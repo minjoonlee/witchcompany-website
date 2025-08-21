@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witch Company - Building the Future with Blockchain & IT Innovation</title>
+    <meta name="description" content="위치컴퍼니는 블록체인, IT, RWA 기반 기술로 Web3와 Web2를 연결하는 기술 중심 기업입니다.">
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="Witch Company - Building the Future with Blockchain & IT Innovation">
+    <meta property="og:description" content="블록체인과 IT 기술로 새로운 디지털 세상을 설계합니다">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://witchcompany.io">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .font-noto { font-family: 'Noto Sans KR', sans-serif; }
+        .bg-gradient-hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .scroll-smooth { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-white font-sans overflow-x-hidden scroll-smooth">
+    
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">
+                WITCH
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-300 hover:text-purple-400 transition-colors">About</a>
+                <a href="#technology" class="text-gray-300 hover:text-purple-400 transition-colors">Technology</a>
+                <a href="#solutions" class="text-gray-300 hover:text-purple-400 transition-colors">Solutions</a>
+                <a href="#partners" class="text-gray-300 hover:text-purple-400 transition-colors">Partners</a>
+                <a href="#news" class="text-gray-300 hover:text-purple-400 transition-colors">News</a>
+                <a href="#contact" class="text-gray-300 hover:text-purple-400 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#about" class="block text-gray-300 hover:text-purple-400 transition-colors py-2">About</a>
+                <a href="#technology" class="block text-gray-300 hover:text-purple-400 transition-colors py-2">Technology</a>
+                <a href="#solutions" class="block text-gray-300 hover:text-purple-400 transition-colors py-2">Solutions</a>
+                <a href="#partners" class="block text-gray-300 hover:text-purple-400 transition-colors py-2">Partners</a>
+                <a href="#news" class="block text-gray-300 hover:text-purple-400 transition-colors py-2">News</a>
+                <a href="#contact" class="block text-gray-300 hover:text-purple-400 transition-colors py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+        <canvas id="hero-canvas" class="absolute inset-0 w-full h-full"></canvas>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 font-poppins opacity-0 animate-fade-in">
+                Building the Future with <br />
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">
+                    Blockchain & IT Innovation
+                </span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl mb-8 text-gray-300 font-noto opacity-0 animate-fade-in-delay">
+                블록체인과 IT 기술로 새로운 디지털 세상을 설계합니다
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-delay-2">
+                <a href="#technology" 
+                    class="px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 text-white font-bold hover:shadow-lg hover:shadow-purple-500/30 transition duration-300">
+                    Explore Our Technology
+                </a>
+                <a href="#solutions" 
+                    class="px-8 py-3 rounded-full border-2 border-purple-500 text-white font-bold hover:bg-purple-500/10 transition duration-300">
+                    Meet Our Solutions
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+            <div class="animate-bounce">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 px-4 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2 font-poppins">
+                    About <span class="text-purple-500">Us</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-purple-700 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg mb-6 leading-relaxed text-gray-300 font-noto">
+                        Witch Company는 블록체인, IT, 그리고 RWA(Real World Asset) 기반 기술을 통해
+                        Web3와 Web2를 연결하는 기술 중심 기업입니다.
+                        우리는 콘텐츠, 결제, 메타버스 등 다양한 산업에서 미래를 만들어갑니다.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-purple-500">
+                            <h3 class="text-xl font-bold mb-2">Vision</h3>
+                            <p class="text-gray-300">"Web3 Mass Adoption through IT Innovation"</p>
+                        </div>
+                        
+                        <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-purple-500">
+                            <h3 class="text-xl font-bold mb-2">Mission</h3>
+                            <p class="text-gray-300">"Connecting Technology, Culture, and People"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="relative z-10 bg-gray-800 p-8 rounded-lg shadow-xl">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 rounded-lg bg-gray-700">
+                                <h4 class="text-4xl font-bold text-purple-500 mb-2">5+</h4>
+                                <p class="text-gray-300">Years Experience</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-700">
+                                <h4 class="text-4xl font-bold text-purple-500 mb-2">5+</h4>
+                                <p class="text-gray-300">Projects</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-700">
+                                <h4 class="text-4xl font-bold text-purple-500 mb-2">20+</h4>
+                                <p class="text-gray-300">Global Partners</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-700">
+                                <h4 class="text-4xl font-bold text-purple-500 mb-2">6</h4>
+                                <p class="text-gray-300">Core Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute -top-4 -right-4 w-full h-full bg-gradient-to-r from-purple-500 to-purple-700 rounded-lg -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Technology Section -->
+    <section id="technology" class="py-20 px-4 bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2 font-poppins">
+                    Core <span class="text-purple-500">Technology</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-purple-700 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-900 rounded-lg p-6 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 group">
+                    <div class="text-purple-500 mb-4 group-hover:text-purple-400 transition-colors duration-300">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10V14H17V10H7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 10V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 19V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 5V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 10L3 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 10L21 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 14L21 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 14L3 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Blockchain Infrastructure</h3>
+                    <p class="text-gray-400">RWA 토큰화, STO 발행, 스마트컨트랙트 설계</p>
+                    <div class="mt-4 w-0 group-hover:w-full h-1 bg-gradient-to-r from-purple-500 to-purple-700 transition-all duration-500"></div>
+                </div>
+
+                <div class="bg-gray-900 rounded-lg p-6 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 group">
+                    <div class="text-purple-500 mb-4 group-hover:text-purple-400 transition-colors duration-300">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 15H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 15H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Payment Solutions (WitchPay)</h3>
+                    <p class="text-gray-400">스테이블코인 결제, 글로벌 온/오프라인 커머스 연결</p>
+                    <div class="mt-4 w-0 group-hover:w-full h-1 bg-gradient-to-r from-purple-500 to-purple-700 transition-all duration-500"></div>
+                </div>
+
+                <div class="bg-gray-900 rounded-lg p-6 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 group">
+                    <div class="text-purple-500 mb-4 group-hover:text-purple-400 transition-colors duration-300">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L19 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Metaverse & Digital Experience (Witchworld)</h3>
+                    <p class="text-gray-400">팬덤, K-POP, NFT 기반 메타버스 플랫폼</p>
+                    <div class="mt-4 w-0 group-hover:w-full h-1 bg-gradient-to-r from-purple-500 to-purple-700 transition-all duration-500"></div>
+                </div>
+
+                <div class="bg-gray-900 rounded-lg p-6 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 group">
+                    <div class="text-purple-500 mb-4 group-hover:text-purple-400 transition-colors duration-300">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 3H3V10H10V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 3H14V10H21V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 14H14V21H21V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 14H3V21H10V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Data & Analytics</h3>
+                    <p class="text-gray-400">블록체인 탐색기 (Witchscan), 실시간 데이터 추적</p>
+                    <div class="mt-4 w-0 group-hover:w-full h-1 bg-gradient-to-r from-purple-500 to-purple-700 transition-all duration-500"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-20 px-4 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2 font-poppins">
+                    Our <span class="text-purple-500">Solutions</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-purple-700 mx-auto mb-4"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto">
+                    우리는 단순 서비스가 아니라, 기술로 구현한 솔루션을 제공합니다.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">Witchbox</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 mb-4">K-콘텐츠 숏폼 OTT (블록체인 기반 유료화 시스템)</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">블록체인 기반 유료화</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">K-콘텐츠 특화</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">숏폼 OTT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">Witchworld</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 mb-4">팬덤 메타버스 (NFT, 디지털 굿즈, 가상 팬미팅)</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">NFT 디지털 굿즈</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">가상 팬미팅</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">메타버스 경험</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">Witchpay</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 mb-4">스테이블코인 결제 시스템</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">스테이블코인 결제</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">글로벌 커머스 연결</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">안전한 트랜잭션</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">Witchscan</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 mb-4">블록체인 데이터 탐색 플랫폼</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">실시간 데이터 추적</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">블록체인 탐색</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">데이터 시각화</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">Ex QueuePay</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 mb-4">콘서트·팝업스토어 전문 줄서기 결제 시스템</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">현장 줄서기 관리</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">빠른 결제</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">대규모 이벤트</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">EnterERP</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 mb-4">엔터테인먼트 분야 맞춤형 ERP 시스템</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">아티스트 관리</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">스케줄 & 정산</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-700 text-purple-400">데이터 통합</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-20 px-4 bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2 font-poppins">
+                    Our <span class="text-purple-500">Partners</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-purple-700 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex items-center justify-center p-6 bg-gray-900 rounded-lg">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 rounded-lg flex items-center justify-center mb-2 mx-auto">
+                            <span class="text-white font-bold text-sm">LG U+</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">LG U+</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center justify-center p-6 bg-gray-900 rounded-lg">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-800 rounded-lg flex items-center justify-center mb-2 mx-auto">
+                            <span class="text-white font-bold text-xs">LOTTE</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">롯데엔터테인먼트</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center justify-center p-6 bg-gray-900 rounded-lg">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg flex items-center justify-center mb-2 mx-auto">
+                            <span class="text-white font-bold text-sm">CIDERS</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">싸이더스</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center justify-center p-6 bg-gray-900 rounded-lg">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-blue-700 to-blue-900 rounded-lg flex items-center justify-center mb-2 mx-auto">
+                            <span class="text-white font-bold text-sm">KBS</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">KBS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-20 px-4 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2 font-poppins">
+                    News & <span class="text-purple-500">Insights</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-purple-700 mx-auto mb-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8" id="news-container">
+                <!-- News items will be loaded here by JavaScript -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <button id="load-more-btn" class="px-8 py-3 rounded-full border-2 border-purple-500 text-white font-bold hover:bg-purple-500/10 transition duration-300">
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 py-12 text-center">
+            <div class="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-700">
+                WITCHCOMPANY
+            </div>
+            <p class="text-gray-400 mb-4">Blockchain & IT Innovation Company</p>
+            <p class="text-gray-400 mb-6">official@witchcompany.io</p>
+            <div class="flex justify-center space-x-4 mb-8">
+                <a href="https://www.youtube.com/@BrandWITCH" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-500 transition-colors duration-300">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.54 6.42C22.4212 5.94541 22.1793 5.51057 21.8387 5.15941C21.498 4.80824 21.0708 4.55318 20.6 4.42C18.88 4 12 4 12 4C12 4 5.12 4 3.4 4.46C2.92925 4.59318 2.50198 4.84824 2.16135 5.19941C1.82072 5.55057 1.57879 5.98541 1.46 6.46C1.14521 8.20556 0.991235 9.97631 1 11.75C0.988687 13.537 1.14266 15.3213 1.46 17.08C1.59096 17.5398 1.83831 17.9581 2.17814 18.2945C2.51798 18.6308 2.93882 18.8738 3.4 19C5.12 19.46 12 19.46 12 19.46C12 19.46 18.88 19.46 20.6 19C21.0708 18.8668 21.498 18.6118 21.8387 18.2606C22.1793 17.9094 22.4212 17.4746 22.54 17C22.8524 15.2676 23.0063 13.5103 23 11.75C23.0113 9.96295 22.8573 8.1787 22.54 6.42Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.75 15.02L15.5 11.75L9.75 8.48V15.02Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="https://blog.naver.com/witchwitch_official" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-500 transition-colors duration-300">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4H20V20H4V4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm">© 2025 Witch Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Animations CSS -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .animate-fade-in-delay {
+            animation: fadeIn 0.8s ease-out 0.2s forwards;
+        }
+        
+        .animate-fade-in-delay-2 {
+            animation: fadeIn 0.8s ease-out 0.4s forwards;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Hero canvas animation
+        const canvas = document.getElementById('hero-canvas');
+        const ctx = canvas.getContext('2d');
+        const particles = [];
+        const particleCount = 80;
+
+        function resizeCanvas() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        }
+
+        function createParticles() {
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5,
+                    radius: Math.random() * 2 + 1,
+                    color: i % 5 === 0 ? '#9333ea' : '#5c3aff'
+                });
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Update and draw particles
+            particles.forEach(particle => {
+                particle.x += particle.vx;
+                particle.y += particle.vy;
+                
+                if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
+                if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
+                
+                ctx.beginPath();
+                ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
+                ctx.fillStyle = particle.color;
+                ctx.fill();
+            });
+            
+            // Draw connections
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < 100) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(92, 58, 255, ${(1 - distance / 100) * 0.5})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+            
+            requestAnimationFrame(animate);
+        }
+
+        // News data
+        const newsItems = [
+            {
+                date: "2025.05.09",
+                title: "숏츠 OTT 위치박스, 콘텐츠 업데이트와 위치토큰 홀더 대상 무료 포인트 지급 이벤트",
+                link: "https://www.businesskorea.co.kr/news/articleView.html?idxno=241874",
+                category: "Witchbox"
+            },
+            {
+                date: "2025.02.28",
+                title: "숏 OTT 플랫폼 위치박스, CJ 엔터테인먼트와 파트너십 체결",
+                link: "https://www.it-b.co.kr/news/articleView.html?idxno=80491",
+                category: "Witchbox"
+            },
+            {
+                date: "2024.11.29",
+                title: "Web3 스타트업 위치컴퍼니, 숏폼 보면서 수익화도 가능한 OTT 플랫폼 소프트 런칭",
+                link: "https://www.koreaittimes.com/news/articleView.html?idxno=136514",
+                category: "Witchbox"
+            },
+            {
+                date: "2024.11.20",
+                title: "위치박스, 사전 가입 1천 명 돌파…'4분 44초' 독점 공개",
+                link: "https://news.nate.com/view/20241106n10130",
+                category: "Witchbox"
+            },
+            {
+                date: "2024.11.15",
+                title: "위치박스, 숏폼 OTT 론칭 기념 사전가입 이벤트…"아이패드 등 혜택 제공"",
+                link: "https://www.businesskorea.co.kr/news/articleView.html?idxno=229520",
+                category: "Witchbox"
+            },
+            {
+                date: "2024.11.06",
+                title: "위치컴퍼니, 롯데엔터테인먼트 영화 '4분 44초' 위치박스서 독점 공개",
+                link: "https://www.sportsseoul.com/news/read/1474920",
+                category: "Witchbox"
+            }
+        ];
+
+        let visibleNewsCount = 3;
+
+        function renderNews() {
+            const container = document.getElementById('news-container');
+            container.innerHTML = '';
+            
+            for (let i = 0; i < Math.min(visibleNewsCount, newsItems.length); i++) {
+                const item = newsItems[i];
+                const newsElement = document.createElement('div');
+                newsElement.className = 'bg-gray-800 rounded-lg overflow-hidden group cursor-pointer';
+                newsElement.innerHTML = `
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+                        <span class="absolute top-4 left-4 px-3 py-1 text-xs rounded-full bg-purple-600 text-white">
+                            ${item.category}
+                        </span>
+                        <div class="text-center text-white">
+                            <h3 class="text-lg font-bold mb-2">News</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-gray-400 text-sm mb-2">${item.date}</div>
+                        <h3 class="text-lg font-bold mb-4 group-hover:text-purple-400 transition-colors duration-300">
+                            ${item.title}
+                        </h3>
+                        <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="text-purple-500 text-sm font-medium flex items-center group-hover:text-purple-400 transition-colors duration-300">
+                            Read More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-1 group-hover:translate-x-1 transition-transform duration-300">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                `;
+                container.appendChild(newsElement);
+            }
+            
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            if (visibleNewsCount >= newsItems.length) {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+
+        // Load more news
+        document.getElementById('load-more-btn').addEventListener('click', function() {
+            visibleNewsCount += 3;
+            renderNews();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Initialize
+        window.addEventListener('load', function() {
+            resizeCanvas();
+            createParticles();
+            animate();
+            renderNews();
+        });
+
+        window.addEventListener('resize', resizeCanvas);
+    </script>
+</body>
+</html>
