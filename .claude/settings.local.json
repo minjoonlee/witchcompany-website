@@ -20,7 +20,9 @@
       "WebFetch(domain:www.fintechtimes.co.kr)",
       "WebFetch(domain:www.newswire.co.kr)",
       "WebFetch(domain:www.blockchaintoday.co.kr)",
-      "WebFetch(domain:www.tgdaily.co.kr)"
+      "WebFetch(domain:www.tgdaily.co.kr)",
+      "WebFetch(domain:witchbox.io)",
+      "WebFetch(domain:witchworld.io)"
     ],
     "deny": [],
     "ask": []
