@@ -580,7 +580,7 @@
             },
             {
                 date: "2024.11.15",
-                title: "위치박스, 숏폼 OTT 론칭 기념 사전가입 이벤트…"아이패드 등 혜택 제공"",
+                title: "위치박스, 숏폼 OTT 론칭 기념 사전가입 이벤트…'아이패드 등 혜택 제공'",
                 link: "https://www.businesskorea.co.kr/news/articleView.html?idxno=229520",
                 category: "Witchbox",
                 image: "https://images.unsplash.com/photo-1583454110551-21aa8e3f43b4?auto=format&fit=crop&w=800&q=80"
@@ -611,7 +611,7 @@
                 title: "위치월드, 웹툰 '아도니스' 메타버스 팬덤 커뮤니티 오픈",
                 link: "https://fintechtimes.co.kr/news/article.html?no=38976",
                 category: "Witchworld",
-                image: "https://images.unsplash.com/photo-1533117848624-3e1e70e3b55b?auto=format&fit=crop&w=800&q=80"
+                image: "https://www.fintechtimes.co.kr/data/photos/20240104/art_17059784160882_4732d8.png"
             },
             {
                 date: "2024.01.04",
@@ -632,14 +632,14 @@
                 title: "위치월드, 업텐션 출신 아티스트 '선율' 버추얼 앨범 공개",
                 link: "https://www.fintechtimes.co.kr/news/article.html?no=38474",
                 category: "Witchworld",
-                image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80"
+                image: "https://www.fintechtimes.co.kr/data/photos/20231252/art_17035458138221_c53aa5.png"
             },
             {
                 date: "2023.10.27",
                 title: "위치컴퍼니, 웹3 메타버스 '위치월드'에서 태빈일경 콘서트 개최",
                 link: "https://www.newswire.co.kr/newsRead.php?no=977275",
                 category: "Witchworld",
-                image: "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=80"
+                image: "https://file.newswire.co.kr/data/datafile2/thumb_640/2023/10/1935238033_20231026185940_4019576832.jpg"
             },
             {
                 date: "2023.03.16",
@@ -695,11 +695,11 @@
                 title: "NFT 메타버스 '위치월드', 바이프로스트 에코 펀드에서 투자 유치",
                 link: "https://platum.kr/archives/184971",
                 category: "Investment",
-                image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80"
+                image: "https://platum.kr/wp-content/uploads/2022/04/ww-1.jpg"
             },
             {
                 date: "2022.04.25",
-                title: "위치컴퍼니-이노션, 업무협약 체결…"현대차 NFT 커뮤니티 활성화"",
+                title: "위치컴퍼니-이노션, 업무협약 체결…'현대차 NFT 커뮤니티 활성화'",
                 link: "https://www.sedaily.com/NewsVIew/264TXE0E4W",
                 category: "Partnership",
                 image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80"
@@ -755,7 +755,7 @@
             },
             {
                 date: "2022.01.19",
-                title: "키썸 "최초의 NFT 앨범, 문별도 처음 봤다고" [엑's 인터뷰③]",
+                title: "키썸 '최초의 NFT 앨범, 문별도 처음 봤다고' [엑's 인터뷰③]",
                 link: "https://www.xportsnews.com/article/1527189",
                 category: "NFT",
                 image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80"
@@ -874,7 +874,7 @@
             },
             {
                 date: "2021.06.21",
-                title: "[블록먼데이]"위안부 진실, 블록체인이 기억합니다"...시즌에스 이민준 대표",
+                title: "[블록먼데이]'위안부 진실, 블록체인이 기억합니다'...시즌에스 이민준 대표",
                 link: "https://n.news.naver.com/article/293/0000035189",
                 category: "Social",
                 image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=800&q=80"
@@ -918,7 +918,8 @@
             for (let i = 0; i < Math.min(visibleNewsCount, newsItems.length); i++) {
                 const item = newsItems[i];
                 const newsElement = document.createElement('div');
-                newsElement.className = 'bg-gray-800 rounded-lg overflow-hidden group cursor-pointer';
+                newsElement.className = 'bg-gray-800 rounded-lg overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-105';
+                newsElement.onclick = () => window.open(item.link, '_blank');
                 newsElement.innerHTML = `
                     <div class="relative h-48 overflow-hidden">
                         <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=800&q=80'">
@@ -932,12 +933,12 @@
                         <h3 class="text-lg font-bold mb-4 group-hover:text-purple-400 transition-colors duration-300">
                             ${item.title}
                         </h3>
-                        <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="text-purple-500 text-sm font-medium flex items-center group-hover:text-purple-400 transition-colors duration-300">
+                        <div class="text-purple-500 text-sm font-medium flex items-center group-hover:text-purple-400 transition-colors duration-300">
                             Read More
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-1 group-hover:translate-x-1 transition-transform duration-300">
                                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        </a>
+                        </div>
                     </div>
                 `;
                 container.appendChild(newsElement);
