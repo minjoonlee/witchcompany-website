@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavist - RWA & STO Infrastructure | WITCH Company</title>
+    <meta name="description" content="Enterprise-grade real-world asset tokenization platform for entertainment industry. Regulatory compliance and profit distribution infrastructure.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="Pavicon.svg?v=2">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0B0C11',
+                        'secondary-dark': '#11131A',
+                        'accent-purple': '#7B4CFF',
+                        'neon-purple': '#B076FF',
+                        'neon-blue': '#00D1FF',
+                        'stroke-gray': '#2A2D3D',
+                        'text-gray': '#8B8D98'
+                    },
+                    maxWidth: {
+                        'enterprise': '1180px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            letter-spacing: 0.01em;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0C11;
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .font-space {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .enterprise-nav {
+            background: rgba(17, 19, 26, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #2A2D3D;
+        }
+        
+        .section-enterprise {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 6rem 1.5rem;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0B0C11 0%, #11131A 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(123, 76, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(0, 209, 255, 0.03) 0%, transparent 50%);
+            z-index: 1;
+        }
+        
+        .nav-link {
+            color: #8B8D98;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #7B4CFF;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #7B4CFF;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .token-card {
+            background: rgba(17, 19, 26, 0.6);
+            border: 1px solid #2A2D3D;
+            transition: all 0.3s ease;
+        }
+        
+        .token-card:hover {
+            border-color: #7B4CFF;
+            transform: translateY(-2px);
+        }
+        
+        .feature-card {
+            background: rgba(17, 19, 26, 0.4);
+            border: 1px solid #2A2D3D;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: #7B4CFF;
+            background: rgba(17, 19, 26, 0.7);
+        }
+        
+        .btn-primary {
+            background: #7B4CFF;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: #B076FF;
+            transform: translateY(-1px);
+        }
+        
+        .compliance-note {
+            background: rgba(42, 45, 61, 0.3);
+            border: 1px solid #2A2D3D;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .section-enterprise {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 enterprise-nav">
+        <div class="max-w-enterprise mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-xl font-bold text-accent-purple font-space tracking-wide">
+                    WITCH COMPANY
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="relative group">
+                        <a href="index.html#products" class="nav-link">Products</a>
+                        <div class="absolute top-full left-0 mt-2 bg-secondary-dark border border-stroke-gray rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-48">
+                            <div class="space-y-2">
+                                <a href="witchverse.html" class="block text-sm text-text-gray hover:text-white">Witchverse</a>
+                                <a href="witchbox.html" class="block text-sm text-text-gray hover:text-white">Witchbox</a>
+                                <a href="wavist.html" class="block text-sm text-accent-purple hover:text-white">Wavist</a>
+                                <a href="witchpay.html" class="block text-sm text-text-gray hover:text-white">WitchPay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="press.html" class="nav-link">Press</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Language Switcher -->
+                    <div class="flex space-x-2">
+                        <a href="wavist.html" class="px-3 py-1 text-sm bg-accent-purple text-white rounded font-medium">EN</a>
+                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-accent-purple hover:text-white transition-colors font-medium">KO</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="section-enterprise">
+            <div class="text-center mb-16">
+                <div class="w-24 h-24 bg-accent-purple/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17l-5-5" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
+                    <span class="text-accent-purple">Wavist</span>
+                </h1>
+                
+                <h2 class="text-2xl lg:text-3xl mb-8 text-neon-blue font-medium">
+                    RWA & STO Infrastructure for Entertainment
+                </h2>
+                
+                <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto mb-12">
+                    Enterprise-grade tokenization platform enabling compliant investment opportunities in entertainment assets with transparent profit distribution.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="https://wavist.io" target="_blank" rel="noopener" class="btn-primary text-lg px-8 py-4">Visit Wavist</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Wavist -->
+    <section class="bg-secondary-dark">
+        <div class="section-enterprise">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 font-space">What is Wavist?</h2>
+                    <p class="text-xl text-text-gray mb-6">
+                        Wavist is a regulatory-compliant platform that tokenizes real-world entertainment assets, enabling institutional and accredited investors to participate in the entertainment economy through digital securities.
+                    </p>
+                    <p class="text-lg text-text-gray mb-8">
+                        Our platform bridges traditional finance with entertainment innovation, providing transparent profit distribution, real-time analytics, and global accessibility for entertainment asset investment.
+                    </p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="feature-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-3 text-neon-purple">Regulatory Compliance</h3>
+                        <p class="text-text-gray">Full Reg S/Reg D compliance with multi-jurisdiction support for global investment.</p>
+                    </div>
+                    
+                    <div class="feature-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-3 text-neon-purple">Transparent Distribution</h3>
+                        <p class="text-text-gray">On-chain profit distribution with real-time reporting and automated payouts.</p>
+                    </div>
+                    
+                    <div class="feature-card rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-3 text-neon-purple">Asset Diversification</h3>
+                        <p class="text-text-gray">Access to diverse entertainment assets including concerts, content IP, and virtual experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why RWA + K-Content -->
+    <section class="bg-primary-dark">
+        <div class="section-enterprise">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    Why RWA + K-Content?
+                </h2>
+                <p class="text-xl text-text-gray max-w-3xl mx-auto">
+                    The convergence of real-world assets and Korean content creates unprecedented investment opportunities
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-neon-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#00D1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-space">Global Demand</h3>
+                    <p class="text-text-gray">K-Content has proven global appeal with massive audience growth worldwide, creating sustainable revenue streams for tokenized assets.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-neon-purple/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" stroke="#B076FF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-space">Proven Returns</h3>
+                    <p class="text-text-gray">Entertainment assets demonstrate strong ROI potential with measurable performance metrics and diversified revenue sources.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-accent-purple/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" stroke="#7B4CFF" stroke-width="2"/>
+                            <path d="M9 12l2 2 4-4" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-space">Institutional Access</h3>
+                    <p class="text-text-gray">Previously exclusive entertainment investments now accessible to institutional investors through compliant tokenization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Token Products -->
+    <section id="products" class="bg-secondary-dark">
+        <div class="section-enterprise">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    Token Products
+                </h2>
+                <p class="text-xl text-text-gray max-w-3xl mx-auto">
+                    Diversified entertainment asset tokens with transparent performance metrics
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- VRT Token -->
+                <div class="token-card rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-neon-blue/20 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-neon-blue font-bold text-lg">VRT</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">$VRT</h3>
+                            <p class="text-text-gray">VR Concert Token</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-text-gray">Market Cap</span>
+                            <span class="text-neon-blue font-semibold">$2.4M</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-gray">Annual Yield</span>
+                            <span class="text-neon-blue font-semibold">18.5%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-gray">Concerts</span>
+                            <span class="text-white font-semibold">12 Active</span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-text-gray mb-6">
+                        Tokenized VR concert revenue sharing from premium K-pop and entertainment events with global distribution.
+                    </p>
+                    
+                </div>
+
+                <!-- CNCRT Token -->
+                <div class="token-card rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-neon-purple/20 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-neon-purple font-bold text-lg">CCT</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">$CNCRT</h3>
+                            <p class="text-text-gray">Concert Profit Token</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-text-gray">Market Cap</span>
+                            <span class="text-neon-purple font-semibold">$8.1M</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-gray">Annual Yield</span>
+                            <span class="text-neon-purple font-semibold">22.3%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-gray">Venues</span>
+                            <span class="text-white font-semibold">8 Partner</span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-text-gray mb-6">
+                        Direct profit participation in live concert events with established venue partnerships and proven revenue streams.
+                    </p>
+                    
+                </div>
+
+                <!-- POPUP Token -->
+                <div class="token-card rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-accent-purple font-bold text-lg">POP</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">$POPUP</h3>
+                            <p class="text-text-gray">Popup Store Token</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-text-gray">Market Cap</span>
+                            <span class="text-accent-purple font-semibold">$1.8M</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-gray">Annual Yield</span>
+                            <span class="text-accent-purple font-semibold">15.2%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-gray">Locations</span>
+                            <span class="text-white font-semibold">25 Active</span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-text-gray mb-6">
+                        Revenue sharing from K-brand popup stores and temporary retail experiences across major markets.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="bg-primary-dark">
+        <div class="section-enterprise">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    Strategic Partners
+                </h2>
+                <p class="text-xl text-text-gray max-w-3xl mx-auto">
+                    Working with industry leaders to tokenize premium entertainment assets
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="feature-card rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4 text-neon-blue">AmazeVR</h3>
+                    <p class="text-text-gray mb-4">
+                        Leading VR concert platform with global reach and premium artist partnerships.
+                    </p>
+                    <div class="text-sm text-text-gray">
+                        • 40B+ KRW asset pipeline<br>
+                        • Global VR concert distribution<br>
+                        • Proven revenue model
+                    </div>
+                </div>
+                
+                <div class="feature-card rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4 text-neon-purple">SET THE STAGE</h3>
+                    <p class="text-text-gray mb-4">
+                        Premium concert production and venue management with established artist relationships.
+                    </p>
+                    <div class="text-sm text-text-gray">
+                        • Major venue partnerships<br>
+                        • K-pop artist collaborations<br>
+                        • International tour network
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance -->
+    <section class="bg-secondary-dark">
+        <div class="section-enterprise">
+            <div class="compliance-note p-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold mb-4 font-space">Regulatory Compliance</h2>
+                    <p class="text-lg text-text-gray max-w-3xl mx-auto">
+                        Wavist operates under full regulatory compliance with international securities laws
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 text-sm text-text-gray">
+                    <div>
+                        <h4 class="font-semibold mb-2 text-white">Important Notice</h4>
+                        <p class="mb-4">
+                            Securities offered through Wavist are available only to accredited investors and qualified institutional buyers. This platform is not available to retail investors in certain jurisdictions.
+                        </p>
+                        <p>
+                            All token offerings are conducted in compliance with applicable securities regulations including Regulation S and Regulation D exemptions.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-2 text-white">Risk Disclosure</h4>
+                        <p class="mb-4">
+                            Investment in entertainment assets involves risk including potential loss of principal. Past performance does not guarantee future results.
+                        </p>
+                        <p>
+                            Token values may fluctuate based on entertainment industry performance, market conditions, and other factors beyond our control.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark border-t border-stroke-gray">
+        <div class="section-enterprise">
+            <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                <div class="lg:col-span-2">
+                    <div class="text-2xl font-bold text-accent-purple mb-4 font-space">
+                        WITCH COMPANY
+                    </div>
+                    <p class="text-text-gray mb-6 text-lg">
+                        Infrastructure for the Future of Entertainment
+                    </p>
+                    <p class="text-text-gray mb-8">
+                        Enterprise-grade Web3 infrastructure for global K-Content
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/wavist" class="text-accent-purple">Wavist</a></li>
+                        <li><a href="/witchbox" class="text-text-gray hover:text-white transition-colors">Witchbox</a></li>
+                        <li><a href="/witchpay" class="text-text-gray hover:text-white transition-colors">WitchPay</a></li>
+                        <li><a href="/witchverse" class="text-text-gray hover:text-white transition-colors">Witchverse</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="text-text-gray">Enterprise Sales<br/><span class="text-white">bd@witchcompany.io</span></li>
+                        <li class="text-text-gray">Investor Relations<br/><span class="text-white">ir@witchcompany.io</span></li>
+                        <li class="text-text-gray">General Inquiries<br/><span class="text-white">official@witchcompany.io</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-stroke-gray pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-text-gray text-sm">© 2025 WITCH Company. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Terms of Service</a>
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Risk Disclosure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

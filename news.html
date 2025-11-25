@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All News - WITCH Company</title>
+    <meta name="description" content="Complete archive of WITCH Company news, press releases, and media coverage">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="Pavicon.svg?v=2">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0B0C11',
+                        'secondary-dark': '#11131A',
+                        'accent-purple': '#7B4CFF',
+                        'neon-purple': '#B076FF',
+                        'neon-blue': '#00D1FF',
+                        'stroke-gray': '#2A2D3D',
+                        'text-gray': '#8B8D98'
+                    },
+                    maxWidth: {
+                        'enterprise': '1180px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            letter-spacing: 0.01em;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0C11;
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .font-space {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .enterprise-nav {
+            background: rgba(17, 19, 26, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #2A2D3D;
+        }
+        
+        .section-enterprise {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 6rem 1.5rem;
+        }
+        
+        .nav-link {
+            color: #8B8D98;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #7B4CFF;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #7B4CFF;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .news-item {
+            background: rgba(17, 19, 26, 0.6);
+            border: 1px solid #2A2D3D;
+            transition: all 0.3s ease;
+        }
+        
+        .news-item:hover {
+            border-color: #7B4CFF;
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            background: #7B4CFF;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: #B076FF;
+            transform: translateY(-1px);
+        }
+        
+        .category-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .category-partnership {
+            background: rgba(123, 76, 255, 0.2);
+            color: #7B4CFF;
+        }
+        
+        .category-launch {
+            background: rgba(176, 118, 255, 0.2);
+            color: #B076FF;
+        }
+        
+        .category-product {
+            background: rgba(0, 209, 255, 0.2);
+            color: #00D1FF;
+        }
+        
+        @media (max-width: 768px) {
+            .section-enterprise {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-40 enterprise-nav">
+        <div class="max-w-enterprise mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-xl font-bold text-accent-purple font-space tracking-wide">
+                    WITCH COMPANY
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="relative group">
+                        <a href="index.html#products" class="nav-link">Products</a>
+                        <div class="absolute top-full left-0 mt-2 bg-secondary-dark border border-stroke-gray rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-48">
+                            <div class="space-y-2">
+                                <a href="witchverse.html" class="block text-sm text-text-gray hover:text-white">Witchverse</a>
+                                <a href="witchbox.html" class="block text-sm text-text-gray hover:text-white">Witchbox</a>
+                                <a href="wavist.html" class="block text-sm text-text-gray hover:text-white">Wavist</a>
+                                <a href="witchpay.html" class="block text-sm text-text-gray hover:text-white">WitchPay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="press.html" class="nav-link text-accent-purple">Press</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Language Switcher -->
+                    <div class="flex space-x-2">
+                        <a href="news.html" class="px-3 py-1 text-sm bg-accent-purple text-white rounded font-medium">EN</a>
+                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-accent-purple hover:text-white transition-colors font-medium">KO</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-primary-dark pt-24">
+        <div class="section-enterprise">
+            <div class="text-center mb-16">
+                <nav class="text-sm text-text-gray mb-4">
+                    <a href="press.html" class="hover:text-accent-purple">Press</a> / <span class="text-white">All News</span>
+                </nav>
+                <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight">
+                    All <span class="text-accent-purple">News</span>
+                </h1>
+                <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto">
+                    Complete archive of WITCH Company announcements, partnerships, and media coverage
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Archive -->
+    <section class="bg-secondary-dark">
+        <div class="section-enterprise">
+            <!-- 2025 News -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 font-space text-accent-purple">2025</h2>
+                
+                <div class="space-y-6">
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-launch mr-3">Launch</span>
+                                    <span class="text-sm text-neon-blue">2025.05.09</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Short-form OTT Witchbox Updates Content and Provides Free Points for Witch Token Holders</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchbox announces content updates and launches free point rewards program for Witch token holders, expanding the Web3 entertainment ecosystem.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=241874" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2025.02.28</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchbox Short-form OTT Platform Establishes Partnership with CJ Entertainment</h3>
+                                <p class="text-text-gray mb-4">
+                                    Strategic partnership between Witchbox and CJ Entertainment opens new opportunities for premium K-content distribution in short-form format.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.it-b.co.kr/news/articleView.html?idxno=80491" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2024 News -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 font-space text-accent-purple">2024</h2>
+                
+                <div class="space-y-6">
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-launch mr-3">Launch</span>
+                                    <span class="text-sm text-neon-blue">2024.11.29</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Web3 Startup WITCH Company Soft Launches OTT Platform Enabling Monetization While Viewing Short-form Content</h3>
+                                <p class="text-text-gray mb-4">
+                                    WITCH Company soft launches revolutionary OTT platform that enables users to earn while watching short-form content, introducing new monetization paradigm.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.koreaittimes.com/news/articleView.html?idxno=136514" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-launch mr-3">Launch</span>
+                                    <span class="text-sm text-neon-blue">2024.11.20</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchbox Surpasses 1,000 Pre-registrations, Exclusively Releases '4 Minutes 44 Seconds'</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchbox reaches pre-registration milestone and exclusively premieres Lotte Entertainment's '4 Minutes 44 Seconds' short film.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://news.nate.com/view/20241106n10130" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-launch mr-3">Launch</span>
+                                    <span class="text-sm text-neon-blue">2024.11.15</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchbox Launches Short-form OTT Pre-registration Event with iPad and Other Benefits</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchbox announces pre-registration campaign offering premium rewards including iPads to celebrate the upcoming OTT platform launch.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=229520" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2024.11.06</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Company Exclusively Releases Lotte Entertainment's '4 Minutes 44 Seconds' on Witchbox</h3>
+                                <p class="text-text-gray mb-4">
+                                    Strategic content partnership brings Lotte Entertainment's premium short film '4 Minutes 44 Seconds' exclusively to the Witchbox platform.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.sportsseoul.com/news/read/1474920" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-launch mr-3">Launch</span>
+                                    <span class="text-sm text-neon-blue">2024.10.30</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Company Debuts High-Quality Short-form OTT Platform 'Witchbox' in November</h3>
+                                <p class="text-text-gray mb-4">
+                                    WITCH Company announces the November launch of Witchbox, a premium short-form OTT platform featuring high-quality K-content.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.etnews.com/20241030000007" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">Product</span>
+                                    <span class="text-sm text-neon-blue">2024.03.05</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchworld Releases Ryu Sujeong Virtual Album 'Cloud'</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchworld platform launches virtual album 'Cloud' by artist Ryu Sujeong, showcasing innovative digital music experiences.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.seoul.co.kr/news/life/2024/03/05/20240305500043" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">Product</span>
+                                    <span class="text-sm text-neon-blue">2024.01.23</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchworld Opens Webtoon 'Adonis' Metaverse Fandom Community</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchworld expands into webtoon fandoms with the launch of metaverse community for popular webtoon 'Adonis'.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://fintechtimes.co.kr/news/article.html?no=38976" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">Product</span>
+                                    <span class="text-sm text-neon-blue">2024.01.04</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchworld Releases UP10TION Former Member 'Sunyoul' Virtual Album</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchworld introduces virtual album by former UP10TION member Sunyoul, expanding the platform's K-pop artist offerings.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.tokenpost.kr/article-158839" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 2022 News -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 font-space text-accent-purple">2022</h2>
+                
+                <div class="space-y-6">
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2022.12.30</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">LG U+ Partners with WITCH Company for Web3 Kids Service Business Development</h3>
+                                <p class="text-text-gray mb-4">
+                                    Strategic collaboration between LG U+ and WITCH Company to develop innovative Web3-based services for children's entertainment market.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://zdnet.co.kr/view/?no=20221230085151" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2022.09.08</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Company Signs 3D NFT Metaverse Business Agreement with Jjan Company</h3>
+                                <p class="text-text-gray mb-4">
+                                    Partnership agreement focuses on 3D NFT integration and metaverse business expansion between WITCH Company and Jjan Company.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.fintechtimes.co.kr/news/article.html?no=29868" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2022.08.31</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchworld Opens Hyundai Ioniq Digital Garage in the Metaverse</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchworld metaverse platform launches Hyundai Ioniq digital garage, bringing automotive experiences to virtual environments.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://wowtale.net/2022/08/31/45286/" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">NFT</span>
+                                    <span class="text-sm text-neon-blue">2022.06.28</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchcraft Sells Out Tekken Pro Gamer 'Knee' Limited Edition Lever + NFT</h3>
+                                <p class="text-text-gray mb-4">
+                                    Limited edition gaming peripheral combined with NFT collectible sells out, demonstrating successful fusion of gaming and blockchain.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.techm.kr/news/articleView.html?idxno=98800" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">Token</span>
+                                    <span class="text-sm text-neon-blue">2022.06.23</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Token Lists on Gopax Exchange</h3>
+                                <p class="text-text-gray mb-4">
+                                    WITCH token achieves major milestone with listing on Gopax, one of Korea's leading cryptocurrency exchanges.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="http://www.tgdaily.co.kr/news/articleView.html?idxno=317651" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2022.05.18</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">NFT Metaverse 'WITCH' Opens Innisfree Virtual Showroom Using Metaverse</h3>
+                                <p class="text-text-gray mb-4">
+                                    WITCH metaverse platform hosts Innisfree virtual showroom, demonstrating retail applications of virtual environments.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.techm.kr/news/articleView.html?idxno=97636" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Investment</span>
+                                    <span class="text-sm text-neon-blue">2022.04.28</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">NFT Metaverse 'Witchworld' Raises Investment from Bifrost Eco Fund</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchworld secures strategic investment from Bifrost Eco Fund, accelerating metaverse platform development and expansion.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://platum.kr/archives/184971" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2022.04.25</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Company-Innocean Signs Business Agreement for 'Hyundai Motor NFT Community Activation'</h3>
+                                <p class="text-text-gray mb-4">
+                                    Strategic partnership with Innocean to develop NFT-based community activation solutions for Hyundai Motor's digital engagement.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.sedaily.com/NewsVIew/264TXE0E4W" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Funding</span>
+                                    <span class="text-sm text-neon-blue">2022.04.05</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">NFT Metaverse WITCH Company Raises Seed Investment from Partners Investment</h3>
+                                <p class="text-text-gray mb-4">
+                                    Partners Investment's first investment in the NFT market, recognizing WITCH Company's potential in the NFT metaverse space with WITCHWORLD platform development and partnerships with major entertainment companies.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://platum.kr/archives/183631" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2022.04.01</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Signs NFT Metaverse Business Partnership with iDreamWork Korea Co., Ltd.</h3>
+                                <p class="text-text-gray mb-4">
+                                    Partnership agreement with iDreamWork Korea focuses on expanding NFT metaverse business and content development capabilities.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.fintechtimes.co.kr/news/article.html?no=26792" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">Tech</span>
+                                    <span class="text-sm text-neon-blue">2022.03.04</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Company Builds Metaverse Platform</h3>
+                                <p class="text-text-gray mb-4">
+                                    WITCH Company announces development of comprehensive metaverse platform infrastructure for entertainment and digital experiences.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="http://www.tgdaily.co.kr/news/articleView.html?idxno=315278" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">NFT</span>
+                                    <span class="text-sm text-neon-blue">2022.02.18</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchcraft Successfully Concludes Rapper Kisum's NFT Auction</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchcraft platform successfully hosts NFT auction for rapper Kisum, demonstrating viable market for music NFTs.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="http://www.tgdaily.co.kr/news/articleView.html?idxno=314993" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">NFT</span>
+                                    <span class="text-sm text-neon-blue">2022.01.20</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchcraft Releases Korea's First NFT Virtual Album</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchcraft platform launches Korea's first NFT virtual album, pioneering new formats for digital music distribution.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.blockchaintoday.co.kr/news/articleView.html?idxno=20762" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2023 News -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 font-space text-accent-purple">2023</h2>
+                
+                <div class="space-y-6">
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">Product</span>
+                                    <span class="text-sm text-neon-blue">2023.12.26</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchworld Releases 'Sunyoul' Virtual Album</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchworld platform releases virtual album by artist Sunyoul, continuing to expand digital music experiences.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.tgdaily.co.kr/news/articleView.html?idxno=329800" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">Product</span>
+                                    <span class="text-sm text-neon-blue">2023.10.27</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Company Hosts Taebin Ilgyeong Concert in Web3 Metaverse 'Witchworld'</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchworld metaverse platform hosts virtual concert featuring artist Taebin Ilgyeong, showcasing live entertainment capabilities.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.newswire.co.kr/newsRead.php?no=977275" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2023.08.20</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">LG U+ Web3 New Business PoC and Partnership Development</h3>
+                                <p class="text-text-gray mb-4">
+                                    LG U+ Web3 new business Proof of Concept development and strategic partnership establishment for metaverse telecommunications services.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.ftoday.co.kr/news/articleView.html?idxno=247611" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">Product</span>
+                                    <span class="text-sm text-neon-blue">2023.03.16</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchworld Opens Ryu Sujeong Solo Metaverse</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchworld launches dedicated metaverse space for artist Ryu Sujeong, providing personalized fan engagement experience.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="http://www.issueinfact.com/news/articleView.html?idxno=53896" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 2021 News -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 font-space text-accent-purple">2021</h2>
+                
+                <div class="space-y-6">
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2021.12.21</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchcraft Opens 'The Matrix: Resurrections' NFT Exhibition Hall in Metaverse</h3>
+                                <p class="text-text-gray mb-4">
+                                    Witchcraft platform launches exclusive NFT exhibition hall for 'The Matrix: Resurrections' in metaverse environment.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.blockchaintoday.co.kr/news/articleView.html?idxno=20328" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2021.12.15</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">Witchcraft Launches NFT Ticket Goods with Lotte Cinema for 'The Matrix: Resurrections' Release</h3>
+                                <p class="text-text-gray mb-4">
+                                    Partnership with Lotte Cinema introduces innovative NFT ticket merchandise for major film release.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.fintechtimes.co.kr/news/article.html?no=25226" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2021.11.22</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">NFT Project WITCH Signs Business Agreement with Korea Model Association for AI Virtual Models</h3>
+                                <p class="text-text-gray mb-4">
+                                    Strategic partnership with Korea Model Association to develop AI virtual model technology and NFT integration.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.blockchaintoday.co.kr/news/articleView.html?idxno=19875" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2021.11.02</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">NFT Project WITCH Signs Business Agreement with LACHICA Agency 'And Entertainment'</h3>
+                                <p class="text-text-gray mb-4">
+                                    Partnership with And Entertainment, LACHICA's agency, to expand NFT offerings in K-pop entertainment sector.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.blockchaintoday.co.kr/news/articleView.html?idxno=19598" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">NFT</span>
+                                    <span class="text-sm text-neon-blue">2021.08.11</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Achieves Korea's First Artist NFT Ticket Auction at 4 Million KRW</h3>
+                                <p class="text-text-gray mb-4">
+                                    Milestone achievement with Korea's first artist NFT ticket selling for 4 million KRW, establishing NFT market value.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="http://www.blockchaintoday.co.kr/news/articleView.html?idxno=18295" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">NFT</span>
+                                    <span class="text-sm text-neon-blue">2021.07.30</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Launches NFT Auction Platform 'WITCH Auction'</h3>
+                                <p class="text-text-gray mb-4">
+                                    Launch of comprehensive NFT auction platform 'WITCH Auction' providing marketplace infrastructure for digital assets.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="http://www.tgdaily.co.kr/news/articleView.html?idxno=310522" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Partnership</span>
+                                    <span class="text-sm text-neon-blue">2021.06.29</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Forms Business Partnership with Warner Music Korea's First Subsidiary Uncut Point</h3>
+                                <p class="text-text-gray mb-4">
+                                    Strategic partnership with Uncut Point, Warner Music Korea's subsidiary, to expand music industry NFT applications.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.fintechtimes.co.kr/news/article.html?no=22325" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">Social</span>
+                                    <span class="text-sm text-neon-blue">2021.06.14</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Creates NFTs of Comfort Women Historical Documents, Records on Blockchain</h3>
+                                <p class="text-text-gray mb-4">
+                                    Social impact initiative using blockchain technology to preserve and protect historical documents related to comfort women.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.blockchaintoday.co.kr/news/articleView.html?idxno=17263" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-partnership mr-3">Investment</span>
+                                    <span class="text-sm text-neon-blue">2021.06.01</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Raises 300 Million KRW Investment from CG·VFX Content Production 'Studio Lennon'</h3>
+                                <p class="text-text-gray mb-4">
+                                    Significant funding round from Studio Lennon accelerates WITCH's expansion in CG and VFX content production capabilities.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="https://www.fintechtimes.co.kr/news/article.html?no=21823" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item -->
+                    <div class="news-item rounded-lg p-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-3">
+                                    <span class="category-badge category-product mr-3">Tech</span>
+                                    <span class="text-sm text-neon-blue">2021.05.21</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Unveils Location-Based Social Media 'WitchWitch'</h3>
+                                <p class="text-text-gray mb-4">
+                                    Launch of innovative location-based social media platform 'WitchWitch' integrating geographical and social elements.
+                                </p>
+                            </div>
+                            <div class="lg:ml-6">
+                                <a href="http://www.sisamagazine.co.kr/news/articleView.html?idxno=358111&google_editors_picks=true" target="_blank" rel="noopener" class="btn-primary">
+                                    Read More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark border-t border-stroke-gray">
+        <div class="section-enterprise">
+            <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                <div class="lg:col-span-2">
+                    <div class="text-2xl font-bold text-accent-purple mb-4 font-space">
+                        WITCH COMPANY
+                    </div>
+                    <p class="text-text-gray mb-6 text-lg">
+                        Infrastructure for the Future of Entertainment
+                    </p>
+                    <p class="text-text-gray mb-8">
+                        Enterprise-grade Web3 infrastructure for global K-Content
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-text-gray hover:text-white transition-colors">About</a></li>
+                        <li><a href="index.html#case-studies" class="text-text-gray hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="press.html" class="text-text-gray hover:text-white transition-colors">Press</a></li>
+                        <li><a href="news.html" class="text-accent-purple">All News</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="text-text-gray">All Inquiries<br/><span class="text-white">official@witchcompany.io</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-stroke-gray pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-text-gray text-sm">© 2025 WITCH Company. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

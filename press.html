@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press & Media - WITCH Company</title>
+    <meta name="description" content="Latest news and media coverage about WITCH Company's entertainment infrastructure innovations">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="Pavicon.svg?v=2">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0B0C11',
+                        'secondary-dark': '#11131A',
+                        'accent-purple': '#7B4CFF',
+                        'neon-purple': '#B076FF',
+                        'neon-blue': '#00D1FF',
+                        'stroke-gray': '#2A2D3D',
+                        'text-gray': '#8B8D98'
+                    },
+                    maxWidth: {
+                        'enterprise': '1180px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            letter-spacing: 0.01em;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0C11;
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .font-space {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .enterprise-nav {
+            background: rgba(17, 19, 26, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #2A2D3D;
+        }
+        
+        .section-enterprise {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 6rem 1.5rem;
+        }
+        
+        .nav-link {
+            color: #8B8D98;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #7B4CFF;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #7B4CFF;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .news-card {
+            background: rgba(17, 19, 26, 0.6);
+            border: 1px solid #2A2D3D;
+            transition: all 0.3s ease;
+        }
+        
+        .news-card:hover {
+            border-color: #7B4CFF;
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            background: #7B4CFF;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: #B076FF;
+            transform: translateY(-1px);
+        }
+        
+        .category-badge {
+            background: rgba(123, 76, 255, 0.2);
+            color: #7B4CFF;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .section-enterprise {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 enterprise-nav">
+        <div class="max-w-enterprise mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-xl font-bold text-accent-purple font-space tracking-wide">
+                    WITCH COMPANY
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="relative group">
+                        <a href="index.html#products" class="nav-link">Products</a>
+                        <div class="absolute top-full left-0 mt-2 bg-secondary-dark border border-stroke-gray rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-48">
+                            <div class="space-y-2">
+                                <a href="witchverse.html" class="block text-sm text-text-gray hover:text-white">Witchverse</a>
+                                <a href="witchbox.html" class="block text-sm text-text-gray hover:text-white">Witchbox</a>
+                                <a href="wavist.html" class="block text-sm text-text-gray hover:text-white">Wavist</a>
+                                <a href="witchpay.html" class="block text-sm text-text-gray hover:text-white">WitchPay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="press.html" class="nav-link text-accent-purple">Press</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Language Switcher -->
+                    <div class="flex space-x-2">
+                        <a href="press.html" class="px-3 py-1 text-sm bg-accent-purple text-white rounded font-medium">EN</a>
+                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-accent-purple hover:text-white transition-colors font-medium">KO</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-primary-dark pt-24">
+        <div class="section-enterprise text-center">
+            <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight">
+                Press & <span class="text-accent-purple">Media</span>
+            </h1>
+            <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto">
+                Latest news and media coverage about WITCH Company's innovations in entertainment infrastructure
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section class="bg-secondary-dark">
+        <div class="section-enterprise">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    Latest News
+                </h2>
+                <p class="text-xl text-text-gray max-w-3xl mx-auto mb-8">
+                    Recent developments and partnerships in K-Content infrastructure
+                </p>
+                <a href="news.html" class="btn-primary">View All News</a>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- News Article 1 -->
+                <div class="news-card rounded-lg overflow-hidden">
+                    <div class="relative h-48 bg-gradient-to-br from-accent-purple/20 to-neon-blue/10">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-6xl">🚀</div>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="category-badge">Partnership</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-neon-blue mb-2">2025.11.03</div>
+                        <h3 class="text-xl font-bold mb-4 leading-snug">WITCH Company & DOD Entertainment Expand NFT-Based Limited Edition Ticketing Business</h3>
+                        <p class="text-text-gray mb-4 text-sm">
+                            WITCH Company partners with DOD Entertainment to expand NFT-based limited edition ticketing business.
+                        </p>
+                        <a href="https://www.it-b.co.kr/news/articleView.html?idxno=84992" target="_blank" rel="noopener" class="text-accent-purple hover:text-neon-purple transition-colors font-semibold">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News Article 2 -->
+                <div class="news-card rounded-lg overflow-hidden">
+                    <div class="relative h-48 bg-gradient-to-br from-neon-blue/20 to-neon-purple/10">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-6xl">🤝</div>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="category-badge">Partnership</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-neon-blue mb-2">2025.02.28</div>
+                        <h3 class="text-xl font-bold mb-4 leading-snug">Witchbox Short-form OTT Platform Establishes Partnership with CJ Entertainment</h3>
+                        <p class="text-text-gray mb-4 text-sm">
+                            Witchbox short-form OTT platform establishes partnership with CJ Entertainment.
+                        </p>
+                        <a href="https://www.it-b.co.kr/news/articleView.html?idxno=80491" target="_blank" rel="noopener" class="text-accent-purple hover:text-neon-purple transition-colors font-semibold">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News Article 3 -->
+                <div class="news-card rounded-lg overflow-hidden">
+                    <div class="relative h-48 bg-gradient-to-br from-accent-purple/20 to-neon-blue/10">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-6xl">🎬</div>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="category-badge">Launch</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-neon-blue mb-2">2024.11.29</div>
+                        <h3 class="text-xl font-bold mb-4 leading-snug">Web3 Startup WITCH Company Soft Launches OTT Platform Enabling Monetization While Viewing Short-form Content</h3>
+                        <p class="text-text-gray mb-4 text-sm">
+                            WITCH Company launches short-form OTT platform enabling monetization while viewing content.
+                        </p>
+                        <a href="https://www.koreaittimes.com/news/articleView.html?idxno=136514" target="_blank" rel="noopener" class="text-accent-purple hover:text-neon-purple transition-colors font-semibold">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News Article 4 -->
+                <div class="news-card rounded-lg overflow-hidden">
+                    <div class="relative h-48 bg-gradient-to-br from-neon-blue/20 to-neon-purple/10">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-6xl">📡</div>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="category-badge">Partnership</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-neon-blue mb-2">2023.08.20</div>
+                        <h3 class="text-xl font-bold mb-4 leading-snug">LG U+ Web3 New Business PoC and Partnership Development</h3>
+                        <p class="text-text-gray mb-4 text-sm">
+                            LG U+ Web3 new business Proof of Concept and partnership development.
+                        </p>
+                        <a href="https://www.ftoday.co.kr/news/articleView.html?idxno=247611" target="_blank" rel="noopener" class="text-accent-purple hover:text-neon-purple transition-colors font-semibold">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News Article 5 -->
+                <div class="news-card rounded-lg overflow-hidden">
+                    <div class="relative h-48 bg-gradient-to-br from-neon-purple/20 to-accent-purple/10">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-6xl">🚗</div>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="category-badge">Partnership</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-neon-blue mb-2">2023.03.15</div>
+                        <h3 class="text-xl font-bold mb-4 leading-snug">Hyundai Motor Company NFT Project Metaverse Collaboration</h3>
+                        <p class="text-text-gray mb-4 text-sm">
+                            Hyundai Motor Company NFT project metaverse collaboration with WITCH Company.
+                        </p>
+                        <a href="https://www.financialpost.co.kr/news/articleView.html?idxno=156051" target="_blank" rel="noopener" class="text-accent-purple hover:text-neon-purple transition-colors font-semibold">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News Article 6 -->
+                <div class="news-card rounded-lg overflow-hidden">
+                    <div class="relative h-48 bg-gradient-to-br from-neon-purple/20 to-accent-purple/10">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-6xl">💰</div>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="category-badge">Funding</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-neon-blue mb-2">2022.04.05</div>
+                        <h3 class="text-xl font-bold mb-4 leading-snug">NFT Metaverse WITCH Company Raises Seed Investment from Partners Investment</h3>
+                        <p class="text-text-gray mb-4 text-sm">
+                            Partners Investment's first investment in the NFT market, recognizing WITCH Company's potential in the NFT metaverse space.
+                        </p>
+                        <a href="https://platum.kr/archives/183631" target="_blank" rel="noopener" class="text-accent-purple hover:text-neon-purple transition-colors font-semibold">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press Resources -->
+    <section class="bg-primary-dark">
+        <div class="section-enterprise">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    Press Resources
+                </h2>
+                <p class="text-xl text-text-gray max-w-3xl mx-auto">
+                    Resources for media professionals and journalists
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="news-card rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-accent-purple">Company Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
+                            <span class="text-text-gray">Company Name</span>
+                            <span class="text-white font-semibold">WITCH Company</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
+                            <span class="text-text-gray">Founded</span>
+                            <span class="text-white font-semibold">2020</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
+                            <span class="text-text-gray">Industry</span>
+                            <span class="text-white font-semibold">Entertainment Infrastructure</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
+                            <span class="text-text-gray">Focus</span>
+                            <span class="text-white font-semibold">K-Content & Web3</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <span class="text-text-gray">Stage</span>
+                            <span class="text-white font-semibold">Seed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-neon-blue">Media Contact</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold mb-2">Press Inquiries</h4>
+                            <p class="text-text-gray mb-2">For all media and press related questions</p>
+                            <a href="mailto:official@witchcompany.io" class="text-accent-purple hover:text-neon-purple transition-colors font-semibold">
+                                official@witchcompany.io
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold mb-2">Response Time</h4>
+                            <p class="text-text-gray">Media inquiries are typically responded to within 24 hours during business days.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold mb-2">Available Languages</h4>
+                            <p class="text-text-gray">Korean, English</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark border-t border-stroke-gray">
+        <div class="section-enterprise">
+            <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                <div class="lg:col-span-2">
+                    <div class="text-2xl font-bold text-accent-purple mb-4 font-space">
+                        WITCH COMPANY
+                    </div>
+                    <p class="text-text-gray mb-6 text-lg">
+                        Infrastructure for the Future of Entertainment
+                    </p>
+                    <p class="text-text-gray mb-8">
+                        Enterprise-grade Web3 infrastructure for global K-Content
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-text-gray hover:text-white transition-colors">About</a></li>
+                        <li><a href="index.html#case-studies" class="text-text-gray hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="press.html" class="text-accent-purple">Press</a></li>
+                        <li><a href="index.html#technology" class="text-text-gray hover:text-white transition-colors">Technology</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="text-text-gray">All Inquiries<br/><span class="text-white">official@witchcompany.io</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-stroke-gray pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-text-gray text-sm">© 2025 WITCH Company. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

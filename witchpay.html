@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WitchPay - Web3 Payment Infrastructure | WITCH Company</title>
+    <meta name="description" content="Enterprise-grade Web3 payment infrastructure with smart wallets, stablecoin settlement, and gas-sponsored transactions for entertainment commerce.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="Pavicon.svg?v=2">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0B0C11',
+                        'secondary-dark': '#11131A',
+                        'accent-purple': '#7B4CFF',
+                        'neon-purple': '#B076FF',
+                        'neon-blue': '#00D1FF',
+                        'stroke-gray': '#2A2D3D',
+                        'text-gray': '#8B8D98'
+                    },
+                    maxWidth: {
+                        'enterprise': '1180px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            letter-spacing: 0.01em;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0C11;
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .font-space {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .enterprise-nav {
+            background: rgba(17, 19, 26, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #2A2D3D;
+        }
+        
+        .section-enterprise {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 6rem 1.5rem;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0B0C11 0%, #11131A 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(123, 76, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(0, 209, 255, 0.03) 0%, transparent 50%);
+            z-index: 1;
+        }
+        
+        .nav-link {
+            color: #8B8D98;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #7B4CFF;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #7B4CFF;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .feature-card {
+            background: rgba(17, 19, 26, 0.6);
+            border: 1px solid #2A2D3D;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: #7B4CFF;
+            transform: translateY(-2px);
+        }
+        
+        .payment-demo {
+            background: rgba(17, 19, 26, 0.4);
+            border: 1px solid #2A2D3D;
+            transition: all 0.3s ease;
+        }
+        
+        .payment-demo:hover {
+            border-color: #00D1FF;
+            background: rgba(17, 19, 26, 0.7);
+        }
+        
+        .btn-primary {
+            background: #7B4CFF;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: #B076FF;
+            transform: translateY(-1px);
+        }
+        
+        .code-block {
+            background: rgba(7, 10, 18, 0.9);
+            border: 1px solid #2A2D3D;
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .metric-highlight {
+            background: linear-gradient(135deg, rgba(123, 76, 255, 0.1) 0%, rgba(0, 209, 255, 0.1) 100%);
+            border: 1px solid rgba(123, 76, 255, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .section-enterprise {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 enterprise-nav">
+        <div class="max-w-enterprise mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-xl font-bold text-accent-purple font-space tracking-wide">
+                    WITCH COMPANY
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="relative group">
+                        <a href="index.html#products" class="nav-link">Products</a>
+                        <div class="absolute top-full left-0 mt-2 bg-secondary-dark border border-stroke-gray rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-48">
+                            <div class="space-y-2">
+                                <a href="witchverse.html" class="block text-sm text-text-gray hover:text-white">Witchverse</a>
+                                <a href="witchbox.html" class="block text-sm text-text-gray hover:text-white">Witchbox</a>
+                                <a href="wavist.html" class="block text-sm text-text-gray hover:text-white">Wavist</a>
+                                <a href="witchpay.html" class="block text-sm text-accent-purple hover:text-white">WitchPay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="press.html" class="nav-link">Press</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Language Switcher -->
+                    <div class="flex space-x-2">
+                        <a href="witchpay.html" class="px-3 py-1 text-sm bg-accent-purple text-white rounded font-medium">EN</a>
+                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-accent-purple hover:text-white transition-colors font-medium">KO</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="section-enterprise">
+            <div class="text-center mb-16">
+                <div class="w-24 h-24 bg-accent-purple/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="5" width="22" height="14" rx="2" stroke="#7B4CFF" stroke-width="2"/>
+                        <path d="M1 10h22" stroke="#7B4CFF" stroke-width="2"/>
+                    </svg>
+                </div>
+                
+                <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
+                    <span class="text-accent-purple">WitchPay</span>
+                </h1>
+                
+                <h2 class="text-2xl lg:text-3xl mb-8 text-neon-blue font-medium">
+                    Web3 Payment & Stablecoin Infrastructure
+                </h2>
+                
+                <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto mb-12">
+                    Enterprise-grade payment infrastructure with smart wallets, KRW-pegged settlement, and gas-sponsored transactions for seamless entertainment commerce.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="https://witchpay.io" target="_blank" rel="noopener" class="btn-primary text-lg px-8 py-4">Visit WitchPay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Stack Overview -->
+    <section class="bg-secondary-dark">
+        <div class="section-enterprise">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 font-space">Complete Payment Stack</h2>
+                    <p class="text-xl text-text-gray mb-6">
+                        WitchPay provides end-to-end payment infrastructure designed specifically for the entertainment industry, combining Web3 innovation with traditional finance reliability.
+                    </p>
+                    <p class="text-lg text-text-gray mb-8">
+                        Our system eliminates the complexity of blockchain transactions while maintaining the transparency and efficiency benefits of decentralized finance.
+                    </p>
+                    
+                    <div class="metric-highlight rounded-lg p-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <div class="text-3xl font-bold text-neon-blue mb-2">99.9%</div>
+                                <div class="text-text-gray">Transaction Success Rate</div>
+                            </div>
+                            
+                            <div>
+                                <div class="text-3xl font-bold text-neon-blue mb-2">< 3s</div>
+                                <div class="text-text-gray">Average Settlement Time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="payment-demo rounded-lg p-8">
+                    <h3 class="text-xl font-bold mb-6 text-center text-neon-blue">Payment Flow Demo</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-4 bg-primary-dark rounded border border-stroke-gray">
+                            <span class="text-text-gray">User Action</span>
+                            <span class="text-white">Purchase Concert Ticket</span>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <div class="w-px h-6 bg-accent-purple"></div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between p-4 bg-primary-dark rounded border border-stroke-gray">
+                            <span class="text-text-gray">Payment Method</span>
+                            <span class="text-white">Credit Card / QR Pay</span>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <div class="w-px h-6 bg-accent-purple"></div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between p-4 bg-primary-dark rounded border border-stroke-gray">
+                            <span class="text-text-gray">Processing</span>
+                            <span class="text-white">KRW → Smart Contract</span>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <div class="w-px h-6 bg-accent-purple"></div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between p-4 bg-primary-dark rounded border border-neon-blue">
+                            <span class="text-text-gray">Result</span>
+                            <span class="text-neon-blue">NFT Ticket Delivered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="bg-primary-dark">
+        <div class="section-enterprise">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    Core Features
+                </h2>
+                <p class="text-xl text-text-gray max-w-3xl mx-auto">
+                    Comprehensive payment infrastructure for modern entertainment commerce
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Smart Wallet -->
+                <div class="feature-card rounded-lg p-8">
+                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V16" stroke="#7B4CFF" stroke-width="2"/>
+                            <circle cx="16" cy="12" r="3" stroke="#7B4CFF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Smart Wallet System</h3>
+                    <p class="text-text-gray mb-6">
+                        Account abstraction technology enabling seamless Web3 experiences without requiring users to manage private keys or understand blockchain complexity.
+                    </p>
+                    <div class="space-y-3 text-sm text-text-gray">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <span>Social login integration</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <span>Gasless transactions for users</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <span>Multi-signature security</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <span>Recovery mechanisms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Merchant Settlement -->
+                <div class="feature-card rounded-lg p-8">
+                    <div class="w-16 h-16 bg-neon-blue/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8" stroke="#00D1FF" stroke-width="2"/>
+                            <rect x="8" y="2" width="8" height="4" rx="1" stroke="#00D1FF" stroke-width="2"/>
+                            <path d="M12 11V17M9 14L12 11L15 14" stroke="#00D1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Merchant Settlement</h3>
+                    <p class="text-text-gray mb-6">
+                        Real-time settlement system with automatic currency conversion, fraud protection, and comprehensive reporting for entertainment merchants.
+                    </p>
+                    <div class="space-y-3 text-sm text-text-gray">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <span>Instant KRW settlement</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <span>Automated reconciliation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <span>Multi-currency support</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <span>Fraud detection & prevention</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QR Pay -->
+                <div class="feature-card rounded-lg p-8">
+                    <div class="w-16 h-16 bg-neon-purple/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="8" height="8" rx="1" stroke="#B076FF" stroke-width="2"/>
+                            <rect x="13" y="3" width="8" height="8" rx="1" stroke="#B076FF" stroke-width="2"/>
+                            <rect x="3" y="13" width="8" height="8" rx="1" stroke="#B076FF" stroke-width="2"/>
+                            <rect x="13" y="13" width="8" height="8" rx="1" stroke="#B076FF" stroke-width="2"/>
+                            <rect x="5" y="5" width="4" height="4" rx="0.5" fill="#B076FF"/>
+                            <rect x="15" y="15" width="4" height="4" rx="0.5" fill="#B076FF"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">QR Pay Integration</h3>
+                    <p class="text-text-gray mb-6">
+                        Mobile-first payment solution with QR code generation, offline payment support, and integration with popular Korean payment platforms.
+                    </p>
+                    <div class="space-y-3 text-sm text-text-gray">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <span>Dynamic QR generation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <span>Offline payment support</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <span>KakaoPay & NaverPay integration</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <span>Receipt generation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KRW Stable System -->
+                <div class="feature-card rounded-lg p-8">
+                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="#7B4CFF" stroke-width="2"/>
+                            <text x="12" y="16" text-anchor="middle" fill="#7B4CFF" font-size="8" font-weight="bold">KRW</text>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">KRW Stablecoin System</h3>
+                    <p class="text-text-gray mb-6">
+                        Korean Won-pegged digital currency for stable value transactions, regulatory compliance, and seamless on-chain/off-chain value transfer.
+                    </p>
+                    <div class="space-y-3 text-sm text-text-gray">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <span>1:1 KRW peg maintained</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <span>Regulatory compliance</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <span>Instant redemption</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <span>Transparent reserves</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gas Abstraction -->
+    <section class="bg-secondary-dark">
+        <div class="section-enterprise">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    Gas Abstraction Layer
+                </h2>
+                <p class="text-xl text-text-gray max-w-3xl mx-auto">
+                    Eliminate blockchain complexity with sponsored transactions and seamless user experience
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-neon-blue">How It Works</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-accent-purple/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <span class="text-accent-purple font-bold text-sm">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">User Initiates Transaction</h4>
+                                <p class="text-text-gray text-sm">User clicks "buy" without needing to understand gas fees, private keys, or blockchain mechanics.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-neon-blue/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <span class="text-neon-blue font-bold text-sm">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Paymaster Processing</h4>
+                                <p class="text-text-gray text-sm">Our infrastructure sponsors the gas fees, handles blockchain interactions transparently.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-neon-purple/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <span class="text-neon-purple font-bold text-sm">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Instant Confirmation</h4>
+                                <p class="text-text-gray text-sm">Transaction completes in seconds with traditional payment experience and Web3 benefits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="code-block p-6 rounded-lg">
+                    <div class="text-neon-blue text-sm mb-4">// Paymaster Implementation</div>
+                    <div class="text-text-gray text-sm font-mono">
+                        <div class="mb-2"><span class="text-accent-purple">function</span> <span class="text-white">sponsoredTransaction</span>(</div>
+                        <div class="ml-4 mb-2"><span class="text-neon-blue">address</span> user,</div>
+                        <div class="ml-4 mb-2"><span class="text-neon-blue">bytes</span> calldata txData</div>
+                        <div class="mb-2">) <span class="text-accent-purple">external</span> <span class="text-accent-purple">payable</span> {</div>
+                        <div class="ml-4 mb-2"><span class="text-accent-purple">require</span>(isAuthorized(user));</div>
+                        <div class="ml-4 mb-2"></div>
+                        <div class="ml-4 mb-2"><span class="text-gray-400">// Sponsor gas fees</span></div>
+                        <div class="ml-4 mb-2">_sponsorGas(msg.sender);</div>
+                        <div class="ml-4 mb-2"></div>
+                        <div class="ml-4 mb-2"><span class="text-gray-400">// Execute transaction</span></div>
+                        <div class="ml-4 mb-2">_executeUserOp(txData);</div>
+                        <div class="mb-2">}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration & APIs -->
+    <section id="integration" class="bg-primary-dark">
+        <div class="section-enterprise">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    Developer Integration
+                </h2>
+                <p class="text-xl text-text-gray max-w-3xl mx-auto">
+                    Simple APIs for rapid integration with existing entertainment platforms
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">SDK Integration Example</h3>
+                    <div class="code-block p-6 rounded-lg mb-6">
+                        <div class="text-neon-blue text-sm mb-4">// Initialize WitchPay SDK</div>
+                        <div class="text-text-gray text-sm font-mono">
+                            <div class="mb-2"><span class="text-accent-purple">import</span> { WitchPay } <span class="text-accent-purple">from</span> <span class="text-neon-blue">'@witch/payments'</span>;</div>
+                            <div class="mb-4"></div>
+                            <div class="mb-2"><span class="text-accent-purple">const</span> payment = <span class="text-accent-purple">new</span> <span class="text-white">WitchPay</span>({</div>
+                            <div class="ml-4 mb-2">apiKey: <span class="text-neon-blue">'your-api-key'</span>,</div>
+                            <div class="ml-4 mb-2">environment: <span class="text-neon-blue">'production'</span></div>
+                            <div class="mb-4">});</div>
+                            <div class="mb-4"></div>
+                            <div class="mb-2"><span class="text-gray-400">// Process payment</span></div>
+                            <div class="mb-2"><span class="text-accent-purple">const</span> result = <span class="text-accent-purple">await</span> payment.<span class="text-white">processPayment</span>({</div>
+                            <div class="ml-4 mb-2">amount: <span class="text-neon-blue">25000</span>,</div>
+                            <div class="ml-4 mb-2">currency: <span class="text-neon-blue">'KRW'</span>,</div>
+                            <div class="ml-4 mb-2">item: <span class="text-neon-blue">'concert-ticket'</span>,</div>
+                            <div class="ml-4 mb-2">userId: user.id</div>
+                            <div class="mb-2">});</div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
+                            <span class="text-text-gray">Integration Time</span>
+                            <span class="text-neon-blue font-semibold">< 1 Day</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
+                            <span class="text-text-gray">API Response Time</span>
+                            <span class="text-neon-blue font-semibold">< 200ms</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <span class="text-text-gray">Uptime SLA</span>
+                            <span class="text-neon-blue font-semibold">99.9%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Available Endpoints</h3>
+                    <div class="space-y-4">
+                        <div class="feature-card rounded-lg p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-neon-blue font-mono text-sm">POST /payments</span>
+                                <span class="text-xs bg-accent-purple/20 text-accent-purple px-2 py-1 rounded">Core</span>
+                            </div>
+                            <p class="text-text-gray text-sm">Process payments with automatic wallet creation and gas sponsorship.</p>
+                        </div>
+                        
+                        <div class="feature-card rounded-lg p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-neon-blue font-mono text-sm">GET /wallets/{id}</span>
+                                <span class="text-xs bg-neon-purple/20 text-neon-purple px-2 py-1 rounded">Wallet</span>
+                            </div>
+                            <p class="text-text-gray text-sm">Retrieve wallet information, balance, and transaction history.</p>
+                        </div>
+                        
+                        <div class="feature-card rounded-lg p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-neon-blue font-mono text-sm">POST /settlements</span>
+                                <span class="text-xs bg-neon-blue/20 text-neon-blue px-2 py-1 rounded">Merchant</span>
+                            </div>
+                            <p class="text-text-gray text-sm">Initiate merchant settlements with automatic currency conversion.</p>
+                        </div>
+                        
+                        <div class="feature-card rounded-lg p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-neon-blue font-mono text-sm">GET /analytics</span>
+                                <span class="text-xs bg-text-gray/20 text-text-gray px-2 py-1 rounded">Data</span>
+                            </div>
+                            <p class="text-text-gray text-sm">Access payment analytics, conversion rates, and performance metrics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="bg-secondary-dark">
+        <div class="section-enterprise">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    Use Cases
+                </h2>
+                <p class="text-xl text-text-gray max-w-3xl mx-auto">
+                    Powering payments across the entertainment ecosystem
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="feature-card rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12L11 14L15 10" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="12" r="10" stroke="#7B4CFF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Concert & Event Ticketing</h3>
+                    <p class="text-text-gray">Seamless NFT ticket purchases with traditional payment methods, automatic wallet creation, and fraud prevention.</p>
+                </div>
+                
+                <div class="feature-card rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-neon-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="14" rx="2" stroke="#00D1FF" stroke-width="2"/>
+                            <path d="M8 21l8 0M12 17l0 4" stroke="#00D1FF" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Digital Content Purchases</h3>
+                    <p class="text-text-gray">Microtransactions for premium content, in-app purchases, and subscription payments with instant settlement.</p>
+                </div>
+                
+                <div class="feature-card rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-neon-purple/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" stroke="#B076FF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Fan Merchandise & NFTs</h3>
+                    <p class="text-text-gray">Physical and digital merchandise sales with integrated loyalty programs and collector rewards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark border-t border-stroke-gray">
+        <div class="section-enterprise">
+            <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                <div class="lg:col-span-2">
+                    <div class="text-2xl font-bold text-accent-purple mb-4 font-space">
+                        WITCH COMPANY
+                    </div>
+                    <p class="text-text-gray mb-6 text-lg">
+                        Infrastructure for the Future of Entertainment
+                    </p>
+                    <p class="text-text-gray mb-8">
+                        Enterprise-grade Web3 infrastructure for global K-Content
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/witchpay" class="text-accent-purple">WitchPay</a></li>
+                        <li><a href="/wavist" class="text-text-gray hover:text-white transition-colors">Wavist</a></li>
+                        <li><a href="/witchbox" class="text-text-gray hover:text-white transition-colors">Witchbox</a></li>
+                        <li><a href="/witchverse" class="text-text-gray hover:text-white transition-colors">Witchverse</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="text-text-gray">Enterprise Sales<br/><span class="text-white">bd@witchcompany.io</span></li>
+                        <li class="text-text-gray">Investor Relations<br/><span class="text-white">ir@witchcompany.io</span></li>
+                        <li class="text-text-gray">General Inquiries<br/><span class="text-white">official@witchcompany.io</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-stroke-gray pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-text-gray text-sm">© 2025 WITCH Company. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Terms of Service</a>
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Developer Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

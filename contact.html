@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - WITCH Company</title>
+    <meta name="description" content="Get in touch with WITCH Company. We welcome investors, enterprise partners, and talented individuals to join our team.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="Pavicon.svg?v=2">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0B0C11',
+                        'secondary-dark': '#11131A',
+                        'accent-purple': '#7B4CFF',
+                        'neon-purple': '#B076FF',
+                        'neon-blue': '#00D1FF',
+                        'stroke-gray': '#2A2D3D',
+                        'text-gray': '#8B8D98'
+                    },
+                    maxWidth: {
+                        'enterprise': '1180px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            letter-spacing: 0.01em;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0C11;
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .font-space {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .enterprise-nav {
+            background: rgba(17, 19, 26, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #2A2D3D;
+        }
+        
+        .section-enterprise {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 6rem 1.5rem;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0B0C11 0%, #11131A 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(123, 76, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(176, 118, 255, 0.06) 0%, transparent 50%);
+            z-index: 1;
+        }
+        
+        .nav-link {
+            color: #8B8D98;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #7B4CFF;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #7B4CFF;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .contact-card {
+            background: rgba(17, 19, 26, 0.6);
+            border: 1px solid #2A2D3D;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-card:hover {
+            border-color: #7B4CFF;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(123, 76, 255, 0.15);
+        }
+        
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #7B4CFF, #B076FF, #00D1FF);
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .contact-card:hover::before {
+            transform: translateX(0);
+        }
+        
+        .btn-primary {
+            background: #7B4CFF;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: #B076FF;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(123, 76, 255, 0.3);
+        }
+        
+        .brand-highlight {
+            background: linear-gradient(135deg, rgba(123, 76, 255, 0.1) 0%, rgba(176, 118, 255, 0.05) 100%);
+            border: 1px solid rgba(123, 76, 255, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .section-enterprise {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-40 enterprise-nav">
+        <div class="max-w-enterprise mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-xl font-bold text-accent-purple font-space tracking-wide">
+                    WITCH COMPANY
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="relative group">
+                        <a href="index.html#products" class="nav-link">Products</a>
+                        <div class="absolute top-full left-0 mt-2 bg-secondary-dark border border-stroke-gray rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-48">
+                            <div class="space-y-2">
+                                <a href="witchverse.html" class="block text-sm text-text-gray hover:text-white">Witchverse</a>
+                                <a href="witchbox.html" class="block text-sm text-text-gray hover:text-white">Witchbox</a>
+                                <a href="wavist.html" class="block text-sm text-text-gray hover:text-white">Wavist</a>
+                                <a href="witchpay.html" class="block text-sm text-text-gray hover:text-white">WitchPay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="press.html" class="nav-link">Press</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Language Switcher -->
+                    <div class="flex space-x-2">
+                        <a href="contact.html" class="px-3 py-1 text-sm bg-accent-purple text-white rounded font-medium">EN</a>
+                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-accent-purple hover:text-white transition-colors font-medium">KO</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="section-enterprise">
+            <div class="text-center mb-16 relative z-10">
+                <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
+                    Let's Build the Future of <br>
+                    <span class="text-accent-purple">Entertainment</span> Together
+                </h1>
+                
+                <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto mb-12">
+                    Whether you're an investor, enterprise partner, or talented individual - we'd love to hear from you.
+                </p>
+                
+                <div class="brand-highlight rounded-lg p-8 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-4 text-neon-purple">We Welcome</h3>
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <div class="text-3xl mb-2">💰</div>
+                            <div class="font-semibold">Investors</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl mb-2">🏢</div>
+                            <div class="font-semibold">Enterprise Partners</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl mb-2">⭐</div>
+                            <div class="font-semibold">Talented Individuals</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="bg-secondary-dark">
+        <div class="section-enterprise">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    Get In Touch
+                </h2>
+                <p class="text-xl text-text-gray max-w-3xl mx-auto">
+                    Choose the best way to reach us based on your inquiry
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Investment & Partnership -->
+                <div class="contact-card rounded-lg p-8">
+                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Investment & Partnership</h3>
+                    <p class="text-text-gray mb-6">
+                        Are you a VC, strategic investor, or enterprise looking to partner with us? Let's explore opportunities together.
+                    </p>
+                    <div class="space-y-4 mb-6">
+                        <div class="text-sm">
+                            <span class="text-neon-blue font-semibold">Perfect for:</span>
+                            <span class="text-text-gray"> VCs, Strategic Investors, Enterprise Partners</span>
+                        </div>
+                        <div class="text-sm">
+                            <span class="text-neon-blue font-semibold">Response Time:</span>
+                            <span class="text-text-gray"> Within 24 hours</span>
+                        </div>
+                    </div>
+                    <a href="mailto:official@witchcompany.io?subject=Investment/Partnership Inquiry" class="btn-primary w-full text-center">
+                        Contact Investment Team
+                    </a>
+                </div>
+
+                <!-- Careers & Talent -->
+                <div class="contact-card rounded-lg p-8">
+                    <div class="w-16 h-16 bg-neon-purple/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#B076FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="9" cy="7" r="4" stroke="#B076FF" stroke-width="2"/>
+                            <path d="M23 21V19C23 18.1645 22.7155 17.3541 22.2094 16.7071C21.7033 16.0601 20.9926 15.6182 20.2 15.46" stroke="#B076FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.7926 3.28821 17.5033 3.73009 18.0094 4.37708C18.5155 5.02407 18.8 5.83454 18.8 6.67C18.8 7.50546 18.5155 8.31593 18.0094 8.96292C17.5033 9.60991 16.7926 10.0518 16 10.21" stroke="#B076FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Join Our Team</h3>
+                    <p class="text-text-gray mb-6">
+                        Passionate about building the future of entertainment? We're always looking for talented individuals to join our mission.
+                    </p>
+                    <div class="space-y-4 mb-6">
+                        <div class="text-sm">
+                            <span class="text-neon-purple font-semibold">Perfect for:</span>
+                            <span class="text-text-gray"> Developers, Product Managers, Business Development</span>
+                        </div>
+                        <div class="text-sm">
+                            <span class="text-neon-purple font-semibold">Response Time:</span>
+                            <span class="text-text-gray"> Within 48 hours</span>
+                        </div>
+                    </div>
+                    <a href="mailto:official@witchcompany.io?subject=Career Opportunity Inquiry" class="btn-primary w-full text-center">
+                        Explore Careers
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Contact -->
+    <section class="bg-primary-dark">
+        <div class="section-enterprise">
+            <div class="text-center">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    General Inquiries
+                </h2>
+                <p class="text-xl text-text-gray max-w-3xl mx-auto mb-12">
+                    For all other questions, media inquiries, or general information
+                </p>
+                
+                <div class="contact-card rounded-lg p-12 max-w-2xl mx-auto text-center">
+                    <div class="w-20 h-20 bg-neon-blue/20 rounded-lg flex items-center justify-center mx-auto mb-8">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#00D1FF" stroke-width="2"/>
+                            <polyline points="22,6 12,13 2,6" stroke="#00D1FF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    
+                    <h3 class="text-3xl font-bold mb-4">official@witchcompany.io</h3>
+                    <p class="text-text-gray mb-8">
+                        We typically respond within 24 hours during business days (KST)
+                    </p>
+                    
+                    <a href="mailto:official@witchcompany.io" class="btn-primary text-xl px-12 py-4">
+                        Send Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Info -->
+    <section class="bg-secondary-dark">
+        <div class="section-enterprise">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 font-space">Why WITCH Company?</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 text-neon-purple">Industry Leadership</h3>
+                            <p class="text-text-gray">Leading the transformation of entertainment with Web3 infrastructure, serving Fortune 500 companies and global entertainment conglomerates.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 text-neon-blue">Proven Track Record</h3>
+                            <p class="text-text-gray">160K+ global community, 3B KRW in NFT sales, and 40B+ KRW STO pipeline with industry-leading partners.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 text-accent-purple">Innovation Focus</h3>
+                            <p class="text-text-gray">Three patented technologies and comprehensive infrastructure for the next generation of entertainment experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-card rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Quick Facts</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
+                            <span class="text-text-gray">Founded</span>
+                            <span class="text-white font-semibold">2020</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
+                            <span class="text-text-gray">Headquarters</span>
+                            <span class="text-white font-semibold">Seoul, South Korea</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
+                            <span class="text-text-gray">Focus</span>
+                            <span class="text-white font-semibold">K-Content Infrastructure</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
+                            <span class="text-text-gray">Stage</span>
+                            <span class="text-white font-semibold">Seed</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <span class="text-text-gray">Patents</span>
+                            <span class="text-white font-semibold">3 Granted</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark border-t border-stroke-gray">
+        <div class="section-enterprise">
+            <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                <div class="lg:col-span-2">
+                    <div class="text-2xl font-bold text-accent-purple mb-4 font-space">
+                        WITCH COMPANY
+                    </div>
+                    <p class="text-text-gray mb-6 text-lg">
+                        Infrastructure for the Future of Entertainment
+                    </p>
+                    <p class="text-text-gray mb-8">
+                        Enterprise-grade Web3 infrastructure for global K-Content
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-text-gray hover:text-white transition-colors">About</a></li>
+                        <li><a href="index.html#case-studies" class="text-text-gray hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="press.html" class="text-text-gray hover:text-white transition-colors">Press</a></li>
+                        <li><a href="index.html#technology" class="text-text-gray hover:text-white transition-colors">Technology</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="text-text-gray">All Inquiries<br/><span class="text-white">official@witchcompany.io</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-stroke-gray pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-text-gray text-sm">© 2025 WITCH Company. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-text-gray hover:text-gray-300 text-sm transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
