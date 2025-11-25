@@ -219,16 +219,16 @@
                 </a>
                 
                 <div class="hidden lg:flex items-center space-x-8">
-                    <a href="#products" class="nav-link">Products</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="press.html" class="nav-link">Press</a>
+                    <a href="#products" class="nav-link" data-i18n="nav.products">Products</a>
+                    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+                    <a href="press.html" class="nav-link" data-i18n="nav.press">Press</a>
                 </div>
                 
                 <div class="flex items-center space-x-4">
                     <!-- Language Switcher -->
                     <div class="flex space-x-2">
-                        <a href="index.html" class="px-3 py-1 text-sm bg-witch-blue text-white rounded font-medium">EN</a>
-                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-witch-blue hover:text-white transition-colors font-medium">KO</a>
+                        <button id="lang-en" onclick="setLanguage('en')" class="px-3 py-1 text-sm bg-witch-blue text-white rounded font-medium">EN</button>
+                        <button id="lang-ko" onclick="setLanguage('ko')" class="px-3 py-1 text-sm bg-stroke-light text-text-gray rounded hover:bg-witch-blue hover:text-white transition-colors font-medium">KO</button>
                     </div>
                     
                 </div>
@@ -257,17 +257,17 @@
         <!-- Hero Content -->
         <div class="absolute bottom-24 left-8 lg:left-16 z-10 max-w-4xl">
             <h1 class="text-4xl lg:text-7xl font-bold mb-6 font-space tracking-tight text-white leading-tight">
-                <span class="text-witch-blue">Infrastructure for the</span><br>
-                <span class="whitespace-nowrap">Global K-content Economy</span>
+                <span class="text-witch-blue" data-i18n="hero.title1">Infrastructure for the</span><br>
+                <span class="whitespace-nowrap" data-i18n="hero.title2">Global K-content Economy</span>
             </h1>
             
-            <p class="text-lg lg:text-xl mb-8 text-gray-200 font-light">
+            <p class="text-lg lg:text-xl mb-8 text-gray-200 font-light" data-i18n="hero.subtitle">
                 Payments, tokenization and virtual experiences united.
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#technology" class="btn-primary text-base px-6 py-3">Explore Technology</a>
-                <a href="contact.html" class="btn-secondary text-base px-6 py-3 bg-white text-witch-blue hover:bg-gray-100">Contact Team</a>
+                <a href="#technology" class="btn-primary text-base px-6 py-3" data-i18n="hero.explore">Explore Technology</a>
+                <a href="contact.html" class="btn-secondary text-base px-6 py-3 bg-white text-witch-blue hover:bg-gray-100" data-i18n="hero.contact">Contact Team</a>
             </div>
         </div>
         
@@ -654,17 +654,185 @@
     </footer>
 
     <script>
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+        // i18n data
+        const i18n = {
+            en: {
+                // Navigation
+                'nav.products': 'Products',
+                'nav.about': 'About',
+                'nav.press': 'Press',
+                
+                // Hero
+                'hero.title1': 'Infrastructure for the',
+                'hero.title2': 'Global K-content Economy',
+                'hero.subtitle': 'Payments, tokenization and virtual experiences united.',
+                'hero.explore': 'Explore Technology',
+                'hero.contact': 'Contact Team',
+                
+                // Products
+                'products.title': 'Core Products',
+                'products.subtitle': 'Modular infrastructure for entertainment finance and Web3 experiences',
+                'products.witchverse.title': 'Witchverse',
+                'products.witchverse.desc': 'Metaverse & NFT infrastructure for fandom identity',
+                'products.witchbox.title': 'Witchbox',
+                'products.witchbox.desc': 'Short-form OTT platform for premium K-content',
+                'products.wavist.title': 'Wavist',
+                'products.wavist.desc': 'RWA tokenisation for entertainment assets',
+                'products.witchpay.title': 'WitchPay',
+                'products.witchpay.desc': 'Smart wallet & stablecoin solutions for merchants',
+                'products.learn': 'Learn More',
+                
+                // Technologies
+                'tech.title': 'Core Technologies',
+                'tech.subtitle': 'Enterprise-grade blockchain and payment infrastructure for entertainment',
+                'tech.wallets': 'Smart Wallets',
+                'tech.wallets.desc': 'Account abstraction & seamless onboarding',
+                'tech.tokens': 'Token Engine',
+                'tech.tokens.desc': 'ERC20/1155 multi-chain deployment',
+                'tech.revenue': 'Revenue Layer',
+                'tech.revenue.desc': 'Transparent distribution & analytics',
+                'tech.settlement': 'Settlement',
+                'tech.settlement.desc': 'Stablecoin & gasless transactions',
+                
+                // Case Studies
+                'cases.title': 'Case Studies',
+                'cases.subtitle': 'Proven results with global entertainment partners',
+                
+                // Numbers
+                'numbers.title': 'Trusted Numbers',
+                'numbers.community': 'Global Community',
+                'numbers.nft': 'KRW NFT Sales',
+                'numbers.users': 'Metaverse Fandom Users',
+                'numbers.pipeline': 'KRW STO Pipeline',
+                
+                // Partners
+                'partners.title': 'Partners',
+                'partners.subtitle': 'Strategic partnerships with global entertainment and technology industry leaders',
+                
+                // Footer
+                'footer.tagline': 'Entertainment Infrastructure. Elevated.',
+                'footer.desc': 'Enterprise-grade Web3 infrastructure for global K-Content',
+                'footer.company': 'Company',
+                'footer.about': 'About',
+                'footer.press': 'Press',
+                'footer.contact': 'Contact',
+                'footer.inquiries': 'All Inquiries',
+                'footer.copyright': '© 2025 WITCH Company. All rights reserved.'
+            },
+            ko: {
+                // Navigation
+                'nav.products': '제품',
+                'nav.about': '회사소개',
+                'nav.press': '보도자료',
+                
+                // Hero
+                'hero.title1': '글로벌 K-콘텐츠 경제를 위한',
+                'hero.title2': '인프라스트럭처',
+                'hero.subtitle': '결제, 토큰화, 가상 경험이 하나로 통합된 솔루션',
+                'hero.explore': '기술 탐색',
+                'hero.contact': '팀 연락',
+                
+                // Products
+                'products.title': '핵심 제품',
+                'products.subtitle': '엔터테인먼트 금융 및 Web3 경험을 위한 모듈형 인프라',
+                'products.witchverse.title': '위치버스',
+                'products.witchverse.desc': '팬덤 아이덴티티를 위한 메타버스 & NFT 인프라',
+                'products.witchbox.title': '위치박스',
+                'products.witchbox.desc': '프리미엄 K-콘텐츠를 위한 숏폼 OTT 플랫폼',
+                'products.wavist.title': '웨이비스트',
+                'products.wavist.desc': '엔터테인먼트 자산의 RWA 토큰화',
+                'products.witchpay.title': '위치페이',
+                'products.witchpay.desc': '가맹점을 위한 스마트 지갑 & 스테이블코인 솔루션',
+                'products.learn': '자세히 보기',
+                
+                // Technologies
+                'tech.title': '핵심 기술',
+                'tech.subtitle': '엔터테인먼트를 위한 엔터프라이즈급 블록체인 및 결제 인프라',
+                'tech.wallets': '스마트 지갑',
+                'tech.wallets.desc': '계정 추상화 및 원활한 온보딩',
+                'tech.tokens': '토큰 엔진',
+                'tech.tokens.desc': 'ERC20/1155 멀티체인 배포',
+                'tech.revenue': '수익 레이어',
+                'tech.revenue.desc': '투명한 분배 및 분석',
+                'tech.settlement': '정산',
+                'tech.settlement.desc': '스테이블코인 및 가스리스 거래',
+                
+                // Case Studies
+                'cases.title': '사례 연구',
+                'cases.subtitle': '글로벌 엔터테인먼트 파트너와의 검증된 결과',
+                
+                // Numbers
+                'numbers.title': '신뢰받는 수치',
+                'numbers.community': '글로벌 커뮤니티',
+                'numbers.nft': 'KRW NFT 매출',
+                'numbers.users': '메타버스 팬덤 사용자',
+                'numbers.pipeline': 'KRW STO 파이프라인',
+                
+                // Partners
+                'partners.title': '파트너',
+                'partners.subtitle': '글로벌 엔터테인먼트 및 기술 업계 리더들과의 전략적 파트너십',
+                
+                // Footer
+                'footer.tagline': '엔터테인먼트 인프라. 한 단계 더.',
+                'footer.desc': '글로벌 K-콘텐츠를 위한 엔터프라이즈급 Web3 인프라',
+                'footer.company': '회사',
+                'footer.about': '회사소개',
+                'footer.press': '보도자료',
+                'footer.contact': '연락처',
+                'footer.inquiries': '모든 문의',
+                'footer.copyright': '© 2025 WITCH Company. 모든 권리 보유.'
+            }
+        };
+
+        // Language management
+        let currentLang = localStorage.getItem('language') || 'en';
+        
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            document.documentElement.setAttribute('data-lang', lang);
+            updateContent();
+            updateLanguageButtons();
+        }
+        
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (i18n[currentLang] && i18n[currentLang][key]) {
+                    element.textContent = i18n[currentLang][key];
                 }
+            });
+        }
+        
+        function updateLanguageButtons() {
+            const enBtn = document.getElementById('lang-en');
+            const koBtn = document.getElementById('lang-ko');
+            
+            if (currentLang === 'en') {
+                enBtn.className = 'px-3 py-1 text-sm bg-witch-blue text-white rounded font-medium';
+                koBtn.className = 'px-3 py-1 text-sm bg-stroke-light text-text-gray rounded hover:bg-witch-blue hover:text-white transition-colors font-medium';
+            } else {
+                koBtn.className = 'px-3 py-1 text-sm bg-witch-blue text-white rounded font-medium';
+                enBtn.className = 'px-3 py-1 text-sm bg-stroke-light text-text-gray rounded hover:bg-witch-blue hover:text-white transition-colors font-medium';
+            }
+        }
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            setLanguage(currentLang);
+            
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
             });
         });
     </script>
