@@ -223,10 +223,10 @@
                     <div class="relative group">
                         <a href="#products" onclick="showPage('home'); setTimeout(() => document.getElementById('products').scrollIntoView({behavior: 'smooth'}), 100)" class="nav-link" data-i18n="nav.products">Products</a>
                         <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-stroke-light rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                            <a href="#" onclick="showPage('witchverse')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchverse.title">Witchverse</a>
-                            <a href="#" onclick="showPage('witchbox')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchbox.title">Witchbox</a>
-                            <a href="#" onclick="showPage('wavist')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.wavist.title">Wavist</a>
-                            <a href="#" onclick="showPage('witchpay')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchpay.title">WitchPay</a>
+                            <a href="witchverse.html" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchverse.title">Witchverse</a>
+                            <a href="witchbox.html" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchbox.title">Witchbox</a>
+                            <a href="wavist.html" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.wavist.title">Wavist</a>
+                            <a href="witchpay.html" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchpay.title">WitchPay</a>
                         </div>
                     </div>
                     <a href="#about" onclick="showPage('about')" class="nav-link" data-i18n="nav.about">About</a>
@@ -320,7 +320,7 @@
                             <p class="text-text-gray text-lg">Metaverse & NFT infrastructure for fandom identity</p>
                         </div>
                     </div>
-                    <a href="#" onclick="showPage('witchverse')" class="btn-secondary">Learn More</a>
+                    <a href="witchverse.html" class="btn-secondary">Learn More</a>
                 </div>
 
                 <!-- Witchbox -->
@@ -337,7 +337,7 @@
                             <p class="text-text-gray text-lg">Short-form OTT platform for premium K-content</p>
                         </div>
                     </div>
-                    <a href="#" onclick="showPage('witchbox')" class="btn-secondary">Learn More</a>
+                    <a href="witchbox.html" class="btn-secondary">Learn More</a>
                 </div>
 
                 <!-- Wavist -->
@@ -353,7 +353,7 @@
                             <p class="text-text-gray text-lg">RWA tokenisation for entertainment assets</p>
                         </div>
                     </div>
-                    <a href="#" onclick="showPage('wavist')" class="btn-secondary">Learn More</a>
+                    <a href="wavist.html" class="btn-secondary">Learn More</a>
                 </div>
 
                 <!-- WitchPay -->
@@ -370,7 +370,7 @@
                             <p class="text-text-gray text-lg">Smart wallet & stablecoin solutions for merchants</p>
                         </div>
                     </div>
-                    <a href="#" onclick="showPage('witchpay')" class="btn-secondary">Learn More</a>
+                    <a href="witchpay.html" class="btn-secondary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -1064,6 +1064,10 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="text-center mt-12">
+                        <a href="news.html" class="btn-primary text-lg px-8 py-4" data-i18n="press.view_all">View All News</a>
+                    </div>
                 </div>
             </section>
             
@@ -1108,522 +1112,6 @@
             </footer>
         </div>
         
-        <!-- Witchverse Product Page -->
-        <div id="page-witchverse" class="page-content" style="display: none;">
-            <section class="bg-primary-light pt-24">
-                <div class="section-enterprise text-center">
-                    <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight">
-                        <span class="text-witch-blue" data-i18n="witchverse.hero.title">Witchverse</span>
-                    </h1>
-                    <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto" data-i18n="witchverse.hero.subtitle">
-                        Metaverse & NFT Infrastructure for Fandom Identity
-                    </p>
-                </div>
-            </section>
-
-            <!-- Platform Features -->
-            <section class="bg-secondary-light">
-                <div class="section-enterprise">
-                    <div class="text-center mb-16">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchverse.features.title">
-                            Platform Features
-                        </h2>
-                        <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchverse.features.subtitle">
-                            Immersive 3D experiences with enterprise-grade performance
-                        </p>
-                    </div>
-                    
-                    <div class="grid lg:grid-cols-2 gap-12 items-center">
-                        <div class="space-y-8">
-                            <div class="bg-white border border-stroke-light rounded-lg p-6 shadow-sm">
-                                <h3 class="text-xl font-bold mb-3 text-sky-blue" data-i18n="witchverse.features.virtual.title">Virtual World Infrastructure</h3>
-                                <p class="text-text-gray" data-i18n="witchverse.features.virtual.desc">WebGL rendering with multi-chain NFT support for immersive fan experiences</p>
-                            </div>
-                            
-                            <div class="bg-white border border-stroke-light rounded-lg p-6 shadow-sm">
-                                <h3 class="text-xl font-bold mb-3 text-sky-blue" data-i18n="witchverse.features.nft.title">NFT Infrastructure</h3>
-                                <p class="text-text-gray" data-i18n="witchverse.features.nft.desc">Complete marketplace with credit card payments and IPFS storage</p>
-                            </div>
-                            
-                            <div class="bg-white border border-stroke-light rounded-lg p-6 shadow-sm">
-                                <h3 class="text-xl font-bold mb-3 text-sky-blue" data-i18n="witchverse.features.events.title">Virtual Events Platform</h3>
-                                <p class="text-text-gray" data-i18n="witchverse.features.events.desc">Real-time communication and immersive event experiences</p>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-2 gap-6">
-                            <div class="text-center">
-                                <div class="text-4xl font-bold text-witch-blue mb-2">20K+</div>
-                                <div class="text-text-gray" data-i18n="witchverse.stats.users">Active Users</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-4xl font-bold text-sky-blue mb-2">3B</div>
-                                <div class="text-text-gray" data-i18n="witchverse.stats.nft">KRW NFT Volume</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-4xl font-bold text-tech-blue mb-2">150+</div>
-                                <div class="text-text-gray" data-i18n="witchverse.stats.collections">Artist Collections</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-4xl font-bold text-accent-purple mb-2">85+</div>
-                                <div class="text-text-gray" data-i18n="witchverse.stats.events">Powered Events</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Footer -->
-            <footer class="bg-primary-light border-t border-stroke-light">
-                <div class="section-enterprise">
-                    <div class="grid lg:grid-cols-4 gap-8 mb-12">
-                        <div class="lg:col-span-2">
-                            <div class="text-2xl font-bold text-witch-blue mb-4 font-space">
-                                WITCH COMPANY
-                            </div>
-                            <p class="text-text-gray mb-6 text-lg" data-i18n="footer.tagline">
-                                Entertainment Infrastructure. Elevated.
-                            </p>
-                            <p class="text-text-gray mb-8" data-i18n="footer.desc">
-                                Enterprise-grade Web3 infrastructure for global K-Content
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold mb-4 text-lg" data-i18n="footer.company">Company</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#about" onclick="showPage('about')" class="text-text-gray hover:text-witch-blue transition-colors" data-i18n="footer.about">About</a></li>
-                                <li><a href="#press" onclick="showPage('press')" class="text-text-gray hover:text-witch-blue transition-colors" data-i18n="footer.press">Press</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
-                            <ul class="space-y-3">
-                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="border-t border-stroke-light pt-8">
-                        <div class="flex flex-col md:flex-row justify-between items-center">
-                            <p class="text-text-gray text-sm" data-i18n="footer.copyright">© 2025 WITCH Company. All rights reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-
-        <!-- Witchbox Product Page -->
-        <div id="page-witchbox" class="page-content" style="display: none;">
-            <section class="bg-primary-light pt-24">
-                <div class="section-enterprise text-center">
-                    <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight">
-                        <span class="text-witch-blue" data-i18n="witchbox.hero.title">Witchbox</span>
-                    </h1>
-                    <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto" data-i18n="witchbox.hero.subtitle">
-                        Short-form OTT Platform for Premium K-Content
-                    </p>
-                </div>
-            </section>
-
-            <!-- Content Transformation -->
-            <section class="bg-secondary-light">
-                <div class="section-enterprise">
-                    <div class="text-center mb-16">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchbox.transform.title">
-                            Content Transformation Pipeline
-                        </h2>
-                        <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchbox.transform.subtitle">
-                            AI-powered content slicing for multi-generational audiences
-                        </p>
-                    </div>
-                    
-                    <div class="grid lg:grid-cols-4 gap-6 mb-16">
-                        <div class="text-center bg-white rounded-lg p-6 border border-stroke-light">
-                            <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <span class="text-2xl">📥</span>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2" data-i18n="witchbox.process.ingestion">Content Ingestion</h3>
-                            <p class="text-text-gray text-sm" data-i18n="witchbox.process.ingestion.desc">Up to 180 minutes</p>
-                        </div>
-                        
-                        <div class="text-center bg-white rounded-lg p-6 border border-stroke-light">
-                            <div class="w-16 h-16 bg-sky-blue/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <span class="text-2xl">✂️</span>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2" data-i18n="witchbox.process.slicing">Intelligent Slicing</h3>
-                            <p class="text-text-gray text-sm" data-i18n="witchbox.process.slicing.desc">30-60 second clips</p>
-                        </div>
-                        
-                        <div class="text-center bg-white rounded-lg p-6 border border-stroke-light">
-                            <div class="w-16 h-16 bg-tech-blue/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <span class="text-2xl">📱</span>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2" data-i18n="witchbox.process.episodes">Episode Creation</h3>
-                            <p class="text-text-gray text-sm" data-i18n="witchbox.process.episodes.desc">15-20 episodes</p>
-                        </div>
-                        
-                        <div class="text-center bg-white rounded-lg p-6 border border-stroke-light">
-                            <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <span class="text-2xl">🌐</span>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2" data-i18n="witchbox.process.distribution">Distribution</h3>
-                            <p class="text-text-gray text-sm" data-i18n="witchbox.process.distribution.desc">15+ platforms</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Technical Specifications -->
-                    <div class="bg-white rounded-lg p-8 border border-stroke-light">
-                        <h3 class="text-2xl font-bold text-center mb-8 font-space" data-i18n="witchbox.specs.title">Technical Specifications</h3>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-witch-blue mb-2">&lt; 30min</div>
-                                <div class="text-text-gray" data-i18n="witchbox.specs.time">Processing Time</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-sky-blue mb-2">95%+</div>
-                                <div class="text-text-gray" data-i18n="witchbox.specs.quality">Quality Retention</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-tech-blue mb-2">180min</div>
-                                <div class="text-text-gray" data-i18n="witchbox.specs.input">Max Input Length</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-accent-purple mb-2">15+</div>
-                                <div class="text-text-gray" data-i18n="witchbox.specs.platforms">Distribution Platforms</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Footer -->
-            <footer class="bg-primary-light border-t border-stroke-light">
-                <div class="section-enterprise">
-                    <div class="grid lg:grid-cols-4 gap-8 mb-12">
-                        <div class="lg:col-span-2">
-                            <div class="text-2xl font-bold text-witch-blue mb-4 font-space">
-                                WITCH COMPANY
-                            </div>
-                            <p class="text-text-gray mb-6 text-lg" data-i18n="footer.tagline">
-                                Entertainment Infrastructure. Elevated.
-                            </p>
-                            <p class="text-text-gray mb-8" data-i18n="footer.desc">
-                                Enterprise-grade Web3 infrastructure for global K-Content
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold mb-4 text-lg" data-i18n="footer.company">Company</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#about" onclick="showPage('about')" class="text-text-gray hover:text-witch-blue transition-colors" data-i18n="footer.about">About</a></li>
-                                <li><a href="#press" onclick="showPage('press')" class="text-text-gray hover:text-witch-blue transition-colors" data-i18n="footer.press">Press</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
-                            <ul class="space-y-3">
-                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="border-t border-stroke-light pt-8">
-                        <div class="flex flex-col md:flex-row justify-between items-center">
-                            <p class="text-text-gray text-sm" data-i18n="footer.copyright">© 2025 WITCH Company. All rights reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-
-        <!-- Wavist Product Page -->
-        <div id="page-wavist" class="page-content" style="display: none;">
-            <section class="bg-primary-light pt-24">
-                <div class="section-enterprise text-center">
-                    <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight">
-                        <span class="text-witch-blue" data-i18n="wavist.hero.title">Wavist</span>
-                    </h1>
-                    <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto" data-i18n="wavist.hero.subtitle">
-                        RWA & STO Infrastructure for Entertainment
-                    </p>
-                </div>
-            </section>
-
-            <!-- Token Products -->
-            <section class="bg-secondary-light">
-                <div class="section-enterprise">
-                    <div class="text-center mb-16">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="wavist.tokens.title">
-                            Token Products
-                        </h2>
-                        <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="wavist.tokens.subtitle">
-                            Regulatory compliant tokenization for institutional investors
-                        </p>
-                    </div>
-                    
-                    <div class="grid lg:grid-cols-3 gap-8">
-                        <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-witch-blue/20 rounded-lg flex items-center justify-center mr-4">
-                                    <span class="text-xl">🎭</span>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold" data-i18n="wavist.vrt.title">VR Concert Token</h3>
-                                    <p class="text-witch-blue font-mono">$VRT</p>
-                                </div>
-                            </div>
-                            <div class="space-y-3">
-                                <div class="flex justify-between">
-                                    <span class="text-text-gray" data-i18n="wavist.vrt.cap">Market Cap:</span>
-                                    <span class="font-bold">$2.4M</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-text-gray" data-i18n="wavist.vrt.concerts">Active Concerts:</span>
-                                    <span class="font-bold">12</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-sky-blue/20 rounded-lg flex items-center justify-center mr-4">
-                                    <span class="text-xl">🎵</span>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold" data-i18n="wavist.cct.title">Concert Profit Token</h3>
-                                    <p class="text-sky-blue font-mono">$CNCRT</p>
-                                </div>
-                            </div>
-                            <div class="space-y-3">
-                                <div class="flex justify-between">
-                                    <span class="text-text-gray" data-i18n="wavist.cct.cap">Market Cap:</span>
-                                    <span class="font-bold">$8.1M</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-text-gray" data-i18n="wavist.cct.venues">Partner Venues:</span>
-                                    <span class="font-bold">8</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-accent-purple/20 rounded-lg flex items-center justify-center mr-4">
-                                    <span class="text-xl">🏪</span>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold" data-i18n="wavist.pop.title">Popup Store Token</h3>
-                                    <p class="text-accent-purple font-mono">$POPUP</p>
-                                </div>
-                            </div>
-                            <div class="space-y-3">
-                                <div class="flex justify-between">
-                                    <span class="text-text-gray" data-i18n="wavist.pop.cap">Market Cap:</span>
-                                    <span class="font-bold">$1.8M</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-text-gray" data-i18n="wavist.pop.locations">Active Locations:</span>
-                                    <span class="font-bold">25</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Compliance Notice -->
-                    <div class="mt-12 bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-                        <div class="flex items-start">
-                            <div class="text-yellow-600 mr-3">⚠️</div>
-                            <div>
-                                <h3 class="font-bold text-yellow-800 mb-2" data-i18n="wavist.compliance.title">Investment Notice</h3>
-                                <p class="text-yellow-700 text-sm" data-i18n="wavist.compliance.desc">
-                                    Available only to accredited investors. Full Reg S/Reg D compliance with securities regulations.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Footer -->
-            <footer class="bg-primary-light border-t border-stroke-light">
-                <div class="section-enterprise">
-                    <div class="grid lg:grid-cols-4 gap-8 mb-12">
-                        <div class="lg:col-span-2">
-                            <div class="text-2xl font-bold text-witch-blue mb-4 font-space">
-                                WITCH COMPANY
-                            </div>
-                            <p class="text-text-gray mb-6 text-lg" data-i18n="footer.tagline">
-                                Entertainment Infrastructure. Elevated.
-                            </p>
-                            <p class="text-text-gray mb-8" data-i18n="footer.desc">
-                                Enterprise-grade Web3 infrastructure for global K-Content
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold mb-4 text-lg" data-i18n="footer.company">Company</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#about" onclick="showPage('about')" class="text-text-gray hover:text-witch-blue transition-colors" data-i18n="footer.about">About</a></li>
-                                <li><a href="#press" onclick="showPage('press')" class="text-text-gray hover:text-witch-blue transition-colors" data-i18n="footer.press">Press</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
-                            <ul class="space-y-3">
-                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="border-t border-stroke-light pt-8">
-                        <div class="flex flex-col md:flex-row justify-between items-center">
-                            <p class="text-text-gray text-sm" data-i18n="footer.copyright">© 2025 WITCH Company. All rights reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-
-        <!-- WitchPay Product Page -->
-        <div id="page-witchpay" class="page-content" style="display: none;">
-            <section class="bg-primary-light pt-24">
-                <div class="section-enterprise text-center">
-                    <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight">
-                        <span class="text-witch-blue" data-i18n="witchpay.hero.title">WitchPay</span>
-                    </h1>
-                    <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto" data-i18n="witchpay.hero.subtitle">
-                        Web3 Payment & Stablecoin Infrastructure
-                    </p>
-                </div>
-            </section>
-
-            <!-- Payment Features -->
-            <section class="bg-secondary-light">
-                <div class="section-enterprise">
-                    <div class="text-center mb-16">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchpay.features.title">
-                            Payment Solutions
-                        </h2>
-                        <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchpay.features.subtitle">
-                            Simplified blockchain transactions for entertainment commerce
-                        </p>
-                    </div>
-                    
-                    <div class="grid lg:grid-cols-2 gap-12">
-                        <div class="space-y-8">
-                            <div class="bg-white border border-stroke-light rounded-lg p-6 shadow-sm">
-                                <h3 class="text-xl font-bold mb-3 text-sky-blue" data-i18n="witchpay.smart.title">Smart Wallet System</h3>
-                                <ul class="text-text-gray space-y-2">
-                                    <li data-i18n="witchpay.smart.abstraction">• Account abstraction technology</li>
-                                    <li data-i18n="witchpay.smart.social">• Social login integration</li>
-                                    <li data-i18n="witchpay.smart.gasless">• Gasless transactions</li>
-                                    <li data-i18n="witchpay.smart.recovery">• Recovery mechanisms</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="bg-white border border-stroke-light rounded-lg p-6 shadow-sm">
-                                <h3 class="text-xl font-bold mb-3 text-sky-blue" data-i18n="witchpay.qr.title">QR Pay Integration</h3>
-                                <ul class="text-text-gray space-y-2">
-                                    <li data-i18n="witchpay.qr.mobile">• Mobile-first payment solution</li>
-                                    <li data-i18n="witchpay.qr.dynamic">• Dynamic QR generation</li>
-                                    <li data-i18n="witchpay.qr.offline">• Offline payment support</li>
-                                    <li data-i18n="witchpay.qr.korean">• Korean payment platform integration</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-8">
-                            <div class="bg-white border border-stroke-light rounded-lg p-6 shadow-sm">
-                                <h3 class="text-xl font-bold mb-3 text-sky-blue" data-i18n="witchpay.merchant.title">Merchant Settlement</h3>
-                                <ul class="text-text-gray space-y-2">
-                                    <li data-i18n="witchpay.merchant.realtime">• Real-time settlement</li>
-                                    <li data-i18n="witchpay.merchant.conversion">• Automatic currency conversion</li>
-                                    <li data-i18n="witchpay.merchant.fraud">• Fraud protection</li>
-                                    <li data-i18n="witchpay.merchant.multi">• Multi-currency support</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="bg-white border border-stroke-light rounded-lg p-6 shadow-sm">
-                                <h3 class="text-xl font-bold mb-3 text-sky-blue" data-i18n="witchpay.stablecoin.title">KRW Stablecoin</h3>
-                                <ul class="text-text-gray space-y-2">
-                                    <li data-i18n="witchpay.stablecoin.pegged">• Korean Won-pegged digital currency</li>
-                                    <li data-i18n="witchpay.stablecoin.peg">• 1:1 currency peg</li>
-                                    <li data-i18n="witchpay.stablecoin.compliance">• Regulatory compliance</li>
-                                    <li data-i18n="witchpay.stablecoin.instant">• Instant redemption</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Performance Metrics -->
-                    <div class="mt-16 bg-white rounded-lg p-8 border border-stroke-light">
-                        <h3 class="text-2xl font-bold text-center mb-8 font-space" data-i18n="witchpay.performance.title">Performance Metrics</h3>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-witch-blue mb-2">99.9%</div>
-                                <div class="text-text-gray" data-i18n="witchpay.performance.success">Success Rate</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-sky-blue mb-2">&lt; 3s</div>
-                                <div class="text-text-gray" data-i18n="witchpay.performance.settlement">Settlement Time</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-tech-blue mb-2">&lt; 1</div>
-                                <div class="text-text-gray" data-i18n="witchpay.performance.integration">Day Integration</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-accent-purple mb-2">99.9%</div>
-                                <div class="text-text-gray" data-i18n="witchpay.performance.uptime">Uptime SLA</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Footer -->
-            <footer class="bg-primary-light border-t border-stroke-light">
-                <div class="section-enterprise">
-                    <div class="grid lg:grid-cols-4 gap-8 mb-12">
-                        <div class="lg:col-span-2">
-                            <div class="text-2xl font-bold text-witch-blue mb-4 font-space">
-                                WITCH COMPANY
-                            </div>
-                            <p class="text-text-gray mb-6 text-lg" data-i18n="footer.tagline">
-                                Entertainment Infrastructure. Elevated.
-                            </p>
-                            <p class="text-text-gray mb-8" data-i18n="footer.desc">
-                                Enterprise-grade Web3 infrastructure for global K-Content
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold mb-4 text-lg" data-i18n="footer.company">Company</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#about" onclick="showPage('about')" class="text-text-gray hover:text-witch-blue transition-colors" data-i18n="footer.about">About</a></li>
-                                <li><a href="#press" onclick="showPage('press')" class="text-text-gray hover:text-witch-blue transition-colors" data-i18n="footer.press">Press</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
-                            <ul class="space-y-3">
-                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="border-t border-stroke-light pt-8">
-                        <div class="flex flex-col md:flex-row justify-between items-center">
-                            <p class="text-text-gray text-sm" data-i18n="footer.copyright">© 2025 WITCH Company. All rights reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
     </div>
 
     <script>
@@ -1708,6 +1196,7 @@
                 // Press page
                 'press.hero.title': 'Press & Media',
                 'press.hero.subtitle': 'Latest news and updates from WITCH Company',
+                'press.view_all': 'View All News',
                 
                 // Product pages
                 'witchverse.hero.title': 'Witchverse',
@@ -1868,6 +1357,7 @@
                 // Press page
                 'press.hero.title': '보도자료 & 미디어',
                 'press.hero.subtitle': 'WITCH Company의 최신 뉴스 및 업데이트',
+                'press.view_all': '모든 뉴스 보기',
                 
                 // Product pages
                 'witchverse.hero.title': '위치버스',
