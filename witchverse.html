@@ -23,9 +23,9 @@
                     colors: {
                         'primary-dark': '#0B0C11',
                         'secondary-dark': '#11131A',
-                        'accent-purple': '#7B4CFF',
-                        'neon-purple': '#B076FF',
-                        'neon-blue': '#00D1FF',
+                        'witch-blue': '#4BB8FF',
+                        'sky-blue': '#5EC8FF',
+                        'tech-blue': '#1A7CEB',
                         'stroke-gray': '#2A2D3D',
                         'text-gray': '#8B8D98'
                     },
@@ -101,7 +101,7 @@
         }
         
         .nav-link:hover {
-            color: #7B4CFF;
+            color: #4BB8FF;
         }
         
         .nav-link::after {
@@ -111,7 +111,7 @@
             left: 0;
             width: 0;
             height: 1px;
-            background: #7B4CFF;
+            background: #4BB8FF;
             transition: width 0.3s ease;
         }
         
@@ -126,7 +126,7 @@
         }
         
         .feature-card:hover {
-            border-color: #7B4CFF;
+            border-color: #4BB8FF;
             transform: translateY(-2px);
             box-shadow: 0 8px 24px rgba(123, 76, 255, 0.1);
         }
@@ -140,7 +140,7 @@
         }
         
         .ecosystem-card:hover {
-            border-color: #B076FF;
+            border-color: #5EC8FF;
             background: rgba(17, 19, 26, 0.7);
         }
         
@@ -151,7 +151,7 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, #7B4CFF, #B076FF, #00D1FF);
+            background: linear-gradient(90deg, #4BB8FF, #5EC8FF, #1A7CEB);
             transform: translateX(-100%);
             transition: transform 0.5s ease;
         }
@@ -161,7 +161,7 @@
         }
         
         .btn-primary {
-            background: #7B4CFF;
+            background: #4BB8FF;
             color: white;
             padding: 0.75rem 2rem;
             border-radius: 6px;
@@ -172,7 +172,7 @@
         }
         
         .btn-primary:hover {
-            background: #B076FF;
+            background: #5EC8FF;
             transform: translateY(-1px);
             box-shadow: 0 4px 12px rgba(123, 76, 255, 0.3);
         }
@@ -214,7 +214,7 @@
     <nav class="fixed top-0 left-0 right-0 z-50 enterprise-nav">
         <div class="max-w-enterprise mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="text-xl font-bold text-accent-purple font-space tracking-wide">
+                <a href="index.html" class="text-xl font-bold text-witch-blue font-space tracking-wide">
                     WITCH COMPANY
                 </a>
                 
@@ -227,8 +227,8 @@
                 <div class="flex items-center space-x-4">
                     <!-- Language Switcher -->
                     <div class="flex space-x-2">
-                        <a href="witchverse.html" class="px-3 py-1 text-sm bg-accent-purple text-white rounded font-medium">EN</a>
-                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-accent-purple hover:text-white transition-colors font-medium">KO</a>
+                        <a href="witchverse.html" class="px-3 py-1 text-sm bg-witch-blue text-white rounded font-medium">EN</a>
+                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-witch-blue hover:text-white transition-colors font-medium">KO</a>
                     </div>
                     
                 </div>
@@ -240,18 +240,18 @@
     <section class="hero-bg min-h-screen flex items-center pt-20">
         <div class="section-enterprise">
             <div class="text-center mb-16 relative z-10">
-                <div class="w-24 h-24 bg-accent-purple/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                <div class="w-24 h-24 bg-witch-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" stroke="#7B4CFF" stroke-width="2"/>
-                        <circle cx="12" cy="12" r="3" stroke="#7B4CFF" stroke-width="2"/>
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" stroke="#4BB8FF" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="3" stroke="#4BB8FF" stroke-width="2"/>
                     </svg>
                 </div>
                 
                 <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
-                    <span class="text-accent-purple">Witchverse</span>
+                    <span class="text-witch-blue">Witchverse</span>
                 </h1>
                 
-                <h2 class="text-2xl lg:text-3xl mb-8 text-neon-purple font-medium">
+                <h2 class="text-2xl lg:text-3xl mb-8 text-sky-blue font-medium">
                     Metaverse & NFT Ecosystem Infrastructure
                 </h2>
                 
@@ -261,7 +261,7 @@
                 
                 <div class="flex flex-col sm:flex-row gap-6 justify-center">
                     <a href="https://witchworld.io" target="_blank" rel="noopener" class="btn-primary text-lg px-8 py-4">Explore Metaverse</a>
-                    <a href="#experiences" class="btn-secondary text-lg px-8 py-4 border border-accent-purple text-accent-purple hover:bg-accent-purple hover:text-white transition-all">Virtual Experiences</a>
+                    <a href="#experiences" class="btn-secondary text-lg px-8 py-4 border border-witch-blue text-witch-blue hover:bg-witch-blue hover:text-white transition-all">Virtual Experiences</a>
                 </div>
             </div>
         </div>
@@ -282,12 +282,12 @@
                     
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="feature-card rounded-lg p-6">
-                            <div class="text-3xl font-bold text-neon-purple mb-2">20K+</div>
+                            <div class="text-3xl font-bold text-sky-blue mb-2">20K+</div>
                             <div class="text-text-gray">Active Metaverse Users</div>
                         </div>
                         
                         <div class="feature-card rounded-lg p-6">
-                            <div class="text-3xl font-bold text-neon-purple mb-2">3B</div>
+                            <div class="text-3xl font-bold text-sky-blue mb-2">3B</div>
                             <div class="text-text-gray">KRW NFT Trading Volume</div>
                         </div>
                     </div>
@@ -296,7 +296,7 @@
                 <div class="virtual-space rounded-lg p-12 h-80 flex items-center justify-center">
                     <div class="text-center">
                         <div class="text-6xl mb-4">🌐</div>
-                        <h3 class="text-2xl font-bold text-neon-purple mb-2">Virtual World</h3>
+                        <h3 class="text-2xl font-bold text-sky-blue mb-2">Virtual World</h3>
                         <p class="text-text-gray">Immersive 3D experiences</p>
                     </div>
                 </div>
@@ -319,9 +319,9 @@
             <div class="grid lg:grid-cols-2 gap-8">
                 <!-- NFT Infrastructure -->
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 16V8C20.9996 7.64927 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64927 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 16V8C20.9996 7.64927 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64927 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">NFT Infrastructure</h3>
@@ -330,19 +330,19 @@
                     </p>
                     <div class="space-y-3 text-sm text-text-gray">
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>Multi-chain NFT deployment</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>Integrated marketplace</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>Utility-based ownership</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>Royalty management</span>
                         </div>
                     </div>
@@ -350,12 +350,12 @@
 
                 <!-- Virtual Fan Meetings -->
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-neon-blue/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-tech-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#00D1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="9" cy="7" r="4" stroke="#00D1FF" stroke-width="2"/>
-                            <path d="M23 21V19C23 18.1645 22.7155 17.3541 22.2094 16.7071C21.7033 16.0601 20.9926 15.6182 20.2 15.46" stroke="#00D1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M16 3.13C16.7926 3.28821 17.5033 3.73009 18.0094 4.37708C18.5155 5.02407 18.8 5.83454 18.8 6.67C18.8 7.50546 18.5155 8.31593 18.0094 8.96292C17.5033 9.60991 16.7926 10.0518 16 10.21" stroke="#00D1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="9" cy="7" r="4" stroke="#4BB8FF" stroke-width="2"/>
+                            <path d="M23 21V19C23 18.1645 22.7155 17.3541 22.2094 16.7071C21.7033 16.0601 20.9926 15.6182 20.2 15.46" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.7926 3.28821 17.5033 3.73009 18.0094 4.37708C18.5155 5.02407 18.8 5.83454 18.8 6.67C18.8 7.50546 18.5155 8.31593 18.0094 8.96292C17.5033 9.60991 16.7926 10.0518 16 10.21" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Virtual Fan Meetings</h3>
@@ -364,19 +364,19 @@
                     </p>
                     <div class="space-y-3 text-sm text-text-gray">
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
                             <span>Real-time 3D interactions</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
                             <span>Scalable room management</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
                             <span>Voice & video integration</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
                             <span>Event recording & replay</span>
                         </div>
                     </div>
@@ -384,10 +384,10 @@
 
                 <!-- Identity Layer -->
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-neon-purple/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-sky-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#B076FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="12" cy="7" r="4" stroke="#B076FF" stroke-width="2"/>
+                            <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#5EC8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="7" r="4" stroke="#5EC8FF" stroke-width="2"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Digital Identity Layer</h3>
@@ -396,19 +396,19 @@
                     </p>
                     <div class="space-y-3 text-sm text-text-gray">
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>Cross-platform identity</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>Reputation & achievement system</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>Privacy-preserving profiles</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>Social graph integration</span>
                         </div>
                     </div>
@@ -416,11 +416,11 @@
 
                 <!-- Metaverse Events -->
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" stroke="#7B4CFF" stroke-width="2"/>
-                            <path d="M9.09 9C9.3251 8.33167 9.78915 7.76811 10.4 7.40913C11.0108 7.05016 11.7289 6.91894 12.4272 7.03871C13.1255 7.15849 13.7588 7.52152 14.2151 8.06353C14.6713 8.60553 14.9211 9.29152 14.92 10C14.92 12 11.92 13 11.92 13" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 17H12.01" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="12" r="10" stroke="#4BB8FF" stroke-width="2"/>
+                            <path d="M9.09 9C9.3251 8.33167 9.78915 7.76811 10.4 7.40913C11.0108 7.05016 11.7289 6.91894 12.4272 7.03871C13.1255 7.15849 13.7588 7.52152 14.2151 8.06353C14.6713 8.60553 14.9211 9.29152 14.92 10C14.92 12 11.92 13 11.92 13" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 17H12.01" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Immersive Event Platform</h3>
@@ -429,19 +429,19 @@
                     </p>
                     <div class="space-y-3 text-sm text-text-gray">
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>Massive concurrent users</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>Interactive stage experiences</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>Real-time streaming integration</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>Monetization & ticketing</span>
                         </div>
                     </div>
@@ -465,7 +465,7 @@
             <div class="grid lg:grid-cols-3 gap-8">
                 <!-- Artist NFTs -->
                 <div class="ecosystem-card rounded-lg p-8">
-                    <h3 class="text-2xl font-bold mb-4 text-accent-purple">Artist Collections</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-witch-blue">Artist Collections</h3>
                     <p class="text-text-gray mb-6">
                         Exclusive digital collectibles from top K-pop artists and entertainment personalities with verified authenticity and limited editions.
                     </p>
@@ -480,14 +480,14 @@
                         </div>
                         <div class="flex justify-between">
                             <span class="text-text-gray">Trading Volume</span>
-                            <span class="text-neon-purple font-semibold">2.8B KRW</span>
+                            <span class="text-sky-blue font-semibold">2.8B KRW</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Virtual Items -->
                 <div class="ecosystem-card rounded-lg p-8">
-                    <h3 class="text-2xl font-bold mb-4 text-neon-blue">Virtual Wearables</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-tech-blue">Virtual Wearables</h3>
                     <p class="text-text-gray mb-6">
                         Digital fashion and accessories for avatars, enabling self-expression and status within virtual environments and metaverse experiences.
                     </p>
@@ -502,14 +502,14 @@
                         </div>
                         <div class="flex justify-between">
                             <span class="text-text-gray">Daily Transactions</span>
-                            <span class="text-neon-blue font-semibold">450+</span>
+                            <span class="text-tech-blue font-semibold">450+</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Event Passes -->
                 <div class="ecosystem-card rounded-lg p-8">
-                    <h3 class="text-2xl font-bold mb-4 text-neon-purple">Event Access Passes</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-sky-blue">Event Access Passes</h3>
                     <p class="text-text-gray mb-6">
                         NFT-based access control for exclusive events, concerts, and experiences with verifiable ownership and transfer capabilities.
                     </p>
@@ -524,7 +524,7 @@
                         </div>
                         <div class="flex justify-between">
                             <span class="text-text-gray">Zero Fraud Rate</span>
-                            <span class="text-neon-purple font-semibold">100%</span>
+                            <span class="text-sky-blue font-semibold">100%</span>
                         </div>
                     </div>
                 </div>
@@ -548,7 +548,7 @@
                 <div class="feature-card rounded-lg p-8">
                     <div class="grid lg:grid-cols-3 gap-8 items-center">
                         <div>
-                            <h3 class="text-2xl font-bold mb-2 text-neon-blue">Virtual Concert Halls</h3>
+                            <h3 class="text-2xl font-bold mb-2 text-tech-blue">Virtual Concert Halls</h3>
                             <p class="text-text-gray font-medium">Immersive live performance venues with spatial audio and interactive elements</p>
                         </div>
                         <div class="lg:col-span-2">
@@ -557,15 +557,15 @@
                             </p>
                             <div class="grid md:grid-cols-3 gap-4 text-sm">
                                 <div>
-                                    <span class="text-neon-blue font-semibold">5000+</span>
+                                    <span class="text-tech-blue font-semibold">5000+</span>
                                     <span class="text-text-gray block">Concurrent Viewers</span>
                                 </div>
                                 <div>
-                                    <span class="text-neon-blue font-semibold">12 Artists</span>
+                                    <span class="text-tech-blue font-semibold">12 Artists</span>
                                     <span class="text-text-gray block">Live Performances</span>
                                 </div>
                                 <div>
-                                    <span class="text-neon-blue font-semibold">95% Satisfaction</span>
+                                    <span class="text-tech-blue font-semibold">95% Satisfaction</span>
                                     <span class="text-text-gray block">User Rating</span>
                                 </div>
                             </div>
@@ -576,7 +576,7 @@
                 <div class="feature-card rounded-lg p-8">
                     <div class="grid lg:grid-cols-3 gap-8 items-center">
                         <div>
-                            <h3 class="text-2xl font-bold mb-2 text-neon-purple">Fan Community Spaces</h3>
+                            <h3 class="text-2xl font-bold mb-2 text-sky-blue">Fan Community Spaces</h3>
                             <p class="text-text-gray font-medium">Dedicated virtual environments for artist fan communities and social interaction</p>
                         </div>
                         <div class="lg:col-span-2">
@@ -585,15 +585,15 @@
                             </p>
                             <div class="grid md:grid-cols-3 gap-4 text-sm">
                                 <div>
-                                    <span class="text-neon-purple font-semibold">50+ Communities</span>
+                                    <span class="text-sky-blue font-semibold">50+ Communities</span>
                                     <span class="text-text-gray block">Active Spaces</span>
                                 </div>
                                 <div>
-                                    <span class="text-neon-purple font-semibold">18K Members</span>
+                                    <span class="text-sky-blue font-semibold">18K Members</span>
                                     <span class="text-text-gray block">Daily Active Users</span>
                                 </div>
                                 <div>
-                                    <span class="text-neon-purple font-semibold">6hrs Average</span>
+                                    <span class="text-sky-blue font-semibold">6hrs Average</span>
                                     <span class="text-text-gray block">Session Duration</span>
                                 </div>
                             </div>
@@ -604,7 +604,7 @@
                 <div class="feature-card rounded-lg p-8">
                     <div class="grid lg:grid-cols-3 gap-8 items-center">
                         <div>
-                            <h3 class="text-2xl font-bold mb-2 text-accent-purple">Interactive Exhibitions</h3>
+                            <h3 class="text-2xl font-bold mb-2 text-witch-blue">Interactive Exhibitions</h3>
                             <p class="text-text-gray font-medium">Virtual galleries and museums showcasing entertainment history and digital art</p>
                         </div>
                         <div class="lg:col-span-2">
@@ -613,15 +613,15 @@
                             </p>
                             <div class="grid md:grid-cols-3 gap-4 text-sm">
                                 <div>
-                                    <span class="text-accent-purple font-semibold">25 Exhibitions</span>
+                                    <span class="text-witch-blue font-semibold">25 Exhibitions</span>
                                     <span class="text-text-gray block">Currently Live</span>
                                 </div>
                                 <div>
-                                    <span class="text-accent-purple font-semibold">200K+ Visitors</span>
+                                    <span class="text-witch-blue font-semibold">200K+ Visitors</span>
                                     <span class="text-text-gray block">Total Attendance</span>
                                 </div>
                                 <div>
-                                    <span class="text-accent-purple font-semibold">450 Artifacts</span>
+                                    <span class="text-witch-blue font-semibold">450 Artifacts</span>
                                     <span class="text-text-gray block">Digital Items</span>
                                 </div>
                             </div>
@@ -646,43 +646,43 @@
             
             <div class="grid lg:grid-cols-2 gap-8">
                 <div class="feature-card rounded-lg p-8">
-                    <h3 class="text-2xl font-bold mb-4 text-neon-blue">Hyundai Motor Company</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-tech-blue">Hyundai Motor Company</h3>
                     <p class="text-text-gray mb-6">
                         Virtual brand activation and NFT campaign achieving unprecedented engagement metrics and global reach.
                     </p>
                     <div class="space-y-4">
                         <div class="flex justify-between items-center py-2 border-b border-stroke-gray">
                             <span class="text-text-gray">Campaign Participants</span>
-                            <span class="text-neon-blue font-semibold">100K+ Users</span>
+                            <span class="text-tech-blue font-semibold">100K+ Users</span>
                         </div>
                         <div class="flex justify-between items-center py-2 border-b border-stroke-gray">
                             <span class="text-text-gray">NFT Sales Volume</span>
-                            <span class="text-neon-blue font-semibold">3B+ KRW</span>
+                            <span class="text-tech-blue font-semibold">3B+ KRW</span>
                         </div>
                         <div class="flex justify-between items-center py-2">
                             <span class="text-text-gray">Brand Engagement Lift</span>
-                            <span class="text-neon-blue font-semibold">+340%</span>
+                            <span class="text-tech-blue font-semibold">+340%</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="feature-card rounded-lg p-8">
-                    <h3 class="text-2xl font-bold mb-4 text-neon-purple">LG U+ Virtual IP</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-sky-blue">LG U+ Virtual IP</h3>
                     <p class="text-text-gray mb-6">
                         Complete virtual idol infrastructure supporting character development, fan interaction, and monetization.
                     </p>
                     <div class="space-y-4">
                         <div class="flex justify-between items-center py-2 border-b border-stroke-gray">
                             <span class="text-text-gray">Virtual Characters</span>
-                            <span class="text-neon-purple font-semibold">5 Active</span>
+                            <span class="text-sky-blue font-semibold">5 Active</span>
                         </div>
                         <div class="flex justify-between items-center py-2 border-b border-stroke-gray">
                             <span class="text-text-gray">Fan Interactions</span>
-                            <span class="text-neon-purple font-semibold">2M+ Monthly</span>
+                            <span class="text-sky-blue font-semibold">2M+ Monthly</span>
                         </div>
                         <div class="flex justify-between items-center py-2">
                             <span class="text-text-gray">IP Revenue</span>
-                            <span class="text-neon-purple font-semibold">2B+ KRW</span>
+                            <span class="text-sky-blue font-semibold">2B+ KRW</span>
                         </div>
                     </div>
                 </div>
@@ -704,7 +704,7 @@
             
             <div class="grid lg:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="text-2xl font-bold mb-6 text-neon-blue">Infrastructure Components</h3>
+                    <h3 class="text-2xl font-bold mb-6 text-tech-blue">Infrastructure Components</h3>
                     <div class="space-y-4">
                         <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
                             <span class="text-text-gray">3D Rendering Engine</span>
@@ -730,23 +730,23 @@
                 </div>
                 
                 <div>
-                    <h3 class="text-2xl font-bold mb-6 text-neon-purple">Performance Metrics</h3>
+                    <h3 class="text-2xl font-bold mb-6 text-sky-blue">Performance Metrics</h3>
                     <div class="space-y-6">
                         <div class="feature-card rounded-lg p-6">
                             <h4 class="font-semibold mb-2">Concurrent Users</h4>
-                            <div class="text-3xl font-bold text-neon-blue">10,000+</div>
+                            <div class="text-3xl font-bold text-tech-blue">10,000+</div>
                             <p class="text-text-gray text-sm">Per virtual environment</p>
                         </div>
                         
                         <div class="feature-card rounded-lg p-6">
                             <h4 class="font-semibold mb-2">Transaction Throughput</h4>
-                            <div class="text-3xl font-bold text-neon-purple">1,500</div>
+                            <div class="text-3xl font-bold text-sky-blue">1,500</div>
                             <p class="text-text-gray text-sm">NFT transactions per second</p>
                         </div>
                         
                         <div class="feature-card rounded-lg p-6">
                             <h4 class="font-semibold mb-2">Load Time</h4>
-                            <div class="text-3xl font-bold text-accent-purple">< 5s</div>
+                            <div class="text-3xl font-bold text-witch-blue">< 5s</div>
                             <p class="text-text-gray text-sm">Average environment load</p>
                         </div>
                     </div>
@@ -760,7 +760,7 @@
         <div class="section-enterprise">
             <div class="grid lg:grid-cols-4 gap-8 mb-12">
                 <div class="lg:col-span-2">
-                    <div class="text-2xl font-bold text-accent-purple mb-4 font-space">
+                    <div class="text-2xl font-bold text-witch-blue mb-4 font-space">
                         WITCH COMPANY
                     </div>
                     <p class="text-text-gray mb-6 text-lg">
@@ -774,7 +774,7 @@
                 <div>
                     <h4 class="font-bold mb-4 text-lg">Products</h4>
                     <ul class="space-y-3">
-                        <li><a href="/witchverse" class="text-accent-purple">Witchverse</a></li>
+                        <li><a href="/witchverse" class="text-witch-blue">Witchverse</a></li>
                         <li><a href="/wavist" class="text-text-gray hover:text-white transition-colors">Wavist</a></li>
                         <li><a href="/witchbox" class="text-text-gray hover:text-white transition-colors">Witchbox</a></li>
                         <li><a href="/witchpay" class="text-text-gray hover:text-white transition-colors">WitchPay</a></li>

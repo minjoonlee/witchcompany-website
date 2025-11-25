@@ -23,9 +23,9 @@
                     colors: {
                         'primary-dark': '#0B0C11',
                         'secondary-dark': '#11131A',
-                        'accent-purple': '#7B4CFF',
-                        'neon-purple': '#B076FF',
-                        'neon-blue': '#00D1FF',
+                        'witch-blue': '#4BB8FF',
+                        'sky-blue': '#5EC8FF',
+                        'tech-blue': '#1A7CEB',
                         'stroke-gray': '#2A2D3D',
                         'text-gray': '#8B8D98'
                     },
@@ -79,8 +79,8 @@
             right: 0;
             bottom: 0;
             background-image: 
-                radial-gradient(circle at 25% 25%, rgba(123, 76, 255, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(0, 209, 255, 0.03) 0%, transparent 50%);
+                radial-gradient(circle at 25% 25%, rgba(75, 184, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(26, 124, 235, 0.03) 0%, transparent 50%);
             z-index: 1;
         }
         
@@ -93,7 +93,7 @@
         }
         
         .nav-link:hover {
-            color: #7B4CFF;
+            color: #4BB8FF;
         }
         
         .nav-link::after {
@@ -103,7 +103,7 @@
             left: 0;
             width: 0;
             height: 1px;
-            background: #7B4CFF;
+            background: #4BB8FF;
             transition: width 0.3s ease;
         }
         
@@ -118,7 +118,7 @@
         }
         
         .feature-card:hover {
-            border-color: #7B4CFF;
+            border-color: #4BB8FF;
             transform: translateY(-2px);
         }
         
@@ -129,12 +129,12 @@
         }
         
         .payment-demo:hover {
-            border-color: #00D1FF;
+            border-color: #4BB8FF;
             background: rgba(17, 19, 26, 0.7);
         }
         
         .btn-primary {
-            background: #7B4CFF;
+            background: #4BB8FF;
             color: white;
             padding: 0.75rem 2rem;
             border-radius: 6px;
@@ -145,7 +145,7 @@
         }
         
         .btn-primary:hover {
-            background: #B076FF;
+            background: #5EC8FF;
             transform: translateY(-1px);
         }
         
@@ -157,8 +157,8 @@
         }
         
         .metric-highlight {
-            background: linear-gradient(135deg, rgba(123, 76, 255, 0.1) 0%, rgba(0, 209, 255, 0.1) 100%);
-            border: 1px solid rgba(123, 76, 255, 0.3);
+            background: linear-gradient(135deg, rgba(75, 184, 255, 0.1) 0%, rgba(26, 124, 235, 0.1) 100%);
+            border: 1px solid rgba(75, 184, 255, 0.3);
         }
         
         @media (max-width: 768px) {
@@ -174,7 +174,7 @@
     <nav class="fixed top-0 left-0 right-0 z-50 enterprise-nav">
         <div class="max-w-enterprise mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="text-xl font-bold text-accent-purple font-space tracking-wide">
+                <a href="index.html" class="text-xl font-bold text-witch-blue font-space tracking-wide">
                     WITCH COMPANY
                 </a>
                 
@@ -187,8 +187,8 @@
                 <div class="flex items-center space-x-4">
                     <!-- Language Switcher -->
                     <div class="flex space-x-2">
-                        <a href="witchpay.html" class="px-3 py-1 text-sm bg-accent-purple text-white rounded font-medium">EN</a>
-                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-accent-purple hover:text-white transition-colors font-medium">KO</a>
+                        <a href="witchpay.html" class="px-3 py-1 text-sm bg-witch-blue text-white rounded font-medium">EN</a>
+                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-witch-blue hover:text-white transition-colors font-medium">KO</a>
                     </div>
                     
                 </div>
@@ -200,18 +200,18 @@
     <section class="hero-bg min-h-screen flex items-center pt-20">
         <div class="section-enterprise">
             <div class="text-center mb-16">
-                <div class="w-24 h-24 bg-accent-purple/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                <div class="w-24 h-24 bg-witch-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="1" y="5" width="22" height="14" rx="2" stroke="#7B4CFF" stroke-width="2"/>
-                        <path d="M1 10h22" stroke="#7B4CFF" stroke-width="2"/>
+                        <rect x="1" y="5" width="22" height="14" rx="2" stroke="#4BB8FF" stroke-width="2"/>
+                        <path d="M1 10h22" stroke="#4BB8FF" stroke-width="2"/>
                     </svg>
                 </div>
                 
                 <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
-                    <span class="text-accent-purple">WitchPay</span>
+                    <span class="text-witch-blue">WitchPay</span>
                 </h1>
                 
-                <h2 class="text-2xl lg:text-3xl mb-8 text-neon-blue font-medium">
+                <h2 class="text-2xl lg:text-3xl mb-8 text-tech-blue font-medium">
                     Web3 Payment & Stablecoin Infrastructure
                 </h2>
                 
@@ -242,12 +242,12 @@
                     <div class="metric-highlight rounded-lg p-6">
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
-                                <div class="text-3xl font-bold text-neon-blue mb-2">99.9%</div>
+                                <div class="text-3xl font-bold text-tech-blue mb-2">99.9%</div>
                                 <div class="text-text-gray">Transaction Success Rate</div>
                             </div>
                             
                             <div>
-                                <div class="text-3xl font-bold text-neon-blue mb-2">< 3s</div>
+                                <div class="text-3xl font-bold text-tech-blue mb-2">< 3s</div>
                                 <div class="text-text-gray">Average Settlement Time</div>
                             </div>
                         </div>
@@ -255,7 +255,7 @@
                 </div>
                 
                 <div class="payment-demo rounded-lg p-8">
-                    <h3 class="text-xl font-bold mb-6 text-center text-neon-blue">Payment Flow Demo</h3>
+                    <h3 class="text-xl font-bold mb-6 text-center text-tech-blue">Payment Flow Demo</h3>
                     
                     <div class="space-y-4">
                         <div class="flex items-center justify-between p-4 bg-primary-dark rounded border border-stroke-gray">
@@ -264,7 +264,7 @@
                         </div>
                         
                         <div class="flex justify-center">
-                            <div class="w-px h-6 bg-accent-purple"></div>
+                            <div class="w-px h-6 bg-witch-blue"></div>
                         </div>
                         
                         <div class="flex items-center justify-between p-4 bg-primary-dark rounded border border-stroke-gray">
@@ -273,7 +273,7 @@
                         </div>
                         
                         <div class="flex justify-center">
-                            <div class="w-px h-6 bg-accent-purple"></div>
+                            <div class="w-px h-6 bg-witch-blue"></div>
                         </div>
                         
                         <div class="flex items-center justify-between p-4 bg-primary-dark rounded border border-stroke-gray">
@@ -282,12 +282,12 @@
                         </div>
                         
                         <div class="flex justify-center">
-                            <div class="w-px h-6 bg-accent-purple"></div>
+                            <div class="w-px h-6 bg-witch-blue"></div>
                         </div>
                         
-                        <div class="flex items-center justify-between p-4 bg-primary-dark rounded border border-neon-blue">
+                        <div class="flex items-center justify-between p-4 bg-primary-dark rounded border border-tech-blue">
                             <span class="text-text-gray">Result</span>
-                            <span class="text-neon-blue">NFT Ticket Delivered</span>
+                            <span class="text-tech-blue">NFT Ticket Delivered</span>
                         </div>
                     </div>
                 </div>
@@ -310,10 +310,10 @@
             <div class="grid lg:grid-cols-2 gap-8">
                 <!-- Smart Wallet -->
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 12V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V16" stroke="#7B4CFF" stroke-width="2"/>
-                            <circle cx="16" cy="12" r="3" stroke="#7B4CFF" stroke-width="2"/>
+                            <path d="M21 12V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V16" stroke="#4BB8FF" stroke-width="2"/>
+                            <circle cx="16" cy="12" r="3" stroke="#4BB8FF" stroke-width="2"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Smart Wallet System</h3>
@@ -322,19 +322,19 @@
                     </p>
                     <div class="space-y-3 text-sm text-text-gray">
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>Social login integration</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>Gasless transactions for users</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>Multi-signature security</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>Recovery mechanisms</span>
                         </div>
                     </div>
@@ -342,11 +342,11 @@
 
                 <!-- Merchant Settlement -->
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-neon-blue/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-tech-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8" stroke="#00D1FF" stroke-width="2"/>
-                            <rect x="8" y="2" width="8" height="4" rx="1" stroke="#00D1FF" stroke-width="2"/>
-                            <path d="M12 11V17M9 14L12 11L15 14" stroke="#00D1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8" stroke="#4BB8FF" stroke-width="2"/>
+                            <rect x="8" y="2" width="8" height="4" rx="1" stroke="#4BB8FF" stroke-width="2"/>
+                            <path d="M12 11V17M9 14L12 11L15 14" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Merchant Settlement</h3>
@@ -355,19 +355,19 @@
                     </p>
                     <div class="space-y-3 text-sm text-text-gray">
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
                             <span>Instant KRW settlement</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
                             <span>Automated reconciliation</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
                             <span>Multi-currency support</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-blue rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
                             <span>Fraud detection & prevention</span>
                         </div>
                     </div>
@@ -375,14 +375,14 @@
 
                 <!-- QR Pay -->
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-neon-purple/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-sky-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3" y="3" width="8" height="8" rx="1" stroke="#B076FF" stroke-width="2"/>
-                            <rect x="13" y="3" width="8" height="8" rx="1" stroke="#B076FF" stroke-width="2"/>
-                            <rect x="3" y="13" width="8" height="8" rx="1" stroke="#B076FF" stroke-width="2"/>
-                            <rect x="13" y="13" width="8" height="8" rx="1" stroke="#B076FF" stroke-width="2"/>
-                            <rect x="5" y="5" width="4" height="4" rx="0.5" fill="#B076FF"/>
-                            <rect x="15" y="15" width="4" height="4" rx="0.5" fill="#B076FF"/>
+                            <rect x="3" y="3" width="8" height="8" rx="1" stroke="#5EC8FF" stroke-width="2"/>
+                            <rect x="13" y="3" width="8" height="8" rx="1" stroke="#5EC8FF" stroke-width="2"/>
+                            <rect x="3" y="13" width="8" height="8" rx="1" stroke="#5EC8FF" stroke-width="2"/>
+                            <rect x="13" y="13" width="8" height="8" rx="1" stroke="#5EC8FF" stroke-width="2"/>
+                            <rect x="5" y="5" width="4" height="4" rx="0.5" fill="#5EC8FF"/>
+                            <rect x="15" y="15" width="4" height="4" rx="0.5" fill="#5EC8FF"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">QR Pay Integration</h3>
@@ -391,19 +391,19 @@
                     </p>
                     <div class="space-y-3 text-sm text-text-gray">
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>Dynamic QR generation</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>Offline payment support</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>KakaoPay & NaverPay integration</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-neon-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
                             <span>Receipt generation</span>
                         </div>
                     </div>
@@ -411,10 +411,10 @@
 
                 <!-- KRW Stable System -->
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" stroke="#7B4CFF" stroke-width="2"/>
-                            <text x="12" y="16" text-anchor="middle" fill="#7B4CFF" font-size="8" font-weight="bold">KRW</text>
+                            <circle cx="12" cy="12" r="10" stroke="#4BB8FF" stroke-width="2"/>
+                            <text x="12" y="16" text-anchor="middle" fill="#4BB8FF" font-size="8" font-weight="bold">KRW</text>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">KRW Stablecoin System</h3>
@@ -423,19 +423,19 @@
                     </p>
                     <div class="space-y-3 text-sm text-text-gray">
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>1:1 KRW peg maintained</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>Regulatory compliance</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>Instant redemption</span>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
+                            <div class="w-2 h-2 bg-witch-blue rounded-full mr-3"></div>
                             <span>Transparent reserves</span>
                         </div>
                     </div>
@@ -458,11 +458,11 @@
             
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h3 class="text-2xl font-bold mb-6 text-neon-blue">How It Works</h3>
+                    <h3 class="text-2xl font-bold mb-6 text-tech-blue">How It Works</h3>
                     <div class="space-y-6">
                         <div class="flex items-start">
-                            <div class="w-8 h-8 bg-accent-purple/20 rounded-lg flex items-center justify-center mr-4 mt-1">
-                                <span class="text-accent-purple font-bold text-sm">1</span>
+                            <div class="w-8 h-8 bg-witch-blue/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <span class="text-witch-blue font-bold text-sm">1</span>
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-2">User Initiates Transaction</h4>
@@ -471,8 +471,8 @@
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="w-8 h-8 bg-neon-blue/20 rounded-lg flex items-center justify-center mr-4 mt-1">
-                                <span class="text-neon-blue font-bold text-sm">2</span>
+                            <div class="w-8 h-8 bg-tech-blue/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <span class="text-tech-blue font-bold text-sm">2</span>
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-2">Paymaster Processing</h4>
@@ -481,8 +481,8 @@
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="w-8 h-8 bg-neon-purple/20 rounded-lg flex items-center justify-center mr-4 mt-1">
-                                <span class="text-neon-purple font-bold text-sm">3</span>
+                            <div class="w-8 h-8 bg-sky-blue/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <span class="text-sky-blue font-bold text-sm">3</span>
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-2">Instant Confirmation</h4>
@@ -493,13 +493,13 @@
                 </div>
                 
                 <div class="code-block p-6 rounded-lg">
-                    <div class="text-neon-blue text-sm mb-4">// Paymaster Implementation</div>
+                    <div class="text-tech-blue text-sm mb-4">// Paymaster Implementation</div>
                     <div class="text-text-gray text-sm font-mono">
-                        <div class="mb-2"><span class="text-accent-purple">function</span> <span class="text-white">sponsoredTransaction</span>(</div>
-                        <div class="ml-4 mb-2"><span class="text-neon-blue">address</span> user,</div>
-                        <div class="ml-4 mb-2"><span class="text-neon-blue">bytes</span> calldata txData</div>
-                        <div class="mb-2">) <span class="text-accent-purple">external</span> <span class="text-accent-purple">payable</span> {</div>
-                        <div class="ml-4 mb-2"><span class="text-accent-purple">require</span>(isAuthorized(user));</div>
+                        <div class="mb-2"><span class="text-witch-blue">function</span> <span class="text-white">sponsoredTransaction</span>(</div>
+                        <div class="ml-4 mb-2"><span class="text-tech-blue">address</span> user,</div>
+                        <div class="ml-4 mb-2"><span class="text-tech-blue">bytes</span> calldata txData</div>
+                        <div class="mb-2">) <span class="text-witch-blue">external</span> <span class="text-witch-blue">payable</span> {</div>
+                        <div class="ml-4 mb-2"><span class="text-witch-blue">require</span>(isAuthorized(user));</div>
                         <div class="ml-4 mb-2"></div>
                         <div class="ml-4 mb-2"><span class="text-gray-400">// Sponsor gas fees</span></div>
                         <div class="ml-4 mb-2">_sponsorGas(msg.sender);</div>
@@ -529,20 +529,20 @@
                 <div>
                     <h3 class="text-2xl font-bold mb-6">SDK Integration Example</h3>
                     <div class="code-block p-6 rounded-lg mb-6">
-                        <div class="text-neon-blue text-sm mb-4">// Initialize WitchPay SDK</div>
+                        <div class="text-tech-blue text-sm mb-4">// Initialize WitchPay SDK</div>
                         <div class="text-text-gray text-sm font-mono">
-                            <div class="mb-2"><span class="text-accent-purple">import</span> { WitchPay } <span class="text-accent-purple">from</span> <span class="text-neon-blue">'@witch/payments'</span>;</div>
+                            <div class="mb-2"><span class="text-witch-blue">import</span> { WitchPay } <span class="text-witch-blue">from</span> <span class="text-tech-blue">'@witch/payments'</span>;</div>
                             <div class="mb-4"></div>
-                            <div class="mb-2"><span class="text-accent-purple">const</span> payment = <span class="text-accent-purple">new</span> <span class="text-white">WitchPay</span>({</div>
-                            <div class="ml-4 mb-2">apiKey: <span class="text-neon-blue">'your-api-key'</span>,</div>
-                            <div class="ml-4 mb-2">environment: <span class="text-neon-blue">'production'</span></div>
+                            <div class="mb-2"><span class="text-witch-blue">const</span> payment = <span class="text-witch-blue">new</span> <span class="text-white">WitchPay</span>({</div>
+                            <div class="ml-4 mb-2">apiKey: <span class="text-tech-blue">'your-api-key'</span>,</div>
+                            <div class="ml-4 mb-2">environment: <span class="text-tech-blue">'production'</span></div>
                             <div class="mb-4">});</div>
                             <div class="mb-4"></div>
                             <div class="mb-2"><span class="text-gray-400">// Process payment</span></div>
-                            <div class="mb-2"><span class="text-accent-purple">const</span> result = <span class="text-accent-purple">await</span> payment.<span class="text-white">processPayment</span>({</div>
-                            <div class="ml-4 mb-2">amount: <span class="text-neon-blue">25000</span>,</div>
-                            <div class="ml-4 mb-2">currency: <span class="text-neon-blue">'KRW'</span>,</div>
-                            <div class="ml-4 mb-2">item: <span class="text-neon-blue">'concert-ticket'</span>,</div>
+                            <div class="mb-2"><span class="text-witch-blue">const</span> result = <span class="text-witch-blue">await</span> payment.<span class="text-white">processPayment</span>({</div>
+                            <div class="ml-4 mb-2">amount: <span class="text-tech-blue">25000</span>,</div>
+                            <div class="ml-4 mb-2">currency: <span class="text-tech-blue">'KRW'</span>,</div>
+                            <div class="ml-4 mb-2">item: <span class="text-tech-blue">'concert-ticket'</span>,</div>
                             <div class="ml-4 mb-2">userId: user.id</div>
                             <div class="mb-2">});</div>
                         </div>
@@ -551,15 +551,15 @@
                     <div class="space-y-4">
                         <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
                             <span class="text-text-gray">Integration Time</span>
-                            <span class="text-neon-blue font-semibold">< 1 Day</span>
+                            <span class="text-tech-blue font-semibold">< 1 Day</span>
                         </div>
                         <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
                             <span class="text-text-gray">API Response Time</span>
-                            <span class="text-neon-blue font-semibold">< 200ms</span>
+                            <span class="text-tech-blue font-semibold">< 200ms</span>
                         </div>
                         <div class="flex justify-between items-center py-3">
                             <span class="text-text-gray">Uptime SLA</span>
-                            <span class="text-neon-blue font-semibold">99.9%</span>
+                            <span class="text-tech-blue font-semibold">99.9%</span>
                         </div>
                     </div>
                 </div>
@@ -569,31 +569,31 @@
                     <div class="space-y-4">
                         <div class="feature-card rounded-lg p-6">
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-neon-blue font-mono text-sm">POST /payments</span>
-                                <span class="text-xs bg-accent-purple/20 text-accent-purple px-2 py-1 rounded">Core</span>
+                                <span class="text-tech-blue font-mono text-sm">POST /payments</span>
+                                <span class="text-xs bg-witch-blue/20 text-witch-blue px-2 py-1 rounded">Core</span>
                             </div>
                             <p class="text-text-gray text-sm">Process payments with automatic wallet creation and gas sponsorship.</p>
                         </div>
                         
                         <div class="feature-card rounded-lg p-6">
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-neon-blue font-mono text-sm">GET /wallets/{id}</span>
-                                <span class="text-xs bg-neon-purple/20 text-neon-purple px-2 py-1 rounded">Wallet</span>
+                                <span class="text-tech-blue font-mono text-sm">GET /wallets/{id}</span>
+                                <span class="text-xs bg-sky-blue/20 text-sky-blue px-2 py-1 rounded">Wallet</span>
                             </div>
                             <p class="text-text-gray text-sm">Retrieve wallet information, balance, and transaction history.</p>
                         </div>
                         
                         <div class="feature-card rounded-lg p-6">
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-neon-blue font-mono text-sm">POST /settlements</span>
-                                <span class="text-xs bg-neon-blue/20 text-neon-blue px-2 py-1 rounded">Merchant</span>
+                                <span class="text-tech-blue font-mono text-sm">POST /settlements</span>
+                                <span class="text-xs bg-tech-blue/20 text-tech-blue px-2 py-1 rounded">Merchant</span>
                             </div>
                             <p class="text-text-gray text-sm">Initiate merchant settlements with automatic currency conversion.</p>
                         </div>
                         
                         <div class="feature-card rounded-lg p-6">
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-neon-blue font-mono text-sm">GET /analytics</span>
+                                <span class="text-tech-blue font-mono text-sm">GET /analytics</span>
                                 <span class="text-xs bg-text-gray/20 text-text-gray px-2 py-1 rounded">Data</span>
                             </div>
                             <p class="text-text-gray text-sm">Access payment analytics, conversion rates, and performance metrics.</p>
@@ -618,10 +618,10 @@
             
             <div class="grid lg:grid-cols-3 gap-8">
                 <div class="feature-card rounded-lg p-8 text-center">
-                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+                    <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 12L11 14L15 10" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="12" cy="12" r="10" stroke="#7B4CFF" stroke-width="2"/>
+                            <path d="M9 12L11 14L15 10" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="12" r="10" stroke="#4BB8FF" stroke-width="2"/>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Concert & Event Ticketing</h3>
@@ -629,10 +629,10 @@
                 </div>
                 
                 <div class="feature-card rounded-lg p-8 text-center">
-                    <div class="w-16 h-16 bg-neon-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+                    <div class="w-16 h-16 bg-tech-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="2" y="3" width="20" height="14" rx="2" stroke="#00D1FF" stroke-width="2"/>
-                            <path d="M8 21l8 0M12 17l0 4" stroke="#00D1FF" stroke-width="2" stroke-linecap="round"/>
+                            <rect x="2" y="3" width="20" height="14" rx="2" stroke="#4BB8FF" stroke-width="2"/>
+                            <path d="M8 21l8 0M12 17l0 4" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Digital Content Purchases</h3>
@@ -640,9 +640,9 @@
                 </div>
                 
                 <div class="feature-card rounded-lg p-8 text-center">
-                    <div class="w-16 h-16 bg-neon-purple/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+                    <div class="w-16 h-16 bg-sky-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" stroke="#B076FF" stroke-width="2"/>
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" stroke="#5EC8FF" stroke-width="2"/>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Fan Merchandise & NFTs</h3>
@@ -657,7 +657,7 @@
         <div class="section-enterprise">
             <div class="grid lg:grid-cols-4 gap-8 mb-12">
                 <div class="lg:col-span-2">
-                    <div class="text-2xl font-bold text-accent-purple mb-4 font-space">
+                    <div class="text-2xl font-bold text-witch-blue mb-4 font-space">
                         WITCH COMPANY
                     </div>
                     <p class="text-text-gray mb-6 text-lg">
@@ -671,7 +671,7 @@
                 <div>
                     <h4 class="font-bold mb-4 text-lg">Products</h4>
                     <ul class="space-y-3">
-                        <li><a href="/witchpay" class="text-accent-purple">WitchPay</a></li>
+                        <li><a href="/witchpay" class="text-witch-blue">WitchPay</a></li>
                         <li><a href="/wavist" class="text-text-gray hover:text-white transition-colors">Wavist</a></li>
                         <li><a href="/witchbox" class="text-text-gray hover:text-white transition-colors">Witchbox</a></li>
                         <li><a href="/witchverse" class="text-text-gray hover:text-white transition-colors">Witchverse</a></li>

@@ -23,9 +23,9 @@
                     colors: {
                         'primary-dark': '#0B0C11',
                         'secondary-dark': '#11131A',
-                        'accent-purple': '#7B4CFF',
-                        'neon-purple': '#B076FF',
-                        'neon-blue': '#00D1FF',
+                        'witch-blue': '#4BB8FF',
+                        'sky-blue': '#5EC8FF',
+                        'tech-blue': '#1A7CEB',
                         'stroke-gray': '#2A2D3D',
                         'text-gray': '#8B8D98'
                     },
@@ -79,8 +79,8 @@
             right: 0;
             bottom: 0;
             background-image: 
-                radial-gradient(circle at 25% 25%, rgba(123, 76, 255, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(0, 209, 255, 0.03) 0%, transparent 50%);
+                radial-gradient(circle at 25% 25%, rgba(75, 184, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(26, 124, 235, 0.03) 0%, transparent 50%);
             z-index: 1;
         }
         
@@ -93,7 +93,7 @@
         }
         
         .nav-link:hover {
-            color: #7B4CFF;
+            color: #4BB8FF;
         }
         
         .nav-link::after {
@@ -103,7 +103,7 @@
             left: 0;
             width: 0;
             height: 1px;
-            background: #7B4CFF;
+            background: #4BB8FF;
             transition: width 0.3s ease;
         }
         
@@ -118,7 +118,7 @@
         }
         
         .feature-card:hover {
-            border-color: #7B4CFF;
+            border-color: #4BB8FF;
             transform: translateY(-2px);
         }
         
@@ -130,7 +130,7 @@
         }
         
         .pipeline-step:hover {
-            border-color: #7B4CFF;
+            border-color: #4BB8FF;
             background: rgba(17, 19, 26, 0.7);
         }
         
@@ -140,7 +140,7 @@
             right: -20px;
             top: 50%;
             transform: translateY(-50%);
-            color: #7B4CFF;
+            color: #4BB8FF;
             font-size: 24px;
             font-weight: bold;
         }
@@ -150,7 +150,7 @@
         }
         
         .btn-primary {
-            background: #7B4CFF;
+            background: #4BB8FF;
             color: white;
             padding: 0.75rem 2rem;
             border-radius: 6px;
@@ -161,7 +161,7 @@
         }
         
         .btn-primary:hover {
-            background: #B076FF;
+            background: #5EC8FF;
             transform: translateY(-1px);
         }
         
@@ -172,7 +172,7 @@
         }
         
         .metric-card:hover {
-            border-color: #00D1FF;
+            border-color: #4BB8FF;
         }
         
         @media (max-width: 768px) {
@@ -192,7 +192,7 @@
     <nav class="fixed top-0 left-0 right-0 z-50 enterprise-nav">
         <div class="max-w-enterprise mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="text-xl font-bold text-accent-purple font-space tracking-wide">
+                <a href="index.html" class="text-xl font-bold text-witch-blue font-space tracking-wide">
                     WITCH COMPANY
                 </a>
                 
@@ -205,8 +205,8 @@
                 <div class="flex items-center space-x-4">
                     <!-- Language Switcher -->
                     <div class="flex space-x-2">
-                        <a href="witchbox.html" class="px-3 py-1 text-sm bg-accent-purple text-white rounded font-medium">EN</a>
-                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-accent-purple hover:text-white transition-colors font-medium">KO</a>
+                        <a href="witchbox.html" class="px-3 py-1 text-sm bg-witch-blue text-white rounded font-medium">EN</a>
+                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-witch-blue hover:text-white transition-colors font-medium">KO</a>
                     </div>
                     
                 </div>
@@ -218,18 +218,18 @@
     <section class="hero-bg min-h-screen flex items-center pt-20">
         <div class="section-enterprise">
             <div class="text-center mb-16">
-                <div class="w-24 h-24 bg-accent-purple/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                <div class="w-24 h-24 bg-witch-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="2" y="3" width="20" height="14" rx="2" stroke="#7B4CFF" stroke-width="2"/>
-                        <path d="M8 21l8 0M12 17l0 4" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round"/>
+                        <rect x="2" y="3" width="20" height="14" rx="2" stroke="#4BB8FF" stroke-width="2"/>
+                        <path d="M8 21l8 0M12 17l0 4" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </div>
                 
                 <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
-                    <span class="text-accent-purple">Witchbox</span>
+                    <span class="text-witch-blue">Witchbox</span>
                 </h1>
                 
-                <h2 class="text-2xl lg:text-3xl mb-8 text-neon-blue font-medium">
+                <h2 class="text-2xl lg:text-3xl mb-8 text-tech-blue font-medium">
                     고품질 숏폼 OTT 플랫폼
                 </h2>
                 
@@ -259,12 +259,12 @@
                     
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="metric-card rounded-lg p-6">
-                            <div class="text-3xl font-bold text-neon-blue mb-2">16</div>
+                            <div class="text-3xl font-bold text-tech-blue mb-2">16</div>
                             <div class="text-text-gray">Contents Onboarded</div>
                         </div>
                         
                         <div class="metric-card rounded-lg p-6">
-                            <div class="text-3xl font-bold text-neon-blue mb-2">50M</div>
+                            <div class="text-3xl font-bold text-tech-blue mb-2">50M</div>
                             <div class="text-text-gray">KRW Contract Value</div>
                         </div>
                     </div>
@@ -272,17 +272,17 @@
                 
                 <div class="space-y-6">
                     <div class="feature-card rounded-lg p-6">
-                        <h3 class="text-xl font-bold mb-3 text-neon-purple">AI-Powered Slicing</h3>
+                        <h3 class="text-xl font-bold mb-3 text-sky-blue">AI-Powered Slicing</h3>
                         <p class="text-text-gray">Advanced algorithms identify optimal cut points, maintaining story flow and emotional impact in short-form format.</p>
                     </div>
                     
                     <div class="feature-card rounded-lg p-6">
-                        <h3 class="text-xl font-bold mb-3 text-neon-purple">Creator Monetization</h3>
+                        <h3 class="text-xl font-bold mb-3 text-sky-blue">Creator Monetization</h3>
                         <p class="text-text-gray">Built-in revenue sharing with transparent analytics and multiple monetization channels for content creators.</p>
                     </div>
                     
                     <div class="feature-card rounded-lg p-6">
-                        <h3 class="text-xl font-bold mb-3 text-neon-purple">Global Distribution</h3>
+                        <h3 class="text-xl font-bold mb-3 text-sky-blue">Global Distribution</h3>
                         <p class="text-text-gray">Multi-platform deployment with region-specific optimization for maximum reach and engagement.</p>
                     </div>
                 </div>
@@ -304,32 +304,32 @@
             
             <div class="hidden lg:flex items-center justify-between mb-16 relative">
                 <div class="pipeline-step rounded-lg p-6 w-48">
-                    <div class="w-12 h-12 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-accent-purple font-bold">1</span>
+                    <div class="w-12 h-12 bg-witch-blue/20 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-witch-blue font-bold">1</span>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Content Ingestion</h3>
                     <p class="text-sm text-text-gray">Upload and analysis of premium long-form content</p>
                 </div>
                 
                 <div class="pipeline-step rounded-lg p-6 w-48">
-                    <div class="w-12 h-12 bg-neon-blue/20 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-neon-blue font-bold">2</span>
+                    <div class="w-12 h-12 bg-tech-blue/20 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-tech-blue font-bold">2</span>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Intelligent Slicing</h3>
                     <p class="text-sm text-text-gray">AI-powered 30-60s clip generation with story preservation</p>
                 </div>
                 
                 <div class="pipeline-step rounded-lg p-6 w-48">
-                    <div class="w-12 h-12 bg-neon-purple/20 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-neon-purple font-bold">3</span>
+                    <div class="w-12 h-12 bg-sky-blue/20 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-sky-blue font-bold">3</span>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Episode Creation</h3>
                     <p class="text-sm text-text-gray">15-20 episode conversion for series consumption</p>
                 </div>
                 
                 <div class="pipeline-step rounded-lg p-6 w-48">
-                    <div class="w-12 h-12 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-accent-purple font-bold">4</span>
+                    <div class="w-12 h-12 bg-witch-blue/20 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-witch-blue font-bold">4</span>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Distribution</h3>
                     <p class="text-sm text-text-gray">Multi-platform deployment with monetization tracking</p>
@@ -339,32 +339,32 @@
             <!-- Mobile Pipeline -->
             <div class="lg:hidden space-y-6">
                 <div class="pipeline-step rounded-lg p-6">
-                    <div class="w-12 h-12 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-accent-purple font-bold">1</span>
+                    <div class="w-12 h-12 bg-witch-blue/20 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-witch-blue font-bold">1</span>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Content Ingestion</h3>
                     <p class="text-sm text-text-gray">Upload and analysis of premium long-form content</p>
                 </div>
                 
                 <div class="pipeline-step rounded-lg p-6">
-                    <div class="w-12 h-12 bg-neon-blue/20 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-neon-blue font-bold">2</span>
+                    <div class="w-12 h-12 bg-tech-blue/20 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-tech-blue font-bold">2</span>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Intelligent Slicing</h3>
                     <p class="text-sm text-text-gray">AI-powered 30-60s clip generation with story preservation</p>
                 </div>
                 
                 <div class="pipeline-step rounded-lg p-6">
-                    <div class="w-12 h-12 bg-neon-purple/20 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-neon-purple font-bold">3</span>
+                    <div class="w-12 h-12 bg-sky-blue/20 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-sky-blue font-bold">3</span>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Episode Creation</h3>
                     <p class="text-sm text-text-gray">15-20 episode conversion for series consumption</p>
                 </div>
                 
                 <div class="pipeline-step rounded-lg p-6">
-                    <div class="w-12 h-12 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-accent-purple font-bold">4</span>
+                    <div class="w-12 h-12 bg-witch-blue/20 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-witch-blue font-bold">4</span>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Distribution</h3>
                     <p class="text-sm text-text-gray">Multi-platform deployment with monetization tracking</p>
@@ -387,9 +387,9 @@
             
             <div class="grid lg:grid-cols-2 gap-8">
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-neon-blue/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-tech-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.828 14.828L21 21M14.828 14.828C16.3918 13.2643 16.3918 10.7357 14.828 9.17199C13.2643 7.60829 10.7357 7.60829 9.17199 9.17199C7.60829 10.7357 7.60829 13.2643 9.17199 14.828C10.7357 16.3918 13.2643 16.3918 14.828 14.828Z" stroke="#00D1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.828 14.828L21 21M14.828 14.828C16.3918 13.2643 16.3918 10.7357 14.828 9.17199C13.2643 7.60829 10.7357 7.60829 9.17199 9.17199C7.60829 10.7357 7.60829 13.2643 9.17199 14.828C10.7357 16.3918 13.2643 16.3918 14.828 14.828Z" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Smart Content Analysis</h3>
@@ -405,9 +405,9 @@
                 </div>
                 
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-neon-purple/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-sky-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" stroke="#B076FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" stroke="#5EC8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Creator Monetization</h3>
@@ -423,10 +423,10 @@
                 </div>
                 
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#7B4CFF" stroke-width="2"/>
-                            <path d="M9 12L11 14L15 10" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#4BB8FF" stroke-width="2"/>
+                            <path d="M9 12L11 14L15 10" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Quality Optimization</h3>
@@ -442,9 +442,9 @@
                 </div>
                 
                 <div class="feature-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-neon-blue/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-tech-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 16V8C20.9996 7.64927 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64927 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="#00D1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 16V8C20.9996 7.64927 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64927 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Global Distribution</h3>
@@ -478,7 +478,7 @@
                 <div class="feature-card rounded-lg p-8">
                     <div class="grid lg:grid-cols-3 gap-8 items-center">
                         <div>
-                            <h3 class="text-2xl font-bold mb-2 text-neon-blue">Premium Content Partnership</h3>
+                            <h3 class="text-2xl font-bold mb-2 text-tech-blue">Premium Content Partnership</h3>
                             <p class="text-text-gray font-medium">롯데엔터테인먼트, 싸이더스, KBS와의 전략적 파트너십</p>
                         </div>
                         <div class="lg:col-span-2">
@@ -487,15 +487,15 @@
                             </p>
                             <div class="grid md:grid-cols-3 gap-4 text-sm">
                                 <div>
-                                    <span class="text-neon-blue font-semibold">롯데엔터테인먼트</span>
+                                    <span class="text-tech-blue font-semibold">롯데엔터테인먼트</span>
                                     <span class="text-text-gray block">Premium Film Content</span>
                                 </div>
                                 <div>
-                                    <span class="text-neon-blue font-semibold">싸이더스</span>
+                                    <span class="text-tech-blue font-semibold">싸이더스</span>
                                     <span class="text-text-gray block">Drama & Film Production</span>
                                 </div>
                                 <div>
-                                    <span class="text-neon-blue font-semibold">KBS</span>
+                                    <span class="text-tech-blue font-semibold">KBS</span>
                                     <span class="text-text-gray block">Classic Drama Content</span>
                                 </div>
                             </div>
@@ -506,7 +506,7 @@
                 <div class="feature-card rounded-lg p-8">
                     <div class="grid lg:grid-cols-3 gap-8 items-center">
                         <div>
-                            <h3 class="text-2xl font-bold mb-2 text-neon-purple">CJ Entertainment</h3>
+                            <h3 class="text-2xl font-bold mb-2 text-sky-blue">CJ Entertainment</h3>
                             <p class="text-text-gray font-medium">Premium Content Processing Pipeline</p>
                         </div>
                         <div class="lg:col-span-2">
@@ -515,15 +515,15 @@
                             </p>
                             <div class="grid md:grid-cols-3 gap-4 text-sm">
                                 <div>
-                                    <span class="text-neon-purple font-semibold">100+ Hours</span>
+                                    <span class="text-sky-blue font-semibold">100+ Hours</span>
                                     <span class="text-text-gray block">Content Processed</span>
                                 </div>
                                 <div>
-                                    <span class="text-neon-purple font-semibold">15 Markets</span>
+                                    <span class="text-sky-blue font-semibold">15 Markets</span>
                                     <span class="text-text-gray block">Global Distribution</span>
                                 </div>
                                 <div>
-                                    <span class="text-neon-purple font-semibold">25% Higher</span>
+                                    <span class="text-sky-blue font-semibold">25% Higher</span>
                                     <span class="text-text-gray block">Engagement Rate</span>
                                 </div>
                             </div>
@@ -548,7 +548,7 @@
             
             <div class="grid lg:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="text-2xl font-bold mb-6 text-neon-blue">Processing Capabilities</h3>
+                    <h3 class="text-2xl font-bold mb-6 text-tech-blue">Processing Capabilities</h3>
                     <div class="space-y-4">
                         <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
                             <span class="text-text-gray">Maximum Input Length</span>
@@ -574,7 +574,7 @@
                 </div>
                 
                 <div>
-                    <h3 class="text-2xl font-bold mb-6 text-neon-purple">Platform Support</h3>
+                    <h3 class="text-2xl font-bold mb-6 text-sky-blue">Platform Support</h3>
                     <div class="space-y-4">
                         <div class="flex justify-between items-center py-3 border-b border-stroke-gray">
                             <span class="text-text-gray">Input Formats</span>
@@ -607,7 +607,7 @@
         <div class="section-enterprise">
             <div class="grid lg:grid-cols-4 gap-8 mb-12">
                 <div class="lg:col-span-2">
-                    <div class="text-2xl font-bold text-accent-purple mb-4 font-space">
+                    <div class="text-2xl font-bold text-witch-blue mb-4 font-space">
                         WITCH COMPANY
                     </div>
                     <p class="text-text-gray mb-6 text-lg">
@@ -621,7 +621,7 @@
                 <div>
                     <h4 class="font-bold mb-4 text-lg">Products</h4>
                     <ul class="space-y-3">
-                        <li><a href="/witchbox" class="text-accent-purple">Witchbox</a></li>
+                        <li><a href="/witchbox" class="text-witch-blue">Witchbox</a></li>
                         <li><a href="/wavist" class="text-text-gray hover:text-white transition-colors">Wavist</a></li>
                         <li><a href="/witchpay" class="text-text-gray hover:text-white transition-colors">WitchPay</a></li>
                         <li><a href="/witchverse" class="text-text-gray hover:text-white transition-colors">Witchverse</a></li>

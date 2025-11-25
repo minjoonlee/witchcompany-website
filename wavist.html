@@ -23,9 +23,9 @@
                     colors: {
                         'primary-dark': '#0B0C11',
                         'secondary-dark': '#11131A',
-                        'accent-purple': '#7B4CFF',
-                        'neon-purple': '#B076FF',
-                        'neon-blue': '#00D1FF',
+                        'witch-blue': '#4BB8FF',
+                        'sky-blue': '#5EC8FF',
+                        'tech-blue': '#1A7CEB',
                         'stroke-gray': '#2A2D3D',
                         'text-gray': '#8B8D98'
                     },
@@ -79,8 +79,8 @@
             right: 0;
             bottom: 0;
             background-image: 
-                radial-gradient(circle at 25% 25%, rgba(123, 76, 255, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(0, 209, 255, 0.03) 0%, transparent 50%);
+                radial-gradient(circle at 25% 25%, rgba(75, 184, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(26, 124, 235, 0.03) 0%, transparent 50%);
             z-index: 1;
         }
         
@@ -93,7 +93,7 @@
         }
         
         .nav-link:hover {
-            color: #7B4CFF;
+            color: #4BB8FF;
         }
         
         .nav-link::after {
@@ -103,7 +103,7 @@
             left: 0;
             width: 0;
             height: 1px;
-            background: #7B4CFF;
+            background: #4BB8FF;
             transition: width 0.3s ease;
         }
         
@@ -118,7 +118,7 @@
         }
         
         .token-card:hover {
-            border-color: #7B4CFF;
+            border-color: #4BB8FF;
             transform: translateY(-2px);
         }
         
@@ -129,12 +129,12 @@
         }
         
         .feature-card:hover {
-            border-color: #7B4CFF;
+            border-color: #4BB8FF;
             background: rgba(17, 19, 26, 0.7);
         }
         
         .btn-primary {
-            background: #7B4CFF;
+            background: #4BB8FF;
             color: white;
             padding: 0.75rem 2rem;
             border-radius: 6px;
@@ -145,7 +145,7 @@
         }
         
         .btn-primary:hover {
-            background: #B076FF;
+            background: #5EC8FF;
             transform: translateY(-1px);
         }
         
@@ -168,7 +168,7 @@
     <nav class="fixed top-0 left-0 right-0 z-50 enterprise-nav">
         <div class="max-w-enterprise mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="text-xl font-bold text-accent-purple font-space tracking-wide">
+                <a href="index.html" class="text-xl font-bold text-witch-blue font-space tracking-wide">
                     WITCH COMPANY
                 </a>
                 
@@ -181,8 +181,8 @@
                 <div class="flex items-center space-x-4">
                     <!-- Language Switcher -->
                     <div class="flex space-x-2">
-                        <a href="wavist.html" class="px-3 py-1 text-sm bg-accent-purple text-white rounded font-medium">EN</a>
-                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-accent-purple hover:text-white transition-colors font-medium">KO</a>
+                        <a href="wavist.html" class="px-3 py-1 text-sm bg-witch-blue text-white rounded font-medium">EN</a>
+                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-witch-blue hover:text-white transition-colors font-medium">KO</a>
                     </div>
                     
                 </div>
@@ -194,17 +194,17 @@
     <section class="hero-bg min-h-screen flex items-center pt-20">
         <div class="section-enterprise">
             <div class="text-center mb-16">
-                <div class="w-24 h-24 bg-accent-purple/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                <div class="w-24 h-24 bg-witch-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 6L9 17l-5-5" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20 6L9 17l-5-5" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 
                 <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
-                    <span class="text-accent-purple">Wavist</span>
+                    <span class="text-witch-blue">Wavist</span>
                 </h1>
                 
-                <h2 class="text-2xl lg:text-3xl mb-8 text-neon-blue font-medium">
+                <h2 class="text-2xl lg:text-3xl mb-8 text-tech-blue font-medium">
                     RWA & STO Infrastructure for Entertainment
                 </h2>
                 
@@ -235,17 +235,17 @@
                 
                 <div class="space-y-6">
                     <div class="feature-card rounded-lg p-6">
-                        <h3 class="text-xl font-bold mb-3 text-neon-purple">Regulatory Compliance</h3>
+                        <h3 class="text-xl font-bold mb-3 text-sky-blue">Regulatory Compliance</h3>
                         <p class="text-text-gray">Full Reg S/Reg D compliance with multi-jurisdiction support for global investment.</p>
                     </div>
                     
                     <div class="feature-card rounded-lg p-6">
-                        <h3 class="text-xl font-bold mb-3 text-neon-purple">Transparent Distribution</h3>
+                        <h3 class="text-xl font-bold mb-3 text-sky-blue">Transparent Distribution</h3>
                         <p class="text-text-gray">On-chain profit distribution with real-time reporting and automated payouts.</p>
                     </div>
                     
                     <div class="feature-card rounded-lg p-6">
-                        <h3 class="text-xl font-bold mb-3 text-neon-purple">Asset Diversification</h3>
+                        <h3 class="text-xl font-bold mb-3 text-sky-blue">Asset Diversification</h3>
                         <p class="text-text-gray">Access to diverse entertainment assets including concerts, content IP, and virtual experiences.</p>
                     </div>
                 </div>
@@ -267,9 +267,9 @@
             
             <div class="grid lg:grid-cols-3 gap-8">
                 <div class="text-center">
-                    <div class="w-20 h-20 bg-neon-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <div class="w-20 h-20 bg-tech-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#00D1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 font-space">Global Demand</h3>
@@ -277,9 +277,9 @@
                 </div>
                 
                 <div class="text-center">
-                    <div class="w-20 h-20 bg-neon-purple/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <div class="w-20 h-20 bg-sky-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" stroke="#B076FF" stroke-width="2"/>
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" stroke="#5EC8FF" stroke-width="2"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 font-space">Proven Returns</h3>
@@ -287,10 +287,10 @@
                 </div>
                 
                 <div class="text-center">
-                    <div class="w-20 h-20 bg-accent-purple/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <div class="w-20 h-20 bg-witch-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" stroke="#7B4CFF" stroke-width="2"/>
-                            <path d="M9 12l2 2 4-4" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" stroke="#4BB8FF" stroke-width="2"/>
+                            <path d="M9 12l2 2 4-4" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 font-space">Institutional Access</h3>
@@ -316,8 +316,8 @@
                 <!-- VRT Token -->
                 <div class="token-card rounded-lg p-8">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-neon-blue/20 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-neon-blue font-bold text-lg">VRT</span>
+                        <div class="w-16 h-16 bg-tech-blue/20 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-tech-blue font-bold text-lg">VRT</span>
                         </div>
                         <div>
                             <h3 class="text-2xl font-bold">$VRT</h3>
@@ -328,11 +328,11 @@
                     <div class="space-y-4 mb-6">
                         <div class="flex justify-between">
                             <span class="text-text-gray">Market Cap</span>
-                            <span class="text-neon-blue font-semibold">$2.4M</span>
+                            <span class="text-tech-blue font-semibold">$2.4M</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-text-gray">Annual Yield</span>
-                            <span class="text-neon-blue font-semibold">18.5%</span>
+                            <span class="text-tech-blue font-semibold">18.5%</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-text-gray">Concerts</span>
@@ -349,8 +349,8 @@
                 <!-- CNCRT Token -->
                 <div class="token-card rounded-lg p-8">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-neon-purple/20 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-neon-purple font-bold text-lg">CCT</span>
+                        <div class="w-16 h-16 bg-sky-blue/20 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-sky-blue font-bold text-lg">CCT</span>
                         </div>
                         <div>
                             <h3 class="text-2xl font-bold">$CNCRT</h3>
@@ -361,11 +361,11 @@
                     <div class="space-y-4 mb-6">
                         <div class="flex justify-between">
                             <span class="text-text-gray">Market Cap</span>
-                            <span class="text-neon-purple font-semibold">$8.1M</span>
+                            <span class="text-sky-blue font-semibold">$8.1M</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-text-gray">Annual Yield</span>
-                            <span class="text-neon-purple font-semibold">22.3%</span>
+                            <span class="text-sky-blue font-semibold">22.3%</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-text-gray">Venues</span>
@@ -382,8 +382,8 @@
                 <!-- POPUP Token -->
                 <div class="token-card rounded-lg p-8">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-accent-purple font-bold text-lg">POP</span>
+                        <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-witch-blue font-bold text-lg">POP</span>
                         </div>
                         <div>
                             <h3 class="text-2xl font-bold">$POPUP</h3>
@@ -394,11 +394,11 @@
                     <div class="space-y-4 mb-6">
                         <div class="flex justify-between">
                             <span class="text-text-gray">Market Cap</span>
-                            <span class="text-accent-purple font-semibold">$1.8M</span>
+                            <span class="text-witch-blue font-semibold">$1.8M</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-text-gray">Annual Yield</span>
-                            <span class="text-accent-purple font-semibold">15.2%</span>
+                            <span class="text-witch-blue font-semibold">15.2%</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-text-gray">Locations</span>
@@ -429,7 +429,7 @@
             
             <div class="grid lg:grid-cols-2 gap-12">
                 <div class="feature-card rounded-lg p-8">
-                    <h3 class="text-2xl font-bold mb-4 text-neon-blue">AmazeVR</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-tech-blue">AmazeVR</h3>
                     <p class="text-text-gray mb-4">
                         Leading VR concert platform with global reach and premium artist partnerships.
                     </p>
@@ -441,7 +441,7 @@
                 </div>
                 
                 <div class="feature-card rounded-lg p-8">
-                    <h3 class="text-2xl font-bold mb-4 text-neon-purple">SET THE STAGE</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-sky-blue">SET THE STAGE</h3>
                     <p class="text-text-gray mb-4">
                         Premium concert production and venue management with established artist relationships.
                     </p>
@@ -496,7 +496,7 @@
         <div class="section-enterprise">
             <div class="grid lg:grid-cols-4 gap-8 mb-12">
                 <div class="lg:col-span-2">
-                    <div class="text-2xl font-bold text-accent-purple mb-4 font-space">
+                    <div class="text-2xl font-bold text-witch-blue mb-4 font-space">
                         WITCH COMPANY
                     </div>
                     <p class="text-text-gray mb-6 text-lg">
@@ -510,7 +510,7 @@
                 <div>
                     <h4 class="font-bold mb-4 text-lg">Products</h4>
                     <ul class="space-y-3">
-                        <li><a href="/wavist" class="text-accent-purple">Wavist</a></li>
+                        <li><a href="/wavist" class="text-witch-blue">Wavist</a></li>
                         <li><a href="/witchbox" class="text-text-gray hover:text-white transition-colors">Witchbox</a></li>
                         <li><a href="/witchpay" class="text-text-gray hover:text-white transition-colors">WitchPay</a></li>
                         <li><a href="/witchverse" class="text-text-gray hover:text-white transition-colors">Witchverse</a></li>

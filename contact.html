@@ -23,9 +23,9 @@
                     colors: {
                         'primary-dark': '#0B0C11',
                         'secondary-dark': '#11131A',
-                        'accent-purple': '#7B4CFF',
-                        'neon-purple': '#B076FF',
-                        'neon-blue': '#00D1FF',
+                        'witch-blue': '#4BB8FF',
+                        'sky-blue': '#5EC8FF',
+                        'tech-blue': '#1A7CEB',
                         'stroke-gray': '#2A2D3D',
                         'text-gray': '#8B8D98'
                     },
@@ -79,8 +79,8 @@
             right: 0;
             bottom: 0;
             background-image: 
-                radial-gradient(circle at 25% 25%, rgba(123, 76, 255, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(176, 118, 255, 0.06) 0%, transparent 50%);
+                radial-gradient(circle at 25% 25%, rgba(75, 184, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(94, 200, 255, 0.06) 0%, transparent 50%);
             z-index: 1;
         }
         
@@ -93,7 +93,7 @@
         }
         
         .nav-link:hover {
-            color: #7B4CFF;
+            color: #4BB8FF;
         }
         
         .nav-link::after {
@@ -103,7 +103,7 @@
             left: 0;
             width: 0;
             height: 1px;
-            background: #7B4CFF;
+            background: #4BB8FF;
             transition: width 0.3s ease;
         }
         
@@ -120,9 +120,9 @@
         }
         
         .contact-card:hover {
-            border-color: #7B4CFF;
+            border-color: #4BB8FF;
             transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(123, 76, 255, 0.15);
+            box-shadow: 0 8px 24px rgba(75, 184, 255, 0.15);
         }
         
         .contact-card::before {
@@ -132,7 +132,7 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, #7B4CFF, #B076FF, #00D1FF);
+            background: linear-gradient(90deg, #4BB8FF, #5EC8FF, #1A7CEB);
             transform: translateX(-100%);
             transition: transform 0.5s ease;
         }
@@ -142,7 +142,7 @@
         }
         
         .btn-primary {
-            background: #7B4CFF;
+            background: #4BB8FF;
             color: white;
             padding: 0.75rem 2rem;
             border-radius: 6px;
@@ -153,14 +153,14 @@
         }
         
         .btn-primary:hover {
-            background: #B076FF;
+            background: #5EC8FF;
             transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(123, 76, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(75, 184, 255, 0.3);
         }
         
         .brand-highlight {
-            background: linear-gradient(135deg, rgba(123, 76, 255, 0.1) 0%, rgba(176, 118, 255, 0.05) 100%);
-            border: 1px solid rgba(123, 76, 255, 0.2);
+            background: linear-gradient(135deg, rgba(75, 184, 255, 0.1) 0%, rgba(94, 200, 255, 0.05) 100%);
+            border: 1px solid rgba(75, 184, 255, 0.2);
         }
         
         @media (max-width: 768px) {
@@ -177,7 +177,7 @@
     <nav class="fixed top-0 left-0 right-0 z-40 enterprise-nav">
         <div class="max-w-enterprise mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="text-xl font-bold text-accent-purple font-space tracking-wide">
+                <a href="index.html" class="text-xl font-bold text-witch-blue font-space tracking-wide">
                     WITCH COMPANY
                 </a>
                 
@@ -190,8 +190,8 @@
                 <div class="flex items-center space-x-4">
                     <!-- Language Switcher -->
                     <div class="flex space-x-2">
-                        <a href="contact.html" class="px-3 py-1 text-sm bg-accent-purple text-white rounded font-medium">EN</a>
-                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-accent-purple hover:text-white transition-colors font-medium">KO</a>
+                        <a href="contact.html" class="px-3 py-1 text-sm bg-witch-blue text-white rounded font-medium">EN</a>
+                        <a href="index-ko.html" class="px-3 py-1 text-sm bg-stroke-gray text-text-gray rounded hover:bg-witch-blue hover:text-white transition-colors font-medium">KO</a>
                     </div>
                     
                 </div>
@@ -205,7 +205,7 @@
             <div class="text-center mb-16 relative z-10">
                 <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
                     Let's Build the Future of <br>
-                    <span class="text-accent-purple">Entertainment</span> Together
+                    <span class="text-witch-blue">Entertainment</span> Together
                 </h1>
                 
                 <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto mb-12">
@@ -213,7 +213,7 @@
                 </p>
                 
                 <div class="brand-highlight rounded-lg p-8 max-w-2xl mx-auto">
-                    <h3 class="text-2xl font-bold mb-4 text-neon-purple">We Welcome</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-sky-blue">We Welcome</h3>
                     <div class="grid md:grid-cols-3 gap-6 text-center">
                         <div>
                             <div class="text-3xl mb-2">💰</div>
@@ -248,9 +248,9 @@
             <div class="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- Investment & Partnership -->
                 <div class="contact-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#7B4CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Investment & Partnership</h3>
@@ -259,11 +259,11 @@
                     </p>
                     <div class="space-y-4 mb-6">
                         <div class="text-sm">
-                            <span class="text-neon-blue font-semibold">Perfect for:</span>
+                            <span class="text-tech-blue font-semibold">Perfect for:</span>
                             <span class="text-text-gray"> VCs, Strategic Investors, Enterprise Partners</span>
                         </div>
                         <div class="text-sm">
-                            <span class="text-neon-blue font-semibold">Response Time:</span>
+                            <span class="text-tech-blue font-semibold">Response Time:</span>
                             <span class="text-text-gray"> Within 24 hours</span>
                         </div>
                     </div>
@@ -274,12 +274,12 @@
 
                 <!-- Careers & Talent -->
                 <div class="contact-card rounded-lg p-8">
-                    <div class="w-16 h-16 bg-neon-purple/20 rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-sky-blue/20 rounded-lg flex items-center justify-center mb-6">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#B076FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="9" cy="7" r="4" stroke="#B076FF" stroke-width="2"/>
-                            <path d="M23 21V19C23 18.1645 22.7155 17.3541 22.2094 16.7071C21.7033 16.0601 20.9926 15.6182 20.2 15.46" stroke="#B076FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M16 3.13C16.7926 3.28821 17.5033 3.73009 18.0094 4.37708C18.5155 5.02407 18.8 5.83454 18.8 6.67C18.8 7.50546 18.5155 8.31593 18.0094 8.96292C17.5033 9.60991 16.7926 10.0518 16 10.21" stroke="#B076FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#5EC8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="9" cy="7" r="4" stroke="#5EC8FF" stroke-width="2"/>
+                            <path d="M23 21V19C23 18.1645 22.7155 17.3541 22.2094 16.7071C21.7033 16.0601 20.9926 15.6182 20.2 15.46" stroke="#5EC8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.7926 3.28821 17.5033 3.73009 18.0094 4.37708C18.5155 5.02407 18.8 5.83454 18.8 6.67C18.8 7.50546 18.5155 8.31593 18.0094 8.96292C17.5033 9.60991 16.7926 10.0518 16 10.21" stroke="#5EC8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Join Our Team</h3>
@@ -288,11 +288,11 @@
                     </p>
                     <div class="space-y-4 mb-6">
                         <div class="text-sm">
-                            <span class="text-neon-purple font-semibold">Perfect for:</span>
+                            <span class="text-sky-blue font-semibold">Perfect for:</span>
                             <span class="text-text-gray"> Developers, Product Managers, Business Development</span>
                         </div>
                         <div class="text-sm">
-                            <span class="text-neon-purple font-semibold">Response Time:</span>
+                            <span class="text-sky-blue font-semibold">Response Time:</span>
                             <span class="text-text-gray"> Within 48 hours</span>
                         </div>
                     </div>
@@ -316,10 +316,10 @@
                 </p>
                 
                 <div class="contact-card rounded-lg p-12 max-w-2xl mx-auto text-center">
-                    <div class="w-20 h-20 bg-neon-blue/20 rounded-lg flex items-center justify-center mx-auto mb-8">
+                    <div class="w-20 h-20 bg-tech-blue/20 rounded-lg flex items-center justify-center mx-auto mb-8">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#00D1FF" stroke-width="2"/>
-                            <polyline points="22,6 12,13 2,6" stroke="#00D1FF" stroke-width="2"/>
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#1A7CEB" stroke-width="2"/>
+                            <polyline points="22,6 12,13 2,6" stroke="#1A7CEB" stroke-width="2"/>
                         </svg>
                     </div>
                     
@@ -344,17 +344,17 @@
                     <h2 class="text-4xl font-bold mb-8 font-space">Why WITCH Company?</h2>
                     <div class="space-y-6">
                         <div>
-                            <h3 class="text-xl font-bold mb-3 text-neon-purple">Industry Leadership</h3>
+                            <h3 class="text-xl font-bold mb-3 text-sky-blue">Industry Leadership</h3>
                             <p class="text-text-gray">Leading the transformation of entertainment with Web3 infrastructure, serving Fortune 500 companies and global entertainment conglomerates.</p>
                         </div>
                         
                         <div>
-                            <h3 class="text-xl font-bold mb-3 text-neon-blue">Proven Track Record</h3>
+                            <h3 class="text-xl font-bold mb-3 text-tech-blue">Proven Track Record</h3>
                             <p class="text-text-gray">160K+ global community, 3B KRW in NFT sales, and 40B+ KRW STO pipeline with industry-leading partners.</p>
                         </div>
                         
                         <div>
-                            <h3 class="text-xl font-bold mb-3 text-accent-purple">Innovation Focus</h3>
+                            <h3 class="text-xl font-bold mb-3 text-witch-blue">Innovation Focus</h3>
                             <p class="text-text-gray">Three patented technologies and comprehensive infrastructure for the next generation of entertainment experiences.</p>
                         </div>
                     </div>
@@ -394,7 +394,7 @@
         <div class="section-enterprise">
             <div class="grid lg:grid-cols-4 gap-8 mb-12">
                 <div class="lg:col-span-2">
-                    <div class="text-2xl font-bold text-accent-purple mb-4 font-space">
+                    <div class="text-2xl font-bold text-witch-blue mb-4 font-space">
                         WITCH COMPANY
                     </div>
                     <p class="text-text-gray mb-6 text-lg">
