@@ -21,13 +21,15 @@
             theme: {
                 extend: {
                     colors: {
-                        'primary-dark': '#0B0C11',
-                        'secondary-dark': '#11131A',
+                        'primary-light': '#FFFFFF',
+                        'secondary-light': '#F8F9FA',
+                        'card-light': '#FAFBFC',
                         'witch-blue': '#4BB8FF',
                         'sky-blue': '#5EC8FF',
                         'tech-blue': '#1A7CEB',
-                        'stroke-gray': '#2A2D3D',
-                        'text-gray': '#8B8D98'
+                        'stroke-light': '#E5E7EB',
+                        'text-dark': '#1F2937',
+                        'text-gray': '#6B7280'
                     },
                     maxWidth: {
                         'enterprise': '1180px'
@@ -44,8 +46,8 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0B0C11;
-            color: white;
+            background-color: #FFFFFF;
+            color: #1F2937;
             line-height: 1.6;
         }
         
@@ -172,7 +174,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-primary-dark pt-24">
+    <section class="bg-primary-light pt-24">
         <div class="section-enterprise text-center">
             <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight">
                 About <span class="text-witch-blue">WITCH Company</span>
@@ -184,7 +186,7 @@
     </section>
 
     <!-- Mission -->
-    <section class="bg-secondary-dark">
+    <section class="bg-secondary-light">
         <div class="section-enterprise">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
@@ -200,8 +202,203 @@
         </div>
     </section>
 
+    <!-- K-Pop to Blockchain Evolution -->
+    <section class="bg-primary-light">
+        <div class="section-enterprise">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                    From K-Pop Global Stage to <span class="text-witch-blue">Blockchain Infrastructure</span>
+                </h2>
+                <p class="text-xl text-text-gray max-w-4xl mx-auto">
+                    How WITCH Company bridges the global K-Content industry with next-generation financial technology
+                </p>
+            </div>
+            
+            <!-- Market Growth Infographic -->
+            <div class="mb-20">
+                <div class="bg-card-light rounded-2xl p-8 border border-stroke-light">
+                    <h3 class="text-2xl font-bold text-center mb-12 font-space">Global K-Content Market Growth</h3>
+                    
+                    <div class="grid md:grid-cols-4 gap-8 mb-12">
+                        <div class="text-center">
+                            <div class="w-24 h-24 bg-witch-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-3xl font-bold text-witch-blue">15B</span>
+                            </div>
+                            <div class="text-sm text-text-gray">2020</div>
+                            <div class="font-semibold">Market Size (USD)</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-24 h-24 bg-sky-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-3xl font-bold text-sky-blue">32B</span>
+                            </div>
+                            <div class="text-sm text-text-gray">2022</div>
+                            <div class="font-semibold">Market Size (USD)</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-24 h-24 bg-tech-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-3xl font-bold text-tech-blue">50B</span>
+                            </div>
+                            <div class="text-sm text-text-gray">2024</div>
+                            <div class="font-semibold">Market Size (USD)</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-24 h-24 bg-gradient-to-r from-witch-blue to-sky-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-3xl font-bold text-witch-blue">89B</span>
+                            </div>
+                            <div class="text-sm text-text-gray">2027</div>
+                            <div class="font-semibold text-witch-blue">Projected</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Growth Arrows -->
+                    <div class="flex justify-center items-center space-x-4 mb-8">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-500">+113%</div>
+                            <div class="text-sm text-text-gray">2020-2022</div>
+                        </div>
+                        <div class="w-8 h-px bg-gradient-to-r from-witch-blue to-sky-blue"></div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-500">+56%</div>
+                            <div class="text-sm text-text-gray">2022-2024</div>
+                        </div>
+                        <div class="w-8 h-px bg-gradient-to-r from-sky-blue to-tech-blue"></div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-witch-blue">+78%</div>
+                            <div class="text-sm text-text-gray">2024-2027</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- The Problem & Solution -->
+            <div class="grid lg:grid-cols-2 gap-12 mb-20">
+                <!-- Problem -->
+                <div class="bg-red-50 border border-red-200 rounded-xl p-8">
+                    <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="#ef4444" stroke-width="2"/>
+                            <line x1="15" y1="9" x2="9" y2="15" stroke="#ef4444" stroke-width="2"/>
+                            <line x1="9" y1="9" x2="15" y2="15" stroke="#ef4444" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-red-800">Traditional Challenges</h3>
+                    <ul class="space-y-3 text-red-700">
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-red-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            Complex global licensing & royalty distribution
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-red-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            Limited monetization channels for creators
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-red-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            Lack of fan engagement infrastructure
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-red-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            Fragmented payment systems across markets
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Solution -->
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-8">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17l-5-5" stroke="#4BB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-800">WITCH Solution</h3>
+                    <ul class="space-y-3 text-blue-700">
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-witch-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            Automated blockchain-based royalty distribution
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-witch-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            NFT & tokenization for new revenue streams
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-witch-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            Metaverse fandom experiences & monetization
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-witch-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            Unified global payment infrastructure
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- WITCH Impact Timeline -->
+            <div class="bg-card-light rounded-2xl p-8 border border-stroke-light">
+                <h3 class="text-2xl font-bold text-center mb-12 font-space">WITCH Company's K-Content Innovation Journey</h3>
+                
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-1/2 transform -translate-x-0.5 w-1 h-full bg-gradient-to-b from-witch-blue to-sky-blue"></div>
+                    
+                    <!-- Timeline Items -->
+                    <div class="space-y-12">
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8 text-right">
+                                <div class="bg-white p-6 rounded-lg border border-stroke-light shadow-sm">
+                                    <div class="text-sm text-witch-blue font-semibold mb-2">2021</div>
+                                    <h4 class="font-bold mb-2">SM Entertainment Partnership</h4>
+                                    <p class="text-text-gray text-sm">First major K-Pop agency collaboration for Web3 fan experiences</p>
+                                </div>
+                            </div>
+                            <div class="w-4 h-4 bg-witch-blue rounded-full border-4 border-white shadow-md z-10"></div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8"></div>
+                            <div class="w-4 h-4 bg-sky-blue rounded-full border-4 border-white shadow-md z-10"></div>
+                            <div class="w-1/2 pl-8">
+                                <div class="bg-white p-6 rounded-lg border border-stroke-light shadow-sm">
+                                    <div class="text-sm text-sky-blue font-semibold mb-2">2022</div>
+                                    <h4 class="font-bold mb-2">Hyundai Metaverse Success</h4>
+                                    <p class="text-text-gray text-sm">100K+ users, 3B+ KRW in NFT sales demonstrating K-Brand + Web3 potential</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8 text-right">
+                                <div class="bg-white p-6 rounded-lg border border-stroke-light shadow-sm">
+                                    <div class="text-sm text-tech-blue font-semibold mb-2">2023</div>
+                                    <h4 class="font-bold mb-2">Short-form Content Revolution</h4>
+                                    <p class="text-text-gray text-sm">Launched Witchbox: KBS & Lotte Entertainment premium content to viral short-form</p>
+                                </div>
+                            </div>
+                            <div class="w-4 h-4 bg-tech-blue rounded-full border-4 border-white shadow-md z-10"></div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8"></div>
+                            <div class="w-4 h-4 bg-gradient-to-r from-witch-blue to-sky-blue rounded-full border-4 border-white shadow-md z-10"></div>
+                            <div class="w-1/2 pl-8">
+                                <div class="bg-gradient-to-r from-witch-blue/5 to-sky-blue/5 p-6 rounded-lg border border-witch-blue/20 shadow-sm">
+                                    <div class="text-sm text-witch-blue font-semibold mb-2">2024</div>
+                                    <h4 class="font-bold mb-2">Global Infrastructure Platform</h4>
+                                    <p class="text-text-gray text-sm">Complete Web3 + fintech infrastructure serving global K-Content industry</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Company Overview -->
-    <section class="bg-primary-dark">
+    <section class="bg-primary-light">
         <div class="section-enterprise">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
@@ -240,7 +437,7 @@
     </section>
 
     <!-- Timeline -->
-    <section class="bg-secondary-dark">
+    <section class="bg-secondary-light">
         <div class="section-enterprise">
             <div class="text-center mb-20">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
@@ -316,7 +513,7 @@
     </section>
 
     <!-- Core Technologies & Patents -->
-    <section class="bg-primary-dark">
+    <section class="bg-primary-light">
         <div class="section-enterprise">
             <div class="text-center mb-20">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
@@ -350,7 +547,7 @@
     </section>
 
     <!-- Enterprise Partners -->
-    <section class="bg-secondary-dark">
+    <section class="bg-secondary-light">
         <div class="section-enterprise">
             <div class="text-center mb-20">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
@@ -395,7 +592,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-primary-dark border-t border-stroke-gray">
+    <footer class="bg-primary-light border-t border-stroke-light">
         <div class="section-enterprise">
             <div class="grid lg:grid-cols-4 gap-8 mb-12">
                 <div class="lg:col-span-2">
@@ -429,7 +626,7 @@
                 </div>
             </div>
             
-            <div class="border-t border-stroke-gray pt-8">
+            <div class="border-t border-stroke-light pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <p class="text-text-gray text-sm">© 2025 WITCH Company. All rights reserved.</p>
                 </div>
