@@ -223,10 +223,10 @@
                     <div class="relative group">
                         <a href="#products" onclick="showPage('home'); setTimeout(() => document.getElementById('products').scrollIntoView({behavior: 'smooth'}), 100)" class="nav-link" data-i18n="nav.products">Products</a>
                         <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-stroke-light rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                            <a href="#witchverse" onclick="showPage('products')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchverse.title">Witchverse</a>
-                            <a href="#witchbox" onclick="showPage('products')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchbox.title">Witchbox</a>
-                            <a href="#wavist" onclick="showPage('products')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.wavist.title">Wavist</a>
-                            <a href="#witchpay" onclick="showPage('products')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchpay.title">WitchPay</a>
+                            <a href="#witchverse" onclick="showPage('witchverse')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchverse.title">Witchverse</a>
+                            <a href="#witchbox" onclick="showPage('witchbox')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchbox.title">Witchbox</a>
+                            <a href="#wavist" onclick="showPage('wavist')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.wavist.title">Wavist</a>
+                            <a href="#witchpay" onclick="showPage('witchpay')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchpay.title">WitchPay</a>
                         </div>
                     </div>
                     <a href="#about" onclick="showPage('about')" class="nav-link" data-i18n="nav.about">About</a>
@@ -320,7 +320,7 @@
                             <p class="text-text-gray text-lg">Metaverse & NFT infrastructure for fandom identity</p>
                         </div>
                     </div>
-                    <a href="#products" onclick="showPage('products')" class="btn-secondary">Learn More</a>
+                    <a href="#witchverse" onclick="showPage('witchverse')" class="btn-secondary">Learn More</a>
                 </div>
 
                 <!-- Witchbox -->
@@ -337,7 +337,7 @@
                             <p class="text-text-gray text-lg">Short-form OTT platform for premium K-content</p>
                         </div>
                     </div>
-                    <a href="#products" onclick="showPage('products')" class="btn-secondary">Learn More</a>
+                    <a href="#witchbox" onclick="showPage('witchbox')" class="btn-secondary">Learn More</a>
                 </div>
 
                 <!-- Wavist -->
@@ -353,7 +353,7 @@
                             <p class="text-text-gray text-lg">RWA tokenisation for entertainment assets</p>
                         </div>
                     </div>
-                    <a href="#products" onclick="showPage('products')" class="btn-secondary">Learn More</a>
+                    <a href="#wavist" onclick="showPage('wavist')" class="btn-secondary">Learn More</a>
                 </div>
 
                 <!-- WitchPay -->
@@ -370,7 +370,7 @@
                             <p class="text-text-gray text-lg">Smart wallet & stablecoin solutions for merchants</p>
                         </div>
                     </div>
-                    <a href="#products" onclick="showPage('products')" class="btn-secondary">Learn More</a>
+                    <a href="#witchpay" onclick="showPage('witchpay')" class="btn-secondary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -1066,7 +1066,176 @@
                     </div>
                     
                     <div class="text-center mt-12">
-                        <a href="news.html" class="btn-primary text-lg px-8 py-4" data-i18n="press.view_all">View All News</a>
+                        <a href="#news" onclick="showPage('news')" class="btn-primary text-lg px-8 py-4" data-i18n="press.view_all">View All News</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Footer -->
+            <footer class="bg-primary-light border-t border-stroke-light">
+                <div class="section-enterprise">
+                    <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                        <div class="lg:col-span-2">
+                            <div class="text-2xl font-bold text-witch-blue mb-4 font-space">
+                                WITCH COMPANY
+                            </div>
+                            <p class="text-text-gray mb-6 text-lg" data-i18n="footer.tagline">
+                                Entertainment Infrastructure. Elevated.
+                            </p>
+                            <p class="text-text-gray mb-8" data-i18n="footer.desc">
+                                Enterprise-grade Web3 infrastructure for global K-Content
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold mb-4 text-lg" data-i18n="footer.company">Company</h4>
+                            <ul class="space-y-3">
+                                <li><a href="#about" onclick="showPage('about')" class="text-text-gray hover:text-witch-blue transition-colors" data-i18n="footer.about">About</a></li>
+                                <li><a href="#press" onclick="showPage('press')" class="text-text-gray hover:text-witch-blue transition-colors" data-i18n="footer.press">Press</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
+                            <ul class="space-y-3">
+                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-stroke-light pt-8">
+                        <div class="flex flex-col md:flex-row justify-between items-center">
+                            <p class="text-text-gray text-sm" data-i18n="footer.copyright">© 2025 WITCH Company. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- News Archive Page -->
+        <div id="page-news" class="page-content" style="display: none;">
+            <section class="bg-primary-light pt-24">
+                <div class="section-enterprise text-center">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight" data-i18n="news.hero.title">
+                        All News
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto" data-i18n="news.hero.subtitle">
+                        Complete archive of WITCH Company news, press releases, and media coverage
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Filter Tabs -->
+            <section class="bg-secondary-light">
+                <div class="section-enterprise">
+                    <div class="flex justify-center mb-12">
+                        <div class="flex space-x-4 bg-white rounded-lg p-2">
+                            <button class="news-filter-btn active px-6 py-2 rounded font-medium transition-all" data-filter="all" data-i18n="news.filter.all">All</button>
+                            <button class="news-filter-btn px-6 py-2 rounded font-medium transition-all" data-filter="partnership" data-i18n="news.filter.partnership">Partnerships</button>
+                            <button class="news-filter-btn px-6 py-2 rounded font-medium transition-all" data-filter="launch" data-i18n="news.filter.launch">Product Launches</button>
+                            <button class="news-filter-btn px-6 py-2 rounded font-medium transition-all" data-filter="investment" data-i18n="news.filter.investment">Investment</button>
+                        </div>
+                    </div>
+                    
+                    <!-- News Grid -->
+                    <div class="space-y-8" id="news-grid">
+                        <!-- 2025 News -->
+                        <div class="news-item bg-white rounded-lg p-6 border border-stroke-light" data-category="launch">
+                            <div class="flex items-start gap-6">
+                                <div class="flex-shrink-0">
+                                    <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center">
+                                        <span class="text-witch-blue font-bold">05.09</span>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center mb-3">
+                                        <span class="px-3 py-1 bg-witch-blue/20 text-witch-blue rounded-full text-xs font-medium mr-3">Launch</span>
+                                        <span class="text-sm text-tech-blue">2025.05.09</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-3 leading-snug">Short-form OTT Witchbox Updates Content and Provides Free Points for Witch Token Holders</h3>
+                                    <p class="text-text-gray mb-4">
+                                        Witchbox platform introduces new content lineup with exclusive benefits for WITCH token holders including free viewing points and premium access.
+                                    </p>
+                                    <a href="https://platum.kr/archives/220981" target="_blank" rel="noopener" class="text-witch-blue hover:text-sky-blue transition-colors font-semibold">
+                                        Read More →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news-item bg-white rounded-lg p-6 border border-stroke-light" data-category="partnership">
+                            <div class="flex items-start gap-6">
+                                <div class="flex-shrink-0">
+                                    <div class="w-16 h-16 bg-sky-blue/20 rounded-lg flex items-center justify-center">
+                                        <span class="text-sky-blue font-bold">11.03</span>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center mb-3">
+                                        <span class="px-3 py-1 bg-sky-blue/20 text-sky-blue rounded-full text-xs font-medium mr-3">Partnership</span>
+                                        <span class="text-sm text-tech-blue">2025.11.03</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-3 leading-snug">WITCH Company & DOD Entertainment Expand NFT-Based Limited Edition Ticketing Business</h3>
+                                    <p class="text-text-gray mb-4">
+                                        WITCH Company partners with DOD Entertainment to expand NFT-based limited edition ticketing business for premium entertainment events.
+                                    </p>
+                                    <a href="https://www.it-b.co.kr/news/articleView.html?idxno=84992" target="_blank" rel="noopener" class="text-witch-blue hover:text-sky-blue transition-colors font-semibold">
+                                        Read More →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news-item bg-white rounded-lg p-6 border border-stroke-light" data-category="partnership">
+                            <div class="flex items-start gap-6">
+                                <div class="flex-shrink-0">
+                                    <div class="w-16 h-16 bg-tech-blue/20 rounded-lg flex items-center justify-center">
+                                        <span class="text-tech-blue font-bold">02.28</span>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center mb-3">
+                                        <span class="px-3 py-1 bg-tech-blue/20 text-tech-blue rounded-full text-xs font-medium mr-3">Partnership</span>
+                                        <span class="text-sm text-tech-blue">2025.02.28</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-3 leading-snug">Witchbox Short-form OTT Platform Establishes Partnership with CJ Entertainment</h3>
+                                    <p class="text-text-gray mb-4">
+                                        Strategic partnership brings premium K-content to Witchbox platform with exclusive content distribution and monetization features.
+                                    </p>
+                                    <a href="https://www.it-b.co.kr/news/articleView.html?idxno=80491" target="_blank" rel="noopener" class="text-witch-blue hover:text-sky-blue transition-colors font-semibold">
+                                        Read More →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news-item bg-white rounded-lg p-6 border border-stroke-light" data-category="launch">
+                            <div class="flex items-start gap-6">
+                                <div class="flex-shrink-0">
+                                    <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center">
+                                        <span class="text-accent-purple font-bold">11.29</span>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center mb-3">
+                                        <span class="px-3 py-1 bg-accent-purple/20 text-accent-purple rounded-full text-xs font-medium mr-3">Launch</span>
+                                        <span class="text-sm text-tech-blue">2024.11.29</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-3 leading-snug">Web3 Startup WITCH Company Soft Launches OTT Platform Enabling Monetization While Viewing Short-form Content</h3>
+                                    <p class="text-text-gray mb-4">
+                                        Revolutionary platform allows viewers to earn rewards while consuming premium short-form entertainment content through blockchain technology.
+                                    </p>
+                                    <a href="https://www.koreaittimes.com/news/articleView.html?idxno=136514" target="_blank" rel="noopener" class="text-witch-blue hover:text-sky-blue transition-colors font-semibold">
+                                        Read More →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Load More Button -->
+                        <div class="text-center mt-12">
+                            <button class="btn-secondary px-8 py-3" data-i18n="news.load_more">Load More News</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1197,6 +1366,15 @@
                 'press.hero.title': 'Press & Media',
                 'press.hero.subtitle': 'Latest news and updates from WITCH Company',
                 'press.view_all': 'View All News',
+                
+                // News page
+                'news.hero.title': 'All News',
+                'news.hero.subtitle': 'Complete archive of WITCH Company news, press releases, and media coverage',
+                'news.filter.all': 'All',
+                'news.filter.partnership': 'Partnerships',
+                'news.filter.launch': 'Product Launches',
+                'news.filter.investment': 'Investment',
+                'news.load_more': 'Load More News',
                 
                 // Product pages
                 'witchverse.hero.title': 'Witchverse',
@@ -1359,6 +1537,15 @@
                 'press.hero.subtitle': 'WITCH Company의 최신 뉴스 및 업데이트',
                 'press.view_all': '모든 뉴스 보기',
                 
+                // News page
+                'news.hero.title': '모든 뉴스',
+                'news.hero.subtitle': 'WITCH Company 뉴스, 보도자료, 미디어 보도의 완전한 아카이브',
+                'news.filter.all': '전체',
+                'news.filter.partnership': '파트너십',
+                'news.filter.launch': '제품 출시',
+                'news.filter.investment': '투자',
+                'news.load_more': '더 많은 뉴스 보기',
+                
                 // Product pages
                 'witchverse.hero.title': '위치버스',
                 'witchverse.hero.subtitle': '팬덤 아이덴티티를 위한 메타버스 & NFT 인프라',
@@ -1492,7 +1679,7 @@
                 showPage('home');
             } else {
                 const pageId = path.substring(1);
-                if (['home', 'products', 'about', 'press', 'witchverse', 'witchbox', 'wavist', 'witchpay'].includes(pageId)) {
+                if (['home', 'products', 'about', 'press', 'news', 'witchverse', 'witchbox', 'wavist', 'witchpay'].includes(pageId)) {
                     showPage(pageId);
                 } else {
                     showPage('home');
