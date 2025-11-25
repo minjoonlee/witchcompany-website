@@ -219,9 +219,10 @@
                 </a>
                 
                 <div class="hidden lg:flex items-center space-x-8">
-                    <a href="#products" class="nav-link" data-i18n="nav.products">Products</a>
-                    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
-                    <a href="press.html" class="nav-link" data-i18n="nav.press">Press</a>
+                    <a href="#" onclick="showPage('home')" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="#products" onclick="showPage('products')" class="nav-link" data-i18n="nav.products">Products</a>
+                    <a href="#about" onclick="showPage('about')" class="nav-link" data-i18n="nav.about">About</a>
+                    <a href="#press" onclick="showPage('press')" class="nav-link" data-i18n="nav.press">Press</a>
                 </div>
                 
                 <div class="flex items-center space-x-4">
@@ -242,7 +243,11 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Background Video -->
+    <!-- Main Content Container -->
+    <div id="app">
+        <!-- Home Page -->
+        <div id="page-home" class="page-content">
+            <!-- Hero Section with Background Video -->
     <section class="relative min-h-screen flex items-center overflow-hidden">
         <!-- Background Video -->
         <video autoplay muted loop playsinline preload="auto" class="absolute inset-0 w-full h-full object-cover z-0">
@@ -652,12 +657,75 @@
             </div>
         </div>
     </footer>
+        </div>
+        
+        <!-- About Page -->
+        <div id="page-about" class="page-content" style="display: none;">
+            <!-- About Hero Section -->
+            <section class="bg-primary-light pt-24">
+                <div class="section-enterprise text-center">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight">
+                        <span data-i18n="about.hero.title1">About</span> <span class="text-witch-blue" data-i18n="about.hero.title2">WITCH Company</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto" data-i18n="about.hero.subtitle">
+                        Building the financial core of global entertainment through K-Content infrastructure
+                    </p>
+                </div>
+            </section>
+
+            <!-- Mission -->
+            <section class="bg-secondary-light">
+                <div class="section-enterprise">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="about.mission.title">
+                            Our Mission
+                        </h2>
+                        <div class="text-2xl lg:text-3xl text-witch-blue font-medium mb-8 font-space" data-i18n="about.mission.subtitle">
+                            Building Global Entertainment Financial Infrastructure Based on K-Content
+                        </div>
+                        <p class="text-xl text-text-gray max-w-4xl mx-auto leading-relaxed" data-i18n="about.mission.description">
+                            WITCH Company is pioneering the intersection of entertainment and finance, creating modular infrastructure that enables global K-Content creators and enterprises to monetize, distribute, and scale their intellectual property through blockchain technology and modern fintech solutions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Products Page -->
+        <div id="page-products" class="page-content" style="display: none;">
+            <section class="bg-primary-light pt-24">
+                <div class="section-enterprise text-center">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight" data-i18n="products.hero.title">
+                        Our Products
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto" data-i18n="products.hero.subtitle">
+                        Comprehensive infrastructure for the future of entertainment
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Press Page -->
+        <div id="page-press" class="page-content" style="display: none;">
+            <section class="bg-primary-light pt-24">
+                <div class="section-enterprise text-center">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight" data-i18n="press.hero.title">
+                        Press & Media
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto" data-i18n="press.hero.subtitle">
+                        Latest news and updates from WITCH Company
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
 
     <script>
         // i18n data
         const i18n = {
             en: {
                 // Navigation
+                'nav.home': 'Home',
                 'nav.products': 'Products',
                 'nav.about': 'About',
                 'nav.press': 'Press',
@@ -717,10 +785,27 @@
                 'footer.press': 'Press',
                 'footer.contact': 'Contact',
                 'footer.inquiries': 'All Inquiries',
-                'footer.copyright': '© 2025 WITCH Company. All rights reserved.'
+                'footer.copyright': '© 2025 WITCH Company. All rights reserved.',
+                
+                // About page
+                'about.hero.title1': 'About',
+                'about.hero.title2': 'WITCH Company',
+                'about.hero.subtitle': 'Building the financial core of global entertainment through K-Content infrastructure',
+                'about.mission.title': 'Our Mission',
+                'about.mission.subtitle': 'Building Global Entertainment Financial Infrastructure Based on K-Content',
+                'about.mission.description': 'WITCH Company is pioneering the intersection of entertainment and finance, creating modular infrastructure that enables global K-Content creators and enterprises to monetize, distribute, and scale their intellectual property through blockchain technology and modern fintech solutions.',
+                
+                // Products page
+                'products.hero.title': 'Our Products',
+                'products.hero.subtitle': 'Comprehensive infrastructure for the future of entertainment',
+                
+                // Press page
+                'press.hero.title': 'Press & Media',
+                'press.hero.subtitle': 'Latest news and updates from WITCH Company'
             },
             ko: {
                 // Navigation
+                'nav.home': '홈',
                 'nav.products': '제품',
                 'nav.about': '회사소개',
                 'nav.press': '보도자료',
@@ -780,9 +865,84 @@
                 'footer.press': '보도자료',
                 'footer.contact': '연락처',
                 'footer.inquiries': '모든 문의',
-                'footer.copyright': '© 2025 WITCH Company. 모든 권리 보유.'
+                'footer.copyright': '© 2025 WITCH Company. 모든 권리 보유.',
+                
+                // About page
+                'about.hero.title1': '회사',
+                'about.hero.title2': 'WITCH Company',
+                'about.hero.subtitle': 'K-콘텐츠 인프라를 통한 글로벌 엔터테인먼트 금융 핵심 구축',
+                'about.mission.title': '우리의 미션',
+                'about.mission.subtitle': 'K-콘텐츠 기반 글로벌 엔터테인먼트 금융 인프라 구축',
+                'about.mission.description': 'WITCH Company는 엔터테인먼트와 금융의 교차점을 개척하며, 글로벌 K-콘텐츠 창작자와 기업들이 블록체인 기술과 현대적인 핀테크 솔루션을 통해 지적 재산을 수익화, 유통, 확장할 수 있는 모듈형 인프라를 구축하고 있습니다.',
+                
+                // Products page
+                'products.hero.title': '우리의 제품',
+                'products.hero.subtitle': '엔터테인먼트 미래를 위한 포괄적 인프라',
+                
+                // Press page
+                'press.hero.title': '보도자료 & 미디어',
+                'press.hero.subtitle': 'WITCH Company의 최신 뉴스 및 업데이트'
             }
         };
+
+        // SPA Routing
+        let currentPage = 'home';
+        
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.style.display = 'none';
+            });
+            
+            // Show selected page
+            const targetPage = document.getElementById('page-' + pageId);
+            if (targetPage) {
+                targetPage.style.display = 'block';
+                currentPage = pageId;
+                
+                // Update URL without reload
+                window.history.pushState({ page: pageId }, '', '/' + (pageId === 'home' ? '' : pageId));
+                
+                // Update navigation active state
+                updateNavigation();
+            }
+        }
+        
+        function updateNavigation() {
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('text-witch-blue');
+            });
+            
+            // Add active class to current page
+            const currentNav = document.querySelector(`[onclick="showPage('${currentPage}')"]`);
+            if (currentNav) {
+                currentNav.classList.add('text-witch-blue');
+            }
+        }
+        
+        // Handle browser back/forward
+        window.addEventListener('popstate', function(event) {
+            if (event.state && event.state.page) {
+                showPage(event.state.page);
+            } else {
+                showPage('home');
+            }
+        });
+        
+        // Initialize page from URL
+        function initializeFromURL() {
+            const path = window.location.pathname;
+            if (path === '/' || path === '') {
+                showPage('home');
+            } else {
+                const pageId = path.substring(1);
+                if (['home', 'products', 'about', 'press'].includes(pageId)) {
+                    showPage(pageId);
+                } else {
+                    showPage('home');
+                }
+            }
+        }
 
         // Language management
         let currentLang = localStorage.getItem('language') || 'en';
@@ -819,6 +979,7 @@
         
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', function() {
+            initializeFromURL();
             setLanguage(currentLang);
             
             // Smooth scroll for navigation links
