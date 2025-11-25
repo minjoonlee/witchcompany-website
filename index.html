@@ -223,10 +223,10 @@
                     <div class="relative group">
                         <a href="#products" onclick="showPage('home'); setTimeout(() => document.getElementById('products').scrollIntoView({behavior: 'smooth'}), 100)" class="nav-link" data-i18n="nav.products">Products</a>
                         <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-stroke-light rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                            <a href="witchverse.html" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchverse.title">Witchverse</a>
-                            <a href="witchbox.html" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchbox.title">Witchbox</a>
-                            <a href="wavist.html" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.wavist.title">Wavist</a>
-                            <a href="witchpay.html" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchpay.title">WitchPay</a>
+                            <a href="#witchverse" onclick="showPage('products')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchverse.title">Witchverse</a>
+                            <a href="#witchbox" onclick="showPage('products')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchbox.title">Witchbox</a>
+                            <a href="#wavist" onclick="showPage('products')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.wavist.title">Wavist</a>
+                            <a href="#witchpay" onclick="showPage('products')" class="block px-4 py-2 text-sm text-text-gray hover:text-witch-blue hover:bg-secondary-light" data-i18n="products.witchpay.title">WitchPay</a>
                         </div>
                     </div>
                     <a href="#about" onclick="showPage('about')" class="nav-link" data-i18n="nav.about">About</a>
@@ -280,7 +280,7 @@
             
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="#technology" class="btn-primary text-base px-6 py-3" data-i18n="hero.explore">Explore Technology</a>
-                <a href="contact.html" class="btn-secondary text-base px-6 py-3 bg-white text-witch-blue hover:bg-gray-100" data-i18n="hero.contact">Contact Team</a>
+                <a href="#contact" onclick="showPage('about')" class="btn-secondary text-base px-6 py-3 bg-white text-witch-blue hover:bg-gray-100" data-i18n="hero.contact">Contact Team</a>
             </div>
         </div>
         
@@ -320,7 +320,7 @@
                             <p class="text-text-gray text-lg">Metaverse & NFT infrastructure for fandom identity</p>
                         </div>
                     </div>
-                    <a href="witchverse.html" class="btn-secondary">Learn More</a>
+                    <a href="#products" onclick="showPage('products')" class="btn-secondary">Learn More</a>
                 </div>
 
                 <!-- Witchbox -->
@@ -337,7 +337,7 @@
                             <p class="text-text-gray text-lg">Short-form OTT platform for premium K-content</p>
                         </div>
                     </div>
-                    <a href="witchbox.html" class="btn-secondary">Learn More</a>
+                    <a href="#products" onclick="showPage('products')" class="btn-secondary">Learn More</a>
                 </div>
 
                 <!-- Wavist -->
@@ -353,7 +353,7 @@
                             <p class="text-text-gray text-lg">RWA tokenisation for entertainment assets</p>
                         </div>
                     </div>
-                    <a href="wavist.html" class="btn-secondary">Learn More</a>
+                    <a href="#products" onclick="showPage('products')" class="btn-secondary">Learn More</a>
                 </div>
 
                 <!-- WitchPay -->
@@ -370,7 +370,7 @@
                             <p class="text-text-gray text-lg">Smart wallet & stablecoin solutions for merchants</p>
                         </div>
                     </div>
-                    <a href="witchpay.html" class="btn-secondary">Learn More</a>
+                    <a href="#products" onclick="showPage('products')" class="btn-secondary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -645,8 +645,8 @@
                 <div>
                     <h4 class="font-bold mb-4 text-lg">Company</h4>
                     <ul class="space-y-3">
-                        <li><a href="about.html" class="text-text-gray hover:text-white transition-colors">About</a></li>
-                        <li><a href="press.html" class="text-text-gray hover:text-white transition-colors">Press</a></li>
+                        <li><a href="#about" onclick="showPage('about')" class="text-text-gray hover:text-white transition-colors">About</a></li>
+                        <li><a href="#press" onclick="showPage('press')" class="text-text-gray hover:text-white transition-colors">Press</a></li>
                     </ul>
                 </div>
                 
