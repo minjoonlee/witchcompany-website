@@ -3203,6 +3203,36 @@
             }
         }
         
+        // Handle initial page load and direct URL access
+        function initializeRouting() {
+            const path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
+            const hash = window.location.hash.replace('#', '');
+            
+            let pageId = 'home';
+            
+            // Check hash first (for hash-based routing)
+            if (hash && ['home', 'products', 'about', 'press', 'news', 'witchverse', 'witchbox', 'wavist', 'witchpay'].includes(hash)) {
+                pageId = hash;
+            }
+            // Then check path (for direct URL access)
+            else if (path && ['products', 'about', 'press', 'news', 'witchverse', 'witchbox', 'wavist', 'witchpay'].includes(path)) {
+                pageId = path;
+            }
+            
+            // Show the appropriate page
+            showPage(pageId);
+        }
+        
+        // Handle browser back/forward navigation
+        window.addEventListener('popstate', function(event) {
+            if (event.state && event.state.page) {
+                showPage(event.state.page);
+            } else {
+                initializeRouting();
+            }
+        });
+        }
+        
         function updateNavigation() {
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('text-witch-blue');
@@ -3274,6 +3304,7 @@
         
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', function() {
+            initializeRouting();
             initializeFromURL();
             setLanguage(currentLang);
             

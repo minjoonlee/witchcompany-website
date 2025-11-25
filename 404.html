@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WITCH Company - Page Not Found</title>
+    <meta name="description" content="Page not found - redirecting to WITCH Company homepage">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="Pavicon.svg?v=2">
+    
+    <!-- Immediate redirect to home with hash-based routing -->
+    <script>
+        // Get the current path and convert to hash-based routing
+        const path = window.location.pathname;
+        let redirectPath = '#';
+        
+        // Convert common paths to hash routing
+        if (path.includes('/press')) {
+            redirectPath = '#press';
+        } else if (path.includes('/about')) {
+            redirectPath = '#about';
+        } else if (path.includes('/news')) {
+            redirectPath = '#news';
+        } else if (path.includes('/products')) {
+            redirectPath = '#products';
+        } else if (path.includes('/witchverse')) {
+            redirectPath = '#witchverse';
+        } else if (path.includes('/witchbox')) {
+            redirectPath = '#witchbox';
+        } else if (path.includes('/wavist')) {
+            redirectPath = '#wavist';
+        } else if (path.includes('/witchpay')) {
+            redirectPath = '#witchpay';
+        }
+        
+        // Redirect to main site with appropriate hash
+        window.location.replace('/' + redirectPath);
+    </script>
+</head>
+<body>
+    <div style="text-align: center; padding: 50px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+        <h1>Redirecting...</h1>
+        <p>If you are not automatically redirected, <a href="/">click here</a>.</p>
+    </div>
+</body>
+</html>
