@@ -240,13 +240,31 @@
                         <button id="lang-ko" onclick="setLanguage('ko')" class="px-3 py-1 text-sm bg-stroke-light text-text-gray rounded hover:bg-witch-blue hover:text-white transition-colors font-medium">KO</button>
                     </div>
                     
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-toggle" class="lg:hidden text-white p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
-                
-                <button class="lg:hidden text-text-gray">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-secondary-dark border-t border-stroke-light mt-4">
+                <div class="px-4 py-2 space-y-2">
+                    <a href="#" onclick="showPage('home')" class="block py-2 text-white hover:text-witch-blue transition-colors" data-i18n="nav.home">Home</a>
+                    <div class="py-2">
+                        <span class="text-text-gray font-medium mb-2 block" data-i18n="nav.products">Products</span>
+                        <div class="pl-4 space-y-1">
+                            <a href="#witchverse" onclick="showPage('witchverse')" class="block py-1 text-sm text-text-gray hover:text-witch-blue transition-colors" data-i18n="products.witchverse.title">Witchverse</a>
+                            <a href="#witchbox" onclick="showPage('witchbox')" class="block py-1 text-sm text-text-gray hover:text-witch-blue transition-colors" data-i18n="products.witchbox.title">Witchbox</a>
+                            <a href="#wavist" onclick="showPage('wavist')" class="block py-1 text-sm text-text-gray hover:text-witch-blue transition-colors" data-i18n="products.wavist.title">Wavist</a>
+                            <a href="#witchpay" onclick="showPage('witchpay')" class="block py-1 text-sm text-text-gray hover:text-witch-blue transition-colors" data-i18n="products.witchpay.title">WitchPay</a>
+                        </div>
+                    </div>
+                    <a href="#about" onclick="showPage('about')" class="block py-2 text-white hover:text-witch-blue transition-colors" data-i18n="nav.about">About</a>
+                    <a href="#press" onclick="showPage('press')" class="block py-2 text-white hover:text-witch-blue transition-colors" data-i18n="nav.press">Press</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -268,10 +286,10 @@
         <div class="absolute inset-0 bg-black bg-opacity-50 z-1"></div>
         
         <!-- Hero Content -->
-        <div class="absolute bottom-24 left-8 lg:left-16 z-10 max-w-4xl">
-            <h1 class="text-4xl lg:text-7xl font-bold mb-6 font-space tracking-tight text-white leading-tight">
+        <div class="absolute bottom-16 md:bottom-24 left-4 md:left-8 lg:left-16 z-10 max-w-4xl pr-4 md:pr-0">
+            <h1 class="text-3xl md:text-4xl lg:text-7xl font-bold mb-6 font-space tracking-tight text-white leading-tight">
                 <span class="text-witch-blue" data-i18n="hero.title1">Infrastructure for the</span><br>
-                <span class="whitespace-nowrap" data-i18n="hero.title2">Global K-content Economy</span>
+                <span data-i18n="hero.title2">Global K-content Economy</span>
             </h1>
             
             <p class="text-lg lg:text-xl mb-8 text-gray-200 font-light" data-i18n="hero.subtitle">
@@ -298,7 +316,7 @@
     <section id="products" class="bg-secondary-light">
         <div class="section-enterprise">
             <div class="text-center mb-20">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
                     Core Products
                 </h2>
                 <p class="text-xl text-text-gray max-w-3xl mx-auto">
@@ -380,7 +398,7 @@
     <section id="technology" class="bg-primary-light">
         <div class="section-enterprise">
             <div class="text-center mb-20">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
                     Core Technologies
                 </h2>
                 <p class="text-xl text-text-gray max-w-3xl mx-auto">
@@ -460,7 +478,7 @@
     <section id="case-studies" class="bg-secondary-light">
         <div class="section-enterprise">
             <div class="text-center mb-20">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
                     Case Studies
                 </h2>
                 <p class="text-xl text-text-gray max-w-3xl mx-auto">
@@ -527,7 +545,7 @@
     <!-- Trusted Numbers -->
     <section class="bg-primary-light">
         <div class="section-enterprise text-center">
-            <h2 class="text-4xl lg:text-5xl font-bold mb-20 font-space">
+            <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-20 font-space">
                 Trusted Numbers
             </h2>
             
@@ -559,7 +577,7 @@
     <section class="bg-secondary-light">
         <div class="section-enterprise">
             <div class="text-center mb-20">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
                     Partners
                 </h2>
                 <p class="text-xl text-text-gray max-w-3xl mx-auto">
@@ -672,7 +690,7 @@
             <!-- About Hero Section -->
             <section class="bg-primary-light pt-24">
                 <div class="section-enterprise text-center">
-                    <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight">
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight">
                         <span data-i18n="about.hero.title1">About</span> <span class="text-witch-blue" data-i18n="about.hero.title2">WITCH Company</span>
                     </h1>
                     <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto" data-i18n="about.hero.subtitle">
@@ -685,7 +703,7 @@
             <section class="bg-secondary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-16">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="about.mission.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="about.mission.title">
                             Our Mission
                         </h2>
                         <div class="text-2xl lg:text-3xl text-witch-blue font-medium mb-8 font-space" data-i18n="about.mission.subtitle">
@@ -702,7 +720,7 @@
             <section class="bg-primary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
                             From K-Pop Global Stage to <span class="text-witch-blue">Blockchain Infrastructure</span>
                         </h2>
                         <p class="text-xl text-text-gray max-w-4xl mx-auto">
@@ -796,7 +814,7 @@
             <section class="bg-secondary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
                             Company Timeline
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto">
@@ -857,7 +875,7 @@
             <section class="bg-primary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
                             Core Technologies
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto">
@@ -891,7 +909,7 @@
             <section class="bg-secondary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
                             Enterprise Partners
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto">
@@ -957,7 +975,7 @@
                         <div>
                             <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
                             <ul class="space-y-3">
-                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
+                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-white font-medium">official@witchcompany.io</span></li>
                             </ul>
                         </div>
                     </div>
@@ -976,7 +994,7 @@
         <div id="page-press" class="page-content" style="display: none;">
             <section class="bg-primary-light pt-24">
                 <div class="section-enterprise text-center">
-                    <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight" data-i18n="press.hero.title">
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight" data-i18n="press.hero.title">
                         Press & Media
                     </h1>
                     <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto" data-i18n="press.hero.subtitle">
@@ -989,7 +1007,7 @@
             <section class="bg-secondary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-16">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="press.latest.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="press.latest.title">
                             주요 뉴스
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="press.latest.subtitle">
@@ -1164,7 +1182,7 @@
                         <div>
                             <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
                             <ul class="space-y-3">
-                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
+                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-white font-medium">official@witchcompany.io</span></li>
                             </ul>
                         </div>
                     </div>
@@ -1182,7 +1200,7 @@
         <div id="page-news" class="page-content" style="display: none;">
             <section class="bg-primary-light pt-24">
                 <div class="section-enterprise text-center">
-                    <h1 class="text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight" data-i18n="news.hero.title">
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-8 font-space tracking-tight" data-i18n="news.hero.title">
                         All News
                     </h1>
                     <p class="text-xl lg:text-2xl text-text-gray max-w-4xl mx-auto" data-i18n="news.hero.subtitle">
@@ -1584,7 +1602,7 @@
                         <div>
                             <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
                             <ul class="space-y-3">
-                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
+                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-white font-medium">official@witchcompany.io</span></li>
                             </ul>
                         </div>
                     </div>
@@ -1610,7 +1628,7 @@
                             </svg>
                         </div>
                         
-                        <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
+                        <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
                             <span class="text-witch-blue" data-i18n="witchverse.hero.title">Witchverse</span>
                         </h1>
                         
@@ -1633,7 +1651,7 @@
             <section class="bg-secondary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchverse.platform.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchverse.platform.title">
                             Platform Infrastructure
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchverse.platform.subtitle">
@@ -1722,7 +1740,7 @@
             <section class="bg-primary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchverse.success.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchverse.success.title">
                             Success Stories
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchverse.success.subtitle">
@@ -1783,7 +1801,7 @@
                         <div>
                             <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
                             <ul class="space-y-3">
-                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
+                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-white font-medium">official@witchcompany.io</span></li>
                             </ul>
                         </div>
                     </div>
@@ -1810,7 +1828,7 @@
                             </svg>
                         </div>
                         
-                        <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
+                        <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
                             <span class="text-witch-blue" data-i18n="witchbox.hero.title">Witchbox</span>
                         </h1>
                         
@@ -1833,7 +1851,7 @@
             <section class="bg-secondary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchbox.pipeline.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchbox.pipeline.title">
                             Content Processing Pipeline
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchbox.pipeline.subtitle">
@@ -1904,7 +1922,7 @@
             <section class="bg-primary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchbox.features.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchbox.features.title">
                             Platform Features
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchbox.features.subtitle">
@@ -1971,7 +1989,7 @@
             <section class="bg-secondary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchbox.success.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchbox.success.title">
                             Content Partnerships
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchbox.success.subtitle">
@@ -2028,7 +2046,7 @@
                         <div>
                             <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
                             <ul class="space-y-3">
-                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
+                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-white font-medium">official@witchcompany.io</span></li>
                             </ul>
                         </div>
                     </div>
@@ -2054,7 +2072,7 @@
                             </svg>
                         </div>
                         
-                        <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
+                        <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
                             <span class="text-witch-blue" data-i18n="wavist.hero.title">Wavist</span>
                         </h1>
                         
@@ -2077,7 +2095,7 @@
             <section class="bg-secondary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="wavist.tokens.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="wavist.tokens.title">
                             Token Products
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="wavist.tokens.subtitle">
@@ -2190,7 +2208,7 @@
             <section class="bg-primary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="wavist.partners.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="wavist.partners.title">
                             Strategic Partners
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="wavist.partners.subtitle">
@@ -2253,7 +2271,7 @@
                         <div>
                             <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
                             <ul class="space-y-3">
-                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
+                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-white font-medium">official@witchcompany.io</span></li>
                             </ul>
                         </div>
                     </div>
@@ -2280,7 +2298,7 @@
                             </svg>
                         </div>
                         
-                        <h1 class="text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
+                        <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold mb-8 font-space tracking-tight">
                             <span class="text-witch-blue" data-i18n="witchpay.hero.title">WitchPay</span>
                         </h1>
                         
@@ -2303,7 +2321,7 @@
             <section class="bg-secondary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchpay.solutions.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchpay.solutions.title">
                             Payment Solutions
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchpay.solutions.subtitle">
@@ -2469,7 +2487,7 @@
             <section class="bg-primary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchpay.usecases.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchpay.usecases.title">
                             Use Cases
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchpay.usecases.subtitle">
@@ -2517,7 +2535,7 @@
             <section class="bg-secondary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchpay.security.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchpay.security.title">
                             Security & Compliance
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchpay.security.subtitle">
@@ -2572,7 +2590,7 @@
             <section class="bg-primary-light">
                 <div class="section-enterprise">
                     <div class="text-center mb-20">
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchpay.partners.title">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchpay.partners.title">
                             Partnership Ecosystem
                         </h2>
                         <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchpay.partners.subtitle">
@@ -2668,7 +2686,7 @@
                         <div>
                             <h4 class="font-bold mb-4 text-lg" data-i18n="footer.contact">Contact</h4>
                             <ul class="space-y-3">
-                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-text-dark font-medium">official@witchcompany.io</span></li>
+                                <li class="text-text-gray"><span data-i18n="footer.inquiries">All Inquiries</span><br/><span class="text-white font-medium">official@witchcompany.io</span></li>
                             </ul>
                         </div>
                     </div>
@@ -3303,6 +3321,23 @@
         document.addEventListener('DOMContentLoaded', function() {
             initializeRouting();
             setLanguage(currentLang);
+            
+            // Mobile menu toggle
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuToggle && mobileMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                
+                // Close mobile menu when clicking on a link
+                mobileMenu.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            }
             
             // Smooth scroll for in-page navigation links only (not SPA page links)
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
