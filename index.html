@@ -251,19 +251,10 @@
             
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden lg:hidden bg-secondary-dark border-t border-stroke-light mt-4">
-                <div class="px-4 py-2 space-y-2">
-                    <a href="#" onclick="showPage('home')" class="block py-2 text-white hover:text-witch-blue transition-colors" data-i18n="nav.home">Home</a>
-                    <div class="py-2">
-                        <span class="text-text-gray font-medium mb-2 block" data-i18n="nav.products">Products</span>
-                        <div class="pl-4 space-y-1">
-                            <a href="#witchverse" onclick="showPage('witchverse')" class="block py-1 text-sm text-text-gray hover:text-witch-blue transition-colors" data-i18n="products.witchverse.title">Witchverse</a>
-                            <a href="#witchbox" onclick="showPage('witchbox')" class="block py-1 text-sm text-text-gray hover:text-witch-blue transition-colors" data-i18n="products.witchbox.title">Witchbox</a>
-                            <a href="#wavist" onclick="showPage('wavist')" class="block py-1 text-sm text-text-gray hover:text-witch-blue transition-colors" data-i18n="products.wavist.title">Wavist</a>
-                            <a href="#witchpay" onclick="showPage('witchpay')" class="block py-1 text-sm text-text-gray hover:text-witch-blue transition-colors" data-i18n="products.witchpay.title">WitchPay</a>
-                        </div>
-                    </div>
-                    <a href="#about" onclick="showPage('about')" class="block py-2 text-white hover:text-witch-blue transition-colors" data-i18n="nav.about">About</a>
-                    <a href="#press" onclick="showPage('press')" class="block py-2 text-white hover:text-witch-blue transition-colors" data-i18n="nav.press">Press</a>
+                <div class="px-4 py-4 space-y-4">
+                    <a href="#products" onclick="showPage('home'); setTimeout(() => document.getElementById('products').scrollIntoView({behavior: 'smooth'}), 100)" class="block py-3 text-white hover:text-witch-blue transition-colors font-medium" data-i18n="nav.products">Products</a>
+                    <a href="#about" onclick="showPage('about')" class="block py-3 text-white hover:text-witch-blue transition-colors font-medium" data-i18n="nav.about">About</a>
+                    <a href="#press" onclick="showPage('press')" class="block py-3 text-white hover:text-witch-blue transition-colors font-medium" data-i18n="nav.press">Press</a>
                 </div>
             </div>
         </div>
