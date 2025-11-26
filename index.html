@@ -2396,145 +2396,118 @@
                         </p>
                     </div>
                     
-                    <div class="grid lg:grid-cols-2 gap-8 mb-16">
-                        <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm">
-                            <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mb-6">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M21 12V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V16" stroke="#4BB8FF" stroke-width="2"/>
-                                    <circle cx="16" cy="12" r="3" stroke="#4BB8FF" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <h3 class="text-2xl font-bold mb-4" data-i18n="witchpay.features.wallet.title">Smart Wallet System</h3>
-                            <p class="text-text-gray mb-6" data-i18n="witchpay.features.wallet.description">
-                                Account abstraction technology enabling seamless Web3 experiences without requiring users to manage private keys or understand blockchain complexity.
-                            </p>
-                            <div class="space-y-3 text-sm text-text-gray">
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.wallet.social">Social login integration</span>
+                    <!-- Carousel Container -->
+                    <div class="relative mb-16">
+                        <div class="overflow-hidden">
+                            <div id="payment-features-carousel" class="flex transition-transform duration-500 ease-in-out">
+                                <!-- Smart Wallet System -->
+                                <div class="min-w-full">
+                                    <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm text-center max-w-md mx-auto">
+                                        <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+                                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 12V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V16" stroke="#4BB8FF" stroke-width="2"/>
+                                                <circle cx="16" cy="12" r="3" stroke="#4BB8FF" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-2xl font-bold mb-4" data-i18n="witchpay.carousel.wallet.title">스마트 지갑 시스템</h3>
+                                        <p class="text-text-gray" data-i18n="witchpay.carousel.wallet.description">
+                                            사용자 친화적인 블록체인 상호작용을 위한 계정 추상화
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.wallet.gasless">Gasless transactions for users</span>
+                                
+                                <!-- QR Payment System -->
+                                <div class="min-w-full">
+                                    <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm text-center max-w-md mx-auto">
+                                        <div class="w-16 h-16 bg-tech-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+                                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="3" y="3" width="8" height="8" rx="1" stroke="#1A7CEB" stroke-width="2"/>
+                                                <rect x="13" y="3" width="8" height="8" rx="1" stroke="#1A7CEB" stroke-width="2"/>
+                                                <rect x="3" y="13" width="8" height="8" rx="1" stroke="#1A7CEB" stroke-width="2"/>
+                                                <rect x="13" y="13" width="8" height="8" rx="1" stroke="#1A7CEB" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-2xl font-bold mb-4" data-i18n="witchpay.carousel.qr.title">QR 결제 시스템</h3>
+                                        <p class="text-text-gray" data-i18n="witchpay.carousel.qr.description">
+                                            모바일 우선 결제 경험을 위한 동적 QR 코드
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.wallet.security">Multi-signature security</span>
+                                
+                                <!-- Merchant Settlement -->
+                                <div class="min-w-full">
+                                    <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm text-center max-w-md mx-auto">
+                                        <div class="w-16 h-16 bg-sky-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+                                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" stroke="#5EC8FF" stroke-width="2"/>
+                                                <rect x="8" y="2" width="8" height="4" rx="1" stroke="#5EC8FF" stroke-width="2"/>
+                                                <path d="M12 11V17M9 14L12 11L15 14" stroke="#5EC8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-2xl font-bold mb-4" data-i18n="witchpay.carousel.settlement.title">가맹점 정산 시스템</h3>
+                                        <p class="text-text-gray" data-i18n="witchpay.carousel.settlement.description">
+                                            안전하고 효율적인 가맹점 정산 시스템
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.wallet.recovery">Recovery mechanisms</span>
+                                
+                                <!-- Stablecoin Payments -->
+                                <div class="min-w-full">
+                                    <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm text-center max-w-md mx-auto">
+                                        <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+                                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="10" stroke="#7B4CFF" stroke-width="2"/>
+                                                <text x="12" y="16" text-anchor="middle" fill="#7B4CFF" font-size="6" font-weight="bold">KRW</text>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-2xl font-bold mb-4" data-i18n="witchpay.carousel.stablecoin.title">스테이블코인 결제</h3>
+                                        <p class="text-text-gray" data-i18n="witchpay.carousel.stablecoin.description">
+                                            엔터프라이즈급 보안을 갖춘 멀티 스테이블코인 처리
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm">
-                            <div class="w-16 h-16 bg-tech-blue/20 rounded-lg flex items-center justify-center mb-6">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="3" y="3" width="8" height="8" rx="1" stroke="#1A7CEB" stroke-width="2"/>
-                                    <rect x="13" y="3" width="8" height="8" rx="1" stroke="#1A7CEB" stroke-width="2"/>
-                                    <rect x="3" y="13" width="8" height="8" rx="1" stroke="#1A7CEB" stroke-width="2"/>
-                                    <rect x="13" y="13" width="8" height="8" rx="1" stroke="#1A7CEB" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <h3 class="text-2xl font-bold mb-4" data-i18n="witchpay.features.qr.title">QR Pay Integration</h3>
-                            <p class="text-text-gray mb-6" data-i18n="witchpay.features.qr.description">
-                                Mobile-first payment solution with QR code generation, offline payment support, and integration with popular Korean payment platforms.
-                            </p>
-                            <div class="space-y-3 text-sm text-text-gray">
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.qr.dynamic">Dynamic QR generation</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.qr.offline">Offline payment support</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.qr.integration">KakaoPay & NaverPay integration</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-tech-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.qr.receipt">Receipt generation</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm">
-                            <div class="w-16 h-16 bg-sky-blue/20 rounded-lg flex items-center justify-center mb-6">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" stroke="#5EC8FF" stroke-width="2"/>
-                                    <rect x="8" y="2" width="8" height="4" rx="1" stroke="#5EC8FF" stroke-width="2"/>
-                                    <path d="M12 11V17M9 14L12 11L15 14" stroke="#5EC8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <h3 class="text-2xl font-bold mb-4" data-i18n="witchpay.features.settlement.title">Merchant Settlement</h3>
-                            <p class="text-text-gray mb-6" data-i18n="witchpay.features.settlement.description">
-                                Real-time settlement system with automatic currency conversion, fraud protection, and comprehensive reporting for entertainment merchants.
-                            </p>
-                            <div class="space-y-3 text-sm text-text-gray">
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.settlement.instant">Instant KRW settlement</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.settlement.automated">Automated reconciliation</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.settlement.currency">Multi-currency support</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-sky-blue rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.settlement.fraud">Fraud detection & prevention</span>
+                                
+                                <!-- Telegram Mini App -->
+                                <div class="min-w-full">
+                                    <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm text-center max-w-md mx-auto">
+                                        <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+                                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#4BB8FF" stroke-width="2" stroke-linejoin="round"/>
+                                                <path d="M2 17L12 22L22 17" stroke="#4BB8FF" stroke-width="2" stroke-linejoin="round"/>
+                                                <path d="M2 12L12 17L22 12" stroke="#4BB8FF" stroke-width="2" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-2xl font-bold mb-4" data-i18n="witchpay.carousel.telegram.title">텔레그램 미니앱</h3>
+                                        <p class="text-text-gray" data-i18n="witchpay.carousel.telegram.description">
+                                            텔레그램 생태계 내에서의 원활한 결제
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm">
-                            <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center mb-6">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="12" cy="12" r="10" stroke="#7B4CFF" stroke-width="2"/>
-                                    <text x="12" y="16" text-anchor="middle" fill="#7B4CFF" font-size="8" font-weight="bold">KRW</text>
-                                </svg>
-                            </div>
-                            <h3 class="text-2xl font-bold mb-4" data-i18n="witchpay.features.stablecoin.title">Stablecoin Payments</h3>
-                            <p class="text-text-gray mb-6" data-i18n="witchpay.features.stablecoin.description">
-                                Multi-stablecoin payment processing with instant settlement, automatic conversion, and enterprise-grade security for global commerce.
-                            </p>
-                            <div class="space-y-3 text-sm text-text-gray">
-                                <div class="flex items-center">
-                                    <div class="w-2 h-2 bg-accent-purple rounded-full mr-3"></div>
-                                    <span data-i18n="witchpay.features.stablecoin.multi">Multi-stablecoin support (USDC, USDT, BUSD)</span>
-                                </div>
-                            </div>
+                        
+                        <!-- Navigation Arrows -->
+                        <button id="payment-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white border border-stroke-light rounded-full flex items-center justify-center shadow-sm hover:bg-gray-50 transition-colors">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="#8B8D98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button id="payment-next" class="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white border border-stroke-light rounded-full flex items-center justify-center shadow-sm hover:bg-gray-50 transition-colors">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="#8B8D98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        
+                        <!-- Indicators -->
+                        <div class="flex justify-center mt-8 space-x-3">
+                            <button class="payment-indicator w-3 h-3 rounded-full bg-witch-blue transition-colors" data-slide="0"></button>
+                            <button class="payment-indicator w-3 h-3 rounded-full bg-gray-300 transition-colors" data-slide="1"></button>
+                            <button class="payment-indicator w-3 h-3 rounded-full bg-gray-300 transition-colors" data-slide="2"></button>
+                            <button class="payment-indicator w-3 h-3 rounded-full bg-gray-300 transition-colors" data-slide="3"></button>
+                            <button class="payment-indicator w-3 h-3 rounded-full bg-gray-300 transition-colors" data-slide="4"></button>
                         </div>
                     </div>
 
-                    <!-- Performance Metrics -->
-                    <div class="bg-white rounded-lg p-8 border border-stroke-light">
-                        <h3 class="text-2xl font-bold text-center mb-8 font-space" data-i18n="witchpay.performance.title">Performance Metrics</h3>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-witch-blue mb-2">99.9%</div>
-                                <div class="text-text-gray" data-i18n="witchpay.performance.success">Transaction Success Rate</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-tech-blue mb-2">&lt; 3s</div>
-                                <div class="text-text-gray" data-i18n="witchpay.performance.settlement">Average Settlement Time</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-sky-blue mb-2">&lt; 1</div>
-                                <div class="text-text-gray" data-i18n="witchpay.performance.integration">Day Integration</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-accent-purple mb-2">99.9%</div>
-                                <div class="text-text-gray" data-i18n="witchpay.performance.uptime">Uptime SLA</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -3117,6 +3090,18 @@
                 'witchpay.integration.endpoints.settlements': 'Initiate merchant settlements with automatic currency conversion.',
                 'witchpay.integration.endpoints.analytics': 'Access payment analytics, conversion rates, and performance metrics.',
                 
+                // Payment Carousel
+                'witchpay.carousel.wallet.title': 'Smart Wallet System',
+                'witchpay.carousel.wallet.description': 'Account abstraction technology for seamless Web3 experiences',
+                'witchpay.carousel.qr.title': 'QR Payment System',
+                'witchpay.carousel.qr.description': 'Mobile-first payment solution with dynamic QR generation',
+                'witchpay.carousel.settlement.title': 'Merchant Settlement',
+                'witchpay.carousel.settlement.description': 'Secure and efficient merchant settlement system',
+                'witchpay.carousel.stablecoin.title': 'Stablecoin Payments',
+                'witchpay.carousel.stablecoin.description': 'Multi-stablecoin processing with enterprise-grade security',
+                'witchpay.carousel.telegram.title': 'Telegram Mini App',
+                'witchpay.carousel.telegram.description': 'Seamless payments within Telegram ecosystem',
+                
                 // Updated stablecoin section
                 'witchpay.features.stablecoin.title': 'Stablecoin Payments',
                 'witchpay.features.stablecoin.description': 'Multi-stablecoin payment processing with enterprise-grade security for digital commerce.',
@@ -3404,6 +3389,18 @@
                 'witchpay.integration.endpoints.settlements': '자동 통화 변환으로 가맹점 정산 시작',
                 'witchpay.integration.endpoints.analytics': '결제 분석, 전환율 및 성능 지표 액세스',
                 
+                // 결제 캐러셀
+                'witchpay.carousel.wallet.title': '스마트 지갑 시스템',
+                'witchpay.carousel.wallet.description': '사용자 친화적인 블록체인 상호작용을 위한 계정 추상화',
+                'witchpay.carousel.qr.title': 'QR 결제 시스템',
+                'witchpay.carousel.qr.description': '모바일 우선 결제 경험을 위한 동적 QR 코드',
+                'witchpay.carousel.settlement.title': '가맹점 정산 시스템',
+                'witchpay.carousel.settlement.description': '안전하고 효율적인 가맹점 정산 시스템',
+                'witchpay.carousel.stablecoin.title': '스테이블코인 결제',
+                'witchpay.carousel.stablecoin.description': '엔터프라이즈급 보안을 갖춘 멀티 스테이블코인 처리',
+                'witchpay.carousel.telegram.title': '텔레그램 미니앱',
+                'witchpay.carousel.telegram.description': '텔레그램 생태계 내에서의 원활한 결제',
+                
                 // WitchPay 보안 & 파트너
                 'witchpay.security.title': '보안 및 규정 준수',
                 'witchpay.security.subtitle': '글로벌 운영을 위한 엔터프라이즈급 보안 인프라와 규제 준수',
@@ -3588,6 +3585,45 @@
             updateCarousel();
         }
 
+        // Payment Features Carousel
+        let paymentCurrentSlide = 0;
+        const paymentTotalSlides = 5;
+        
+        function updatePaymentCarousel() {
+            const carousel = document.getElementById('payment-features-carousel');
+            const indicators = document.querySelectorAll('.payment-indicator');
+            
+            if (carousel) {
+                carousel.style.transform = `translateX(-${paymentCurrentSlide * 100}%)`;
+            }
+            
+            // Update indicators
+            indicators.forEach((indicator, index) => {
+                if (index === paymentCurrentSlide) {
+                    indicator.classList.add('bg-witch-blue');
+                    indicator.classList.remove('bg-gray-300');
+                } else {
+                    indicator.classList.remove('bg-witch-blue');
+                    indicator.classList.add('bg-gray-300');
+                }
+            });
+        }
+        
+        function paymentNextSlide() {
+            paymentCurrentSlide = (paymentCurrentSlide + 1) % paymentTotalSlides;
+            updatePaymentCarousel();
+        }
+        
+        function paymentPrevSlide() {
+            paymentCurrentSlide = (paymentCurrentSlide - 1 + paymentTotalSlides) % paymentTotalSlides;
+            updatePaymentCarousel();
+        }
+        
+        function paymentGoToSlide(index) {
+            paymentCurrentSlide = index;
+            updatePaymentCarousel();
+        }
+
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', function() {
             initializeRouting();
@@ -3607,6 +3643,9 @@
             
             // Auto-play carousel (optional)
             setInterval(nextSlide, 8000);
+            
+            // Initialize Payment Features Carousel
+            updatePaymentCarousel();
             
             // News filter functionality
             const filterButtons = document.querySelectorAll('.news-filter-btn');
@@ -3636,6 +3675,23 @@
                 });
             });
             
+            // Payment Features Carousel controls
+            const paymentNextBtn = document.getElementById('payment-next');
+            const paymentPrevBtn = document.getElementById('payment-prev');
+            const paymentIndicators = document.querySelectorAll('.payment-indicator');
+
+            if (paymentNextBtn) {
+                paymentNextBtn.addEventListener('click', paymentNextSlide);
+            }
+            
+            if (paymentPrevBtn) {
+                paymentPrevBtn.addEventListener('click', paymentPrevSlide);
+            }
+            
+            paymentIndicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => paymentGoToSlide(index));
+            });
+
             // Mobile menu toggle
             const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
             const mobileMenu = document.getElementById('mobile-menu');
