@@ -241,7 +241,7 @@
                     </div>
                     
                     <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-toggle" class="lg:hidden text-white p-2">
+                    <button id="mobile-menu-toggle" class="lg:hidden text-text-gray hover:text-white p-2 transition-colors">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
@@ -250,7 +250,7 @@
             </div>
             
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden bg-secondary-dark border-t border-stroke-light mt-4">
+            <div id="mobile-menu" class="hidden lg:hidden bg-primary-dark border-t border-stroke-gray mt-4">
                 <div class="px-4 py-4 space-y-4">
                     <a href="#products" onclick="showPage('home'); setTimeout(() => document.getElementById('products').scrollIntoView({behavior: 'smooth'}), 100)" class="block py-3 text-white hover:text-witch-blue transition-colors font-medium" data-i18n="nav.products">Products</a>
                     <a href="#about" onclick="showPage('about')" class="block py-3 text-white hover:text-witch-blue transition-colors font-medium" data-i18n="nav.about">About</a>
