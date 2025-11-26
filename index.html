@@ -2569,8 +2569,8 @@
                                     <path d="M8 21l8 0M12 17l0 4" stroke="#1A7CEB" stroke-width="2" stroke-linecap="round"/>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold mb-4" data-i18n="witchpay.usecases.content.title">Digital Content Purchases</h3>
-                            <p class="text-text-gray" data-i18n="witchpay.usecases.content.description">Microtransactions for premium content, in-app purchases, and subscription payments with instant settlement.</p>
+                            <h3 class="text-xl font-bold mb-4" data-i18n="witchpay.usecases.restaurant.title">Restaurant Franchise Payments</h3>
+                            <p class="text-text-gray" data-i18n="witchpay.usecases.restaurant.description">Real-world deployment at Heungdo Restaurant Pangyo branch with seamless QR code payments and digital receipts.</p>
                         </div>
                         
                         <div class="bg-white rounded-lg p-8 border border-stroke-light shadow-sm text-center">
@@ -2581,6 +2581,166 @@
                             </div>
                             <h3 class="text-xl font-bold mb-4" data-i18n="witchpay.usecases.merchandise.title">Fan Merchandise & NFTs</h3>
                             <p class="text-text-gray" data-i18n="witchpay.usecases.merchandise.description">Physical and digital merchandise sales with integrated loyalty programs and collector rewards.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Gas Abstraction -->
+            <section class="bg-secondary-light">
+                <div class="section-enterprise">
+                    <div class="text-center mb-20">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchpay.gas.title">
+                            Gas Abstraction Layer
+                        </h2>
+                        <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchpay.gas.subtitle">
+                            Eliminate blockchain complexity with sponsored transactions and seamless user experience
+                        </p>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6 text-tech-blue" data-i18n="witchpay.gas.how_title">How It Works</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-witch-blue/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                        <span class="text-witch-blue font-bold text-sm">1</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2" data-i18n="witchpay.gas.step1.title">User Initiates Transaction</h4>
+                                        <p class="text-text-gray text-sm" data-i18n="witchpay.gas.step1.desc">User clicks "buy" without needing to understand gas fees, private keys, or blockchain mechanics.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-tech-blue/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                        <span class="text-tech-blue font-bold text-sm">2</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2" data-i18n="witchpay.gas.step2.title">Paymaster Processing</h4>
+                                        <p class="text-text-gray text-sm" data-i18n="witchpay.gas.step2.desc">Our infrastructure sponsors the gas fees, handles blockchain interactions transparently.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-sky-blue/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                        <span class="text-sky-blue font-bold text-sm">3</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2" data-i18n="witchpay.gas.step3.title">Instant Confirmation</h4>
+                                        <p class="text-text-gray text-sm" data-i18n="witchpay.gas.step3.desc">Transaction completes in seconds with traditional payment experience and Web3 benefits.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-primary-dark p-6 rounded-lg border border-stroke-light">
+                            <div class="text-tech-blue text-sm mb-4">// Paymaster Implementation</div>
+                            <div class="text-text-gray text-sm font-mono">
+                                <div class="mb-2"><span class="text-witch-blue">function</span> <span class="text-white">sponsoredTransaction</span>(</div>
+                                <div class="ml-4 mb-2"><span class="text-tech-blue">address</span> user,</div>
+                                <div class="ml-4 mb-2"><span class="text-tech-blue">bytes</span> calldata txData</div>
+                                <div class="mb-2">) <span class="text-witch-blue">external</span> <span class="text-witch-blue">payable</span> {</div>
+                                <div class="ml-4 mb-2"><span class="text-witch-blue">require</span>(isAuthorized(user));</div>
+                                <div class="ml-4 mb-2"></div>
+                                <div class="ml-4 mb-2"><span class="text-gray-400">// Sponsor gas fees</span></div>
+                                <div class="ml-4 mb-2">_sponsorGas(msg.sender);</div>
+                                <div class="ml-4 mb-2"></div>
+                                <div class="ml-4 mb-2"><span class="text-gray-400">// Execute transaction</span></div>
+                                <div class="ml-4 mb-2">_executeUserOp(txData);</div>
+                                <div class="mb-2">}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Developer Integration -->
+            <section class="bg-primary-light">
+                <div class="section-enterprise">
+                    <div class="text-center mb-20">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space" data-i18n="witchpay.integration.title">
+                            Developer Integration
+                        </h2>
+                        <p class="text-xl text-text-gray max-w-3xl mx-auto" data-i18n="witchpay.integration.subtitle">
+                            Simple APIs for rapid integration with existing entertainment platforms
+                        </p>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6" data-i18n="witchpay.integration.sdk_title">SDK Integration Example</h3>
+                            <div class="bg-primary-dark p-6 rounded-lg border border-stroke-light mb-6">
+                                <div class="text-tech-blue text-sm mb-4">// Initialize WitchPay SDK</div>
+                                <div class="text-text-gray text-sm font-mono">
+                                    <div class="mb-2"><span class="text-witch-blue">import</span> { WitchPay } <span class="text-witch-blue">from</span> <span class="text-tech-blue">'@witch/payments'</span>;</div>
+                                    <div class="mb-4"></div>
+                                    <div class="mb-2"><span class="text-witch-blue">const</span> payment = <span class="text-witch-blue">new</span> <span class="text-white">WitchPay</span>({</div>
+                                    <div class="ml-4 mb-2">apiKey: <span class="text-tech-blue">'your-api-key'</span>,</div>
+                                    <div class="ml-4 mb-2">environment: <span class="text-tech-blue">'production'</span></div>
+                                    <div class="mb-4">});</div>
+                                    <div class="mb-4"></div>
+                                    <div class="mb-2"><span class="text-gray-400">// Process payment</span></div>
+                                    <div class="mb-2"><span class="text-witch-blue">const</span> result = <span class="text-witch-blue">await</span> payment.<span class="text-white">processPayment</span>({</div>
+                                    <div class="ml-4 mb-2">amount: <span class="text-tech-blue">25000</span>,</div>
+                                    <div class="ml-4 mb-2">currency: <span class="text-tech-blue">'KRW'</span>,</div>
+                                    <div class="ml-4 mb-2">item: <span class="text-tech-blue">'restaurant-payment'</span>,</div>
+                                    <div class="ml-4 mb-2">userId: user.id</div>
+                                    <div class="mb-2">});</div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center py-3 border-b border-stroke-light">
+                                    <span class="text-text-gray" data-i18n="witchpay.integration.metrics.time">Integration Time</span>
+                                    <span class="text-tech-blue font-semibold">< 1 Day</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3 border-b border-stroke-light">
+                                    <span class="text-text-gray" data-i18n="witchpay.integration.metrics.response">API Response Time</span>
+                                    <span class="text-tech-blue font-semibold">< 200ms</span>
+                                </div>
+                                <div class="flex justify-between items-center py-3">
+                                    <span class="text-text-gray" data-i18n="witchpay.integration.metrics.uptime">Uptime SLA</span>
+                                    <span class="text-tech-blue font-semibold">99.9%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6" data-i18n="witchpay.integration.endpoints_title">Available Endpoints</h3>
+                            <div class="space-y-4">
+                                <div class="bg-white rounded-lg p-6 border border-stroke-light shadow-sm">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="text-tech-blue font-mono text-sm">POST /payments</span>
+                                        <span class="text-xs bg-witch-blue/20 text-witch-blue px-2 py-1 rounded">Core</span>
+                                    </div>
+                                    <p class="text-text-gray text-sm" data-i18n="witchpay.integration.endpoints.payments">Process payments with automatic wallet creation and gas sponsorship.</p>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-6 border border-stroke-light shadow-sm">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="text-tech-blue font-mono text-sm">GET /wallets/{id}</span>
+                                        <span class="text-xs bg-sky-blue/20 text-sky-blue px-2 py-1 rounded">Wallet</span>
+                                    </div>
+                                    <p class="text-text-gray text-sm" data-i18n="witchpay.integration.endpoints.wallets">Retrieve wallet information, balance, and transaction history.</p>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-6 border border-stroke-light shadow-sm">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="text-tech-blue font-mono text-sm">POST /settlements</span>
+                                        <span class="text-xs bg-tech-blue/20 text-tech-blue px-2 py-1 rounded">Merchant</span>
+                                    </div>
+                                    <p class="text-text-gray text-sm" data-i18n="witchpay.integration.endpoints.settlements">Initiate merchant settlements with automatic currency conversion.</p>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-6 border border-stroke-light shadow-sm">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="text-tech-blue font-mono text-sm">GET /analytics</span>
+                                        <span class="text-xs bg-text-gray/20 text-text-gray px-2 py-1 rounded">Data</span>
+                                    </div>
+                                    <p class="text-text-gray text-sm" data-i18n="witchpay.integration.endpoints.analytics">Access payment analytics, conversion rates, and performance metrics.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2619,9 +2779,9 @@
                                     <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#1A7CEB" stroke-width="2" stroke-linecap="round"/>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold mb-4" data-i18n="witchpay.security.compliance.title">Alchemy Infrastructure</h3>
+                            <h3 class="text-xl font-bold mb-4" data-i18n="witchpay.security.compliance.title">Multi-Sig Security</h3>
                             <p class="text-text-gray" data-i18n="witchpay.security.compliance.description">
-                                Enterprise-grade blockchain infrastructure powered by Alchemy for reliable and scalable operations.
+                                Advanced multi-signature wallet protection with distributed key management for enhanced transaction security.
                             </p>
                         </div>
                         
@@ -2663,8 +2823,8 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="text-lg font-bold mb-2" data-i18n="witchpay.partners.payment.title">Payment Networks</h3>
-                                    <p class="text-text-gray text-sm" data-i18n="witchpay.partners.payment.description">Integration with Visa, Mastercard, and local Korean payment systems</p>
+                                    <h3 class="text-lg font-bold mb-2" data-i18n="witchpay.partners.alchemy.title">Alchemy Infrastructure</h3>
+                                    <p class="text-text-gray text-sm" data-i18n="witchpay.partners.alchemy.description">Enterprise-grade blockchain infrastructure powered by Alchemy for reliable and scalable operations</p>
                                 </div>
                             </div>
                             
@@ -2912,16 +3072,50 @@
                 'witchpay.security.subtitle': 'Enterprise-grade security infrastructure with regulatory compliance for global operations',
                 'witchpay.security.encryption.title': 'AA Wallet System',
                 'witchpay.security.encryption.description': 'Account Abstraction wallet infrastructure for seamless user experience with enhanced security protocols.',
-                'witchpay.security.compliance.title': 'Alchemy Infrastructure',
-                'witchpay.security.compliance.description': 'Enterprise-grade blockchain infrastructure powered by Alchemy for reliable and scalable operations.',
+                'witchpay.security.compliance.title': 'Multi-Sig Security',
+                'witchpay.security.compliance.description': 'Advanced multi-signature wallet protection with distributed key management for enhanced transaction security.',
                 'witchpay.security.monitoring.title': 'Security & Compliance',
                 'witchpay.security.monitoring.description': 'Advanced security protocols with regulatory compliance and automated risk management systems.',
                 'witchpay.partners.title': 'Partnership Ecosystem',
                 'witchpay.partners.subtitle': 'Strategic partnerships with global payment networks and financial institutions',
-                'witchpay.partners.payment.title': 'Payment Networks',
-                'witchpay.partners.payment.description': 'Integration with Visa, Mastercard, and local Korean payment systems',
+                'witchpay.partners.alchemy.title': 'Alchemy Infrastructure',
+                'witchpay.partners.alchemy.description': 'Enterprise-grade blockchain infrastructure powered by Alchemy for reliable and scalable operations',
                 'witchpay.partners.blockchain.title': 'Blockchain Networks',
                 'witchpay.partners.blockchain.description': 'Multi-chain support including Ethereum, Polygon, and BSC',
+                
+                // Use Cases
+                'witchpay.usecases.title': 'Use Cases',
+                'witchpay.usecases.subtitle': 'Powering payments across the entertainment ecosystem',
+                'witchpay.usecases.restaurant.title': 'Restaurant Franchise Payments',
+                'witchpay.usecases.restaurant.description': 'Real-world deployment at Heungdo Restaurant Pangyo branch with seamless QR code payments and digital receipts.',
+                'witchpay.usecases.merchandise.title': 'Fan Merchandise & NFTs',
+                'witchpay.usecases.merchandise.description': 'Physical and digital merchandise sales with integrated loyalty programs and collector rewards.',
+                'witchpay.usecases.ticketing.title': 'Concert & Event Ticketing',
+                'witchpay.usecases.ticketing.description': 'Seamless NFT ticket purchases with traditional payment methods, automatic wallet creation, and fraud prevention.',
+                
+                // Gas Abstraction
+                'witchpay.gas.title': 'Gas Abstraction Layer',
+                'witchpay.gas.subtitle': 'Eliminate blockchain complexity with sponsored transactions and seamless user experience',
+                'witchpay.gas.how_title': 'How It Works',
+                'witchpay.gas.step1.title': 'User Initiates Transaction',
+                'witchpay.gas.step1.desc': 'User clicks "buy" without needing to understand gas fees, private keys, or blockchain mechanics.',
+                'witchpay.gas.step2.title': 'Paymaster Processing',
+                'witchpay.gas.step2.desc': 'Our infrastructure sponsors the gas fees, handles blockchain interactions transparently.',
+                'witchpay.gas.step3.title': 'Instant Confirmation',
+                'witchpay.gas.step3.desc': 'Transaction completes in seconds with traditional payment experience and Web3 benefits.',
+                
+                // Developer Integration
+                'witchpay.integration.title': 'Developer Integration',
+                'witchpay.integration.subtitle': 'Simple APIs for rapid integration with existing entertainment platforms',
+                'witchpay.integration.sdk_title': 'SDK Integration Example',
+                'witchpay.integration.endpoints_title': 'Available Endpoints',
+                'witchpay.integration.metrics.time': 'Integration Time',
+                'witchpay.integration.metrics.response': 'API Response Time',
+                'witchpay.integration.metrics.uptime': 'Uptime SLA',
+                'witchpay.integration.endpoints.payments': 'Process payments with automatic wallet creation and gas sponsorship.',
+                'witchpay.integration.endpoints.wallets': 'Retrieve wallet information, balance, and transaction history.',
+                'witchpay.integration.endpoints.settlements': 'Initiate merchant settlements with automatic currency conversion.',
+                'witchpay.integration.endpoints.analytics': 'Access payment analytics, conversion rates, and performance metrics.',
                 
                 // Updated stablecoin section
                 'witchpay.features.stablecoin.title': 'Stablecoin Payments',
@@ -3183,22 +3377,46 @@
                 'witchpay.usecases.ticketing.description': '콘서트 및 팬미팅 티켓의 안전한 결제 및 전송',
                 'witchpay.usecases.merchandise.title': '상품 판매',
                 'witchpay.usecases.merchandise.description': '팬 상품 및 한정판 아이템의 원활한 결제',
-                'witchpay.usecases.content.title': '디지털 콘텐츠',
-                'witchpay.usecases.content.description': '스트리밍 서비스 및 디지털 앨범 구매',
+                'witchpay.usecases.restaurant.title': '식당 프랜차이즈 결제',
+                'witchpay.usecases.restaurant.description': '흥도식당 판교점 실제 배포 사례로 QR 코드 결제 및 디지털 영수증 제공',
+                
+                // 가스 추상화
+                'witchpay.gas.title': '가스 추상화 레이어',
+                'witchpay.gas.subtitle': '후원 트랜잭션과 원활한 사용자 경험으로 블록체인 복잡성 제거',
+                'witchpay.gas.how_title': '작동 방식',
+                'witchpay.gas.step1.title': '사용자 거래 시작',
+                'witchpay.gas.step1.desc': '사용자는 가스 수수료, 개인키, 블록체인 메커니즘을 이해할 필요 없이 "구매"를 클릭',
+                'witchpay.gas.step2.title': '페이마스터 처리',
+                'witchpay.gas.step2.desc': '당사 인프라가 가스 수수료를 후원하고 블록체인 상호작용을 투명하게 처리',
+                'witchpay.gas.step3.title': '즉시 확인',
+                'witchpay.gas.step3.desc': '기존 결제 경험과 Web3 혜택으로 몇 초 만에 거래 완료',
+                
+                // 개발자 통합
+                'witchpay.integration.title': '개발자 통합',
+                'witchpay.integration.subtitle': '기존 엔터테인먼트 플랫폼과 신속한 통합을 위한 간단한 API',
+                'witchpay.integration.sdk_title': 'SDK 통합 예제',
+                'witchpay.integration.endpoints_title': '사용 가능한 엔드포인트',
+                'witchpay.integration.metrics.time': '통합 시간',
+                'witchpay.integration.metrics.response': 'API 응답 시간',
+                'witchpay.integration.metrics.uptime': '가동시간 SLA',
+                'witchpay.integration.endpoints.payments': '자동 지갑 생성 및 가스 후원으로 결제 처리',
+                'witchpay.integration.endpoints.wallets': '지갑 정보, 잔액 및 거래 내역 조회',
+                'witchpay.integration.endpoints.settlements': '자동 통화 변환으로 가맹점 정산 시작',
+                'witchpay.integration.endpoints.analytics': '결제 분석, 전환율 및 성능 지표 액세스',
                 
                 // WitchPay 보안 & 파트너
                 'witchpay.security.title': '보안 및 규정 준수',
                 'witchpay.security.subtitle': '글로벌 운영을 위한 엔터프라이즈급 보안 인프라와 규제 준수',
                 'witchpay.security.encryption.title': 'AA 월렛 시스템',
                 'witchpay.security.encryption.description': '향상된 보안 프로토콜로 원활한 사용자 경험을 제공하는 계정 추상화 지갑 인프라',
-                'witchpay.security.compliance.title': 'Alchemy 인프라',
-                'witchpay.security.compliance.description': '안정적이고 확장 가능한 운영을 위한 Alchemy 기반 엔터프라이즈급 블록체인 인프라',
+                'witchpay.security.compliance.title': '멀티시그 보안',
+                'witchpay.security.compliance.description': '향상된 거래 보안을 위한 분산 키 관리 및 고급 다중 서명 지갑 보호',
                 'witchpay.security.monitoring.title': '보안 및 규정준수',
                 'witchpay.security.monitoring.description': '규제 준수 및 자동화된 위험 관리 시스템을 갖춘 고급 보안 프로토콜',
                 'witchpay.partners.title': '파트너십 생태계',
                 'witchpay.partners.subtitle': '글로벌 결제 네트워크 및 금융 기관과의 전략적 파트너십',
-                'witchpay.partners.payment.title': '결제 네트워크',
-                'witchpay.partners.payment.description': 'Visa, Mastercard 및 한국 현지 결제 시스템과의 통합',
+                'witchpay.partners.alchemy.title': 'Alchemy 인프라',
+                'witchpay.partners.alchemy.description': '안정적이고 확장 가능한 운영을 위한 Alchemy 기반 엔터프라이즈급 블록체인 인프라',
                 'witchpay.partners.blockchain.title': '블록체인 네트워크',
                 'witchpay.partners.blockchain.description': 'Ethereum, Polygon, BSC를 포함한 멀티체인 지원',
                 
