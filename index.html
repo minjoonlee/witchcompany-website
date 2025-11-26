@@ -306,7 +306,7 @@
     <!-- Products Section -->
     <section id="products" class="bg-secondary-light">
         <div class="section-enterprise">
-            <div class="text-center mb-20">
+            <div class="text-center mb-12">
                 <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
                     Core Products
                 </h2>
@@ -315,71 +315,180 @@
                 </p>
             </div>
             
-            <div class="space-y-12">
-                <!-- Witchverse -->
-                <div class="flex items-center justify-between py-8 border-b border-stroke-light">
-                    <div class="flex items-center space-x-6">
-                        <div class="w-16 h-16 bg-witch-blue/20 rounded-lg flex items-center justify-center">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" stroke="#4BB8FF" stroke-width="2"/>
-                            </svg>
+            <!-- Products Carousel -->
+            <div class="relative">
+                <!-- Carousel Container -->
+                <div class="carousel-container overflow-hidden">
+                    <div id="products-carousel" class="flex transition-transform duration-500 ease-in-out">
+                        <!-- Witchverse Card -->
+                        <div class="carousel-slide w-full flex-shrink-0">
+                            <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-lg border border-stroke-light">
+                                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                                    <div>
+                                        <div class="w-20 h-20 bg-witch-blue/20 rounded-xl flex items-center justify-center mb-6">
+                                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" stroke="#4BB8FF" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-3xl lg:text-4xl font-bold font-space mb-4 text-witch-blue">Witchverse</h3>
+                                        <p class="text-text-gray text-lg mb-6">Metaverse & NFT infrastructure for fandom identity. Immersive virtual environments where fans interact with favorite artists.</p>
+                                        <div class="flex flex-wrap gap-4 mb-6">
+                                            <span class="bg-witch-blue/10 text-witch-blue px-3 py-1 rounded-full text-sm font-medium">Metaverse</span>
+                                            <span class="bg-witch-blue/10 text-witch-blue px-3 py-1 rounded-full text-sm font-medium">NFT</span>
+                                            <span class="bg-witch-blue/10 text-witch-blue px-3 py-1 rounded-full text-sm font-medium">3D Virtual</span>
+                                        </div>
+                                        <a href="#witchverse" onclick="showPage('witchverse')" class="btn-primary">Explore Witchverse</a>
+                                    </div>
+                                    <div class="bg-gradient-to-br from-witch-blue/10 to-sky-blue/5 rounded-xl p-8 text-center">
+                                        <div class="text-6xl mb-4">🌐</div>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div>
+                                                <div class="text-2xl font-bold text-witch-blue">160K+</div>
+                                                <div class="text-sm text-text-gray">Community</div>
+                                            </div>
+                                            <div>
+                                                <div class="text-2xl font-bold text-witch-blue">₩2.1B</div>
+                                                <div class="text-sm text-text-gray">NFT Sales</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-3xl font-bold font-space mb-2">Witchverse</h3>
-                            <p class="text-text-gray text-lg">Metaverse & NFT infrastructure for fandom identity</p>
-                        </div>
-                    </div>
-                    <a href="#witchverse" onclick="showPage('witchverse')" class="btn-secondary">Learn More</a>
-                </div>
 
-                <!-- Witchbox -->
-                <div class="flex items-center justify-between py-8 border-b border-stroke-light">
-                    <div class="flex items-center space-x-6">
-                        <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="2" y="3" width="20" height="14" rx="2" stroke="#5EC8FF" stroke-width="2"/>
-                                <path d="M8 21l8 0M12 17l0 4" stroke="#5EC8FF" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
+                        <!-- Witchbox Card -->
+                        <div class="carousel-slide w-full flex-shrink-0">
+                            <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-lg border border-stroke-light">
+                                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                                    <div>
+                                        <div class="w-20 h-20 bg-sky-blue/20 rounded-xl flex items-center justify-center mb-6">
+                                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="2" y="3" width="20" height="14" rx="2" stroke="#5EC8FF" stroke-width="2"/>
+                                                <path d="M8 21l8 0M12 17l0 4" stroke="#5EC8FF" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-3xl lg:text-4xl font-bold font-space mb-4 text-sky-blue">Witchbox</h3>
+                                        <p class="text-text-gray text-lg mb-6">Short-form OTT platform for premium K-content. AI-powered content transformation for multi-generational audiences.</p>
+                                        <div class="flex flex-wrap gap-4 mb-6">
+                                            <span class="bg-sky-blue/10 text-sky-blue px-3 py-1 rounded-full text-sm font-medium">OTT Platform</span>
+                                            <span class="bg-sky-blue/10 text-sky-blue px-3 py-1 rounded-full text-sm font-medium">AI Content</span>
+                                            <span class="bg-sky-blue/10 text-sky-blue px-3 py-1 rounded-full text-sm font-medium">Short-form</span>
+                                        </div>
+                                        <a href="#witchbox" onclick="showPage('witchbox')" class="btn-primary bg-sky-blue hover:bg-sky-blue/90">Explore Witchbox</a>
+                                    </div>
+                                    <div class="bg-gradient-to-br from-sky-blue/10 to-tech-blue/5 rounded-xl p-8 text-center">
+                                        <div class="text-6xl mb-4">📺</div>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div>
+                                                <div class="text-2xl font-bold text-sky-blue">15+</div>
+                                                <div class="text-sm text-text-gray">Platforms</div>
+                                            </div>
+                                            <div>
+                                                <div class="text-2xl font-bold text-sky-blue">95%</div>
+                                                <div class="text-sm text-text-gray">Quality Rate</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-3xl font-bold font-space mb-2">Witchbox</h3>
-                            <p class="text-text-gray text-lg">Short-form OTT platform for premium K-content</p>
-                        </div>
-                    </div>
-                    <a href="#witchbox" onclick="showPage('witchbox')" class="btn-secondary">Learn More</a>
-                </div>
 
-                <!-- Wavist -->
-                <div class="flex items-center justify-between py-8 border-b border-stroke-light">
-                    <div class="flex items-center space-x-6">
-                        <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17l-5-5" stroke="#1A7CEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <!-- Wavist Card -->
+                        <div class="carousel-slide w-full flex-shrink-0">
+                            <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-lg border border-stroke-light">
+                                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                                    <div>
+                                        <div class="w-20 h-20 bg-tech-blue/20 rounded-xl flex items-center justify-center mb-6">
+                                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17l-5-5" stroke="#1A7CEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-3xl lg:text-4xl font-bold font-space mb-4 text-tech-blue">Wavist</h3>
+                                        <p class="text-text-gray text-lg mb-6">RWA tokenization for entertainment assets. Enterprise-grade tokenization platform with compliant investment opportunities.</p>
+                                        <div class="flex flex-wrap gap-4 mb-6">
+                                            <span class="bg-tech-blue/10 text-tech-blue px-3 py-1 rounded-full text-sm font-medium">RWA</span>
+                                            <span class="bg-tech-blue/10 text-tech-blue px-3 py-1 rounded-full text-sm font-medium">STO</span>
+                                            <span class="bg-tech-blue/10 text-tech-blue px-3 py-1 rounded-full text-sm font-medium">Tokenization</span>
+                                        </div>
+                                        <a href="#wavist" onclick="showPage('wavist')" class="btn-primary bg-tech-blue hover:bg-tech-blue/90">Explore Wavist</a>
+                                    </div>
+                                    <div class="bg-gradient-to-br from-tech-blue/10 to-witch-blue/5 rounded-xl p-8 text-center">
+                                        <div class="text-6xl mb-4">💎</div>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div>
+                                                <div class="text-2xl font-bold text-tech-blue">₩15B</div>
+                                                <div class="text-sm text-text-gray">STO Pipeline</div>
+                                            </div>
+                                            <div>
+                                                <div class="text-2xl font-bold text-tech-blue">3</div>
+                                                <div class="text-sm text-text-gray">Token Products</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-3xl font-bold font-space mb-2">Wavist</h3>
-                            <p class="text-text-gray text-lg">RWA tokenisation for entertainment assets</p>
-                        </div>
-                    </div>
-                    <a href="#wavist" onclick="showPage('wavist')" class="btn-secondary">Learn More</a>
-                </div>
 
-                <!-- WitchPay -->
-                <div class="flex items-center justify-between py-8">
-                    <div class="flex items-center space-x-6">
-                        <div class="w-16 h-16 bg-accent-purple/20 rounded-lg flex items-center justify-center">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="1" y="5" width="22" height="14" rx="2" stroke="#7B4CFF" stroke-width="2"/>
-                                <path d="M1 10h22" stroke="#7B4CFF" stroke-width="2"/>
-                            </svg>
+                        <!-- WitchPay Card -->
+                        <div class="carousel-slide w-full flex-shrink-0">
+                            <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-lg border border-stroke-light">
+                                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                                    <div>
+                                        <div class="w-20 h-20 bg-accent-purple/20 rounded-xl flex items-center justify-center mb-6">
+                                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1" y="5" width="22" height="14" rx="2" stroke="#8B5CF6" stroke-width="2"/>
+                                                <path d="M1 10h22" stroke="#8B5CF6" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-3xl lg:text-4xl font-bold font-space mb-4 text-accent-purple">WitchPay</h3>
+                                        <p class="text-text-gray text-lg mb-6">Smart wallet & stablecoin solutions for merchants. Web3 payment infrastructure with seamless blockchain transactions.</p>
+                                        <div class="flex flex-wrap gap-4 mb-6">
+                                            <span class="bg-accent-purple/10 text-accent-purple px-3 py-1 rounded-full text-sm font-medium">Smart Wallet</span>
+                                            <span class="bg-accent-purple/10 text-accent-purple px-3 py-1 rounded-full text-sm font-medium">Stablecoin</span>
+                                            <span class="bg-accent-purple/10 text-accent-purple px-3 py-1 rounded-full text-sm font-medium">Payment</span>
+                                        </div>
+                                        <a href="#witchpay" onclick="showPage('witchpay')" class="btn-primary bg-accent-purple hover:bg-accent-purple/90">Explore WitchPay</a>
+                                    </div>
+                                    <div class="bg-gradient-to-br from-accent-purple/10 to-witch-blue/5 rounded-xl p-8 text-center">
+                                        <div class="text-6xl mb-4">💳</div>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div>
+                                                <div class="text-2xl font-bold text-accent-purple">99.9%</div>
+                                                <div class="text-sm text-text-gray">Success Rate</div>
+                                            </div>
+                                            <div>
+                                                <div class="text-2xl font-bold text-accent-purple">1-Day</div>
+                                                <div class="text-sm text-text-gray">Integration</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-3xl font-bold font-space mb-2">WitchPay</h3>
-                            <p class="text-text-gray text-lg">Smart wallet & stablecoin solutions for merchants</p>
-                        </div>
+                        
                     </div>
-                    <a href="#witchpay" onclick="showPage('witchpay')" class="btn-secondary">Learn More</a>
+                </div>
+                
+                <!-- Carousel Navigation -->
+                <div class="flex justify-center items-center mt-8 space-x-4">
+                    <button id="carousel-prev" class="w-12 h-12 bg-white border border-stroke-light rounded-full flex items-center justify-center hover:bg-witch-blue hover:text-white transition-all">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="flex space-x-2">
+                        <button class="carousel-indicator w-3 h-3 bg-witch-blue rounded-full transition-all" data-slide="0"></button>
+                        <button class="carousel-indicator w-3 h-3 bg-stroke-light rounded-full transition-all" data-slide="1"></button>
+                        <button class="carousel-indicator w-3 h-3 bg-stroke-light rounded-full transition-all" data-slide="2"></button>
+                        <button class="carousel-indicator w-3 h-3 bg-stroke-light rounded-full transition-all" data-slide="3"></button>
+                    </div>
+                    
+                    <button id="carousel-next" class="w-12 h-12 bg-white border border-stroke-light rounded-full flex items-center justify-center hover:bg-witch-blue hover:text-white transition-all">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -3308,10 +3417,64 @@
             }
         }
         
+        // Products Carousel
+        let currentSlide = 0;
+        const totalSlides = 4;
+        
+        function updateCarousel() {
+            const carousel = document.getElementById('products-carousel');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            
+            if (carousel) {
+                carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+            
+            // Update indicators
+            indicators.forEach((indicator, index) => {
+                if (index === currentSlide) {
+                    indicator.classList.remove('bg-stroke-light');
+                    indicator.classList.add('bg-witch-blue');
+                } else {
+                    indicator.classList.remove('bg-witch-blue');
+                    indicator.classList.add('bg-stroke-light');
+                }
+            });
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', function() {
             initializeRouting();
             setLanguage(currentLang);
+            
+            // Carousel controls
+            const nextBtn = document.getElementById('carousel-next');
+            const prevBtn = document.getElementById('carousel-prev');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            
+            if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+            if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+            
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => goToSlide(index));
+            });
+            
+            // Auto-play carousel (optional)
+            setInterval(nextSlide, 8000);
             
             // Mobile menu toggle
             const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
