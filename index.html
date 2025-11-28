@@ -3459,24 +3459,31 @@
         function initializeRouting() {
             const path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
             const hash = window.location.hash.replace('#', '');
-            
+
             let pageId = 'home';
-            
+            let scrollToSection = null;
+
             // Check hash first (for hash-based routing)
-            if (hash && ['home', 'products', 'about', 'press', 'news', 'witchworld', 'witchbox', 'wavist', 'witchpay'].includes(hash)) {
-                pageId = hash;
+            if (hash) {
+                // Handle #products as scroll target within home page
+                if (hash === 'products') {
+                    pageId = 'home';
+                    scrollToSection = 'products';
+                } else if (['home', 'about', 'press', 'news', 'witchworld', 'witchbox', 'wavist', 'witchpay'].includes(hash)) {
+                    pageId = hash;
+                }
             }
             // Then check path (for direct URL access)
-            else if (path && ['products', 'about', 'press', 'news', 'witchworld', 'witchbox', 'wavist', 'witchpay'].includes(path)) {
+            else if (path && ['about', 'press', 'news', 'witchworld', 'witchbox', 'wavist', 'witchpay'].includes(path)) {
                 pageId = path;
             }
-            
+
             // Force show the page immediately
             // Hide all pages first
             document.querySelectorAll('.page-content').forEach(page => {
                 page.style.display = 'none';
             });
-            
+
             // Show target page
             const targetPage = document.getElementById('page-' + pageId);
             if (targetPage) {
@@ -3487,12 +3494,31 @@
                 document.getElementById('page-home').style.display = 'block';
                 currentPage = 'home';
             }
+
+            // Scroll to section if needed
+            if (scrollToSection) {
+                setTimeout(() => {
+                    const section = document.getElementById(scrollToSection);
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 100);
+            }
         }
         
         // Handle hash changes
         window.addEventListener('hashchange', function() {
             const hash = window.location.hash.replace('#', '');
-            if (hash && ['home', 'products', 'about', 'press', 'news', 'witchworld', 'witchbox', 'wavist', 'witchpay'].includes(hash)) {
+            if (hash === 'products') {
+                // Handle #products as scroll target within home page
+                showPage('home');
+                setTimeout(() => {
+                    const section = document.getElementById('products');
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 100);
+            } else if (hash && ['home', 'about', 'press', 'news', 'witchworld', 'witchbox', 'wavist', 'witchpay'].includes(hash)) {
                 showPage(hash);
             }
         });
