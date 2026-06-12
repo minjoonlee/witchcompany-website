@@ -299,20 +299,20 @@ section:last-of-type { border-bottom: 0; }
 .proof-rows { display: grid; border-top: 1px solid var(--line); }
 .proof-row {
   display: grid; grid-template-columns: minmax(170px, 300px) 1fr;
-  gap: clamp(20px, 4vw, 64px);
+  gap: clamp(28px, 5vw, 80px);
   padding: clamp(26px, 3.4vw, 44px) 0; border-bottom: 1px solid var(--line);
   align-items: baseline;
 }
 @media (max-width: 720px) { .proof-row { grid-template-columns: 1fr; gap: 10px; } }
 .proof-row .p-key {
   font-family: "Archivo", sans-serif; font-weight: 800;
-  font-size: clamp(26px, 3.4vw, 44px); letter-spacing: -0.02em; line-height: 1.05;
-  text-transform: uppercase;
+  font-size: clamp(22px, 2.6vw, 34px); letter-spacing: -0.02em; line-height: 1.05;
+  text-transform: uppercase; white-space: nowrap;
 }
 .proof-row .p-key small {
   display: block; font-family: "IBM Plex Mono", monospace; font-weight: 400;
   font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--sub); margin-top: 8px;
+  color: var(--sub); margin-top: 8px; white-space: normal;
 }
 .proof-row .p-body { font-size: 16px; line-height: 1.7; max-width: 62ch; text-wrap: pretty; }
 .proof-row .p-body .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }

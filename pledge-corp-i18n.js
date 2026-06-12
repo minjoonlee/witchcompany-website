@@ -2,9 +2,9 @@
 // Headlines: \n = line break, *word* = italic accent
 window.PLEDGE_I18N = {
   headlines: {
-    circle: { en: "Where *Fandom*\nBecomes an\nEconomy", ko: "Where *Fandom*\nBecomes an\nEconomy" },
-    economy: { en: "One *Fandom*\nEconomy", ko: "One *Fandom*\nEconomy" },
-    stays: { en: "Where Fan\n*Value* Stays", ko: "Where Fan\n*Value* Stays" }
+    circle: { en: "The Fandom\n*Platform*\nCompany", ko: "The Fandom\n*Platform*\nCompany" },
+    economy: { en: "Three Platforms,\nOne *Fandom*", ko: "Three Platforms,\nOne *Fandom*" },
+    stays: { en: "Where Fandom\n*Grows* Together", ko: "Where Fandom\n*Grows* Together" }
   },
   ko: {
     nav_loop: "구조",
@@ -12,10 +12,10 @@ window.PLEDGE_I18N = {
     nav_proof: "트랙레코드",
     nav_company: "회사",
     eyebrow: "Pledge Inc. — A DayOneDream Company",
-    hero_sub: "플렛지㈜는 팬덤 플랫폼 · IP 금융 · 숏폼 미디어를 하나의 순환 구조로 묶은 K-콘텐츠 비즈니스 컴퍼니입니다. 팬덤 활동에서 발생한 가치가 생태계 안에서 순환해, 다시 팬에게 돌아오는 구조를 만듭니다.",
+    hero_sub: "(주)플렛지는 팬덤 플랫폼 PLEDGE, IP 금융 플랫폼 WAVIST, 숏폼 OTT WITCHBOX를 운영하는 K-콘텐츠 플랫폼 기업입니다. 팬이 즐기고, 참여하고, 투자하는 모든 순간을 하나의 생태계로 연결합니다.",
     hero_m1k: "법인", hero_m1v: "주식회사 플렛지 · PLG—CORP",
     hero_m2k: "그룹", hero_m2v: "데이원드림 계열",
-    hero_m3k: "사업", hero_m3v: "Fandom · Finance · Media",
+    hero_m3k: "플랫폼", hero_m3v: "PLEDGE · WAVIST · WITCHBOX",
     s02a: "02 — One Loop", s02b: "구조",
     loop_h: "The Fan\nValue *Loop*",
     loop_desc: "팬덤 활동이 데이터가 되고, 데이터가 IP의 가치가 되며, 그 가치는 투자와 보상으로 팬에게 돌아옵니다. 세 개의 브랜드가 각 단계를 담당하며 하나의 순환 구조를 완성합니다.",
@@ -76,10 +76,10 @@ window.PLEDGE_I18N = {
     nav_proof: "Track Record",
     nav_company: "Company",
     eyebrow: "Pledge Inc. — A DayOneDream Company",
-    hero_sub: "Pledge Inc. is a K-content business company connecting a fandom platform, IP finance, and short-form media into one loop — so the value fans create circulates within the ecosystem and returns to fans.",
+    hero_sub: "Pledge Inc. is a K-content platform company operating PLEDGE for fandom, WAVIST for IP finance, and WITCHBOX for short-form OTT — connecting how fans enjoy, participate, and invest into one ecosystem.",
     hero_m1k: "Entity", hero_m1v: "Pledge Inc. · PLG—CORP",
     hero_m2k: "Group", hero_m2v: "A DayOneDream Company",
-    hero_m3k: "Business", hero_m3v: "Fandom · Finance · Media",
+    hero_m3k: "Platforms", hero_m3v: "PLEDGE · WAVIST · WITCHBOX",
     s02a: "02 — One Loop", s02b: "Structure",
     loop_h: "The Fan\nValue *Loop*",
     loop_desc: "Fandom activity becomes data, data becomes IP value, and that value returns to fans as investment and rewards. Each of our three brands powers one stage of this single loop.",

@@ -3,7 +3,7 @@
   var I18N = window.PLEDGE_I18N;
   var state = {
     lang: localStorage.getItem("pledgeCorpLang") || "ko",
-    headline: "circle",
+    headline: "stays",
     motion: true,
     step: 0
   };
@@ -151,7 +151,7 @@
 
   // ---------- tweak hooks ----------
   window.applyPledgeTweaks = function (t) {
-    var map = { "Fandom Economy": "circle", "One Economy": "economy", "Value Stays": "stays" };
+    var map = { "Platform Company": "circle", "Three Platforms": "economy", "Grow Together": "stays" };
     state.headline = map[t.headline] || "circle";
     state.motion = !!t.motion;
     document.documentElement.setAttribute("data-motion", state.motion ? "on" : "off");
