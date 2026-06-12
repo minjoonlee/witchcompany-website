@@ -144,7 +144,7 @@ section:last-of-type { border-bottom: 0; }
   background: var(--card);
 }
 .marquee-track { display: inline-flex; gap: 0; will-change: transform; }
-[data-motion="on"] .marquee-track { animation: marquee 28s linear infinite; }
+[data-motion="on"] .marquee-track { animation: marquee 84s linear infinite; }
 .marquee span {
   font-family: "Archivo", sans-serif; font-weight: 700; font-size: 15px;
   letter-spacing: 0.06em; text-transform: uppercase;
