@@ -1,48 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WITCH Company - Page Not Found</title>
-    <meta name="description" content="Page not found - redirecting to WITCH Company homepage">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="Pavicon.svg?v=2">
-    
-    <!-- Immediate redirect to home with hash-based routing -->
-    <script>
-        // Get the current path and convert to hash-based routing
-        const path = window.location.pathname;
-        let redirectPath = '#';
-        
-        // Convert common paths to hash routing
-        if (path.includes('/press')) {
-            redirectPath = '#press';
-        } else if (path.includes('/about')) {
-            redirectPath = '#about';
-        } else if (path.includes('/news')) {
-            redirectPath = '#news';
-        } else if (path.includes('/products')) {
-            redirectPath = '#products';
-        } else if (path.includes('/witchverse')) {
-            redirectPath = '#witchverse';
-        } else if (path.includes('/witchbox')) {
-            redirectPath = '#witchbox';
-        } else if (path.includes('/wavist')) {
-            redirectPath = '#wavist';
-        } else if (path.includes('/witchpay')) {
-            redirectPath = '#witchpay';
-        }
-        
-        // Redirect to main site with appropriate hash
-        window.location.replace('/' + redirectPath);
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Pledge Inc.</title>
+<link rel="icon" href="https://pledge.im/assets/logo-monogram-white.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #16140f; color: #fbfaf7; font-family: "Pretendard Variable", Pretendard, sans-serif; text-align: center; }
+  h1 { font-size: 64px; margin: 0 0 8px; }
+  p { color: #9a958a; margin: 0 0 24px; }
+  a { color: #fbfaf7; }
+</style>
 </head>
 <body>
-    <div style="text-align: center; padding: 50px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
-        <h1>Redirecting...</h1>
-        <p>If you are not automatically redirected, <a href="/">click here</a>.</p>
-    </div>
-    <script defer src="/_vercel/insights/script.js"></script>
+<div>
+  <h1>404</h1>
+  <p>페이지를 찾을 수 없습니다.</p>
+  <a href="/">홈으로 돌아가기</a>
+</div>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
