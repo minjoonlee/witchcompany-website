@@ -63,31 +63,41 @@
   });
 
   // ---------- loop diagram ----------
-  var STEPS = 5;
-  var stepNodeMap = ["pledge", "pledge", "ai", "wavist", "pay"];
+  // one step per node — the diagram and the counter can never disagree
+  var stepNodeMap = ["pledge", "ai", "wavist", "pay"];
+  var STEPS = stepNodeMap.length;
   var captionEl = document.getElementById("loop-caption");
-  var stepnoEl = document.getElementById("loop-stepno");
+  var centerEl = document.getElementById("loop-center");
+  var segEls = document.querySelectorAll("#loop-stepbar i");
   var nodes = document.querySelectorAll(".loop-node");
   var stepRows = document.querySelectorAll(".loop-step");
   var cycleTimer = null;
 
-  function renderCaption(instant) {
-    var dict = I18N[state.lang];
-    var key = "step" + (state.step + 1);
-    function swap() {
-      captionEl.textContent = dict[key];
-      stepnoEl.textContent = (state.step + 1) + " / " + STEPS;
-      captionEl.classList.remove("fading");
-    }
-    if (instant) { swap(); return; }
-    captionEl.classList.add("fading");
-    setTimeout(swap, 320);
+  function paintStepState() {
+    var node = stepNodeMap[state.step];
+    if (centerEl) centerEl.dataset.node = node;
     nodes.forEach(function (n) {
-      n.classList.toggle("is-active", n.dataset.node === stepNodeMap[state.step]);
+      n.classList.toggle("is-active", n.dataset.node === node);
     });
     stepRows.forEach(function (r, i) {
       r.classList.toggle("active", i === state.step);
     });
+    segEls.forEach(function (s, i) {
+      s.classList.toggle("on", i <= state.step);
+    });
+  }
+
+  function renderCaption(instant) {
+    var dict = I18N[state.lang];
+    var key = "cap" + (state.step + 1);
+    function swap() {
+      captionEl.textContent = dict[key];
+      captionEl.classList.remove("fading");
+    }
+    if (instant) { swap(); paintStepState(); return; }
+    captionEl.classList.add("fading");
+    setTimeout(swap, 320);
+    paintStepState();
   }
 
   function setStep(i, manual) {
@@ -186,9 +196,6 @@
   document.documentElement.setAttribute("data-motion", "on");
   document.documentElement.setAttribute("data-color", "full");
   applyLang();
-  nodes.forEach(function (n) {
-    n.classList.toggle("is-active", n.dataset.node === stepNodeMap[state.step]);
-  });
-  stepRows[0] && stepRows[0].classList.add("active");
+  paintStepState();
   restartCycle();
 })();
