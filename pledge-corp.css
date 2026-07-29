@@ -58,6 +58,7 @@ img { max-width: 100%; }
   color: var(--sub);
 }
 .site-nav { display: flex; gap: clamp(14px, 2.5vw, 32px); align-items: center; }
+.nav-links { display: flex; gap: clamp(14px, 2.5vw, 32px); align-items: center; }
 .site-nav a {
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
@@ -76,8 +77,24 @@ img { max-width: 100%; }
 }
 .lang-toggle button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 
+/* Mobile: the page runs ~9,600px tall with five sections, so the nav has to
+   survive rather than be hidden. Drops to a second, horizontally scrollable
+   row under the wordmark. */
 @media (max-width: 760px) {
-  .site-nav a.nav-link { display: none; }
+  .site-header .wrap {
+    flex-wrap: wrap; height: auto;
+    padding-top: 11px; padding-bottom: 0; gap: 0 16px;
+  }
+  .site-nav { display: contents; }
+  .nav-links {
+    order: 3; width: 100%; gap: 20px;
+    overflow-x: auto; overscroll-behavior-x: contain;
+    padding: 9px 0 10px; scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent);
+    mask-image: linear-gradient(90deg, #000 88%, transparent);
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .site-nav a.nav-link { white-space: nowrap; }
 }
 
 /* ---------- section scaffolding ---------- */
@@ -173,6 +190,20 @@ section:last-of-type { border-bottom: 0; }
 @media (max-width: 920px) {
   .loop-grid { grid-template-columns: 1fr; gap: clamp(40px, 6vw, 72px); }
   .loop-stage { padding-left: 0; }
+}
+/* Phones: the ring is only ~320px across, so the nodes have to give up their
+   minimum width or they crowd the ring and the centre caption. */
+@media (max-width: 560px) {
+  .loop-node { width: 24%; padding: 5px; gap: 4px; }
+  .loop-node .node-mark { font-size: 8.5px; min-height: 19px; gap: 0; }
+  .loop-node img { height: 8.5px; }
+  .loop-node[data-node="pledge"] img { height: 7.5px; }
+  .loop-node[data-node="wavist"] img { height: 8px; }
+  .loop-node .role { font-size: 7.5px; letter-spacing: 0.08em; }
+  .loop-node.is-active::after { inset: -6px; }
+  .loop-center { width: 38%; gap: 8px; }
+  .loop-center .caption { font-size: 12.5px; min-height: 2.6em; }
+  .loop-center .stepbar i { width: 10px; }
 }
 .sec-h {
   font-family: "Archivo", sans-serif; font-weight: 800;
