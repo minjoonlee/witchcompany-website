@@ -58,7 +58,6 @@ img { max-width: 100%; }
   color: var(--sub);
 }
 .site-nav { display: flex; gap: clamp(14px, 2.5vw, 32px); align-items: center; }
-.nav-links { display: flex; gap: clamp(14px, 2.5vw, 32px); align-items: center; }
 .site-nav a {
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
@@ -77,24 +76,10 @@ img { max-width: 100%; }
 }
 .lang-toggle button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 
-/* Mobile: the page runs ~9,600px tall with five sections, so the nav has to
-   survive rather than be hidden. Drops to a second, horizontally scrollable
-   row under the wordmark. */
+/* Mobile keeps the header to a single 64px row — wordmark and language only.
+   Section links are dropped by design; the page is read by scrolling. */
 @media (max-width: 760px) {
-  .site-header .wrap {
-    flex-wrap: wrap; height: auto;
-    padding-top: 11px; padding-bottom: 0; gap: 0 16px;
-  }
-  .site-nav { display: contents; }
-  .nav-links {
-    order: 3; width: 100%; gap: 20px;
-    overflow-x: auto; overscroll-behavior-x: contain;
-    padding: 9px 0 10px; scrollbar-width: none;
-    -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent);
-    mask-image: linear-gradient(90deg, #000 88%, transparent);
-  }
-  .nav-links::-webkit-scrollbar { display: none; }
-  .site-nav a.nav-link { white-space: nowrap; }
+  .site-nav a.nav-link { display: none; }
 }
 
 /* ---------- section scaffolding ---------- */
