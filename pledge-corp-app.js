@@ -64,7 +64,7 @@
 
   // ---------- loop diagram ----------
   var STEPS = 5;
-  var stepNodeMap = ["pledge", "pledge", "wavist", "witchbox", null];
+  var stepNodeMap = ["pledge", "pledge", "ai", "wavist", "pay"];
   var captionEl = document.getElementById("loop-caption");
   var stepnoEl = document.getElementById("loop-stepno");
   var nodes = document.querySelectorAll(".loop-node");
@@ -151,7 +151,7 @@
 
   // ---------- tweak hooks ----------
   window.applyPledgeTweaks = function (t) {
-    var map = { "Platform Company": "circle", "Three Platforms": "economy", "Grow Together": "stays" };
+    var map = { "Platform Company": "circle", "Two Engines": "economy", "Grow Together": "stays" };
     state.headline = map[t.headline] || "circle";
     state.motion = !!t.motion;
     document.documentElement.setAttribute("data-motion", state.motion ? "on" : "off");

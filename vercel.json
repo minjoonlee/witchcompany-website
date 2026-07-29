@@ -1,6 +1,12 @@
 {
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "(www\\.)?witchcompany\\.io" }],
+      "destination": "https://pledge.co.kr/$1",
+      "permanent": true
+    },
+    {
       "source": "/(about|contact|news|press|wavist|witchbox|witchpay|witchverse|index-ko)\\.html",
       "destination": "/",
       "permanent": false

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://witchcompany.io/sitemap.xml
+Sitemap: https://pledge.co.kr/sitemap.xml
