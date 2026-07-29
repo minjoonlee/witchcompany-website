@@ -132,6 +132,25 @@
   }
   requestAnimationFrame(tick);
 
+  // ---------- reading progress ----------
+  (function setupProgress() {
+    var header = document.querySelector(".site-header");
+    if (!header) return;
+    var ticking = false;
+    function paint() {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var pct = max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0;
+      header.style.setProperty("--sp", pct.toFixed(2) + "%");
+      ticking = false;
+    }
+    function onScroll() {
+      if (!ticking) { ticking = true; requestAnimationFrame(paint); }
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    paint();
+  })();
+
   // ---------- scroll reveal ----------
   // Elements are visible by default; below-fold elements get .pre (hidden),
   // removed when they scroll into view. JS failure = everything still visible.

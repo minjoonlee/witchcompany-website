@@ -107,7 +107,7 @@
           <span><span data-i18n="hero_m1k">법인</span> — <b data-i18n="hero_m1v">주식회사 플렛지 · PLG—CORP</b></span>
           <span><span data-i18n="hero_m2k">그룹</span> — <b data-i18n="hero_m2v">데이원드림 계열</b></span>
           <span><span data-i18n="hero_m3k">사업축</span> — <b data-i18n="hero_m3v">PLEDGE · WAVIST</b></span>
-          <span><span data-i18n="hero_m4k">엔진</span> — <b data-i18n="hero_m4v">KAVE · PLEDGE PAY · STO · IP RISK AI</b></span>
+          <span><span data-i18n="hero_m4k">엔진</span> — <b data-i18n="hero_m4v">KAVE · PLEDGE PAY · IP VALUATION AI · STO</b></span>
         </div>
         <p class="hero-sub" data-i18n="hero_sub">(주)플렛지는 팬덤 플랫폼 PLEDGE와 IP 금융 플랫폼 WAVIST를 운영하는 K-콘텐츠 플랫폼 기업입니다. 팬의 활동을 검증 가능한 데이터로 축적하고, 그 데이터로 IP의 가치를 평가하며, 평가된 IP를 글로벌 자본으로 연결합니다.</p>
       </div>
@@ -118,10 +118,10 @@
   <!-- marquee -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track" id="marquee-track">
-      <span>PLEDGE — Fandom Platform <i>●</i> PLEDGE PAY — Fan Payment Layer <i>●</i> WAVIST — K-Culture RWA <i>●</i> IP RISK AI — Automated IP Rating <i>●</i> A DayOneDream Company <i>●</i> </span>
-      <span>PLEDGE — Fandom Platform <i>●</i> PLEDGE PAY — Fan Payment Layer <i>●</i> WAVIST — K-Culture RWA <i>●</i> IP RISK AI — Automated IP Rating <i>●</i> A DayOneDream Company <i>●</i> </span>
-      <span>PLEDGE — Fandom Platform <i>●</i> PLEDGE PAY — Fan Payment Layer <i>●</i> WAVIST — K-Culture RWA <i>●</i> IP RISK AI — Automated IP Rating <i>●</i> A DayOneDream Company <i>●</i> </span>
-      <span>PLEDGE — Fandom Platform <i>●</i> PLEDGE PAY — Fan Payment Layer <i>●</i> WAVIST — K-Culture RWA <i>●</i> IP RISK AI — Automated IP Rating <i>●</i> A DayOneDream Company <i>●</i> </span>
+      <span>PLEDGE — Fandom Platform <i>●</i> PLEDGE PAY — Fan Payment Layer <i>●</i> WAVIST — K-Culture RWA <i>●</i> IP VALUATION AI — Cashflow Distribution Forecasting <i>●</i> A DayOneDream Company <i>●</i> </span>
+      <span>PLEDGE — Fandom Platform <i>●</i> PLEDGE PAY — Fan Payment Layer <i>●</i> WAVIST — K-Culture RWA <i>●</i> IP VALUATION AI — Cashflow Distribution Forecasting <i>●</i> A DayOneDream Company <i>●</i> </span>
+      <span>PLEDGE — Fandom Platform <i>●</i> PLEDGE PAY — Fan Payment Layer <i>●</i> WAVIST — K-Culture RWA <i>●</i> IP VALUATION AI — Cashflow Distribution Forecasting <i>●</i> A DayOneDream Company <i>●</i> </span>
+      <span>PLEDGE — Fandom Platform <i>●</i> PLEDGE PAY — Fan Payment Layer <i>●</i> WAVIST — K-Culture RWA <i>●</i> IP VALUATION AI — Cashflow Distribution Forecasting <i>●</i> A DayOneDream Company <i>●</i> </span>
     </div>
   </div>
 
@@ -136,13 +136,21 @@
           <div class="loop-steps">
             <div class="loop-step"><span class="n">PLG·01</span><span class="t" data-i18n="step1">팬덤 활동이 PLEDGE에서 시작됩니다</span></div>
             <div class="loop-step"><span class="n">PLG·02</span><span class="t" data-i18n="step2">활동·소유·거래 이력이 온체인 데이터로 자산화됩니다</span></div>
-            <div class="loop-step"><span class="n">PLG·03</span><span class="t" data-i18n="step3">IP RISK AI가 운영 데이터로 IP를 자동 평가·등급화합니다</span></div>
-            <div class="loop-step"><span class="n">PLG·04</span><span class="t" data-i18n="step4">WAVIST가 그 등급을 근거로 다권역 토큰증권을 발행합니다</span></div>
+            <div class="loop-step"><span class="n">PLG·03</span><span class="t" data-i18n="step3">운영 데이터로 IP의 미래 현금흐름 분포를 예측합니다</span></div>
+            <div class="loop-step"><span class="n">PLG·04</span><span class="t" data-i18n="step4">그 분포가 발행 규모·가격의 근거가 됩니다 — WAVIST 다권역 발행</span></div>
             <div class="loop-step"><span class="n">PLG·05</span><span class="t" data-i18n="step5">PLEDGE PAY로 결제와 보상이 순환해, 다시 제작과 팬에게 돌아갑니다</span></div>
           </div>
         </div>
         <div class="loop-stage rv" aria-label="Fan value loop diagram">
           <svg viewBox="0 0 720 720" aria-hidden="true">
+            <defs>
+              <linearGradient id="ringgrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="var(--pledge)"></stop>
+                <stop offset="38%" stop-color="var(--ai)"></stop>
+                <stop offset="70%" stop-color="var(--wavist)"></stop>
+                <stop offset="100%" stop-color="var(--pay)"></stop>
+              </linearGradient>
+            </defs>
             <circle class="ring-base" cx="360" cy="360" r="250"></circle>
             <circle class="ring-flow" cx="360" cy="360" r="250"></circle>
             <circle class="flow-dot" cx="360" cy="110" r="6" fill="var(--ink)"></circle>
@@ -155,8 +163,8 @@
             <span class="role" data-i18n="node_p">팬덤 플랫폼</span>
           </div>
           <div class="loop-node" data-node="ai" style="left: 84.7%; top: 50%;">
-            <span class="node-mark en">IP RISK<br>AI</span>
-            <span class="role" data-i18n="node_ai">IP 평가 AI</span>
+            <span class="node-mark en">IP VALUATION<br>AI</span>
+            <span class="role" data-i18n="node_ai">IP 가치평가 AI</span>
           </div>
           <div class="loop-node" data-node="wavist" style="left: 50%; top: 84.7%;">
             <span class="chip"><img src="assets/wavist-logo-white.svg" alt="WAVIST"></img></span>
@@ -265,10 +273,23 @@
           </div>
         </div>
         <div class="e-subs">
+          <div class="sub s-ai">
+            <p class="sub-top"><span class="sub-no mono">S—03</span><span class="sub-name en">IP VALUATION AI</span></p>
+            <p class="sub-role" data-i18n="e2s2_role">현금흐름 분포 예측 · 하방위험 등급화</p>
+            <p class="sub-def" data-i18n="e2s2_def">콘텐츠 IP의 미래 현금흐름을 하나의 추정치가 아니라 분포로 예측합니다. 베이지안 계층모델이 이력 없는 신규 IP의 콜드스타트를 넘고, 몬테카를로 시뮬레이션이 분포를 만들며, 그 분포의 하방(VaR · CVaR)에서 투자위험 등급이 도출됩니다. 등급은 별도의 산출물이 아니라 예측 분포의 파생물입니다.</p>
+            <p class="metrics-h mono" data-i18n="e2s2_mt">검증 지표</p>
+            <ul class="metrics">
+              <li><span class="m-k" data-i18n="m1k">분포 예측 정확도</span><span class="m-s mono" data-i18n="m1v">CRPS · Pinball Loss</span></li>
+              <li><span class="m-k" data-i18n="m2k">예측구간 캘리브레이션</span><span class="m-s mono" data-i18n="m2v">80% PI 커버리지</span></li>
+              <li><span class="m-k" data-i18n="m3k">매출 예측 오차</span><span class="m-s mono" data-i18n="m3v">MAPE</span></li>
+              <li><span class="m-k" data-i18n="m4k">하방위험 등급</span><span class="m-s mono" data-i18n="m4v">VaR · CVaR</span></li>
+            </ul>
+            <p class="sub-note" data-i18n="e2s2_note">손실 이벤트를 따로 정의하지 않습니다. 공연 · 앨범 · 팬미팅 건마다 발생하는 실현매출과 예측분포의 오차가 곧 학습 · 검증 라벨이며, 운영할수록 표본이 이벤트 단위로 축적됩니다.</p>
+          </div>
           <div class="sub s-sto">
-            <p class="sub-top"><span class="sub-no mono">S—03</span><span class="sub-name en">STO ISSUANCE</span></p>
-            <p class="sub-role" data-i18n="e2s1_role">다권역 규제준수 발행</p>
-            <p class="sub-def" data-i18n="e2s1_def">발행 → 청약 · 배정 → 수익배분 → 상환 → 소각. 전 과정을 온체인으로 증빙합니다.</p>
+            <p class="sub-top"><span class="sub-no mono">S—04</span><span class="sub-name en">STO ISSUANCE</span></p>
+            <p class="sub-role" data-i18n="e2s1_role">평가 결과를 발행 파라미터로</p>
+            <p class="sub-def" data-i18n="e2s1_def">예측된 현금흐름 분포가 발행 규모 · 가격 · 수익배분의 근거가 됩니다. 발행부터 소각까지 전 과정을 온체인으로 증빙하고, 권역별 규제는 발행 파라미터로 모듈화해 새로운 권역을 코드 변경 없이 확장합니다.</p>
             <p class="metrics-h mono" data-i18n="e2s1_ft">발행 풀사이클</p>
             <ol class="flowsteps">
               <li><span class="fs-n mono">01</span><span class="fs-k" data-i18n="fl1">발행</span><span class="fs-d" data-i18n="fl1d">SPV · 한도 설정</span></li>
@@ -283,19 +304,6 @@
               <li data-i18n="e2s1_l3">일본 JFSA</li>
               <li data-i18n="e2s1_l4">유럽 MiCA</li>
             </ul>
-          </div>
-          <div class="sub s-ai">
-            <p class="sub-top"><span class="sub-no mono">S—04</span><span class="sub-name en">IP RISK AI</span></p>
-            <p class="sub-role" data-i18n="e2s2_role">IP 투자위험 자동평가</p>
-            <p class="sub-def" data-i18n="e2s2_def">수기 실사와 주관적 판단에 의존해온 콘텐츠 IP 평가를 자동화합니다. 베이지안 계층모델로 이력 없는 신규 IP의 콜드스타트를 넘고, 몬테카를로 · VaR로 손실위험을 산출하며, 산출 근거를 설명 가능한 형태로 함께 제시합니다.</p>
-            <p class="metrics-h mono" data-i18n="e2s2_mt">개발 목표치</p>
-            <ul class="metrics">
-              <li><span class="m-k" data-i18n="m1k">투자위험등급 변별력 (AUC)</span><span class="m-v en">0.55 <i>→</i> 0.85</span></li>
-              <li><span class="m-k" data-i18n="m2k">등급 — 실손실 정합성</span><span class="m-v en">80<small>%</small></span></li>
-              <li><span class="m-k" data-i18n="m3k">평가 설명가능성 (XAI) 충실도</span><span class="m-v en">90<small>%</small></span></li>
-              <li><span class="m-k" data-i18n="m4k">다권역 규제룰셋 자동적용</span><span class="m-v en">95<small>%</small></span></li>
-            </ul>
-            <p class="sub-note" data-i18n="e2s2_note">개발 중인 기술의 목표치이며, 학술 · 공인시험 · 실무 3중 외부 검증 체계로 확인합니다.</p>
           </div>
         </div>
       </article>
@@ -359,7 +367,7 @@
             <div><dt data-i18n="co_k1">법인명</dt><dd data-i18n="co_v1">주식회사 플렛지 (구 위치컴퍼니)</dd></div>
             <div><dt data-i18n="co_k2">그룹</dt><dd data-i18n="co_v2">데이원드림 계열사</dd></div>
             <div><dt data-i18n="co_k3">주소</dt><dd data-i18n="co_v3">서울특별시 강남구 봉은사로67길 40, 2F</dd></div>
-            <div><dt data-i18n="co_k4">사업영역</dt><dd data-i18n="co_v4">팬덤 플랫폼 · 팬 결제 · IP 금융 · IP 평가 AI</dd></div>
+            <div><dt data-i18n="co_k4">사업영역</dt><dd data-i18n="co_v4">팬덤 플랫폼 · 팬 결제 · IP 가치평가 · IP 금융</dd></div>
           </dl>
         </div>
         <div class="contact-card rv">
