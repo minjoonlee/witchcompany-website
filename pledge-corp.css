@@ -12,6 +12,9 @@
   --pay-deep: #1a1509;
   --ai: oklch(0.66 0.14 232);
   --ai-deep: oklch(0.3 0.08 240);
+  --plaiva: #7c3aed;
+  --plaiva-deep: #2a0f5c;
+  --store: var(--pay);
   --maxw: 1320px;
   --pad: clamp(20px, 4vw, 56px);
   /* one spine for the whole page: every section splits 5fr / 7fr with no gap,
@@ -692,3 +695,20 @@ section:last-of-type { border-bottom: 0; }
   [data-motion="on"] .rv { transition: opacity 0.5s ease, transform 0.5s ease; }
   [data-motion="on"] .rv.pre { opacity: 0; transform: translateY(22px); }
 }
+
+/* ---- v4 (2026-11): three brands, one loop ---- */
+.loop-node[data-node="plaiva"] { --nc: var(--plaiva); }
+.loop-node[data-node="store"] { --nc: var(--store); }
+.loop-node[data-node="plaiva"] .node-mark { color: var(--plaiva); letter-spacing: 0.04em; }
+.loop-node[data-node="store"] .node-mark { color: var(--pay-deep); }
+.loop-center[data-node="plaiva"] .stepbar i.on { background: var(--plaiva); }
+.loop-center[data-node="store"] .stepbar i.on { background: var(--store); }
+
+.e-plaiva .e-visual img.kv { object-fit: cover; object-position: center; }
+[data-color="full"] .e-plaiva { background: var(--plaiva-deep); color: #f3eefe; border-color: var(--plaiva-deep); }
+[data-color="full"] .e-plaiva .b-tag { color: #c4a8ff; opacity: 1; }
+[data-color="subtle"] .e-plaiva .b-tag { color: var(--plaiva); opacity: 1; }
+
+.e-labs .labs-head { padding: var(--gutter); display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 20px; }
+.e-labs .labs-head .e-def { margin: 0; }
+.e-labs .sub-def { opacity: 0.8; }

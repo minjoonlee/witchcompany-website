@@ -64,7 +64,7 @@
 
   // ---------- loop diagram ----------
   // one step per node — the diagram and the counter can never disagree
-  var stepNodeMap = ["pledge", "ai", "wavist", "pay"];
+  var stepNodeMap = ["plaiva", "pledge", "store", "wavist"];
   var STEPS = stepNodeMap.length;
   var captionEl = document.getElementById("loop-caption");
   var centerEl = document.getElementById("loop-center");
@@ -180,7 +180,7 @@
 
   // ---------- tweak hooks ----------
   window.applyPledgeTweaks = function (t) {
-    var map = { "Platform Company": "circle", "Two Engines": "economy", "Grow Together": "stays" };
+    var map = { "Platform Company": "circle", "Three Brands": "economy", "Grow Together": "stays" };
     state.headline = map[t.headline] || "circle";
     state.motion = !!t.motion;
     document.documentElement.setAttribute("data-motion", state.motion ? "on" : "off");
