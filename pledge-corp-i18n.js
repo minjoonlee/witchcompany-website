@@ -98,8 +98,8 @@ window.PLEDGE_I18N = {
 
     s04a: "04 — Track Record", s04b: "트랙레코드",
     proof_h: "Proof,\nNot *Promise*",
-    p1_key: "First Mover",
-    p1_small: "K-콘텐츠 STO 풀사이클 최초",
+    p1_key: "Full Cycle",
+    p1_small: "발행 → 상환 → 온체인 소각 완료",
     p1_body: "SBI Digital Markets와 함께 K-POP 공연 IP 기초 토큰증권 $3.22M을 발행하고, 상환과 온체인 소각까지 마쳤습니다. 저희가 아는 한, K-콘텐츠 현금흐름을 기초로 한 증권이 발행부터 상환 · 소각까지 완료된 첫 사례입니다. 콘텐츠 펀드 $CNTNT 1호도 조달을 마치고 제작에 들어갔습니다.",
     p1_t1: "$3.22M 발행", p1_t2: "SBI Digital Markets", p1_t3: "KYOBO", p1_t4: "발행 → 상환 → 온체인 소각", p1_t5: "$CNTNT 1호 조달 완료",
     p2_key: "Soneium",
@@ -229,8 +229,8 @@ window.PLEDGE_I18N = {
 
     s04a: "04 — Track Record", s04b: "Track Record",
     proof_h: "Proof,\nNot *Promise*",
-    p1_key: "First Mover",
-    p1_small: "First full K-content STO cycle",
+    p1_key: "Full Cycle",
+    p1_small: "Issued → Redeemed → Burned on-chain",
     p1_body: "With SBI Digital Markets, we issued $3.22M in token securities backed by K-pop concert IP and carried them through redemption and on-chain burn. To our knowledge, it is the first security backed by K-content cash flows to complete the full cycle from issuance to redemption and burn. Content fund $CNTNT No.1 has also closed funding and entered production.",
     p1_t1: "$3.22M issued", p1_t2: "SBI Digital Markets", p1_t3: "KYOBO", p1_t4: "Issue → Redeem → On-chain burn", p1_t5: "$CNTNT No.1 funded",
     p2_key: "Soneium",
