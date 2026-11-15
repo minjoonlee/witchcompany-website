@@ -1,4 +1,4 @@
-// PLEDGE Inc. corporate v6 — language toggle + fail-open scroll reveal
+// PLEDGE Inc. corporate v8 — language toggle + fail-open scroll reveal
 (function () {
   var I18N = window.PLEDGE_I18N;
   var lang = "ko";
@@ -34,6 +34,11 @@
     });
   });
   if (lang !== "ko") apply();
+
+  var hd = document.querySelector(".hd");
+  function onScroll() { if (hd) hd.classList.toggle("scrolled", window.scrollY > 8); }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 
   // reveal: only below-the-fold elements are hidden, and only once JS runs
   if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
