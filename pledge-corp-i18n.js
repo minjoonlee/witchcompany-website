@@ -77,7 +77,15 @@ window.PLEDGE_I18N = {
     "mz1": "앨범 속 공간",
     "mz3": "3D 팝업스토어 · 부산",
     "mz4": "3D 팝업스토어 · 대전",
-    "mz5": "HYUNJAE PLEDGE · 광장"
+    "mz5": "HYUNJAE PLEDGE · 광장",
+    "az1": "〈바다의 집〉 캐스팅",
+    "az3": "AI 숏드라마",
+    "az4": "AI 영상 장면",
+    "az5": "AI 캐릭터 · 대화",
+    "bz1": "K-POP 공연 IP",
+    "bz3": "딜룸",
+    "bz4": "K-컬처 RWA",
+    "bz5": "온체인 인프라"
   },
   "en": {
     "nav_about": "About",
@@ -156,6 +164,14 @@ window.PLEDGE_I18N = {
     "mz1": "Inside the album",
     "mz3": "3D pop-up store · Busan",
     "mz4": "3D pop-up store · Daejeon",
-    "mz5": "HYUNJAE PLEDGE · Plaza"
+    "mz5": "HYUNJAE PLEDGE · Plaza",
+    "az1": "Sea House · casting",
+    "az3": "AI short drama",
+    "az4": "AI video scene",
+    "az5": "AI character · chat",
+    "bz1": "K-POP concert IP",
+    "bz3": "Deal room",
+    "bz4": "K-Culture RWA",
+    "bz5": "On-chain infrastructure"
   }
 };
