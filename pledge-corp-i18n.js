@@ -73,7 +73,11 @@ window.PLEDGE_I18N = {
     "pr2": "아티스트별 팬 공간 · 3D 광장",
     "pr3": "굿즈 커머스 · 3D 팝업 · AI 제작실",
     "pr4": "메타버스 앨범",
-    "pr5": "K-컬처 RWA 플랫폼"
+    "pr5": "K-컬처 RWA 플랫폼",
+    "mz1": "앨범 속 공간",
+    "mz3": "3D 팝업스토어 · 부산",
+    "mz4": "3D 팝업스토어 · 대전",
+    "mz5": "HYUNJAE PLEDGE · 광장"
   },
   "en": {
     "nav_about": "About",
@@ -148,6 +152,10 @@ window.PLEDGE_I18N = {
     "pr2": "Per-artist fan space · 3D plaza",
     "pr3": "Goods commerce · 3D pop-ups · AI studio",
     "pr4": "Metaverse album",
-    "pr5": "K-Culture RWA platform"
+    "pr5": "K-Culture RWA platform",
+    "mz1": "Inside the album",
+    "mz3": "3D pop-up store · Busan",
+    "mz4": "3D pop-up store · Daejeon",
+    "mz5": "HYUNJAE PLEDGE · Plaza"
   }
 };
