@@ -712,3 +712,20 @@ section:last-of-type { border-bottom: 0; }
 .e-labs .labs-head { padding: var(--gutter); display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 20px; }
 .e-labs .labs-head .e-def { margin: 0; }
 .e-labs .sub-def { opacity: 0.8; }
+
+/* v5 (2026-11) — type-only key visual for pillars without photography */
+.e-visual.e-type {
+  background:
+    radial-gradient(120% 90% at 85% 10%, color-mix(in srgb, var(--pay) 38%, transparent), transparent 60%),
+    linear-gradient(150deg, #2a261d, #0c0b08);
+  display: flex; align-items: flex-end;
+}
+.e-type .type-mark {
+  position: relative; z-index: 1; padding: 20px;
+  display: flex; flex-direction: column;
+  font-family: "Archivo", sans-serif; font-weight: 800; text-transform: uppercase;
+  font-size: clamp(30px, 4vw, 52px); line-height: 0.95; letter-spacing: -0.03em;
+  color: #f6f4ee;
+}
+.e-type .type-mark span:last-child { font-style: italic; font-weight: 500; color: var(--pay); }
+.sub-list li { text-wrap: pretty; }
