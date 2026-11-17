@@ -3,11 +3,6 @@ window.PLEDGE_I18N = {
   "ko": {
     "gt2": "구매하면 같은 디자인의 아바타 아이템",
     "gt1": "공식 MD 티셔츠",
-    "pt_m2v": "특허 결정 · 2026.10",
-    "pt_m2": "상태",
-    "pt_m1": "출원번호",
-    "pt_p": "실물 앨범의 QR로 들어가는 메타버스 앨범 공간 — PLEDGE ALBUM에 적용",
-    "pt_h": "가상 앨범 기술 특허",
     "bf5s": "사이클 완료",
     "bf5": "소각",
     "bf4s": "원금 반환",
@@ -115,11 +110,6 @@ window.PLEDGE_I18N = {
   "en": {
     "gt2": "Same design as an avatar item, with purchase",
     "gt1": "Official MD T-shirt",
-    "pt_m2v": "Allowed · Oct 2026",
-    "pt_m2": "Status",
-    "pt_m1": "Application no.",
-    "pt_p": "A metaverse album space entered via the physical album's QR — applied to PLEDGE ALBUM",
-    "pt_h": "Virtual album patent",
     "bf5s": "Cycle complete",
     "bf5": "Burn",
     "bf4s": "Principal returned",
