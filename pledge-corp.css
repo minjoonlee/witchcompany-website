@@ -169,6 +169,10 @@ button{font:inherit;color:inherit}
   .user b{font-size:13px;word-break:keep-all}
   .map .node.on{border-color:rgba(255,255,255,.85);background:rgba(255,255,255,.1)}
   .map-lines path{stroke:rgba(255,255,255,.18)}
+  .map-lines path.v-aud{opacity:0}
+  .map-lines path.v-aud.on{opacity:1;stroke:rgba(255,255,255,.9);stroke-width:1.4}
+  .map.has-active .map-lines path:not(.v-aud){opacity:1}
+  .col-h{z-index:2;background:var(--dark);padding:2px 8px 2px 0}
   .map-cap{display:block;margin-top:28px;min-height:3.2em;padding:16px 18px;border-radius:12px;background:rgba(255,255,255,.06);font-size:13.5px;line-height:1.6;color:rgba(255,255,255,.75)}
   .map-cap b{color:#fff;font-weight:700}
 }

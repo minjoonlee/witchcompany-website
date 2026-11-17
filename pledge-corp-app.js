@@ -64,9 +64,15 @@
       EDGES.forEach(function (e) {
         var a = node(e[0]).getBoundingClientRect(), b = node(e[1]).getBoundingClientRect(), d;
         if (vertical) {
-          var vx1 = a.left + a.width / 2 - m.left, vy1 = a.bottom - m.top, vx2 = b.left + b.width / 2 - m.left, vy2 = b.top - m.top, dy = (vy2 - vy1) * 0.55;
-          if (e[0] === "ip") vx1 = Math.min(Math.max(vx2, a.left - m.left + 24), a.right - m.left - 24);
-          d = "M" + vx1 + " " + vy1 + " C" + vx1 + " " + (vy1 + dy) + " " + vx2 + " " + (vy2 - dy) + " " + vx2 + " " + vy2;
+          var vx1 = a.left + a.width / 2 - m.left, vy1 = a.bottom - m.top, vx2 = b.left + b.width / 2 - m.left, vy2 = b.top - m.top;
+          if (e[0] === "ip") { vx1 = vx2; d = "M" + vx1 + " " + vy1 + " V" + vy2; }
+          else {
+            // rounded elbow: down → across → down
+            var ym = vy1 + (vy2 - vy1) / 2, r = Math.min(10, Math.abs(vx2 - vx1) / 2, (vy2 - vy1) / 4), s = vx2 > vx1 ? 1 : -1;
+            d = Math.abs(vx2 - vx1) < 1 ? "M" + vx1 + " " + vy1 + " V" + vy2
+              : "M" + vx1 + " " + vy1 + " V" + (ym - r) + " Q" + vx1 + " " + ym + " " + (vx1 + s * r) + " " + ym +
+                " H" + (vx2 - s * r) + " Q" + vx2 + " " + ym + " " + vx2 + " " + (ym + r) + " V" + vy2;
+          }
         } else {
           var x1 = a.right - m.left, y1 = a.top + a.height / 2 - m.top;
           var x2 = b.left - m.left, y2 = b.top + b.height / 2 - m.top, dx = (x2 - x1) * 0.5;
@@ -75,6 +81,7 @@
         var p = document.createElementNS(NS, "path");
         p.setAttribute("d", d);
         p.dataset.a = e[0]; p.dataset.b = e[1];
+        if (vertical && e[0] !== "ip") p.classList.add("v-aud");
         if (e[2]) p.setAttribute("class", "dash");
         svg.appendChild(p);
       });
