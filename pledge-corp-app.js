@@ -53,7 +53,7 @@
     var map = document.getElementById("map");
     if (!map) return;
     var svg = map.querySelector(".map-lines");
-    var EDGES = [["ip","ai"],["ip","mv"],["ip","bc"],["ai","u10"],["ai","u20"],["mv","u10"],["mv","u20"],["bc","u20"],["bc","u30"],["bc","u40",1]];
+    var EDGES = [["ip","ai"],["ip","mv"],["ip","bc"],["ai","u10"],["ai","u20"],["mv","u10"],["mv","u30"],["bc","u30"],["bc","u40"]];
     var NS = "http://www.w3.org/2000/svg";
     function node(id) { return map.querySelector('[data-id="' + id + '"]'); }
     function draw() {
