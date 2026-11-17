@@ -79,9 +79,9 @@
 </head>
 <body>
 
-<header class="hd">
+<header class="hd on-dark">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="Pledge Inc."><img src="assets/logo-wordmark-black.png" alt="PLEDGE"><span>INC.</span></a>
+    <a class="logo" href="#top" aria-label="Pledge Inc."><img class="lg-b" src="assets/logo-wordmark-black.png" alt="PLEDGE"><img class="lg-w" src="assets/logo-wordmark-white.png" alt=""><span>INC.</span></a>
     <nav class="nav">
       <a href="#about" data-i18n="nav_about">비전</a>
       <a href="#structure" data-i18n="nav_sx">구조</a>
@@ -98,84 +98,68 @@
 
 <main id="top">
 
-  <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Entertainment Technology Company</p>
-      <h1 data-i18n="hero_h">플렛지에서<br><em>놀자</em></h1>
-      <p class="hero-sub" data-i18n="hero_sub">좋아하는 아티스트와 이야기를 AI · 메타버스 · 블록체인으로 함께 즐기는 곳. 플렛지는 엔터테인먼트를 모든 세대의 놀이로 만드는 엔터테크 회사입니다.</p>
-      <div class="hero-cta">
-        <a class="btn" href="#structure" data-i18n="hero_b1">플렛지는 이렇게 연결됩니다</a>
-        <a class="more" href="#business" data-i18n="hero_b2">서비스 둘러보기</a>
-      </div>
+  <section class="hero" aria-label="PLEDGE">
+    <div class="hero-media" aria-hidden="true">
+      <div class="slide is-on" data-cap="PLAIVA — AI Drama"><img src="assets/v8/ai-cast.webp" alt=""></div>
+      <div class="slide" data-cap="WAVIST — K-POP Live IP"><img src="assets/live-stage.jpg" alt=""></div>
+      <div class="slide" data-cap="PLEDGE STORE — Official MD"><img src="assets/v8/md-btob.webp" alt=""></div>
+      <div class="slide" data-cap="PLEDGE STORE — Pop-up Store"><img src="assets/v8/kdh-popup.webp" alt=""></div>
+      <div class="slide" data-cap="PLEDGE STORE — 3D Pop-up"><img src="assets/v8/mv-busan3d.webp" alt=""></div>
     </div>
-    <div class="strip" aria-hidden="true">
-      <div class="strip-track">
-        <img src="assets/v8/ai-cast.webp" alt=""><img src="assets/v8/mv-album-sea.webp" alt=""><img src="assets/v8/kave-plaza.webp" alt=""><img src="assets/v8/md-heartattack.webp" alt=""><img src="assets/v8/ai-topstar.webp" alt=""><img src="assets/v8/mv-busan3d.webp" alt=""><img src="assets/v8/bc-concert.webp" alt=""><img src="assets/v8/kdh-popup.webp" alt=""><img src="assets/v8/ai-daily.webp" alt=""><img src="assets/v8/mv-daejeon3d.webp" alt="">
-        <img src="assets/v8/ai-cast.webp" alt=""><img src="assets/v8/mv-album-sea.webp" alt=""><img src="assets/v8/kave-plaza.webp" alt=""><img src="assets/v8/md-heartattack.webp" alt=""><img src="assets/v8/ai-topstar.webp" alt=""><img src="assets/v8/mv-busan3d.webp" alt=""><img src="assets/v8/bc-concert.webp" alt=""><img src="assets/v8/kdh-popup.webp" alt=""><img src="assets/v8/ai-daily.webp" alt=""><img src="assets/v8/mv-daejeon3d.webp" alt="">
-      </div>
+    <div class="hero-in wrap">
+      <p class="eyebrow">Entertainment Technology Company</p>
+      <h1 data-i18n="hero_h">좋아하는 마음이 닿는 곳마다,<br>새로운 즐거움을 만듭니다</h1>
+      <p class="hero-sub" data-i18n="hero_sub">플렛지는 AI · 메타버스 · 블록체인으로 아티스트와 팬, 그리고 모든 세대를 잇는 엔터테인먼트 테크 회사입니다.</p>
+    </div>
+    <div class="hero-foot wrap">
+      <p class="hero-cap" id="heroCap">PLAIVA — AI Drama</p>
+      <div class="hero-ticks" id="heroTicks"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+      <a class="hero-scroll" href="#about">Scroll</a>
     </div>
   </section>
 
-  <section id="about" class="about">
-    <div class="wrap grid2">
-      <p class="label">Vision</p>
-      <div>
-        <p class="statement rv" data-i18n="about_p">엔터테인먼트는 이제 보는 것이 아니라 함께 노는 것입니다. 플렛지는 아티스트와 인플루언서의 음악 · 영상 · 굿즈를 기술로 풀어, 10대부터 60대까지 누구나 들어와 놀 수 있는 곳을 만듭니다.</p>
-        <dl class="figures rv">
-          <div><dt>6</dt><dd data-i18n="fg1">아티스트 PLEDGE</dd></div>
-          <div><dt>40+</dt><dd data-i18n="fg2">공식 MD · 앨범 프로젝트</dd></div>
-          <div><dt>3</dt><dd data-i18n="fg3">iOS · Android 출시 앱</dd></div>
-          <div><dt>$3.22M</dt><dd data-i18n="fg4">IP 토큰 발행 · 상환 완료</dd></div>
-        </dl>
+  <section id="about" class="vision">
+    <div class="wrap">
+      <p class="kicker"><span>01</span>Vision</p>
+      <p class="vision-h rv" data-i18n="vs_h">엔터테인먼트는 보는 것에서<br>함께 즐기는 것으로</p>
+      <div class="vision-body rv">
+        <p data-i18n="about_p">아티스트와 인플루언서가 만든 음악 · 영상 · 굿즈를 기술 위에 올려, 팬이 직접 대화하고 머물고 소유하는 경험으로 바꿉니다. 젊은 팬덤에서 시작해 모든 세대로 넓혀 갑니다.</p>
       </div>
+      <dl class="figures rv">
+        <div><dt>6</dt><dd data-i18n="fg1">아티스트 PLEDGE</dd></div>
+        <div><dt>40+</dt><dd data-i18n="fg2">공식 MD · 앨범 프로젝트</dd></div>
+        <div><dt>3</dt><dd data-i18n="fg3">iOS · Android 출시 앱</dd></div>
+        <div><dt>$3.22M</dt><dd data-i18n="fg4">IP 토큰 발행 · 상환 완료</dd></div>
+      </dl>
     </div>
   </section>
 
   <section id="structure" class="structure">
     <div class="wrap">
-      <div class="sec-head rv">
-        <p class="label">How PLEDGE Connects</p>
-        <h2 data-i18n="sx_h">엔터테인먼트와 사람 사이,<br>플렛지의 기술이 있습니다</h2>
-        <p class="sub" data-i18n="sx_p">기술을 눌러 어떤 세대와 이어지는지 확인해 보세요.</p>
-      </div>
+      <p class="kicker"><span>02</span>How PLEDGE Connects</p>
+      <h2 class="sx-h rv" data-i18n="sx_h">엔터테인먼트와 사람 사이,<br>플렛지의 기술이 있습니다</h2>
 
       <div class="map rv" id="map">
         <svg class="map-lines" aria-hidden="true"></svg>
-
         <div class="col">
-          <p class="col-h">Entertainment</p>
+          <p class="col-h">Entertainment IP</p>
           <div class="node src" data-id="ip">
-            <b data-i18n="sx_ip">엔터 IP</b>
-            <div class="ip-grp"><span data-i18n="sx_ip1">아티스트</span><span data-i18n="sx_ip2">인플루언서</span></div>
-            <div class="ip-grp light"><span data-i18n="sx_ip3">음원</span><span data-i18n="sx_ip4">영상</span><span data-i18n="sx_ip5">굿즈</span><span data-i18n="sx_ip6">공연</span></div>
+            <b data-i18n="sx_ip1">아티스트</b><b data-i18n="sx_ip2">인플루언서</b>
+            <small data-i18n="sx_ip_s">음원 · 영상 · 굿즈 · 공연</small>
           </div>
         </div>
-
-        <div class="col col-tech">
+        <div class="col">
           <p class="col-h">PLEDGE Technology</p>
-          <button type="button" class="node tech" data-id="ai">
-            <b data-i18n="sx_ai">생성형 AI</b>
-            <small>PLAIVA · <span data-i18n="sx_ai_s">AI 굿즈 제작실</span></small>
-            <span class="to" data-i18n="sx_ai_to">→ 10대 · 20대</span>
-          </button>
-          <button type="button" class="node tech" data-id="mv">
-            <b data-i18n="sx_mv">메타버스</b>
-            <small data-i18n="sx_mv_s">아티스트 PLEDGE · 3D 팝업 · 앨범</small>
-            <span class="to" data-i18n="sx_mv_to">→ 10대 · 20대</span>
-          </button>
-          <button type="button" class="node tech" data-id="bc">
-            <b data-i18n="sx_bc">블록체인 · RWA</b>
-            <small data-i18n="sx_bc_s">지갑 · WAVIST</small>
-            <span class="to" data-i18n="sx_bc_to">→ 20대 · 30대 · 그 이상</span>
-          </button>
+          <button type="button" class="node tech" data-id="ai"><b data-i18n="sx_ai">생성형 AI</b><small>PLAIVA · AI Goods Studio</small></button>
+          <button type="button" class="node tech" data-id="mv"><b data-i18n="sx_mv">메타버스</b><small>Artist PLEDGE · ALBUM · 3D Store</small></button>
+          <button type="button" class="node tech" data-id="bc"><b data-i18n="sx_bc">블록체인 · RWA</b><small>Wallet · WAVIST</small></button>
         </div>
-
-        <div class="col col-user">
+        <div class="col">
           <p class="col-h">People</p>
-          <div class="node user" data-id="u10"><b data-i18n="sx_u10">10대</b><span data-i18n="sx_u10v">놀다</span><small data-i18n="sx_u10d">AI 캐릭터 · 아티스트와 대화하고, 직접 만들기</small></div>
-          <div class="node user" data-id="u20"><b data-i18n="sx_u20">20대</b><span data-i18n="sx_u20v">모이다</span><small data-i18n="sx_u20d">아티스트 공간 · 굿즈 · 앨범을 모으고 머물기</small></div>
-          <div class="node user" data-id="u30"><b data-i18n="sx_u30">30대</b><span data-i18n="sx_u30v">소유하다</span><small data-i18n="sx_u30d">좋아하는 IP의 가치를 디지털 자산으로</small></div>
-          <div class="node user next" data-id="u40"><b data-i18n="sx_u40">40–60대</b><span>Next</span><small data-i18n="sx_u40d">모든 세대의 놀이터로 확장</small></div>
+          <div class="node user" data-id="u10"><b data-i18n="sx_u10">10대</b><small data-i18n="sx_u10d">대화하고, 직접 만들고</small></div>
+          <div class="node user" data-id="u20"><b data-i18n="sx_u20">20대</b><small data-i18n="sx_u20d">모으고, 머물고</small></div>
+          <div class="node user" data-id="u30"><b data-i18n="sx_u30">30대</b><small data-i18n="sx_u30d">좋아하는 IP를 소유하고</small></div>
+          <div class="node user next" data-id="u40"><b data-i18n="sx_u40">40–60대</b><small data-i18n="sx_u40d">모든 세대로</small></div>
         </div>
       </div>
     </div>
@@ -183,15 +167,12 @@
 
   <section id="story" class="story">
     <div class="wrap">
-      <div class="sec-head rv">
-        <p class="label">Our Path</p>
-        <h2 data-i18n="sl_h">놀이에서 시작해,<br>가치로 이어집니다</h2>
-      </div>
+      <p class="kicker"><span>03</span>Our Path</p>
+      <h2 class="st-h rv" data-i18n="sl_h">팬덤에서 시작해,<br>가치로 이어집니다</h2>
       <ol class="steps">
-        <li class="rv"><p class="ph"><span>01</span> PLAY · <em data-i18n="sl_1a">10대</em></p><h3 data-i18n="sl_1h">AI와 멤버로 모입니다</h3><p data-i18n="sl_1p">아티스트 목소리의 AI 캐릭터, 내가 만드는 숏드라마와 굿즈. 10대가 먼저 놀러 옵니다.</p><p class="svc">PLAIVA · AI Goods Studio</p></li>
-        <li class="rv"><p class="ph"><span>02</span> STAY · <em data-i18n="sl_2a">10–20대</em></p><h3 data-i18n="sl_2h">아티스트마다 머무는 공간</h3><p data-i18n="sl_2p">광장 · 앨범 · 팝업이 웹 3D로 열리고, 팬은 아바타로 매일 들릅니다. 플렛지의 유저가 쌓이는 곳입니다.</p><p class="svc">Artist PLEDGE · PLEDGE ALBUM · STORE</p></li>
-        <li class="rv"><p class="ph"><span>03</span> OWN · <em data-i18n="sl_3a">20–30대</em></p><h3 data-i18n="sl_3h">좋아하는 IP가 자산이 됩니다</h3><p data-i18n="sl_3p">모인 팬덤 위에서 IP의 가치를 블록체인 지갑과 RWA로 나눕니다. 엔터를 넘어 실물 자산까지 넓혀 갑니다.</p><p class="svc">WAVIST · Wallet</p></li>
-        <li class="rv next"><p class="ph"><span>Next</span> · <em data-i18n="sl_4a">40–60대</em></p><h3 data-i18n="sl_4h">모든 세대의 놀이터</h3><p data-i18n="sl_4p">젊은 세대에서 검증한 놀이를 더 넓은 세대로 엽니다.</p></li>
+        <li class="rv"><figure><img src="assets/v8/ai-night.webp" alt="" loading="lazy" style="object-position:60% 50%"></figure><div class="cap"><p class="ph">01 · <span data-i18n="sl_1a">10대</span></p><h3 data-i18n="sl_1h">AI와 멤버로 모입니다</h3><p data-i18n="sl_1p">아티스트 목소리의 AI 캐릭터와 내가 만드는 이야기. 가장 젊은 팬이 먼저 찾아옵니다.</p></div></li>
+        <li class="rv"><figure><img src="assets/v8/mv-album-sea.webp" alt="" loading="lazy" style="object-position:50% 50%"></figure><div class="cap"><p class="ph">02 · <span data-i18n="sl_2a">10–20대</span></p><h3 data-i18n="sl_2h">아티스트마다 머무는 공간</h3><p data-i18n="sl_2p">광장 · 앨범 · 팝업이 웹 3D로 열리고, 팬은 매일 들릅니다.</p></div></li>
+        <li class="rv"><figure><img src="assets/v8/bc-concert.webp" alt="" loading="lazy" style="object-position:50% 45%"></figure><div class="cap"><p class="ph">03 · <span data-i18n="sl_3a">20–30대</span></p><h3 data-i18n="sl_3h">좋아하는 IP의 가치를 나눕니다</h3><p data-i18n="sl_3p">모인 팬덤 위에서 지갑과 RWA로 IP의 가치를 기록하고 나눕니다.</p></div></li>
       </ol>
     </div>
   </section>
@@ -199,8 +180,8 @@
   <section id="business" class="biz">
     <div class="wrap">
       <div class="sec-head rv">
-        <p class="label">Business</p>
-        <h2 data-i18n="biz_h">놀이를 만드는 세 가지 기술</h2>
+        <p class="kicker"><span>04</span>Business</p>
+        <h2 data-i18n="biz_h">세 가지 기술, 직접 운영하는 서비스</h2>
       </div>
 
       <article class="row-wide rv">
@@ -275,7 +256,7 @@
   <section class="matrix">
     <div class="wrap">
       <div class="sec-head rv">
-        <p class="label">Technology × Services</p>
+        <p class="kicker"><span>05</span>Technology × Services</p>
         <h2 data-i18n="mx_h">기술은 서비스로 증명합니다</h2>
       </div>
       <div class="tbl rv" role="table">
@@ -292,7 +273,7 @@
   <section id="artists" class="artists">
     <div class="wrap">
       <div class="sec-head rv">
-        <p class="label">Artist PLEDGE</p>
+        <p class="kicker"><span>06</span>Artist PLEDGE</p>
         <h2 data-i18n="ar_h">아티스트마다, 하나의 PLEDGE</h2>
         <p class="sub" data-i18n="ar_p">팬 공간 · 공식 굿즈 · 콘텐츠가 아티스트별로 한곳에 모입니다.</p>
       </div>
@@ -310,7 +291,7 @@
   <section class="md">
     <div class="wrap">
       <div class="sec-head rv">
-        <p class="label">Goods &amp; MD</p>
+        <p class="kicker"><span>07</span>Goods &amp; MD</p>
         <h2 data-i18n="md_h">공식 MD부터 앨범, 팝업까지</h2>
         <p class="sub" data-i18n="md_p">기획 · 디자인 · 생산 · 판매를 그룹 안에서 끝냅니다.</p>
       </div>
@@ -325,7 +306,7 @@
 
   <section class="partners">
     <div class="wrap grid2">
-      <p class="label">Partners</p>
+      <p class="kicker"><span>08</span>Partners</p>
       <ul class="plist rv">
         <li>SBI Digital Markets</li><li>Soneium</li><li>Optimism</li><li>KYOBO</li><li>DayOneDream</li>
       </ul>

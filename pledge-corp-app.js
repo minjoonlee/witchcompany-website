@@ -1,4 +1,4 @@
-// PLEDGE Inc. corporate v8 — language toggle + fail-open scroll reveal
+// PLEDGE Inc. corporate v10 — language toggle, hero slideshow, structure map, fail-open reveal
 (function () {
   var I18N = window.PLEDGE_I18N;
   var lang = "ko";
@@ -35,10 +35,33 @@
   });
   if (lang !== "ko") apply();
 
-  var hd = document.querySelector(".hd");
-  function onScroll() { if (hd) hd.classList.toggle("scrolled", window.scrollY > 8); }
+  // header: transparent over the hero, solid afterwards
+  var hd = document.querySelector(".hd"), darks = document.querySelectorAll(".hero, .structure, .contact, .ft");
+  function onScroll() {
+    if (!hd) return;
+    var y = hd.offsetHeight / 2, dark = false, top = false;
+    darks.forEach(function (d) { var r = d.getBoundingClientRect(); if (r.top <= y && r.bottom > y) { dark = true; if (d.classList.contains("hero")) top = true; } });
+    hd.classList.toggle("on-dark", dark);
+    hd.classList.toggle("at-top", top);
+  }
   window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
   onScroll();
+
+  // hero slideshow
+  (function () {
+    var slides = document.querySelectorAll(".hero .slide");
+    var ticks = document.querySelectorAll("#heroTicks i"), cap = document.getElementById("heroCap");
+    if (slides.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var i = 0;
+    setInterval(function () {
+      if (document.hidden) return;
+      slides[i].classList.remove("is-on"); if (ticks[i]) ticks[i].classList.remove("on");
+      i = (i + 1) % slides.length;
+      slides[i].classList.add("is-on"); if (ticks[i]) ticks[i].classList.add("on");
+      if (cap) { cap.style.opacity = 0; setTimeout(function () { cap.textContent = slides[i].dataset.cap; cap.style.opacity = 1; }, 300); }
+    }, 6000);
+  })();
 
   // structure map: IP → technology → generations
   (function () {
