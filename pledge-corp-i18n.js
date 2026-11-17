@@ -1,7 +1,11 @@
 // PLEDGE Inc. corporate — KO/EN strings (v8 editorial · 2026-11-15)
 window.PLEDGE_I18N = {
   "ko": {
-    "mx_gen": "주요 사용자",
+    "pt_m2v": "특허 결정 · 2026.10",
+    "pt_m2": "상태",
+    "pt_m1": "출원번호",
+    "pt_p": "실물 앨범의 QR로 들어가는 메타버스 앨범 공간 — PLEDGE ALBUM에 적용",
+    "pt_h": "가상 앨범 기술 특허",
     "bf5s": "사이클 완료",
     "bf5": "소각",
     "bf4s": "원금 반환",
@@ -74,7 +78,7 @@ window.PLEDGE_I18N = {
     "sx_h": "IP를 경험으로 바꾸는\n세 개의 레이어",
     "nav_sx": "구조",
     "nav_about": "비전",
-    "nav_biz": "사업",
+    "nav_biz": "기술",
     "nav_artists": "아티스트",
     "nav_ct": "문의",
     "hero_h": "엔터테인먼트의\n다음 인프라를 만듭니다",
@@ -84,7 +88,7 @@ window.PLEDGE_I18N = {
     "fg2": "공식 MD · 앨범 프로젝트",
     "fg3": "iOS · Android 출시 앱",
     "fg4": "IP 토큰 발행 · 상환 완료",
-    "biz_h": "세 개의 기술, 다섯 개의 서비스",
+    "biz_h": "플렛지의 핵심 기술",
     "ai_h": "한 줄의 기획에서\n한 편의 드라마까지",
     "ai_p": "대본, 캐스팅, 콘티, 영상, 목소리까지 여러 생성 모델을 하나의 제작 흐름으로 묶었습니다. 작품 속 인물과 통화하듯 대화할 수도 있습니다.",
     "mv_h": "온라인과 오프라인,\n리얼과 언리얼을 잇습니다",
@@ -104,17 +108,14 @@ window.PLEDGE_I18N = {
     "f_v1": "주식회사 플렛지 (구 위치컴퍼니) · 데이원드림 계열사",
     "f_k2": "주소",
     "f_v2": "서울특별시 강남구 봉은사로67길 40, 2F",
-    "f_k3": "문의",
-    "mx_h": "기술과 서비스의 지도",
-    "mx_svc": "서비스",
-    "pr1": "AI 숏드라마 · 캐릭터 대화",
-    "pr2": "아티스트별 팬 공간 · 3D 광장",
-    "pr3": "굿즈 커머스 · 3D 팝업 · AI 제작실",
-    "pr4": "메타버스 앨범",
-    "pr5": "K-컬처 RWA 플랫폼"
+    "f_k3": "문의"
   },
   "en": {
-    "mx_gen": "Main users",
+    "pt_m2v": "Allowed · Oct 2026",
+    "pt_m2": "Status",
+    "pt_m1": "Application no.",
+    "pt_p": "A metaverse album space entered via the physical album's QR — applied to PLEDGE ALBUM",
+    "pt_h": "Virtual album patent",
     "bf5s": "Cycle complete",
     "bf5": "Burn",
     "bf4s": "Principal returned",
@@ -187,7 +188,7 @@ window.PLEDGE_I18N = {
     "sx_h": "Three layers that turn\nIP into experience",
     "nav_sx": "Structure",
     "nav_about": "Vision",
-    "nav_biz": "Business",
+    "nav_biz": "Technology",
     "nav_artists": "Artists",
     "nav_ct": "Contact",
     "hero_h": "Building the next\ninfrastructure for entertainment",
@@ -197,7 +198,7 @@ window.PLEDGE_I18N = {
     "fg2": "Official MD & album projects",
     "fg3": "Apps live on iOS · Android",
     "fg4": "IP tokens issued & redeemed",
-    "biz_h": "Three technologies, five services",
+    "biz_h": "PLEDGE core technology",
     "ai_h": "From a one-line idea\nto a finished drama",
     "ai_p": "Script, casting, storyboards, video and voice: we tie multiple generative models into one production flow. Viewers can even talk to the characters as if on a call.",
     "mv_h": "Online and offline,\nreal and unreal, connected",
@@ -217,13 +218,6 @@ window.PLEDGE_I18N = {
     "f_v1": "Pledge Inc. (formerly WITCH Company) · A DayOneDream company",
     "f_k2": "Address",
     "f_v2": "2F, 40 Bongeunsa-ro 67-gil, Gangnam-gu, Seoul",
-    "f_k3": "Contact",
-    "mx_h": "Technology, mapped to services",
-    "mx_svc": "Service",
-    "pr1": "AI short dramas · character chat",
-    "pr2": "Per-artist fan space · 3D plaza",
-    "pr3": "Goods commerce · 3D pop-ups · AI studio",
-    "pr4": "Metaverse album",
-    "pr5": "K-Culture RWA platform"
+    "f_k3": "Contact"
   }
 };

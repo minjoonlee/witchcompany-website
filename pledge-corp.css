@@ -222,6 +222,15 @@ button{font:inherit;color:inherit}
 .flow b{display:block;margin-top:6px;font-size:16px;font-weight:700;letter-spacing:-0.02em}
 .flow small{display:block;margin-top:2px;font-size:13px;color:var(--sub)}
 
+/* patent */
+.patent{grid-column:1 / -1;margin-top:clamp(20px,2.4vw,32px);display:grid;grid-template-columns:auto 1fr auto;gap:clamp(20px,3vw,48px);align-items:center;padding:22px clamp(20px,2.4vw,32px);background:var(--soft);border-radius:14px}
+.pt-k{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:var(--ink);padding:6px 10px;border-radius:6px}
+.pt-body b{display:block;font-size:17px;font-weight:700;letter-spacing:-0.02em}
+.pt-body span{display:block;margin-top:2px;font-size:14px;color:var(--sub)}
+.pt-meta{display:flex;gap:clamp(20px,3vw,40px)}
+.pt-meta dt{font-size:11px;letter-spacing:.08em;color:var(--mute)}
+.pt-meta dd{margin-top:2px;font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}
+
 /* matrix */
 .matrix{padding:clamp(80px,9vw,128px) 0 var(--sec);border-top:1px solid var(--line)}
 .tr{display:grid;grid-template-columns:2.2fr .8fr .8fr .8fr 1.1fr;align-items:center;border-bottom:1px solid var(--line);min-height:84px}
@@ -296,6 +305,8 @@ a.card:hover img{transform:scale(1.05)}
   .vision-grid{grid-template-columns:1fr}
   .flywheel{justify-self:center}
   .tech-row{grid-template-columns:1fr}
+  .patent{grid-template-columns:1fr;gap:12px}
+  .pt-k{justify-self:start}
   .flow{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);row-gap:24px}
   .flow li::after{display:none}
   .map{grid-template-columns:1fr;gap:48px}
