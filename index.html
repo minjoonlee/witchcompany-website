@@ -9,7 +9,7 @@
 <meta name="author" content="Pledge Inc.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="naver-site-verification" content="59a0d62d4f853a1ac647cabe54b9d7e3484766f9" />
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#08080a">
 <link rel="canonical" href="https://pledge.co.kr/">
 <link rel="alternate" hreflang="ko" href="https://pledge.co.kr/">
 <link rel="alternate" hreflang="x-default" href="https://pledge.co.kr/">
@@ -79,12 +79,13 @@
 </head>
 <body>
 
-<header class="hd">
+<header class="hd on-dark">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="Pledge Inc."><img src="assets/logo-wordmark-black.png" alt="PLEDGE"><span>INC.</span></a>
+    <a class="logo" href="#top" aria-label="Pledge Inc."><img class="lg-b" src="assets/logo-wordmark-black.png" alt="PLEDGE"><img class="lg-w" src="assets/logo-wordmark-white.png" alt=""><span>INC.</span></a>
     <nav class="nav">
-      <a href="#about" data-i18n="nav_about">회사</a>
-      <a href="#business" data-i18n="nav_biz">사업</a>
+      <a href="#about" data-i18n="nav_about">비전</a>
+      <a href="#structure" data-i18n="nav_sx">구조</a>
+      <a href="#business" data-i18n="nav_biz">기술</a>
       <a href="#artists" data-i18n="nav_artists">아티스트</a>
       <a href="#contact" data-i18n="nav_ct">문의</a>
       <div class="lang-toggle" role="group" aria-label="Language">
@@ -97,153 +98,200 @@
 
 <main id="top">
 
-  <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Entertainment Technology Company</p>
-      <h1 data-i18n="hero_h">엔터테인먼트를 움직이는<br>기술을 만듭니다</h1>
-      <p class="hero-sub" data-i18n="hero_sub">플렛지는 AI · 메타버스 · 블록체인 기술을 직접 개발하고, 그 기술로 팬덤 서비스를 운영합니다.</p>
-
-      <div class="stack" aria-label="Pledge technology stack">
-        <div class="layer">
-          <p class="ln">Technology</p>
-          <div class="cols3">
-            <div class="cell"><b>AI</b><ul><li data-i18n="st_a1">영상 생성 파이프라인</li><li data-i18n="st_a2">캐릭터 음성 · 실시간 대화</li><li data-i18n="st_a3">AI 굿즈 디자인 · 견적</li><li data-i18n="st_a4">IP 현금흐름 예측</li></ul></div>
-            <div class="cell"><b>Metaverse</b><ul><li data-i18n="st_m1">웹 3D 실시간 멀티 아바타</li><li data-i18n="st_m2">3D 매장 · 전시 공간</li><li data-i18n="st_m3">360° · AR 앨범</li><li data-i18n="st_m4">실물 굿즈 ↔ 아바타 아이템</li></ul></div>
-            <div class="cell"><b>Blockchain</b><ul><li data-i18n="st_b1">토큰 발행 · 상환 · 소각</li><li data-i18n="st_b2">임베디드 지갑 · 소셜 로그인</li><li data-i18n="st_b3">스테이블코인 결제</li><li data-i18n="st_b4">온체인 소유 인증</li></ul></div>
-          </div>
-        </div>
-        <div class="arrow" aria-hidden="true"></div>
-        <div class="layer">
-          <p class="ln">Services</p>
-          <div class="cols5">
-            <a href="https://plaiva.ai" target="_blank" rel="noopener">PLAIVA</a>
-            <a href="https://pledge.im" target="_blank" rel="noopener">PLEDGE</a>
-            <a href="https://store.pledge.im" target="_blank" rel="noopener">PLEDGE STORE</a>
-            <span>PLEDGE ALBUM</span>
-            <a href="https://wavist.io" target="_blank" rel="noopener">WAVIST</a>
-          </div>
-        </div>
-        <div class="arrow" aria-hidden="true"></div>
-        <div class="layer">
-          <p class="ln">For</p>
-          <div class="cols3 out"><span data-i18n="st_o1">아티스트 · 기획사</span><span data-i18n="st_o2">IP 보유사 · 브랜드</span><span data-i18n="st_o3">전 세계 팬</span></div>
+  <section class="hero" aria-label="PLEDGE">
+    <div class="wrap hero-grid">
+      <div class="hero-in">
+        <p class="eyebrow">Entertainment Technology Company</p>
+        <h1 data-i18n="hero_h">엔터테인먼트의<br>다음 인프라를 만듭니다</h1>
+        <p class="hero-sub" data-i18n="hero_sub">AI는 콘텐츠를, 메타버스는 온라인과 오프라인을 잇는 공간을, 블록체인은 소유를 만듭니다. 플렛지는 이 세 가지를 하나의 팬덤 경험으로 설계하고 직접 운영합니다.</p>
+        <ul class="hero-tech"><li><b>AI</b><span>PLAIVA</span></li><li><b>Metaverse</b><span>PLEDGE</span></li><li><b>Blockchain</b><span>WAVIST</span></li></ul>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="glow g1"></div><div class="glow g2"></div>
+        <div class="dv-browser st-browser"><div class="bar"><i></i><i></i><i></i><span>store.pledge.im/popup</span></div><img src="assets/v8/mv-busan3d.webp" alt=""></div>
+        <div class="dv-phone st-phone"><img src="assets/v8/ai-ep4.webp" alt="" style="object-position:50% 20%"></div>
+        <div class="dv-card st-album"><img src="assets/v8/mv-album-cover.webp" alt=""><p><b>PLEDGE ALBUM</b><span>Metaverse Album</span></p><em class="pt-chip" title="가상 앨범 특허 결정"><b>PATENT</b><span>10-2024-0054271</span></em></div>
+        <div class="dv-ui st-token">
+          <p class="ui-k">WAVIST · K-POP Live IP</p>
+          <p class="ui-v">$3.22M</p>
+          <ol class="ui-steps"><li class="ok">Issued</li><li class="ok">Settled</li><li class="ok">Redeemed</li><li class="ok">Burned</li></ol>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="about">
-    <div class="wrap grid2">
-      <p class="label">About</p>
-      <div>
-        <p class="statement rv" data-i18n="about_p">플렛지는 데이원드림 그룹의 팬덤 기술 회사입니다. AI로 이야기를 영상으로 만들고, 아티스트마다 팬이 모이는 3D 공간을 열고, 팬이 좋아하는 IP의 가치를 블록체인에 기록합니다.</p>
-        <dl class="figures rv">
-          <div><dt>6</dt><dd data-i18n="fg1">아티스트 PLEDGE</dd></div>
-          <div><dt>40+</dt><dd data-i18n="fg2">공식 MD · 앨범 프로젝트</dd></div>
-          <div><dt>3</dt><dd data-i18n="fg3">iOS · Android 출시 앱</dd></div>
-          <div><dt>$3.22M</dt><dd data-i18n="fg4">IP 토큰 발행 · 상환 완료</dd></div>
-        </dl>
+  <section id="about" class="vision">
+    <div class="wrap">
+      <p class="kicker"><span>01</span>Vision</p>
+      <p class="vision-h rv" data-i18n="vs_h">새로운 팬덤 문화를<br>만듭니다</p>
+      <div class="vision-grid">
+        <div class="vision-body rv">
+          <p data-i18n="about_p">팬이 아티스트와 캐릭터를 만나고, 함께 머물고, 좋아하는 IP를 소유하는 방식이 바뀌고 있습니다. 플렛지는 그 변화를 기술과 서비스로 직접 만들어 갑니다.</p>
+          <p class="fw-cap" data-i18n="fw_cap">네 서비스는 하나의 계정과 지갑을 씁니다. 한 서비스에서 만난 팬이 다음 서비스로 이어집니다.</p>
+        </div>
+        <figure class="flywheel rv" aria-label="PLEDGE ecosystem loop">
+          <svg viewBox="0 0 520 520" class="fw-svg" aria-hidden="true">
+            <defs><marker id="fwArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0a0a0b"/></marker></defs>
+            <circle cx="260" cy="260" r="178" fill="none" stroke="#e3e3e6" stroke-width="1"/>
+            <path d="M300 86 A178 178 0 0 1 434 220" fill="none" stroke="#0a0a0b" stroke-width="1.4" marker-end="url(#fwArrow)"/>
+            <path d="M434 300 A178 178 0 0 1 300 434" fill="none" stroke="#0a0a0b" stroke-width="1.4" marker-end="url(#fwArrow)"/>
+            <path d="M220 434 A178 178 0 0 1 86 300" fill="none" stroke="#0a0a0b" stroke-width="1.4" marker-end="url(#fwArrow)"/>
+            <path d="M86 220 A178 178 0 0 1 220 86" fill="none" stroke="#0a0a0b" stroke-width="1.4" marker-end="url(#fwArrow)"/>
+            <circle cx="260" cy="260" r="92" fill="#0a0a0b"/>
+          </svg>
+          <div class="fw-center"><b>PLEDGE</b><span data-i18n="fw_c">통합 계정 · 지갑 · 데이터</span></div>
+          <div class="fw-node n-top"><i>01</i><b data-i18n="fw1">Content</b><span>PLAIVA</span><small data-i18n="fw1s">AI 드라마 · 캐릭터 IP</small></div>
+          <div class="fw-node n-right"><i>02</i><b data-i18n="fw2">Community</b><span>Artist PLEDGE</span><small data-i18n="fw2s">온 · 오프라인 팬 공간</small></div>
+          <div class="fw-node n-bottom"><i>03</i><b data-i18n="fw3">Commerce</b><span>STORE · ALBUM</span><small data-i18n="fw3s">굿즈 · 메타버스 앨범</small></div>
+          <div class="fw-node n-left"><i>04</i><b data-i18n="fw4">Asset</b><span>WAVIST</span><small data-i18n="fw4s">IP 토큰화 · RWA</small></div>
+        </figure>
       </div>
+      <dl class="figures rv">
+        <div><dt>6</dt><dd data-i18n="fg1">아티스트 PLEDGE</dd></div>
+        <div><dt>40+</dt><dd data-i18n="fg2">공식 MD · 앨범 프로젝트</dd></div>
+        <div><dt>3</dt><dd data-i18n="fg3">iOS · Android 출시 앱</dd></div>
+        <div><dt>$3.22M</dt><dd data-i18n="fg4">IP 토큰 발행 · 상환 완료</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="structure" class="structure">
+    <div class="wrap">
+      <p class="kicker"><span>02</span>How PLEDGE Connects</p>
+      <h2 class="sx-h rv" data-i18n="sx_h">IP를 경험으로 바꾸는<br>세 개의 레이어</h2>
+
+      <div class="map rv" id="map">
+        <svg class="map-lines" aria-hidden="true"></svg>
+        <div class="col">
+          <p class="col-h">Entertainment IP</p>
+          <div class="node src" data-id="ip">
+            <b data-i18n="sx_ip1">아티스트</b><b data-i18n="sx_ip2">인플루언서</b><b data-i18n="sx_ip3">캐릭터</b>
+            <small data-i18n="sx_ip_s">음원 · 영상 · 굿즈 · 공연</small>
+          </div>
+        </div>
+        <div class="col">
+          <p class="col-h">PLEDGE Technology</p>
+          <button type="button" class="node tech" data-id="ai"><b data-i18n="sx_ai">생성형 AI</b><small>PLAIVA · AI Goods Studio</small></button>
+          <button type="button" class="node tech" data-id="mv"><b data-i18n="sx_mv">메타버스</b><small>Artist PLEDGE · On/Offline · 3D Store</small></button>
+          <button type="button" class="node tech" data-id="bc"><b data-i18n="sx_bc">블록체인 · RWA</b><small>Wallet · WAVIST</small></button>
+        </div>
+        <div class="col">
+          <p class="col-h">Audience</p>
+          <div class="node user" data-id="u10"><b data-i18n="sx_u10">팬</b><small data-i18n="sx_u10d">대화 · 방문 · 참여</small></div>
+          <div class="node user" data-id="u20"><b data-i18n="sx_u20">크리에이터</b><small data-i18n="sx_u20d">숏드라마 · 굿즈를 직접 제작</small></div>
+          <div class="node user" data-id="u30"><b data-i18n="sx_u30">컬렉터</b><small data-i18n="sx_u30d">굿즈 · 앨범 · 디지털 소유</small></div>
+          <div class="node user" data-id="u40"><b data-i18n="sx_u40">IP 파트너</b><small data-i18n="sx_u40d">아티스트사 · 브랜드 · IP 보유사</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="story">
+    <div class="wrap">
+      <p class="kicker"><span>03</span>Fan Journey</p>
+      <h2 class="st-h rv" data-i18n="sl_h">즐기고, 함께 만들고,<br>소유합니다</h2>
+      <ol class="steps">
+        <li class="rv"><div class="panel p-warm"><div class="dv-phone sm"><img src="assets/v8/ai-night.webp" alt="" style="object-position:58% 50%"></div><div class="bubble b1" data-i18n="sb1">"오늘 무대 어땠어?"</div></div><div class="cap"><p class="ph">01 · ENJOY</p><h3 data-i18n="sl_1h">즐기며 팬이 됩니다</h3><p data-i18n="sl_1p">AI 드라마를 보고, 아티스트 목소리의 캐릭터와 대화합니다. 처음 만난 콘텐츠가 팬심으로 이어집니다.</p></div></li>
+        <li class="rv"><div class="panel p-cool"><div class="dv-browser sm"><div class="bar"><i></i><i></i><i></i></div><img src="assets/v8/mv-album-sea.webp" alt=""></div><div class="dv-phone xs"><img src="assets/v8/kave-plaza.webp" alt="" style="object-position:45% 50%"></div></div><div class="cap"><p class="ph">02 · CONNECT</p><h3 data-i18n="sl_2h">소통하며 함께 공간을 만듭니다</h3><p data-i18n="sl_2p">팬과 아티스트가 아바타로 만나 광장 · 앨범 · 팝업을 함께 채웁니다. 디지털 공간이 팬들의 손으로 자랍니다.</p></div></li>
+        <li class="rv"><div class="panel p-ink"><div class="dv-ui lg"><p class="ui-k">My IP Wallet</p><div class="ui-row"><span>K-POP Live IP</span><b>Redeemed</b></div><div class="ui-row"><span>PLEDGE ALBUM</span><b>On-chain</b></div><div class="ui-row"><span>Official Goods</span><b>Verified</b></div></div></div><div class="cap"><p class="ph">03 · OWN</p><h3 data-i18n="sl_3h">좋아하는 것을 소유합니다</h3><p data-i18n="sl_3p">굿즈 · 앨범 · IP의 가치가 지갑에 기록됩니다. 팬의 시간이 남는 자산이 됩니다.</p></div></li>
+      </ol>
     </div>
   </section>
 
   <section id="business" class="biz">
     <div class="wrap">
       <div class="sec-head rv">
-        <p class="label">Business</p>
-        <h2 data-i18n="biz_h">세 가지 기술, 직접 운영하는 서비스</h2>
+        <p class="kicker"><span>04</span>Core Technology</p>
+        <h2 data-i18n="biz_h">기술이 경험이 되기까지</h2>
       </div>
 
-      <article class="row-wide rv">
-        <div class="txt txt-wide">
-          <p class="tag">AI</p>
-          <h3 data-i18n="ai_h">이야기 한 줄이<br>드라마가 됩니다</h3>
+      <article class="tech-row rv">
+        <div class="tech-txt">
+          <p class="tag">01 · AI</p>
+          <h3 data-i18n="ai_h">한 줄의 기획에서<br>한 편의 드라마까지</h3>
           <p data-i18n="ai_p">대본, 캐스팅, 콘티, 영상, 목소리까지 여러 생성 모델을 하나의 제작 흐름으로 묶었습니다. 작품 속 인물과 통화하듯 대화할 수도 있습니다.</p>
-          <ul class="caps">
-            <li><span class="n">01</span><b data-i18n="ai_c1">AI 영상 제작 파이프라인</b><span>PLAIVA</span></li>
-            <li><span class="n">02</span><b data-i18n="ai_c2">캐릭터 음성 · 실시간 대화</b><span>PLAIVA</span></li>
-            <li><span class="n">03</span><b data-i18n="ai_c3">AI 굿즈 디자인 · 견적</b><span>PLEDGE STORE</span></li>
-            <li><span class="n">04</span><b data-i18n="ai_c4">IP 현금흐름 예측 모델</b><span>R&amp;D</span></li>
-          </ul>
           <a class="more" href="https://plaiva.ai" target="_blank" rel="noopener">plaiva.ai ↗</a>
         </div>
-        <div class="mosaic">
-          <a class="m-big" href="https://plaiva.ai" target="_blank" rel="noopener"><img src="assets/v8/ai-cast.webp" alt="PLAIVA 〈바다의 집〉 캐스팅" loading="lazy"><span>PLAIVA · <em data-i18n="az1">〈바다의 집〉 캐스팅</em></span></a>
-          <a href="https://plaiva.ai" target="_blank" rel="noopener"><img src="assets/v8/ai-night.webp" alt="PLAIVA 웹애니 장면" loading="lazy" style="object-position:50% 40%"><span>PLAIVA</span></a>
-          <a href="https://plaiva.ai" target="_blank" rel="noopener"><img src="assets/v8/ai-topstar.webp" alt="PLAIVA 〈내 남자친구는 톱스타〉" loading="lazy" style="object-position:50% 20%"><span data-i18n="az3">AI 숏드라마</span></a>
-          <a href="https://plaiva.ai" target="_blank" rel="noopener"><img src="assets/v8/ai-ep4.webp" alt="PLAIVA 〈바다의 집〉 장면" loading="lazy" style="object-position:50% 25%"><span data-i18n="az4">AI 영상 장면</span></a>
-          <a href="https://plaiva.ai" target="_blank" rel="noopener"><img src="assets/v8/ai-daily.webp" alt="PLAIVA AI 캐릭터" loading="lazy" style="object-position:50% 25%"><span data-i18n="az5">AI 캐릭터 · 대화</span></a>
+        <div class="panel big p-ai">
+          <div class="fan">
+            <div class="dv-phone"><img src="assets/v8/ai-topstar.webp" alt="PLAIVA 〈내 남자친구는 톱스타〉" loading="lazy"></div>
+            <div class="dv-phone mid"><img src="assets/v8/ai-ep4.webp" alt="PLAIVA 영상 장면" loading="lazy" style="object-position:50% 20%"></div>
+            <div class="dv-phone"><img src="assets/v8/ai-daily.webp" alt="PLAIVA AI 캐릭터" loading="lazy" style="object-position:50% 25%"></div>
+          </div>
+          <div class="call"><i></i><span data-i18n="ai_call">캐릭터와 통화 중</span><b>00:42</b></div>
         </div>
+        <ol class="flow" aria-label="AI pipeline">
+          <li><i>01</i><b data-i18n="af1">이야기</b><small data-i18n="af1s">한 줄 기획</small></li>
+          <li><i>02</i><b data-i18n="af2">대본</b><small data-i18n="af2s">회차 · 대사</small></li>
+          <li><i>03</i><b data-i18n="af3">캐스팅</b><small data-i18n="af3s">AI 배우 · 목소리</small></li>
+          <li><i>04</i><b data-i18n="af4">콘티</b><small data-i18n="af4s">장면 설계</small></li>
+          <li><i>05</i><b data-i18n="af5">영상</b><small data-i18n="af5s">생성 · 편집</small></li>
+          <li class="end"><i>06</i><b data-i18n="af6">대화 · 굿즈</b><small data-i18n="af6s">팬 경험으로</small></li>
+        </ol>
       </article>
 
-      <article class="row-wide rv">
-        <div class="txt txt-wide">
-          <p class="tag">Metaverse</p>
-          <h3 data-i18n="mv_h">설치 없이,<br>웹에서 바로 3D로</h3>
-          <p data-i18n="mv_p">아티스트마다 팬이 아바타로 만나는 광장이 열립니다. 오프라인 팝업스토어와 앨범도 브라우저에서 걸어 들어가는 공간이 됩니다.</p>
-          <ul class="caps">
-            <li><span class="n">01</span><b data-i18n="mv_c1">실시간 멀티 아바타 광장</b><span>PLEDGE</span></li>
-            <li><span class="n">02</span><b data-i18n="mv_c2">3D 매장 · 전시 공간</b><span>PLEDGE STORE</span></li>
-            <li><span class="n">03</span><b data-i18n="mv_c3">360° · AR 앨범 공간</b><span>PLEDGE ALBUM</span></li>
-            <li><span class="n">04</span><b data-i18n="mv_c4">실물 굿즈 ↔ 아바타 아이템</b><span>PLEDGE</span></li>
-          </ul>
+      <article class="tech-row rv">
+        <div class="tech-txt">
+          <p class="tag">02 · Metaverse</p>
+          <h3 data-i18n="mv_h">현장이 끝나도,<br>경험은 이어집니다</h3>
+          <p data-i18n="mv_p">오프라인 팝업과 공연, 굿즈를 웹 3D와 아바타로 그대로 옮깁니다. 현장에서 산 티셔츠는 아바타가 입고, 현장의 매장은 온라인에서 다시 열립니다.</p>
           <a class="more" href="https://pledge.im" target="_blank" rel="noopener">pledge.im ↗</a>
         </div>
-        <div class="mosaic">
-          <div class="m-big"><img src="assets/v8/mv-album-sea.webp" alt="메타버스 앨범 속 공간" loading="lazy"><span>PLEDGE ALBUM · <em data-i18n="mz1">앨범 속 공간</em></span></div>
-          <div><img src="assets/v8/mv-album-cover.webp" alt="메타버스 앨범 커버" loading="lazy"><span>PLEDGE ALBUM</span></div>
-          <a href="https://store.pledge.im/popup/kdh" target="_blank" rel="noopener"><img src="assets/v8/mv-busan3d.webp" alt="김동현 3D 팝업스토어 부산점" loading="lazy"><span data-i18n="mz3">3D 팝업스토어 · 부산</span></a>
-          <a href="https://store.pledge.im/popup/kdh" target="_blank" rel="noopener"><img src="assets/v8/mv-daejeon3d.webp" alt="김동현 3D 팝업스토어 대전점" loading="lazy"><span data-i18n="mz4">3D 팝업스토어 · 대전</span></a>
-          <a href="https://hyunjae.pledge.im" target="_blank" rel="noopener"><img src="assets/v8/kave-plaza.webp" alt="현재 PLEDGE 광장" loading="lazy"><span data-i18n="mz5">HYUNJAE PLEDGE · 광장</span></a>
+        <div class="panel big p-mv">
+          <div class="tw-head"><b>OFFLINE</b><i></i><b>ONLINE</b></div>
+          <div class="tw-row">
+            <figure class="tw-cell"><div class="tw-img"><img src="assets/v8/popup-real-daejeon.webp" alt="신세계 대전 김동현 팝업스토어 현장" loading="lazy"></div><figcaption data-i18n="tw1">팝업스토어 · 신세계 대전</figcaption></figure>
+            <div class="tw-link" aria-hidden="true"><span></span><i>↔</i><span></span></div>
+            <figure class="tw-cell"><div class="tw-img"><img src="assets/v8/popup-3d-daejeon.webp" alt="웹 3D로 옮긴 같은 팝업 매장" loading="lazy"></div><figcaption data-i18n="tw2">같은 매장을 웹 3D로</figcaption></figure>
+          </div>
+          <div class="tw-row">
+            <figure class="tw-cell"><div class="tw-img light"><img src="assets/v8/goods-tee-real.webp" alt="HYUNJAE 팬미팅 공식 티셔츠" loading="lazy"></div><figcaption data-i18n="gt1">공식 MD 티셔츠</figcaption></figure>
+            <div class="tw-link" aria-hidden="true"><span></span><i>↔</i><span></span></div>
+            <figure class="tw-cell"><div class="tw-img cream"><img src="assets/v8/goods-tee-avatar.webp" alt="같은 디자인의 아바타 티셔츠" loading="lazy"></div><figcaption data-i18n="gt2">구매하면 같은 디자인의 아바타 아이템</figcaption></figure>
+          </div>
         </div>
+        <ol class="flow" aria-label="Metaverse flow">
+          <li><i>01</i><b data-i18n="mf1">오프라인 현장</b><small data-i18n="mf1s">팝업 · 앨범 · 공연</small></li>
+          <li><i>02</i><b data-i18n="mf2">디지털 트윈</b><small data-i18n="mf2s">3D 공간 · 아바타</small></li>
+          <li><i>03</i><b data-i18n="mf3">웹 · QR 입장</b><small data-i18n="mf3s">설치 없이</small></li>
+          <li><i>04</i><b data-i18n="mf4">함께 소통</b><small data-i18n="mf4s">실시간 멀티</small></li>
+          <li class="end"><i>05</i><b data-i18n="mf5">다시 현장으로</b><small data-i18n="mf5s">굿즈 ↔ 아바타 아이템</small></li>
+        </ol>
       </article>
 
-      <article class="row-wide rv">
-        <div class="txt txt-wide">
-          <p class="tag">Blockchain</p>
-          <h3 data-i18n="bc_h">좋아하는 IP의 가치를<br>온체인에 기록합니다</h3>
+      <article class="tech-row rv">
+        <div class="tech-txt">
+          <p class="tag">03 · Blockchain</p>
+          <h3 data-i18n="bc_h">IP의 현금흐름을<br>온체인으로</h3>
           <p data-i18n="bc_p">K-POP 공연 IP의 현금흐름을 토큰으로 발행하고 정산 · 상환 · 소각까지 블록체인에 남겼습니다. SBI Digital Markets와 함께 한 사이클을 마쳤습니다.</p>
-          <ul class="caps">
-            <li><span class="n">01</span><b data-i18n="bc_c1">토큰 발행 · 상환 · 소각</b><span>WAVIST</span></li>
-            <li><span class="n">02</span><b data-i18n="bc_c2">임베디드 지갑 · 소셜 로그인</b><span>WAVIST</span></li>
-            <li><span class="n">03</span><b data-i18n="bc_c3">스테이블코인 결제</b><span>PLEDGE STORE</span></li>
-            <li><span class="n">04</span><b data-i18n="bc_c4">온체인 한정판 · 소유 인증</b><span>PLEDGE ALBUM</span></li>
-          </ul>
           <a class="more" href="https://wavist.io" target="_blank" rel="noopener">wavist.io ↗</a>
           <p class="note" data-i18n="bc_note">WAVIST 투자 상품은 Regulation S에 따라 미국 외 적격 투자자에게만 제공되며, 한국 거주자는 청약할 수 없습니다.</p>
         </div>
-        <div class="mosaic">
-          <a class="m-big" href="https://wavist.io" target="_blank" rel="noopener"><img src="assets/v8/bc-concert.webp" alt="K-POP 공연" loading="lazy" style="object-position:50% 45%"><span>WAVIST · <em data-i18n="bz1">K-POP 공연 IP</em></span></a>
-          <a href="https://wavist.io" target="_blank" rel="noopener"><img src="assets/v8/bc-logo.webp" alt="WAVIST" loading="lazy"><span>WAVIST</span></a>
-          <a href="https://wavist.io" target="_blank" rel="noopener"><img src="assets/v8/bc-dealroom.webp" alt="WAVIST 딜룸" loading="lazy" style="object-position:50% 55%"><span data-i18n="bz3">딜룸</span></a>
-          <a href="https://wavist.io" target="_blank" rel="noopener"><img src="assets/v8/bc-ownership.webp" alt="K-컬처 소유권" loading="lazy"><span data-i18n="bz4">K-컬처 RWA</span></a>
-          <a href="https://wavist.io" target="_blank" rel="noopener"><img src="assets/v8/bc-infra.webp" alt="온체인 인프라" loading="lazy"><span data-i18n="bz5">온체인 인프라</span></a>
+        <div class="panel big p-bc">
+          <div class="dv-browser bc-main"><div class="bar"><i></i><i></i><i></i><span>wavist.io</span></div><img src="assets/live-stage.jpg" alt="K-POP 공연" loading="lazy"></div>
+          <div class="dv-ui bc-ui">
+            <p class="ui-k">K-POP Live IP · Full Cycle</p>
+            <p class="ui-v">$3.22M</p>
+            <div class="ui-track"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></div>
+            <ol class="ui-steps"><li class="ok">Issued</li><li class="ok">Settled</li><li class="ok">Redeemed</li><li class="ok">Burned</li></ol>
+            <p class="ui-foot">with SBI Digital Markets</p>
+          </div>
         </div>
+        <ol class="flow" aria-label="RWA cycle">
+          <li><i>01</i><b data-i18n="bf1">IP 현금흐름</b><small data-i18n="bf1s">공연 · 음원 · 굿즈</small></li>
+          <li><i>02</i><b data-i18n="bf2">토큰 발행</b><small data-i18n="bf2s">온체인 기록</small></li>
+          <li><i>03</i><b data-i18n="bf3">정산</b><small data-i18n="bf3s">수익 분배</small></li>
+          <li><i>04</i><b data-i18n="bf4">상환</b><small data-i18n="bf4s">원금 반환</small></li>
+          <li class="end"><i>05</i><b data-i18n="bf5">소각</b><small data-i18n="bf5s">사이클 완료</small></li>
+        </ol>
       </article>
-    </div>
-  </section>
-
-  <section class="matrix">
-    <div class="wrap">
-      <div class="sec-head rv">
-        <p class="label">Technology × Services</p>
-        <h2 data-i18n="mx_h">기술은 서비스로 증명합니다</h2>
-      </div>
-      <div class="tbl rv" role="table">
-        <div class="tr th" role="row"><span role="columnheader" data-i18n="mx_svc">서비스</span><span role="columnheader">AI</span><span role="columnheader">Metaverse</span><span role="columnheader">Blockchain</span></div>
-        <div class="tr" role="row"><span role="cell"><b>PLAIVA</b><small data-i18n="pr1">AI 숏드라마 · 캐릭터 대화</small></span><i class="on"></i><i></i><i></i></div>
-        <div class="tr" role="row"><span role="cell"><b>PLEDGE</b><small data-i18n="pr2">아티스트별 팬 공간 · 3D 광장</small></span><i></i><i class="on"></i><i class="on"></i></div>
-        <div class="tr" role="row"><span role="cell"><b>PLEDGE STORE</b><small data-i18n="pr3">굿즈 커머스 · 3D 팝업 · AI 제작실</small></span><i class="on"></i><i class="on"></i><i class="on"></i></div>
-        <div class="tr" role="row"><span role="cell"><b>PLEDGE ALBUM</b><small data-i18n="pr4">메타버스 앨범</small></span><i></i><i class="on"></i><i class="on"></i></div>
-        <div class="tr" role="row"><span role="cell"><b>WAVIST</b><small data-i18n="pr5">K-컬처 RWA 플랫폼</small></span><i></i><i></i><i class="on"></i></div>
-      </div>
     </div>
   </section>
 
   <section id="artists" class="artists">
     <div class="wrap">
       <div class="sec-head rv">
-        <p class="label">Artist PLEDGE</p>
+        <p class="kicker"><span>05</span>Artist PLEDGE</p>
         <h2 data-i18n="ar_h">아티스트마다, 하나의 PLEDGE</h2>
         <p class="sub" data-i18n="ar_p">팬 공간 · 공식 굿즈 · 콘텐츠가 아티스트별로 한곳에 모입니다.</p>
       </div>
@@ -261,14 +309,14 @@
   <section class="md">
     <div class="wrap">
       <div class="sec-head rv">
-        <p class="label">Goods &amp; MD</p>
+        <p class="kicker"><span>06</span>Goods &amp; MD</p>
         <h2 data-i18n="md_h">공식 MD부터 앨범, 팝업까지</h2>
         <p class="sub" data-i18n="md_p">기획 · 디자인 · 생산 · 판매를 그룹 안에서 끝냅니다.</p>
       </div>
       <div class="gallery">
         <figure class="g1 rv"><img src="assets/v8/md-btob.webp" alt="BTOB 공식 MD" loading="lazy"><figcaption>BTOB · Official MD</figcaption></figure>
         <figure class="rv"><img src="assets/v8/md-heartattack.webp" alt="Heart Attack MD" loading="lazy"><figcaption>Heart Attack · Fan Kit</figcaption></figure>
-        <figure class="rv"><img src="assets/v8/kdh-popup.webp" alt="김동현 팝업스토어" loading="lazy"><figcaption data-i18n="md_c3">김동현 · 팝업스토어</figcaption></figure>
+        <figure class="rv"><img src="assets/v8/popup-real-daejeon.webp" alt="신세계 대전 김동현 팝업스토어" loading="lazy"><figcaption data-i18n="md_c3">김동현 팝업스토어 · 신세계 대전</figcaption></figure>
       </div>
       <a class="more rv" href="https://pledge.im/md-portfolio.html" target="_blank" rel="noopener" data-i18n="md_more">MD 포트폴리오 전체 보기 ↗</a>
     </div>
@@ -276,7 +324,7 @@
 
   <section class="partners">
     <div class="wrap grid2">
-      <p class="label">Partners</p>
+      <p class="kicker"><span>07</span>Partners</p>
       <ul class="plist rv">
         <li>SBI Digital Markets</li><li>Soneium</li><li>Optimism</li><li>KYOBO</li><li>DayOneDream</li>
       </ul>
@@ -285,8 +333,8 @@
 
   <section id="contact" class="contact">
     <div class="wrap">
-      <h2 class="rv" data-i18n="ct_h">함께 만들 파트너를 찾습니다</h2>
-      <p class="rv" data-i18n="ct_p">아티스트 · IP 보유사 · 브랜드와 콘텐츠, 공간, 굿즈를 함께 만듭니다.</p>
+      <h2 class="rv" data-i18n="ct_h">다음 프로젝트를<br>함께 만듭니다</h2>
+      <p class="rv" data-i18n="ct_p">아티스트 · IP 보유사 · 브랜드의 제안을 기다립니다.</p>
       <a class="btn rv" href="mailto:cs@pledge.co.kr">cs@pledge.co.kr</a>
     </div>
   </section>
