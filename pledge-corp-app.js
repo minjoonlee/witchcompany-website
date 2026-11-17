@@ -48,7 +48,7 @@
   window.addEventListener("resize", onScroll);
   onScroll();
 
-  // structure map: IP → technology → generations
+  // structure map: IP → technology → audience (horizontal on desktop, vertical layers on mobile)
   (function () {
     var map = document.getElementById("map");
     if (!map) return;
@@ -60,12 +60,20 @@
       svg.textContent = "";
       if (getComputedStyle(svg).display === "none") return;
       var m = map.getBoundingClientRect();
+      var vertical = Math.abs(node("ai").getBoundingClientRect().top - node("mv").getBoundingClientRect().top) < 4;
       EDGES.forEach(function (e) {
-        var a = node(e[0]).getBoundingClientRect(), b = node(e[1]).getBoundingClientRect();
-        var x1 = a.right - m.left, y1 = a.top + a.height / 2 - m.top;
-        var x2 = b.left - m.left, y2 = b.top + b.height / 2 - m.top, dx = (x2 - x1) * 0.5;
+        var a = node(e[0]).getBoundingClientRect(), b = node(e[1]).getBoundingClientRect(), d;
+        if (vertical) {
+          var vx1 = a.left + a.width / 2 - m.left, vy1 = a.bottom - m.top, vx2 = b.left + b.width / 2 - m.left, vy2 = b.top - m.top, dy = (vy2 - vy1) * 0.55;
+          if (e[0] === "ip") vx1 = Math.min(Math.max(vx2, a.left - m.left + 24), a.right - m.left - 24);
+          d = "M" + vx1 + " " + vy1 + " C" + vx1 + " " + (vy1 + dy) + " " + vx2 + " " + (vy2 - dy) + " " + vx2 + " " + vy2;
+        } else {
+          var x1 = a.right - m.left, y1 = a.top + a.height / 2 - m.top;
+          var x2 = b.left - m.left, y2 = b.top + b.height / 2 - m.top, dx = (x2 - x1) * 0.5;
+          d = "M" + x1 + " " + y1 + " C" + (x1 + dx) + " " + y1 + " " + (x2 - dx) + " " + y2 + " " + x2 + " " + y2;
+        }
         var p = document.createElementNS(NS, "path");
-        p.setAttribute("d", "M" + x1 + " " + y1 + " C" + (x1 + dx) + " " + y1 + " " + (x2 - dx) + " " + y2 + " " + x2 + " " + y2);
+        p.setAttribute("d", d);
         p.dataset.a = e[0]; p.dataset.b = e[1];
         if (e[2]) p.setAttribute("class", "dash");
         svg.appendChild(p);
@@ -78,7 +86,7 @@
       map.classList.toggle("has-active", !!id);
       map.querySelectorAll(".node").forEach(function (n) { n.classList.remove("on"); });
       svg.querySelectorAll("path").forEach(function (p) { p.classList.remove("on"); });
-      if (!id) return;
+      if (!id) { caption(null); return; }
       var on = {}; on[id] = 1; on.ip = 1;
       EDGES.forEach(function (e) {
         if (e[0] === id || e[1] === id) { on[e[0]] = on[e[1]] = 1; }
@@ -88,9 +96,22 @@
         if (a === id || b === id || (a === "ip" && on[b] && b.charAt(0) !== "u")) p.classList.add("on");
       });
       Object.keys(on).forEach(function (k) { var n = node(k); if (n) n.classList.add("on"); });
+      caption(id);
+    }
+    var cap = document.getElementById("mapCap");
+    function name(id) { var n = node(id); var b = n && n.querySelector("b"); return b ? b.textContent : ""; }
+    function caption(id) {
+      if (!cap) return;
+      if (!id) { cap.textContent = ""; return; }
+      var n = node(id), small = n.querySelector("small"), isTech = n.classList.contains("tech"), peers = [];
+      EDGES.forEach(function (e) { if (e[0] === "ip") return; if (e[0] === id) peers.push(name(e[1])); if (e[1] === id) peers.push(name(e[0])); });
+      cap.textContent = "";
+      var b = document.createElement("b"); b.textContent = name(id); cap.appendChild(b);
+      cap.appendChild(document.createTextNode((isTech ? " → " : " ← ") + peers.join(" · ")));
+      if (small) { cap.appendChild(document.createElement("br")); cap.appendChild(document.createTextNode(small.textContent)); }
     }
     var order = ["ai", "mv", "bc"], idx = 0, timer = null, touched = false;
-    function cycle() { if (getComputedStyle(svg).display === "none") return activate(null); activate(order[idx++ % order.length]); }
+    function cycle() { activate(order[idx++ % order.length]); }
     var still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!still && "IntersectionObserver" in window) {
       new IntersectionObserver(function (es) {
@@ -104,7 +125,7 @@
     function stop() { touched = true; if (timer) { clearInterval(timer); timer = null; } }
     map.querySelectorAll(".node.tech, .node.user").forEach(function (n) {
       n.addEventListener("mouseenter", function () { stop(); activate(n.dataset.id); });
-      n.addEventListener("click", function () { stop(); activate(current === n.dataset.id ? null : n.dataset.id); });
+      n.addEventListener("click", function () { stop(); activate(n.dataset.id); });
       n.addEventListener("focus", function () { stop(); activate(n.dataset.id); });
     });
     map.addEventListener("mouseleave", function () { if (touched) activate(null); });
@@ -112,6 +133,7 @@
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(draw);
     window.addEventListener("load", draw);
     draw();
+    if (!current) activate("ai");
   })();
 
   // reveal: only below-the-fold elements are hidden, and only once JS runs
