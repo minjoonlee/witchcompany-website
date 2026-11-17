@@ -48,21 +48,6 @@
   window.addEventListener("resize", onScroll);
   onScroll();
 
-  // hero slideshow
-  (function () {
-    var slides = document.querySelectorAll(".hero .slide");
-    var ticks = document.querySelectorAll("#heroTicks i"), cap = document.getElementById("heroCap");
-    if (slides.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    var i = 0;
-    setInterval(function () {
-      if (document.hidden) return;
-      slides[i].classList.remove("is-on"); if (ticks[i]) ticks[i].classList.remove("on");
-      i = (i + 1) % slides.length;
-      slides[i].classList.add("is-on"); if (ticks[i]) ticks[i].classList.add("on");
-      if (cap) { cap.style.opacity = 0; setTimeout(function () { cap.textContent = slides[i].dataset.cap; cap.style.opacity = 1; }, 300); }
-    }, 6000);
-  })();
-
   // structure map: IP → technology → generations
   (function () {
     var map = document.getElementById("map");
